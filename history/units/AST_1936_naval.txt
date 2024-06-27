@@ -1,0 +1,42 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Australian Navy"			
+		naval_base = 12406 # Sydney
+		task_force = {
+			name = "Australian Squadron"
+			location = 12406 # Sydney
+			ship = { name = "HMAS Canberra" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } }	}
+			ship = { name = "HMAS Australia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Sydney" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS New Guinea" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Vampire" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
+			ship = { name = "HMAS Vendetta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
+			ship = { name = "HMAS Voyager" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
+			ship = { name = "HMAS Waterhen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
+			ship = { name = "HMAS Stuart" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
+			ship = { name = "HMAS Melbourne" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }			
+			ship = { name = "HMAS Adelaide" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Hobart" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Brisbane" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Townsville" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Darwin" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Perth" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Wellington" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Auckland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Christchurch" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }	
+			ship = { name = "HMAS New Zealand" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Bismarck" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Solomon Islands" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Tasmania" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
+			ship = { name = "HMAS Princess Elizabeth" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AST version_name = "Nelson Class" } } }        
+			ship = { name = "HMAS New South Wales" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AST version_name = "Nelson Class" } } }
+			ship = { name = "HMAS Queensland" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AST version_name = "Nelson Class" } } }			
+			ship = { name = "HMAS South Australia" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AST version_name = "Nelson Class" } } }			
+			ship = { name = "HMAS Victoria" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AST version_name = "Nelson Class" } } }		
+		}				
+	}
+}
+
+

@@ -1,0 +1,56 @@
+declare_war_on_enemy_faction = {
+	if = {
+		limit = { NOT = { ROOT={has_war_with = THIS.faction_leader } }}
+		set_variable={GER.test1=15}
+		ROOT={declare_war_on = { target = PREV.faction_leader type = annex_everything }}
+		ROOT_call_all_allies_against_THIS = yes
+		THIS_call_all_allies_against_ROOT = yes
+	}
+}
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_THIS = yes
+	THIS_call_all_allies_against_ROOT = yes
+}
+ROOT_call_all_allies_against_THIS = {
+	
+	for_each_scope_loop = {
+		array = ROOT.faction_members
+		if = {
+			limit = { NOT = {  original_tag = ROOT}  }
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = PREV
+			}
+		}
+	}
+}
+THIS_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+		array = THIS.faction_members
+		if = {
+			limit = { NOT = { OR = { AND={original_tag = USA has_war=no} original_tag = PREV} } }
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = ROOT
+			}
+		}
+	}
+}
+share_intel_with_allies={
+	add_intel = {
+		target = PREV
+		civilian_intel = 200
+		army_intel = 200
+		navy_intel = 200
+		airforce_intel = 200
+	}
+	PREV = {
+		add_intel = {
+			target = PREV
+			civilian_intel = 200
+			army_intel = 200
+			navy_intel = 200
+			airforce_intel = 200
+		}
+	}
+}

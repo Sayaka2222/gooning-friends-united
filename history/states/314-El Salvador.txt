@@ -1,0 +1,20 @@
+state=
+{
+	id=314
+	name="STATE_314"
+	manpower = 1
+	
+	state_category = town
+	
+	history=
+	{
+		owner = SWI
+		add_core_of = SWI
+
+	}
+	provinces={
+		12823 13093 
+	}
+
+	local_supplies=0.0 
+}

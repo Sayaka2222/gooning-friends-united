@@ -1,0 +1,100 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+		    if = {
+				limit = {
+				    tag=FIN
+				}
+			every_country = {
+	        limit = { has_war_with = FIN}
+	        white_peace = FIN
+		     }
+			GER = {end_puppet = FIN}
+			FIN = {
+			leave_faction = yes
+			}
+			SOV = { transfer_state = 143 transfer_state = 142 transfer_state = 640}
+			GER = {	
+					change_tag_from = FIN
+				}
+            }
+			if = {
+				limit = {
+					OR={
+						tag=HOL
+						tag=DEN
+						tag=POL
+						tag=NOR
+						tag=GRE
+						tag=YUG
+						}}
+				country_event={id=surrender.1 days=2}
+				if={limit={tag=POL}GER={country_event={id=germany.14 days=3}}}
+			}
+			else_if = {
+				limit = {
+					OR={
+						tag=AST
+						tag=RAJ
+						tag=NZL
+						tag=FRA
+						tag=SAF
+						}}
+				add_offsite_building = { type = arms_factory level = 5 }
+				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = dockyard level = 1 }
+			}
+			else_if = {
+				limit = {
+					tag=ENG
+				}
+				add_offsite_building = { type = arms_factory level = 30 }
+				add_offsite_building = { type = industrial_complex level = 20 }
+				add_offsite_building = { type = dockyard level = 10 }
+			}
+		}
+	}
+	on_declare_war={
+		effect={
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					NOT = {
+						has_global_flag = GER_has_started_war
+					}
+				}
+				set_global_flag = GER_has_started_war
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR={
+							tag=DEN
+							tag=POL
+							tag=NOR
+							tag=GRE
+							tag=YUG
+						}
+					}
+				}
+				ENG={add_to_faction=FROM}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						tag=HOL
+					}
+				}
+				ENG={add_to_faction=FROM}
+				GER={
+					declare_war_on = {
+						target = INS
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+}

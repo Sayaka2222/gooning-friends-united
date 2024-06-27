@@ -1,0 +1,25 @@
+﻿capital = 11
+
+oob = "LIT_1936"
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 15
+	communism = 15
+	neutrality = 40
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.6.10"
+		election_frequency = 120
+		elections_allowed = no
+	}
+}

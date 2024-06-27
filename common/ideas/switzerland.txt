@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+
+		SWI_swiss_neutrality = {
+			allowed = {
+			}
+
+			cancel = {
+			}
+			
+			removal_cost = -1 
+			picture = SWI_swiss_neutrality 
+
+			modifier = { 
+				ai_get_ally_desire_factor = -150
+				enemy_justify_war_goal_time = 10
+				consumer_goods_expected_value = 1
+				consumer_goods_factor = 1
+				industrial_capacity_factory = -10
+				industrial_capacity_dockyard = -10
+				production_speed_buildings_factor = -10
+				political_power_gain = -5
+			}
+		}
+	}
+}

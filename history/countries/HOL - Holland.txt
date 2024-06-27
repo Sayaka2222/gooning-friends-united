@@ -1,0 +1,44 @@
+﻿capital = 7
+
+oob = "HOL_1936"
+
+set_stability = 0.75
+set_war_support = 0
+add_command_power = 10
+
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = INS
+	}
+}
+
+
+add_ideas = {
+	SWI_swiss_neutrality
+}
+
+recruit_character = HOL_hendrikus_colijn
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+}
+
+set_convoys = 150
+set_stability = 0.75

@@ -1,0 +1,27 @@
+﻿capital = 3
+##### Characters for both
+recruit_character = SWI_federal_assembly 
+add_ideas = {
+	SWI_swiss_neutrality
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+}
+
+#1939.1.1 = {
+#	#next election october 39
+#	set_popularities = {
+#		democratic = 95
+#		fascism = 2
+#		communism = 3
+#	}
+#}
+
+set_stability = 0.85
