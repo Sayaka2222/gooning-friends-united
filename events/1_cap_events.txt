@@ -4,65 +4,91 @@ country_event = {
 	title = surrender.1.t
 	desc = surrender.1.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-	hidden=yes
+	hidden = yes
 	fire_only_once = no
 	is_triggered_only = yes
 	immediate = {
-		if={limit={ENG={has_war=no}}
-			GER={declare_war_on = {
+		if={
+			limit={
+				ENG = { has_war = no }
+			}
+			GER={
+				declare_war_on = {
 					target = ENG
 					type = annex_everything
-					}}
+					}
+				}
 		}
 		ENG={
 			add_offsite_building = { type = arms_factory level = 1 }
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
-		if={limit = {
-				OR={
-					tag=HOL
-					tag=DEN
-					tag=NOR
-					}}
-			transfer_navy={target=ENG}
-			every_owned_state={limit={is_core_of=ROOT}
+		if={
+			limit = {
+				OR = {
+					tag = HOL
+					tag = DEN
+					tag = NOR
+					tag = BEL
+				}
+			}
+			transfer_navy = {
+				target = ENG
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
 				add_state_modifier = {
 					modifier = {
 						local_building_slots_factor = 0.5
 					}
 				}
-				GER={
-					transfer_state=PREV
+				GER = {
+					transfer_state = PREV
 				}
 			}
-			if={limit={tag=DEN}USA = { transfer_state = 101}
-				ENG = { transfer_state =  100
-					transfer_state = 337 }
-				GER={transfer_state = 910}
+			if={
+				limit = {
+					tag = DEN
+				}
+				USA = { transfer_state = 101}
+				ENG = {
+					transfer_state =  100
+					transfer_state = 337
+				}
+				GER = { transfer_state = 910 }
 			}
-			if={limit={tag=NOR}ENG = { transfer_state = 914}}
+			if = { 
+				limit = {
+					tag=NOR
+				}
+				ENG = { transfer_state = 914}
+			}
 			ENG={annex_country={target=ROOT transfer_troops=yes}}
 			if={limit={tag=HOL}
 				ENG={	set_state_controller=309
 					set_state_controller=695
 					add_to_faction=INS
 				}
-				FRA={annex_country={target=ROOT transfer_troops=yes}
-				transfer_state=295
-				transfer_state=538
-				transfer_state=718
-				transfer_state=890
-				transfer_state=888
-				transfer_state=889
-				transfer_state=768
-				transfer_state=769
+				FRA={
+					annex_country = { target = ROOT transfer_troops = yes }
+					transfer_state=295
+					transfer_state=538
+					transfer_state=718
+					transfer_state=890
+					transfer_state=888
+					transfer_state=889
+					transfer_state=768
+					transfer_state=769
 				}
 			}
 		}
-		else_if={limit = {
+		else_if = { 
+			limit = {
 				tag=HOL
 			}
-			transfer_navy={target=ENG}
+			transfer_navy = { target = ENG }
 			every_owned_state={limit={is_core_of=ROOT}
 				add_state_modifier = {
 					modifier = {

@@ -18,7 +18,6 @@ ability = {
 					NOT = { has_completed_focus = CHI_dare_to_die_corps }
 				}
 			}
-			always = no
 		}
 		
 		ai_will_do = {
@@ -38,18 +37,13 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
+		cost = 1
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_offense = 0.2
-				combat_breakthrough = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_attacking = 1.0
-				
+				combat_offense = 0.1
+				str_damage_multiplier = 0.35
 				days = 7
 				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
@@ -73,21 +67,15 @@ ability = {
 					has_completed_focus = SPA_cultivate_fanaticism
 				}
 			}
-			always = no
 		}
 		
-		cost = 0.22
+		cost = 1
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_defending = 1.0
-				
+				combat_defense = 0.1
+				str_damage_multiplier = 0.2
 				days = 7
 				tooltip = ABILITY_LAST_STAND_TOOLTIP
 			}
@@ -124,10 +112,10 @@ ability = {
 		}
 		
 		cost = 0.12
-		duration = 168
+		duration = 28
 		
 		unit_modifiers = {
-			planning_speed = 4.0
+			planning_speed = 40.0
 		}
 		
 		
@@ -154,7 +142,6 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_ability = siege_artillery
 			is_border_war = no
 		}
 		
@@ -165,7 +152,13 @@ ability = {
 			fortification_damage = 2.0
 			fortification_collateral_chance = 2.0
 		}
-		cost = 0.1
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				str_damage_multiplier = 0.2
+				days = 7
+			}
+		}
+		cost = 0.75
 		duration = 168
 		
 		

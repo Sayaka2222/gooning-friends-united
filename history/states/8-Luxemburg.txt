@@ -12,14 +12,14 @@ state=
 
 	history=
 	{
-		owner = HOL
+		owner = BEL
 		buildings = {
 			infrastructure = 10
 			arms_factory = 4
 			industrial_complex = 4
 		}
 		victory_points = { 6583 5 }
-		add_core_of = HOL
+		add_core_of = BEL
 	}
 
 	provinces=
