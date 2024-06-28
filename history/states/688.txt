@@ -1,16 +1,19 @@
+
 state={
-	id=964
-	name="STATE_964"
-	provinces={
-		2198 5216 8185 8254 
-	}
+	id=688
+	name="STATE_959"
+
 	history={
 		owner = SWI
 		add_core_of = SWI
+
+	}
+
+	provinces={
+		2224 13308 
 	}
 	manpower=1
-	impassable = yes
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category=wasteland
 }

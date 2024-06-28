@@ -1,24 +1,26 @@
 
 state={
 	id=449
-	name="STATE_449" # El Agheila
-	manpower = 40431
-	
-	state_category = wasteland
-	resources = {
-		oil = 10
+	name="STATE_449"
+	resources={
+		oil=10.000
 	}
+
 	history={
 		owner = ITA
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = SWE
+
 	}
 
 	provinces={
-		1041 1198 4047 4057 10046 10117 12088 
+		1041 1198 2106 4047 4057 4200 7076 7136 10046 10117 10375 10418 12088 13073 13304 
 	}
-
-	local_supplies=0.0 
+	manpower=40431
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }
