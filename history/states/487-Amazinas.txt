@@ -1,21 +1,19 @@
 
-state = {
-	id = 487
-	name = "STATE_487"
-	manpower = 1
-	
-	state_category = pastoral
+state={
+	id=487
+	name="STATE_487"
 
-	history = {
+	history={
 		owner = SWI
 		add_core_of = SWI
-		
+
 	}
 
-	provinces = {
-		2160 5188 8211 8240 10924 10982 10996 12902 12916 12917 12973 
+	provinces={
+		2160 8211 8240 10924 
 	}
-	
-
-	local_supplies = 0.0 
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
