@@ -28,9 +28,9 @@ sub_units = {
 		combat_width = 1
 		
 		#Size Definitions
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0.1
-		max_strength = 0.6
+		max_strength = 5
 		manpower = 500
 		training_time = 120
 		weight = 0.5
@@ -42,17 +42,17 @@ sub_units = {
 		}
 
 		forest = {
-			attack = -0.1
+			attack = -0.05
 			movement = -0.1
 		}
 
 		jungle = {
-			attack = -0.2
+			attack = -0.15
 			movement = -0.2
 		}
 
 		marsh = {
-			attack = -0.2
+			attack = -0.15
 			movement = -0.2
 		}
 
