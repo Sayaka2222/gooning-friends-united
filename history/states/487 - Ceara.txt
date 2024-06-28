@@ -1,6 +1,6 @@
 
 state = {
-	id = 935
+	id = 487
 	name = "STATE_935"
 	manpower = 1 # A third from Rio Grande
 

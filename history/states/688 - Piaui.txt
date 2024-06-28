@@ -1,7 +1,7 @@
 
 state={
-	id=941
-	name="STATE_955"
+	id=688
+	name="STATE_937"
 
 	history={
 		owner = SWI
@@ -10,7 +10,7 @@ state={
 	}
 
 	provinces={
-		8161 10953 13296 13307 
+		2228 5153 10984 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

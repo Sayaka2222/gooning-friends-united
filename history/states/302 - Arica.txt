@@ -1,18 +1,18 @@
 state = {
-	id = 949
-	name = "STATE_949" # Aysen
+	id = 302
+	name = "STATE_951"
 	manpower = 1
 	
-	state_category = pastoral
+	state_category = rural
 
 	history = {
 		owner = SWI
 		add_core_of = SWI
-		
+
 	}
 
 	provinces = {
-		2161 5118 5159 8198 10961 13295
+		5131 8217 8231 13303
 	}
 
 	local_supplies = 0.0 

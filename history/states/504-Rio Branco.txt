@@ -1,19 +1,15 @@
-
 state={
-	id=301
-	name="STATE_301"
-
+	id=504
+	name="STATE_969"
+	provinces={
+		5214 13340 13361
+	}
 	history={
 		owner = SWI
 		add_core_of = SWI
-
-	}
-
-	provinces={
-		2173 2194 12901 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
+	state_category = pastoral
 }

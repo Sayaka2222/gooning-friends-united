@@ -1,19 +1,18 @@
 
 state={
-	id=944
-	name="STATE_944"
+	id=492
+	name="STATE_939"
 
 	history={
 		owner = SWI
 		add_core_of = SWI
-
 	}
 
 	provinces={
-		2109 4533 5156 5178 8181 8239 
+		4980 13276 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 	local_supplies=0.000
 }

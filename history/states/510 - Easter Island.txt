@@ -1,18 +1,17 @@
-
 state = {
-	id = 305
-	name = "STATE_305"
+	id = 510
+	name = "STATE_948"
 	manpower = 1
+	state_category = small_island
 	
-	state_category = city
-
 	history = {
+
 		owner = SWI
 		add_core_of = SWI
 	}
 
 	provinces = {
-		5051 5120 8047 8075 8252 10888 11020 12798 
+		13294
 	}
 
 	local_supplies = 0.0 
