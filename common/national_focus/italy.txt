@@ -9809,7 +9809,6 @@ focus_tree = {
 		relative_position_id = ITA_power_to_the_king
 		cost = 5
 		available = {
-			NOT = { has_completed_focus = ITA_battaglioni_d_assalto }
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -13283,15 +13282,6 @@ focus_tree = {
 			add_to_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0.05 }
 			#Custom tooltip based on Assault Battalions focus
-			if = {
-				limit = {
-					has_completed_focus = ITA_battaglioni_d_assalto
-				}
-				custom_effect_tooltip = ITA_battaglioni_m_re_battaglioni_d_assalto_tt
-			}
-			else = {
-				custom_effect_tooltip = ITA_battaglioni_m_re_tt
-			}
 
 			custom_effect_tooltip = ITA_blackshirts_div_cap_8_tt
 			hidden_effect = {

@@ -43,7 +43,6 @@ ITA_alt_fascist_balbo = {
 
 		#1938
 		ITA_albanian_occupation 			#35	WAR/DIP
-		ITA_italy_first						#70	DIP/WAR
 		ITA_army_primacy_bba 				#35	ARM
 		ITA_industria_della_gomma_sintetica #35	IND
 		ITA_strengthen_northern_industry	#70	CIV/MIL
@@ -54,7 +53,6 @@ ITA_alt_fascist_balbo = {
 		ITA_brescia_small_arms_industry		#35	MIL
 		ITA_investments_in_edison			#70	CIV
 		ITA_consolidate_power				#70	POL
-		ITA_spanish_italian_alliance		#35	DIP
 		ITA_stop_the_squandering			#70	PRO
 		ITA_develop_libya					#35	COL
 		ITA_redirect_alfa_romeo_production	#70	MIL
@@ -72,25 +70,19 @@ ITA_alt_fascist_balbo = {
 		ITA_expand_national_universities	#70	IND
 		ITA_novus_ordo						#70	COL/IND
 		ITA_reinforce_regia_aeronautica		#70	AIR
-		ITA_war_with_greece					#35	WAR
 		ITA_superesercito					#35	ARM
-		ITA_befriend_portugal				#35	DIP
 
 		#1942
 		ITA_keep_specialization				#70	PRO
-		ITA_befriend_turkey					#70	DIP
 		ITA_compagnie_auto_avio_sahariane	#70	AIR/ARM
 		ITA_italian_tankettes						#70	PRO
 		ITA_superaereo						#35	AIR
-		ITA_support_albanian_irredentism	#35	DIP/WAR/ARM
 
 		#1943
-		ITA_war_with_the_uk					#70	WAR
 		ITA_specialization					#70	AIR/IND/MIL
 		ITA_combined_land_and_air_warfare	#70	AIR/ARM
 		ITA_albanian_oil					#35	IND
 		ITA_self_propelled_guns				#70	ARM
-		ITA_security_militias				#35	ARM
 
 		#1944
 		ITA_long_range_aircraft				#70	AIR
@@ -170,19 +162,15 @@ ITA_alt_fascist_grandi = {
 		#1937	
 		ITA_foreign_affairs 						#35	
 		ITA_corpo_di_truppe_volontarie 				#35 
-		ITA_potential_allies_in_the_balkans			#35	
 		ITA_fiocchi_munizioni 						#35	
 		ITA_ministry_of_italian_africa 				#35
-		ITA_guarantee_austrian_independence			#35
 		ITA_power_plants_in_terni					
 		ITA_the_new_emperor_of_ethiopia 			#35	
 		ITA_topple_amhara_rulers 					#35	
 			
 		#1938	
 		ITA_albanian_occupation						#35	
-		ITA_negotiate_italian_claims					
 		ITA_railway_innovations					
-		ITA_ratify_the_stresa_front					
 		ITA_industria_della_gomma_sintetica 		#35	
 		ITA_army_primacy_bba						#35	
 		ITA_air_innovations_bba						#35	
@@ -208,7 +196,6 @@ ITA_alt_fascist_grandi = {
 		#1941	
 		ITA_modernize_the_mezzogiorno				
 		ITA_citta_dell_aria						
-		ITA_joint_military_programs					#35	
 		ITA_economic_reforms					
 		ITA_improve_the_industries					
 		ITA_superesercito							#35	
@@ -225,7 +212,6 @@ ITA_alt_fascist_grandi = {
 		ITA_superaereo								#35	
 		ITA_expand_naval_facilities					
 		ITA_supermarina								#35	
-		ITA_stockpile_fuel							#35	
 		ITA_expand_rome_flying_school				
 		ITA_officers_of_the_service_role			#35	
 		ITA_redirect_alfa_romeo_production			
@@ -316,7 +302,6 @@ ITA_monarchist_plan = {
 		ITA_develop_libya							#35
 		ITA_develop_eritrea							#35
 		ITA_regional_development
-		ITA_support_albanian_irredentism			#35
 		ITA_industria_della_gomma_sintetica 		#35
 		ITA_air_innovations_bba						#35
 		ITA_preserve_army_traditions
@@ -362,9 +347,7 @@ ITA_monarchist_plan = {
 		ITA_defy_the_duce = 0
 		ITA_italo_balbo_focus = 0
 		ITA_dino_grandi_focus = 0
-		ITA_guarantee_austrian_independence = 0
 		ITA_pact_of_steel = 0
-		ITA_italy_first = 0
 		ITA_revoke_the_acerbo_law = 0
 		ITA_towards_a_greater_italy = 0
 		ITA_seek_papal_support = 0 #No pope popping up
@@ -437,17 +420,14 @@ ITA_christian_democracy_plan = {
 		ITA_disband_the_blackshirts					#35
 		ITA_expand_intelligence_services			#35
 		ITA_steel_industry_in_terni
-		ITA_potential_allies_in_the_balkans			#35
 		ITA_albanian_occupation						#35
 		ITA_railway_innovations
 		ITA_investments_in_edison
 				
 		#1939
 		ITA_crush_opposition						#35
-		ITA_italy_first
 		ITA_develop_libya							#35
 		ITA_italian_irredentism
-		ITA_war_with_france
 		ITA_regional_development
 
 		#1940	
@@ -489,9 +469,7 @@ ITA_christian_democracy_plan = {
 		ITA_defy_the_duce = 0
 		ITA_italo_balbo_focus = 0
 		ITA_dino_grandi_focus = 0
-		ITA_guarantee_austrian_independence = 0
 		ITA_pact_of_steel = 0
-		ITA_italy_first = 0
 		ITA_power_to_the_king = 0
 		ITA_democratic_king = 0
 		ITA_towards_a_greater_italy = 0
@@ -722,7 +700,6 @@ ITA_democratic_plan = {
 		ITA_supermarina								#35
 		ITA_self_propelled_guns
 		ITA_incrociatori_leggeri					#35
-		ITA_midget_submarines						#35
 		ITA_end_fiat_ansaldo_duopoly				#35
 		ITA_ferrea_mole_ferreo_cuore				#35
 		ITA_air_innovations_bba						#35

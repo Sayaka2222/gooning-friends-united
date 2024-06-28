@@ -2594,7 +2594,6 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_guarantee_austrian_independence
 			}
 			
 			modifier = {

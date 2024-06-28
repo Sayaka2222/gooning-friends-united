@@ -76,7 +76,6 @@ bookmarks = {
 				ITA_pact_of_steel
 			}
 			focuses = {
-				ITA_battaglioni_d_assalto
 				ITA_by_blood_alone
 				ITA_ferrea_mole_ferreo_cuore
 			}			
@@ -226,7 +225,6 @@ bookmarks = {
 			}
 			focuses = {
 				YUG_join_axis
-				YUG_join_allies
 				YUG_the_ik_3
 			}
 		}

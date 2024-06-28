@@ -1364,7 +1364,6 @@ country_event = {
 				factor = 0
 				is_historical_focus_on = yes
 				NOT = { HUN = { has_completed_focus = HUN_protect_austria } }
-				NOT = { ITA = { has_completed_focus = ITA_guarantee_austrian_independence } }
 			}
 			modifier = {
 				GER = { has_army_size = { size > 39 } }
@@ -1379,15 +1378,6 @@ country_event = {
 				HUN = {
 					OR = {
 						has_completed_focus = HUN_protect_austria
-						is_in_faction_with = AUS
-					}
-				}
-			}
-			modifier = {
-				add = 100
-				ITA = {
-					OR = {
-						has_completed_focus = ITA_guarantee_austrian_independence
 						is_in_faction_with = AUS
 					}
 				}
@@ -1416,16 +1406,6 @@ country_event = {
 			country_event = { hours = 2 id = germany.29 }
 			if = { limit = { is_in_faction_with = AUS }
 				remove_from_faction = AUS
-			}
-		}
-		if = {
-			limit = {
-				ITA = {
-					has_completed_focus = ITA_guarantee_austrian_independence
-				}
-			}
-			ITA = { #Italy gets an event to ask the UK and France to guarantee Austria too
-				country_event = { id = BBA_italy_interaction_events.24 hours = 1 }
 			}
 		}
 	}
@@ -2284,9 +2264,6 @@ country_event = {
 		}
 		add_state_claim = 69
 		add_state_claim = 74
-		hidden_effect = {
-			country_event = { hours = 6 id = news.58 }
-		}
 	}
 }
 
@@ -2315,9 +2292,6 @@ country_event = {
 				}
 			}
 			GER = { remove_from_faction = CZE }
-		}
-		hidden_effect = {
-			country_event = { hours = 6 id = news.59 }
 		}
 	}
 }
@@ -2353,7 +2327,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.56 }
 			if = {
 				limit = {
 					has_dlc = "Death or Dishonor"
@@ -2743,7 +2716,6 @@ country_event = {
 		GER_mefo_bills_level_down = yes
 
 		hidden_effect = {
-			country_event = { hours = 6 id = news.60 }
 			every_state = {
 				limit = {
 					is_owned_by = SLO
@@ -2811,7 +2783,6 @@ country_event = {
 			HUN = { country_event = DOD_hungary.106 }
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.62 }
 		}
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -2874,7 +2845,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.61 }
 		}
 	}
 	option = {
@@ -2983,7 +2953,6 @@ country_event = {
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.60 }
 		}
 	}
 	option = {
@@ -2995,7 +2964,6 @@ country_event = {
 			annex_country = { target = CZE }
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.62 }
 		}
 	}
 }
@@ -3362,7 +3330,6 @@ country_event = {
 				type = take_state_focus
 				generator = { 42 51 }
 			}
-			country_event = germany.92
 			if = {
 				limit = {
 					has_idea = FRA_disjointed_government
@@ -3447,7 +3414,6 @@ country_event = {
 				type = take_state_focus
 				generator = { 42 51 }
 			}
-			country_event = germany.92
 			if = {
 				limit = {
 					has_idea = FRA_disjointed_government
@@ -4354,7 +4320,6 @@ country_event = {
 					has_war_with = SOV
 				}
 			}
-			country_event = { id = germany.85 days = 1 }
 		}
 		hidden_effect = {
 			if = {
@@ -4401,7 +4366,6 @@ country_event = {
 				remove_state_claim = 762
 			}
 		}
-		country_event = { id = poland.1 days = 7 }
 		hidden_effect = {
 			news_event = { id = news.203 hours = 6 }
 		}
