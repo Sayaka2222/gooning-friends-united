@@ -1,4 +1,79 @@
 on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {FRA ={has_country_flag = fra_cap}}
+					count_triggers = {
+						amount = 6
+						18 = { NOT={is_controlled_by = FRA}}
+						29 = { NOT={is_controlled_by = FRA}}
+						16 = { NOT={is_controlled_by = FRA}}
+						785 = { NOT={is_controlled_by = FRA}}
+						17 = { NOT={is_controlled_by = FRA}}
+						28 = { NOT={is_controlled_by = FRA}}
+						15 = { NOT={is_controlled_by = FRA}}
+						24 = { NOT={is_controlled_by = FRA}}
+						27 = { NOT={is_controlled_by = FRA}}
+						30 = { NOT={is_controlled_by = FRA}}
+						14 = { NOT={is_controlled_by = FRA}}
+					}
+				}
+				every_country={
+					if={limit={is_in_faction_with=GER}
+						country_event = {hours = 2 id=france.10}
+					}
+					else={
+						country_event = {hours = 2 id=france.11}
+						}}
+				country_event = {days = 9 id=france.13}
+				FRA ={set_country_flag =fra_cap}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 16 }
+					OR = {
+						TAG = ENG
+						TAG = USA
+						TAG = AST
+						TAG = FRA
+						TAG = CAN
+						TAG = NZL
+						TAG = SAF
+					}
+					FROM = { original_tag = GER }
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = news.134
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 124 }
+					OR = {
+						TAG = ENG
+						TAG = USA
+					}
+					FROM = { original_tag = GER }
+					FROM = { has_war_with = ROOT }
+					
+				}
+				news_event = news.137
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 10 }
+					OR = {
+						TAG = POL
+						TAG = SOV
+					}
+					NOT = { SOV = { has_war_with = POL } }
+					FROM = { original_tag = GER }
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = news.139
+			}
+		}
+	}
 	# country
 	on_new_term_election = {
 		random_events = {

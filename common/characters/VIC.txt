@@ -1,0 +1,126 @@
+characters={
+	EFR_philippe_pétain={
+		name="Philippe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/EFR/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PHILIPPE_PÉTAIN_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EFR_VIC_jean_romatet={
+		advisor={
+			slot = air_chief
+			idea_token = VIC_jean_romatet
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_romatet"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EFR_VIC_lucien_lacaze={
+		advisor={
+			slot = theorist
+			idea_token = VIC_lucien_lacaze
+			ledger  = navy 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="VIC_lucien_lacaze"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_VIC_marius_viple={
+		advisor={
+			slot = political_advisor
+			idea_token = VIC_marius_viple
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="VIC_marius_viple"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EFR_joseph_darnand={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_joseph_darnand
+			allowed  = {
+					original_tag  = FRA
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					prince_of_terror 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EFR_joseph_darnand"
+		portraits={
+			army={
+				small="GFX_idea_EFR_joseph_darnand"
+			}
+		}
+	}
+	EFR_VIC_jean_francois_darlan={
+		advisor={
+			slot = navy_chief
+			idea_token = VIC_jean_francois_darlan
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_francois_darlan"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+}

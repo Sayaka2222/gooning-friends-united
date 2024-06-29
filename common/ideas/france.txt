@@ -1,7 +1,32 @@
 ideas = {
 
 	country = {
-
+		FRA_no_training_queue = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRA
+				
+			}
+			available={amount_manpower_in_deployment_queue > 10}
+			cancel={NOT={amount_manpower_in_deployment_queue > 10}}
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+			removal_cost = -1
+			on_remove={set_equipment_fraction = 0
+			every_state = {
+			FRA= { delete_unit = { 
+           		 state = PREV             
+             		disband = no #will refund equipment and manpower
+             		 }}}
+			}
+			modifier = {
+				industrial_capacity_factory = -0.5
+				consumer_goods_factor = 2
+				stability_factor = -0.5
+				training_time_factor = 1000
+			}
+		}
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {
@@ -1124,8 +1149,6 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.003
-				war_support_factor = -0.05
-				land_doctrine_cost_factor = 0.5
 			}
 		}
 
@@ -1145,9 +1168,8 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.8
+				political_power_cost = 0.5
 				stability_factor = -0.10
-				surrender_limit = -0.5
 			}
 		}
 
@@ -1210,6 +1232,7 @@ ideas = {
 				industrial_capacity_dockyard = -10
 				max_planning = 0.25
 				planning_speed = -0.25
+				surrender_limit = 1
 			}
 		}
 

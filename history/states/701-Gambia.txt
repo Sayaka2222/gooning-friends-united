@@ -4,12 +4,12 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = GAM
+		add_core_of = SWE
 		victory_points = {
 			4989 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			4989 = {
 				naval_base = 1
 
