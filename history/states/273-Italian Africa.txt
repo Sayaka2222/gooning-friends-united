@@ -10,8 +10,8 @@ state={
 
 		}
 		add_core_of = SWE
-
 	}
+	impassable = yes
 
 	provinces={
 		1057 1994 4191 5004 10884 12022 

@@ -194,6 +194,21 @@ categories =  {
 		
 		truck_attrition_factor = 4.0
 	}
+
+	safari = {
+		color = { 76 96 35 }
+		movement_cost = 1.0
+		# combat_width = -0.25
+		combat_width = 80
+		combat_support_width = 40
+		ai_terrain_importance_factor = 8.0
+		match_value = 8
+		sound_type = desert
+
+		units = {
+			defence = 5
+		}
+	}
 	
 	desert = {
 		color = { 255 127 0 }

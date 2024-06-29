@@ -45,7 +45,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 12049 1155 4073 9947 }
+	required_provinces = { 4073 9947 }
 
 	is_disabled = {
 		OR = {
@@ -56,7 +56,7 @@ adjacency_rule =
 		tooltip = suez_blocked_tt
 	}
 	
-	icon = 12049
+	icon = 4073
 	offset = { 1 0 -6 }
 }
 

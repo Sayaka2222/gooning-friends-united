@@ -1,5 +1,5 @@
 state = { # Jan Mayen
-	id = 914
+	id = 279
 	name = "STATE_914"
 	manpower = 10
 	state_category = tiny_island

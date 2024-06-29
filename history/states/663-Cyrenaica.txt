@@ -10,7 +10,21 @@ state={
 
 		}
 		add_core_of = SWE
-
+		victory_points = {
+			11021 3
+		}
+		victory_points = {
+			10785 3 
+		}
+		victory_points = {
+			10986 3 
+		}
+		victory_points = {
+			10390 3
+		}
+		victory_points = {
+			5143 3
+		}
 	}
 
 	provinces={
