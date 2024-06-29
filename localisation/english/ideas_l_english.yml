@@ -2706,3 +2706,6 @@
 
  will_turn_to: "Will Turn Into"
  upon_timeout: "Upon Timeout"
+
+fra_cap_tt:0 " §RWhen you capitulate you will be annexed into Vichy France.§!\n"
+fra_cap2_tt:0 " §GWhen you capitulate you will continue as Free France.§!\n"

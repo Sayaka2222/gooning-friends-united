@@ -111,13 +111,13 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_stability < 0.7
 			}
+
 
 			removal_cost = -1
 			
 			modifier = {
-				
+				stability_factor = -0.15
 			}
 		}
 		FRA_devalue_the_franc = {
@@ -135,7 +135,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.15
-				stability_factor = -0.05
 			}
 		}
 		FRA_global_investments = {
@@ -276,8 +275,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				consumer_goods_factor = -0.1
 			}
 		}
 		FRA_expanded_citizenship = {
@@ -294,7 +292,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.03
+				non_core_manpower = 0.1
 			}
 		}
 		FRA_france_undividable = {
@@ -328,7 +326,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.075
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.4
 			}
 		}
 		FRA_entrepeneurship = {
@@ -345,8 +344,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		FRA_market_dynamism = {
@@ -363,10 +361,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
 			}
-			research_bonus = { industry = 0.05}
+			research_bonus = { industry = 0.1}
 		}
 		FRA_anti_decandence = {
 			picture = generic_oppression
@@ -1230,9 +1227,9 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_dockyard = -10
-				max_planning = 0.25
-				planning_speed = -0.25
 				surrender_limit = 1
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.1
 			}
 		}
 
@@ -1473,8 +1470,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = 0.15
 				stability_factor = 0.1
 				consumer_goods_factor = 0.10
 			}

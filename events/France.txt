@@ -131,48 +131,92 @@ country_event = {
 			transfer_state = 806
 		}
 		FRA = {
-			change_tag_from = VIC
-		}
-		FRA = {
-			load_focus_tree = free_french_focus
-			add_ideas = FRA_no_training_queue
-			add_ideas = FRA_defeatism
-			transfer_state = 773
-			transfer_state = 539
-			transfer_state = 772
-			transfer_state = 660
-			transfer_state = 774
-			transfer_state = 538
-			transfer_state = 295
-			transfer_state = 718
-			transfer_state = 888
-			transfer_state = 889
-			transfer_state = 890
-			transfer_state = 768
-			transfer_state = 769
-			transfer_state = 310
-			transfer_state = 694
-			transfer_state = 268
-			transfer_state = 635
-			transfer_state = 734
-			transfer_state = 641
-			transfer_state = 713
-			set_cosmetic_tag = FRA_FREE
-			remove_ideas = FRA_protected_by_the_maginot_line
-			set_country_flag = free_france
-			set_capital = { state = 539 }
-			country_event = france.20
-		}
-		ENG = { add_to_faction = FRA }
-		GER ={
-			declare_war_on = {
-				target = FRA
-				type = annex_everything
+			if = {
+				limit = { 
+					has_completed_focus = FRA_revive_the_national_bloc
+				}
+				change_tag_from = VIC
 			}
 		}
-		FRA = {set_equipment_fraction = 0}
-		FRA = { country_event = {id=france.187 days=7} }
-		FRA = { country_event = {id=france.16 days=7} }
+		FRA = {
+			if = {
+				limit = { 
+					has_completed_focus = FRA_revive_the_national_bloc
+				}
+				load_focus_tree = free_french_focus
+				add_ideas = FRA_no_training_queue
+				add_ideas = FRA_defeatism
+				transfer_state = 773
+				transfer_state = 539
+				transfer_state = 772
+				transfer_state = 660
+				transfer_state = 774
+				transfer_state = 538
+				transfer_state = 295
+				transfer_state = 718
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890
+				transfer_state = 768
+				transfer_state = 769
+				transfer_state = 310
+				transfer_state = 694
+				transfer_state = 268
+				transfer_state = 635
+				transfer_state = 734
+				transfer_state = 641
+				transfer_state = 713
+				set_cosmetic_tag = FRA_FREE
+				remove_ideas = FRA_protected_by_the_maginot_line
+				set_country_flag = free_france
+				set_capital = { state = 539 }
+				country_event = france.20
+			}
+		}
+		if = {
+			limit = { 
+				FRA = {
+					has_completed_focus = FRA_revive_the_national_bloc
+				}
+			}
+			ENG = { add_to_faction = FRA }
+			GER ={
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+			FRA = {set_equipment_fraction = 0}
+			FRA = { country_event = {id=france.187 days=7} }
+			FRA = { country_event = {id=france.16 days=7} }
+		}
+		if = {
+			limit = { 
+				has_global_flag = france_mainland
+			}
+			ENG = {
+				transfer_state = 773
+				transfer_state = 539
+				transfer_state = 772
+				transfer_state = 660
+				transfer_state = 774
+				transfer_state = 538
+				transfer_state = 295
+				transfer_state = 718
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890
+				transfer_state = 768
+				transfer_state = 769
+				transfer_state = 310
+				transfer_state = 694
+				transfer_state = 268
+				transfer_state = 635
+				transfer_state = 734
+				transfer_state = 641
+				transfer_state = 713
+			}
+		}
 	}
 }
 country_event = {
