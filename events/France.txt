@@ -168,6 +168,7 @@ country_event = {
 				transfer_state = 713
 				set_cosmetic_tag = FRA_FREE
 				remove_ideas = FRA_protected_by_the_maginot_line
+				remove_ideas = FRA_devalue_the_franc
 				set_country_flag = free_france
 				set_capital = { state = 539 }
 				country_event = france.20

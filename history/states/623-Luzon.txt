@@ -7,7 +7,7 @@ state= {
 	
 	resources={
 		rubber=10 # was: 2
-		chromium = 8
+		chromium = 20
 	}
 
 	history= {

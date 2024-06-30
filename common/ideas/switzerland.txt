@@ -20,6 +20,7 @@ ideas = {
 				industrial_capacity_dockyard = -10
 				production_speed_buildings_factor = -10
 				political_power_gain = -5
+				surrender_limit = -0.2
 			}
 		}
 	}

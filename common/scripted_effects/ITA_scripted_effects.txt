@@ -270,24 +270,11 @@ ITA_missiolini_stockpile_trucks_failure_effect = {
 }
 
 ITA_missiolini_stockpile_trucks_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		add_political_power = 50
-		add_war_support = 0.03
-		add_timed_idea = {
-			idea = ITA_efficient_supply_lines
-			days = 365
-		}
-	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
-		add_political_power = 75
-		add_war_support = 0.05
-		add_timed_idea = {
-			idea = ITA_efficient_supply_lines_lion_version
-			days = 365
-		}
+	add_political_power = 50
+	add_war_support = 0.03
+	add_timed_idea = {
+		idea = ITA_efficient_supply_lines
+		days = 365
 	}
 }
 
@@ -298,28 +285,13 @@ ITA_missiolini_stockpile_fuel_failure_effect = {
 }
 
 ITA_missiolini_stockpile_fuel_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		army_experience = 25
-		navy_experience = 25
-		air_experience = 25
-		add_war_support = 0.03
-		add_timed_idea = {
-			idea = ITA_fuel_reserves
-			days = 365
-		}
-	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
-		army_experience = 30
-		navy_experience = 30
-		air_experience = 30
-		add_war_support = 0.05
-		add_timed_idea = {
-			idea = ITA_fuel_reserves_lion_version
-			days = 365
-		}
+	army_experience = 25
+	navy_experience = 25
+	air_experience = 25
+	add_war_support = 0.03
+	add_timed_idea = {
+		idea = ITA_fuel_reserves
+		days = 365
 	}
 }
 
@@ -334,26 +306,12 @@ ITA_missiolini_strengthen_the_airforce_failure_effect = {
 }
 
 ITA_missiolini_strengthen_the_airforce_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		air_experience = 50
-		add_command_power = 25
-		add_war_support = 0.03
-		add_timed_idea = {
-			idea = ITA_strengthened_the_airforce
-			days = 365
-		}
-	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
-		air_experience = 60
-		add_command_power = 35
-		add_war_support = 0.05
-		add_timed_idea = {
-			idea = ITA_strengthened_the_airforce_lion_Version
-			days = 365
-		}
+	air_experience = 50
+	add_command_power = 25
+	add_war_support = 0.03
+	add_timed_idea = {
+		idea = ITA_strengthened_the_airforce
+		days = 365
 	}
 }
 
@@ -387,36 +345,17 @@ ITA_missiolini_industrial_research_failure_effect = {
 }
 
 ITA_missiolini_industrial_research_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		add_political_power = 25
-		add_tech_bonus = {
-			name = ITA_missiolini_industrial_research
-			bonus = 0.5
-			uses = 2
-			category = industry
-			category = air_equipment
-			category = naval_equipment
-			category = artillery
-			category = armor
-			category = motorized_equipment
-		}
-	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
-		add_political_power = 35
-		add_tech_bonus = {
-			name = ITA_missiolini_industrial_research
-			bonus = 0.75
-			uses = 2
-			category = industry
-			category = air_equipment
-			category = naval_equipment
-			category = artillery
-			category = armor
-			category = motorized_equipment
-		}
+	add_political_power = 25
+	add_tech_bonus = {
+		name = ITA_missiolini_industrial_research
+		bonus = 0.5
+		uses = 2
+		category = industry
+		category = air_equipment
+		category = naval_equipment
+		category = artillery
+		category = armor
+		category = motorized_equipment
 	}
 
 	#CLEAR FLAGS FOR NEXT TIME
@@ -455,7 +394,7 @@ ITA_missiolini_expand_intelligence_service_failure_effect = {
 ITA_missiolini_expand_intelligence_service_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 25
 		#ASSIGN APPROPRIATE REWARD
@@ -502,52 +441,6 @@ ITA_missiolini_expand_intelligence_service_success_effect = {
 			}
 		}
 	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
-		add_political_power = 25
-		#ASSIGN APPROPRIATE REWARD
-		if = { #Upgrade - Passive Defense
-			limit = {
-				has_country_flag = { flag = ITA_missiolini_upgrade_agency_goal_flag value = 5 } #Need to do checks in inverted order (ie. if value = 5, checking for value = 1 also returns true apparently)
-			}
-			add_timed_idea = {
-				idea = ITA_expanded_intelligence_service_passive_defense_lion_version
-				days = 365
-			}
-		}
-		else_if = { #Upgrade - Anti-Partisan
-			limit = {
-				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 4 }
-			}
-			add_timed_idea = {
-				idea = ITA_expanded_intelligence_service_anti_partisan_lion_version
-				days = 365
-			}
-		}
-		else_if = { #Upgrade - Form Army Department
-			limit = {
-				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 3 }
-			}
-			add_timed_idea = {
-				idea = ITA_expanded_intelligence_service_army_department_lion_version
-				days = 365
-			}
-		}
-		else_if = { #Upgrade - Form Cryptology Department
-			limit = {
-				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 2 }
-			}
-			add_timed_idea = {
-				idea = ITA_expanded_intelligence_service_cryptology_department_lion_version
-				days = 365
-			}
-		}
-		else = { #Create Intel Agency + Fallback
-			add_timed_idea = {
-				idea = ITA_expanded_intelligence_service_basic_lion_version
-				days = 365
-			}
-		}
-	}
 
 	#CLEAR FLAG FOR NEXT TIME
 	clr_country_flag = ITA_missiolini_upgrade_agency_goal_flag
@@ -566,7 +459,7 @@ ITA_missiolini_occupy_albania_failure_effect = {
 ITA_missiolini_occupy_albania_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 50
 		add_popularity = {
@@ -763,7 +656,7 @@ ITA_missiolini_occupy_dalmatia_failure_effect = {
 ITA_missiolini_occupy_dalmatia_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 50
 		add_war_support = 0.03
@@ -937,7 +830,7 @@ ITA_missiolini_occupy_greece_failure_effect = {
 ITA_missiolini_occupy_greece_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 50
 		add_war_support = 0.03
@@ -1052,7 +945,7 @@ ITA_missiolini_occupy_ticino_failure_effect = {
 ITA_missiolini_occupy_ticino_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 50
 		add_war_support = 0.03
@@ -1166,7 +1059,7 @@ ITA_missiolini_bolster_political_cabinet_failure_effect = {
 ITA_missiolini_bolster_political_cabinet_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 50
 		add_stability = 0.03
@@ -1206,7 +1099,7 @@ ITA_missiolini_bolster_military_high_command_failure_effect = {
 ITA_missiolini_bolster_military_high_command_success_effect = {
 	if = { #DEFAULT
 		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+			always = yes
 		}
 		add_political_power = 25
 		add_command_power = 25
@@ -4328,167 +4221,6 @@ ITA_clear_purge_flag_effect = {
 	}
 }
 
-ITA_anglo_italian_cooperation_effect = {
-	ENG = {
-		add_opinion_modifier = {
-			target = ITA
-			modifier = ITA_military_cooperation_acceptance
-		}
-	}
-	ITA = {
-		add_opinion_modifier = {
-			target = ENG
-			modifier = ITA_military_cooperation_acceptance
-		}
-	}
-	if = {
-		limit = {
-			has_tech_sharing_feature = yes
-		}
-		ENG = {
-			add_to_tech_sharing_group = ITA_anglo_italian_tech_sharing
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.50
-				uses = 2
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.50
-				uses = 2
-				category = naval_equipment
-			}
-		}
-		ITA = {
-			add_to_tech_sharing_group = ITA_anglo_italian_tech_sharing
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.50
-				uses = 2
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.50
-				uses = 2
-				category = naval_equipment
-			}
-		}
-	}
-	else = {
-		ENG = {
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = naval_equipment
-			}
-
-		}
-		ITA = {
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = ITA_anglo_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = naval_equipment
-			}
-		}
-	}
-}
-
-ITA_franco_italian_cooperation_effect = {
-	FRA = {
-		add_opinion_modifier = {
-			target = ITA
-			modifier = ITA_military_cooperation_acceptance
-		}
-	}
-	ITA = {
-		add_opinion_modifier = {
-			target = FRA
-			modifier = ITA_military_cooperation_acceptance
-		}
-	}
-	if = {
-		limit = {
-			has_tech_sharing_feature = yes
-		}
-		FRA = {
-			add_to_tech_sharing_group = ITA_franco_italian_tech_sharing
-			add_tech_bonus = {
-					name = ITA_franco_italian_tech_sharing_name
-					bonus = 0.5
-					uses = 2
-					category = armor
-			}
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-		ITA = {
-			add_to_tech_sharing_group = ITA_franco_italian_tech_sharing
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.5
-				uses = 2
-				category = armor
-			}
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-	else = {
-		FRA = {
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = armor
-			}
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-		ITA = {
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = armor
-			}
-			add_tech_bonus = {
-				name = ITA_franco_italian_tech_sharing_name
-				bonus = 0.75
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-}
-
 ITA_non_aggression_pact_effect = {
 	diplomatic_relation = {
 		country = FROM
@@ -5435,714 +5167,6 @@ ITA_add_the_king_of_the_skies_template_production_and_wing = {
    ##    ##     ## ##   ### ##   ##        ##    ##       ##     ## ##        ##       ##     ##    ##    ##       ##    ##
    ##    ##     ## ##    ## ##    ##       ##    ######## ##     ## ##        ######## ##     ##    ##    ########  ######
 
-
-
-ITA_add_basic_light_flamethrower_template = {
-	create_equipment_variant = {
-		name = "L3 Lf"
-		type = light_tank_flame_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = flamethrower
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_ITA_basic_light_tank_medium"
-	}
-}
-
-ITA_add_basic_light_tank_destroyer_template = {
-	#L3 cc
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "L3 cc"
-			type = light_tank_destroyer_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 1
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_ITA_basic_light_td_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "L3 cc"
-			type = light_tank_destroyer_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 1
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_ITA_basic_light_tank_medium"
-		}
-	}
-}
-
-ITA_add_improved_light_tank_templates = {
-	#L6/40
-	create_equipment_variant = {
-		name = "L6/40"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_auto_cannon
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 4
-		}
-		icon = "GFX_ITA_improved_light_tank_medium"
-	}
-
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		#L40 da 47/32
-		create_equipment_variant = {
-			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_cannon
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 2
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_improved_light_td_medium"
-		}
-	}
-	else = {
-		#L40 da 47/32
-		create_equipment_variant = {
-			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_cannon
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 2
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_generic_light_BBA_camo"
-		}
-	}
-}
-
-ITA_add_basic_medium_tank_templates = {
-	#M11/39
-	create_equipment_variant = {
-		name = "M11/39"
-		type = medium_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_high_velocity_cannon
-			turret_type_slot = tank_medium_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = secondary_turret_hmg
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
-	}
-	#M11/40
-	create_equipment_variant = {
-		name = "M13/40"
-		type = medium_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon
-			turret_type_slot = tank_medium_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = additional_machine_guns
-			special_type_slot_2 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
-	}
-	#SEMOVENTE da 75/18 (SPG)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 75/18"
-			type = medium_tank_artillery_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_close_support_gun
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 3
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_improved_medium_art_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 75/18"
-			type = medium_tank_artillery_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_close_support_gun
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 3
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_medium_BBA_camo"
-		}
-	}
-
-	#SEMOVENTE da 90/53 (AT)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 90/53"
-			type = medium_tank_destroyer_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 3
-				tank_nsb_armor_upgrade = 3
-			}
-			icon = GFX_ITA_advanced_medium_td_medium
-			role_icon_index = 2
-			model = ITA_medium_tank_destroyer_brigade_2_entity
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 90/53"
-			type = medium_tank_destroyer_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 3
-				tank_nsb_armor_upgrade = 3
-			}
-			icon = "GFX_ITA_heavy_CCB_camo"
-		}
-	}
-}
-
-ITA_add_improved_medium_tank_templates = {
-	#M14/41
-	create_equipment_variant = {
-		name = "M14/41"
-		type = medium_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon
-			turret_type_slot = tank_medium_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = additional_machine_guns
-			special_type_slot_2 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 3
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
-	}
-	#M15/42
-	create_equipment_variant = {
-		name = "M15/42"
-		type = medium_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon_2
-			turret_type_slot = tank_medium_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = additional_machine_guns
-			special_type_slot_2 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 4
-			tank_nsb_armor_upgrade = 5
-		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
-	}
-
-	#SEMOVENTE da 75/34 (SPG-AT)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 75/34"
-			type = medium_tank_destroyer_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_improved_medium_td_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 75/34"
-			type = medium_tank_destroyer_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_medium_BAA_camo"
-		}
-	}
-
-	#SEMOVENTE da 105/25 (SPG)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 105/25"
-			type = medium_tank_artillery_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_howitzer_2
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-				special_type_slot_2 = additional_machine_guns
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 6
-			}
-			icon = "GFX_ITA_advanced_medium_art_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 105/25"
-			type = medium_tank_artillery_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_howitzer_2
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-				special_type_slot_2 = additional_machine_guns
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 6
-			}
-			icon = "GFX_ITA_medium_ABB_camo"
-		}
-	}
-
-	#SEMOVENTE da 20/70 Quadruplo (AA)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 20/70 Quadruplo"
-			type = medium_tank_aa_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_anti_air_cannon
-				turret_type_slot = tank_medium_two_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_advanced_medium_spaa_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 20/70 Quadruplo"
-			type = medium_tank_aa_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_anti_air_cannon
-				turret_type_slot = tank_medium_two_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_basic_medium_tank_medium"
-		}
-	}
-}
-
-ITA_add_improved_heavy_tank_templates = {
-	#P26/40 (Heavy tank)
-	create_equipment_variant = {
-		name = "P26/40"
-		type = heavy_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_cannon
-			turret_type_slot = tank_heavy_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 6
-			tank_nsb_armor_upgrade = 6
-		}
-		icon = "GFX_ITA_improved_heavy_tank_medium"
-	}
-}
-
-ITA_add_advanced_medium_tank_templates = {
-	#SEMOVENTE da 75/46 (Medium AT)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 75/46"
-			type = medium_tank_destroyer_chassis_3
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_heavy_cannon
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_diesel_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 7
-			}
-			icon = "GFX_ITA_advanced_medium_art_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 75/46"
-			type = medium_tank_destroyer_chassis_3
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_heavy_cannon
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_diesel_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 7
-			}
-			icon = "GFX_ITA_medium_BAA_camo"
-		}
-	}
-
-	#SEMOVENTE DA 149/40 (Medium SPG)
-	if = {
-		limit = {
-			has_dlc = "Axis Armor Pack"
-		}
-		create_equipment_variant = {
-			name = "Semovente da 149/40"
-			type = medium_tank_artillery_chassis_3
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_howitzer
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_ITA_improved_heavy_art_medium"
-		}
-	}
-	else = {
-		create_equipment_variant = {
-			name = "Semovente da 149/40"
-			type = medium_tank_artillery_chassis_3
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_howitzer
-				turret_type_slot = tank_medium_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_ITA_heavy_CBC"
-		}
-	}
-
-	#M16/43 Sahariano (Medium Tank)
-	create_equipment_variant = {
-		name = "M16/43"
-		type = medium_tank_chassis_3
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_cannon
-			turret_type_slot = tank_medium_two_man_tank_turret
-			suspension_type_slot = tank_torsion_bar_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 6
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_ITA_improved_medium_tank_medium"
-		model = ITA_medium_armor_1_entity
-	}
-}
-
-ITA_add_advanced_heavy_tank_templates = {
-	#P43 (Heavy Tank)
-	create_equipment_variant = {
-		name = "P43"
-		type = heavy_tank_chassis_3
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_cannon_2
-			turret_type_slot = tank_heavy_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 8
-			tank_nsb_armor_upgrade = 10
-		}
-		icon = "GFX_ITA_advanced_heavy_tank_medium"
-	}
-}
-
-ITA_add_il_duce_sh_tank_template_and_production = {
-	#SH template
-	create_equipment_variant = {
-		name = "Il Duce"
-		type = super_heavy_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_super_heavy_cannon
-			turret_type_slot = tank_super_heavy_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = armor_skirts
-			special_type_slot_2 = secondary_turret_small_cannon
-			special_type_slot_3 = secondary_turret_small_cannon
-			special_type_slot_4 = tank_radio_2
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 16
-			tank_nsb_armor_upgrade = 6
-		}
-		icon = "GFX_ITA_super_heavy_tank_medium"
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = super_heavy_tank_chassis_1
-			creator = "ITA"
-			version_name = "Il Duce"
-		}
-
-		requested_factories = 1
-		progress = 0.6
-		efficiency = 50
-	}
-}
-
-ITA_add_modern_musculus_sh_tank_template_and_production = {
-	#SH template
-	create_equipment_variant = {
-		name = "Cataphract Mortis"
-		type = super_heavy_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_super_heavy_cannon
-			turret_type_slot = tank_super_heavy_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = armor_skirts
-			special_type_slot_2 = secondary_turret_small_cannon
-			special_type_slot_3 = additional_machine_guns
-			special_type_slot_4 = wet_ammo_storage
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 16
-			tank_nsb_armor_upgrade = 12
-		}
-		icon = "GFX_ITA_super_heavy_tank_medium"
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = super_heavy_tank_chassis_1
-			creator = "ITA"
-			version_name = "Caesar"
-		}
-
-		requested_factories = 1
-		progress = 0.6
-		efficiency = 50
-	}
-}
-
-ITA_add_hand_of_god_sh_tank_template_and_production = {
-	#SH template
-	create_equipment_variant = {
-		name = "The Hand of God"
-		type = super_heavy_tank_artillery_chassis_1
-		parent_version = 0
-		modules = {
-			turret_type_slot = tank_super_heavy_three_man_tank_turret
-			main_armament_slot = tank_rocket_launcher_2
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = armor_skirts
-			special_type_slot_2 = secondary_turret_small_cannon
-			special_type_slot_3 = secondary_turret_small_cannon
-			special_type_slot_4 = extra_ammo_storage
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 10
-			tank_nsb_armor_upgrade = 6
-		}
-		icon = "GFX_ITA_super_heavy_tank_medium"
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = super_heavy_tank_artillery_chassis_1
-			creator = "ITA"
-			version_name = "The Hand of God"
-		}
-
-		requested_factories = 1
-		progress = 0.6
-		efficiency = 50
-	}
-}
-
-
 ### TEMPLATES
 ITA_add_redshirts_div_template = {
 	division_template = { #Redshirts
@@ -6803,148 +5827,6 @@ ITA_replace_stuff_based_on_ideology_effect = {
 				}
 				remove_dynamic_modifier = { modifier = ITA_regia_marina_3_alt_dynamic_modifier }
 				add_dynamic_modifier = { modifier = ITA_regia_marina_3_dynamic_modifier }
-			}
-		}
-	}
-}
-
-ITA_forced_italo_ethiopian_peace_deal = {
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					ETH = {
-						any_core_state = {
-							is_controlled_by = ITA
-						}
-					}
-					ITA = {
-						any_owned_state = {
-							is_controlled_by = ETH
-						}
-					}
-				}
-				AND = {
-					ITA = { surrender_progress < 0.01 }
-					ETH = { surrender_progress < 0.01 }
-				}
-			}
-		}
-		ETH = {
-			white_peace = ITA
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = {
-				all_core_state = {
-					is_controlled_by = ITA
-				}
-			}
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.25
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.74 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.20
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.49 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.15
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.19 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.05
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.74 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.125
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.49 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.19 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.075
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.05
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress < 0.01 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.025
 			}
 		}
 	}

@@ -1234,9 +1234,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			ITA_end_the_italo_ethiopian_war = yes
-		}
 	}
 
 	# Great

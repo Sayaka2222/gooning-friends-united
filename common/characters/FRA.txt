@@ -117,20 +117,6 @@ characters={
 		}
 	}
 
-	FRA_philippe_petain={ #Fascist Leader
-		name=FRA_philippe_petain
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_philippe_petain
-			}
-		}
-		
-		
-		
-		
-		
-	}
-
 	FRA_jean_de_lattre_de_tassigny={
 		name=FRA_jean_de_lattre_de_tassigny
 		portraits={
@@ -1244,7 +1230,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_buy_time 
+				has_completed_focus  = FRA_review_foreign_policy 
 				has_government  = democratic 
 			}
 			cost  = 75.000

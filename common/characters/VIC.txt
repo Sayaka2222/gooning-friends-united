@@ -1,9 +1,9 @@
 characters={
-	EFR_philippe_pétain={
-		name="Philippe Pétain"
+	FRA_philippe_petain={ #Fascist Leader
+		name=FRA_philippe_petain
 		portraits={
 			civilian={
-				large="gfx/leaders/EFR/Portrait_France_Philippe_Petain.dds"
+				large=GFX_portrait_FRA_philippe_petain
 			}
 		}
 		country_leader={

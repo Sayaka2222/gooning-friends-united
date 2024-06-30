@@ -16,8 +16,6 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_strengthen_government_support
-				FRA_arms_purchases_in_the_us
-				FRA_french_union
 			}
 		}
 		USA = {
@@ -76,7 +74,6 @@ bookmarks = {
 				ITA_pact_of_steel
 			}
 			focuses = {
-				ITA_by_blood_alone
 				ITA_ferrea_mole_ferreo_cuore
 			}			
 		}

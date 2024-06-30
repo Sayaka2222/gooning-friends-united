@@ -19,7 +19,6 @@ bookmarks = {
 			focuses = {
 				FRA_form_the_popular_front
 				FRA_revive_the_national_bloc
-				FRA_france_leads
 			}
 		}
 		"FRA"={
@@ -117,7 +116,6 @@ bookmarks = {
 			focuses = {
 				ITA_comandante_diavolo
 				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
 			}		
 		}
 		"ITA"={
@@ -131,8 +129,6 @@ bookmarks = {
 			}	
 			focuses = {
 				ITA_comandante_diavolo
-				ITA_to_live_as_a_lion
-				ITA_a_colonial_empire
 			}		
 		}
 		"JAP"={
@@ -308,7 +304,6 @@ bookmarks = {
 				YUG_idea_serbian_general_staff
 			}
 			focuses = {
-				YUG_end_the_regency
 				YUG_abolish_the_monarchy
 				YUG_dissolve_serbia
 			}

@@ -33,7 +33,7 @@ characters = {
 			logistics_skill=1
 			legacy_id=0
 			visible = {
-				has_completed_focus = ITA_capo_supremo
+				always = no
 			}
 		}
 	}
@@ -1829,7 +1829,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_security_militias
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}

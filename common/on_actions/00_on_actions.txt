@@ -1237,7 +1237,6 @@ on_actions = {
 						FROM = { has_focus_tree = yugoslavian_focus }
 					}
 					load_focus_tree = { tree = yugoslavian_focus keep_completed = yes }
-					unlock_national_focus = YUG_end_the_regency
 				}
 			}
 			#End of ideology Civil War

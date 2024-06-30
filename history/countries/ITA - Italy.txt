@@ -18,7 +18,7 @@ starting_train_buffer = 1.5
 
 set_research_slots = 4
 set_stability = 0.5
-set_war_support = 0.7
+set_war_support = 0.75
 add_ideas = {
 	vittorio_emanuele
 	vittoria_mutilata
@@ -244,7 +244,7 @@ add_dynamic_modifier = { modifier = ITA_regia_aeronautica_dynamic_modifier }
 #REGIA MARINA
 set_variable = { ITA_rm_naval_has_potf_in_combat_attack = 0.1 }
 set_variable = { ITA_rm_screening_efficiency = 0.05 }
-set_variable = { ITA_rm_naval_doctrine_cost_factor = 0.1 }
+set_variable = { ITA_rm_naval_doctrine_cost_factor = 0 }
 set_variable = { ITA_rm_naval_coordination = -0.05 }
 set_variable = { ITA_rm_naval_detection = -0.1 }
 set_variable = { ITA_rm_spotting_chance = -0.1 }

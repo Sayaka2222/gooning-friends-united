@@ -1042,7 +1042,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
 				}
 			}
 					
@@ -1072,7 +1071,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
 				}
 			}
 					
@@ -1103,7 +1101,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
 				}
 			}
 					
@@ -1135,7 +1132,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
 				}
 			}
 					

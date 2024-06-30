@@ -2643,6 +2643,10 @@ focus_tree = {
 				target = HOL
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
 		}
 	}
 

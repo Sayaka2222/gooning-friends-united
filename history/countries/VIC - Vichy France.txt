@@ -22,11 +22,11 @@ set_politics = {
 	elections_allowed = no ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
-	democratic = 55
-	fascism = 5
+	democratic = 60
+	fascism = 10
 	communism = 30
 }
-recruit_character = EFR_philippe_pétain
+recruit_character = FRA_philippe_petain
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "FRA_1936_air_bba"

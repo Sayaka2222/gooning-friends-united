@@ -123,9 +123,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			ITA_end_the_italo_ethiopian_war = yes
-		}
 	}
 	
 	#Ok - Already completed initial missiolini focus
@@ -423,7 +420,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 1 } #STOCKPILE TRUCKS
 						}
-						country_event = BBA_italy_missiolinis.51
 					}
 					10 = { #STOCKPILE FUEL
 						modifier = {
@@ -438,7 +434,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 2 } #STOCKPILE FUEL
 						}
-						country_event = BBA_italy_missiolinis.61
 					}
 					10 = { #STRENGTHEN THE AIRFORCE
 						modifier = {
@@ -467,7 +462,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 3 } #STRENGTHEN THE AIRFORCE
 						}
-						country_event = BBA_italy_missiolinis.71
 					}
 					10 = { #INDUSTRIAL RESEARCH
 						modifier = {
@@ -577,7 +571,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 4 } #INDUSTRIAL RESEARCH
 						}
-						country_event = BBA_italy_missiolinis.81
 					}
 					10 = { #EXPAND INTELLIGENCE SERVICE
 						modifier = {
@@ -621,7 +614,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 5 } #EXPAND INTELLIGENCE SERVICE
 						}
-						country_event = BBA_italy_missiolinis.91
 					}
 					10 = { #OCCUPY ALBANIA
 						modifier = {
@@ -679,11 +671,6 @@ country_event = {
 							date > 1938.6.1 #MM: If this makes ppl rush Albania for no real reason, it can be triggered in 1939.1.1
 							is_historical_focus_on = yes
 						}
-						modifier = { #NOT AVAILABLE WHEN RE-ROLLING MISSIOLINI
-							factor = 0
-							has_country_flag = ITA_missiolinis_rerolling_flag
-						}
-						country_event = BBA_italy_missiolinis.101
 					}
 					10 = { #OCCUPY DALMATIA
 						modifier = {
@@ -722,11 +709,6 @@ country_event = {
 							factor = 10
 							ITA_missiolinis_weigh_mussolini_feels_safe = yes
 						}
-						modifier = { #NOT AVAILABLE WHEN RE-ROLLING MISSIOLINI
-							factor = 0
-							has_country_flag = ITA_missiolinis_rerolling_flag
-						}
-						country_event = BBA_italy_missiolinis.111
 					}
 					10 = { #OCCUPY GREECE
 						modifier = {
@@ -789,11 +771,6 @@ country_event = {
 							factor = 10
 							ITA_missiolinis_weigh_mussolini_feels_safe = yes
 						}
-						modifier = { #NOT AVAILABLE WHEN RE-ROLLING MISSIOLINI
-							factor = 0
-							has_country_flag = ITA_missiolinis_rerolling_flag
-						}
-						country_event = BBA_italy_missiolinis.121
 					}
 					10 = { #OCCUPY TICINO
 						modifier = {
@@ -817,21 +794,12 @@ country_event = {
 						}
 						modifier = {
 							factor = 10
-							ITA_missiolinis_weigh_mussolini_esta_flipado = yes
-						}
-						modifier = {
-							factor = 10
 							ITA_missiolinis_weigh_mussolini_feels_invincible = yes
 						}
 						modifier = {
 							factor = 10
 							ITA_missiolinis_weigh_mussolini_feels_safe = yes
 						}
-						modifier = { #NOT AVAILABLE WHEN RE-ROLLING MISSIOLINI
-							factor = 0
-							has_country_flag = ITA_missiolinis_rerolling_flag
-						}
-						country_event = BBA_italy_missiolinis.131
 					}
 					10 = { #BOLSTER POLITICAL CABINET
 						modifier = {
@@ -856,7 +824,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 6 } #BOLSTER POLITICAL CABINET
 						}
-						country_event = BBA_italy_missiolinis.201
 					}
 					10 = { #BOLSTER MILITARY CABINET
 						modifier = {
@@ -881,7 +848,6 @@ country_event = {
 							factor = 0
 							check_variable = { ITA_missiolini_reroll_from = 7 } #BOLSTER MILITARY CABINET
 						}
-						country_event = BBA_italy_missiolinis.211
 					}
 				}
 			}
@@ -1662,36 +1628,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_stockpile_trucks_triggered_flag
-			set_variable = { ITA_missiolinis_stockpile_trucks_goal = 0 }
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 1 } #STOCKPILE TRUCKS
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Stockpile Trucks - FAILURE 
@@ -1783,34 +1719,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_stockpile_fuel
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_stockpile_fuel_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 2 } #STOCKPILE FUEL
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -1957,39 +1865,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_strengthen_the_airforce
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_strengthen_the_airforce_triggered_flag
-			set_variable = { ITA_missiolinis_fighters_goal = 0 }
-			set_variable = { ITA_missiolinis_cas_goal = 0 }
-			set_variable = { ITA_missiolinis_naval_bombers_goal = 0 }
-			set_variable = { ITA_missiolinis_tactical_bombers_goal = 0 }
-
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 3 } #STRENGTHEN THE AIRFORCE
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -2248,51 +2123,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_production_flag
-				}
-				clr_country_flag = ITA_missiolini_research_production_flag
-			}
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_industry_flag
-				}
-				clr_country_flag = ITA_missiolini_research_industry_flag
-			}
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_construction_flag
-				}
-				clr_country_flag = ITA_missiolini_research_construction_flag
-			}
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 4 } #INDUSTRIAL RESEARCH
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Industrial Research - FAILURE 
@@ -2454,35 +2284,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_expand_intelligence_agency
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_expand_intelligence_service_triggered_flag
-			clr_country_flag = ITA_missiolini_upgrade_agency_goal_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 5 } #EXPAND INTELLIGENCE SERVICE
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -2944,34 +2745,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_bolster_political_cabinet_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 6 } #BOLSTER POLITICAL CABINET
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Bolster Political Cabinet - FAILURE 
@@ -3063,34 +2836,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_bolster_military_high_command
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-		#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_bolster_military_high_command_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 7 } #BOLSTER MILITARY CABINET
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -4842,91 +4587,6 @@ country_event = {
 	##    ## ##     ## ##     ## ##        ##       ##    ##  ##     ##    ##     ##  ##     ## ##   ###    ##        ##    ##  ##     ## ##    ##  ##    ##  ##     ## ##     ## ##    ## 
 	 ######   #######   #######  ##        ######## ##     ## ##     ##    ##    ####  #######  ##    ##    ##        ##     ##  #######   ######   ##     ## ##     ## ##     ##  ######  
 
-
-# Offer to join the Naval Cooperation Program - Event for allies
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.01
-	title = BBA_italy_naval_cooperation_programs.01.t
-	desc = BBA_italy_naval_cooperation_programs.01.desc
-	picture = GFX_report_event_ast_navy
-	
-	is_triggered_only = yes
-
-	# Accept
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.01.a
-		ai_chance = {
-			base = 10
-		}
-
-		add_to_tech_sharing_group = ITA_naval_cooperation_program_research_group
-		FROM = { add_to_tech_sharing_group = ITA_naval_cooperation_program_research_group }
-		hidden_effect = {
-			FROM = { country_event = { id = BBA_italy_naval_cooperation_programs.02 hours = 1 } }
-		}
-	}
-
-	# Refuse
-	option = {
-		name = BBA_italy_naval_cooperation_programs.01.b
-		ai_chance = {
-			base = 0 #AI always says 'yes'
-		}
-
-		FROM = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = BUL_rejected_our_proposal
-			}
-		}
-		hidden_effect = {
-			FROM = { country_event = { id = BBA_italy_naval_cooperation_programs.03 hours = 1 } }
-		}
-	}
-}
-
-# Country joins the Naval Cooperation Program - Event for ITA
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.02
-	title = BBA_italy_naval_cooperation_programs.02.t
-	desc = BBA_italy_naval_cooperation_programs.02.desc
-	picture = GFX_report_event_ast_navy
-	
-	is_triggered_only = yes
-
-	# Coolio
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.02.a
-
-		effect_tooltip = {
-			add_to_tech_sharing_group = ITA_naval_cooperation_program_research_group
-			FROM = { add_to_tech_sharing_group = ITA_naval_cooperation_program_research_group }
-		}
-	}
-}
-
-# Country refuses to join the Naval Cooperation Program - Event for ITA
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.03
-	title = BBA_italy_naval_cooperation_programs.03.t
-	desc = BBA_italy_naval_cooperation_programs.03.desc
-	picture = GFX_report_event_ast_navy
-	
-	is_triggered_only = yes
-
-	# wtf
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.03.a
-
-		effect_tooltip = {
-			add_opinion_modifier = {
-				target = FROM
-				modifier = BUL_rejected_our_proposal
-			}
-		}
-	}
-}
-
 # Offer to perform joint maneuvers - Event for allies
 country_event = {
 	id = BBA_italy_naval_cooperation_programs.04
@@ -4983,97 +4643,6 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = ITA_joint_maneuvers_rejected_flag #Preventing the decision to be taken again by Italy
 			FROM = { country_event = { id = BBA_italy_naval_cooperation_programs.06 hours = 1 } }
-		}
-	}
-}
-
-# Country accepts joint maneuvers - Event for ITA
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.05
-	title = BBA_italy_naval_cooperation_programs.05.t
-	desc = BBA_italy_naval_cooperation_programs.05.desc
-	picture = GFX_report_event_usa_destroyers
-	
-	is_triggered_only = yes
-
-	# Coolio
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.05.a
-
-		effect_tooltip = {
-			custom_effect_tooltip = ITA_joint_maneuvers_with_country_remove_effect_tt
-			navy_experience = 50
-			add_doctrine_cost_reduction = {
-				name = ITA_joint_maneuvers_with_country_doctrine_bonus
-				cost_reduction = 0.75
-				uses = 1
-				category = naval_doctrine
-			}
-			FROM = {
-				navy_experience = 50
-				add_doctrine_cost_reduction = {
-					name = ITA_joint_maneuvers_with_country_doctrine_bonus
-					cost_reduction = 0.75
-					uses = 1
-					category = naval_doctrine
-				}
-			}
-		}
-	}
-}
-
-# Country rejects joint maneuvers - Event for ITA
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.06
-	title = BBA_italy_naval_cooperation_programs.06.t
-	desc = BBA_italy_naval_cooperation_programs.06.desc
-	picture = GFX_report_event_usa_destroyers
-	
-	is_triggered_only = yes
-
-	# wtf
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.06.a
-
-		effect_tooltip = {
-			add_opinion_modifier = {
-				target = FROM
-				modifier = BUL_rejected_our_proposal
-			}
-		}
-	}
-}
-
-# Joint Maneuvers Prgoram finished - Event for ITA and ally
-country_event = {
-	id = BBA_italy_naval_cooperation_programs.07
-	title = BBA_italy_naval_cooperation_programs.07.t
-	desc = BBA_italy_naval_cooperation_programs.07.desc
-	picture = GFX_report_event_usa_destroyers
-	
-	is_triggered_only = yes
-
-	# Awesome
-	option = { 
-		name = BBA_italy_naval_cooperation_programs.07.a
-
-		navy_experience = 50
-		add_doctrine_cost_reduction = {
-			name = ITA_joint_maneuvers_with_country_doctrine_bonus
-			cost_reduction = 0.75
-			uses = 1
-			category = naval_doctrine
-		}
-		effect_tooltip = {
-			FROM = {
-				navy_experience = 50
-				add_doctrine_cost_reduction = {
-					name = ITA_joint_maneuvers_with_country_doctrine_bonus
-					cost_reduction = 0.75
-					uses = 1
-					category = naval_doctrine
-				}
-			}
 		}
 	}
 }
@@ -7944,9 +7513,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			ITA_end_the_italo_ethiopian_war = yes
-		}
 	}
 
 	#Oki

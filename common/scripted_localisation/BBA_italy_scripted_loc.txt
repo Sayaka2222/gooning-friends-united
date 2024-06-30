@@ -226,19 +226,6 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetDeckConversionsTooltip
-	text = {
-		trigger = {
-			has_completed_focus = ITA_refit_civilian_ships #Focus grants bonuses
-		}
-		localization_key = ITA_deck_conversions_dynamic_modifier_tt
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
 	name = GetRailwayGunsTooltip
 	text = {
 		trigger = {
@@ -350,33 +337,6 @@ defined_text = {
 			has_completed_focus = ITA_ministry_of_italian_africa
 		}
 		localization_key = BBA_italy_colonial_management_african_states
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
-	name = GetAlbanianStates
-	text = {
-		trigger = {
-			has_completed_focus = ITA_albanian_fascist_militia
-		}
-		localization_key = BBA_italy_colonial_management_albanian_states
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
-	name = GetAndOrNothing
-	text = {
-		trigger = {
-			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_albanian_fascist_militia
-		}
-		localization_key = BBA_italy_colonial_management_and
 	}
 	text = {
 		localization_key = generic_null
