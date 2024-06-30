@@ -13,42 +13,7 @@ CZE_ckd_organization = {
 	icon = GFX_idea_CZE_ckd
 	
 	allowed = {	
-		OR = {
-			tag = CZE
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_ckd_organization_flag
-				}
-			}
-		}
+		always = no
 	}
 }
 
@@ -56,50 +21,33 @@ CZE_tatra_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_CZE_tatra
 	allowed = { 
-		tag = CZE
+		always = no
 	}
 }
 
 CZE_skoda_armor_organization = {
-	include = generic_heavy_tank_organization
+	include = generic_mobile_tank_organization
 	icon = GFX_idea_CZE_skoda_armor
-	
+
+	equipment_type = { mio_cat_eq_all_light_tank }
+	research_categories = { mio_cat_tech_light_armor_and_modules }
+
 	allowed = {	
 		OR = {
+			tag = GER 
+			tag = ROM
+			tag = HUN
+			tag = BUL
 			tag = CZE
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
+			tag = CRO
 		}
 	}
-	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_skoda_armor_organization_flag
-				}
-			}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 	}
 }
@@ -118,7 +66,7 @@ CZE_skoda_shipyards_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_CZE_skoda_shipyards
 	allowed = { 
-		tag = CZE
+		always = no
 	}
 }
 
@@ -136,7 +84,7 @@ CZE_ckd_praga_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_CZE_ckd_praga
 	allowed = { 
-		tag = CZE
+		always = no
 	}
 }
 
@@ -144,7 +92,7 @@ CZE_aero_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_CZE_aero
 	allowed = { 
-		tag = CZE
+		always = no
 	}
 }
 
@@ -152,7 +100,7 @@ CZE_letov_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_CZE_letov
 	allowed = { 
-		tag = CZE
+		always = no
 	}
 }
 
@@ -161,42 +109,7 @@ name = CZE_avia
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_CZE_avia
 	allowed = { 
-		OR = {
-			tag = CZE 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_avia_organization_flag
-				}
-			}
-		}
+		always = no
 	}
 }
 

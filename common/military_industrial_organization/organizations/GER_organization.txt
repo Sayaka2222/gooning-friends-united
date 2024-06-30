@@ -8,6 +8,25 @@
 
  #################### 
 
+GER_nibel_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_CZE_ckd
+	
+	allowed = {	
+		tag = GER
+	}
+	available = {
+		has_completed_focus = "Quality Tank Production"
+	}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = 0.1
+			soft_attack = 0.15
+			hard_attack = 0.15
+			armor_value = 0.1
+		}
+	}
+}
 
 GER_porsche_organization = {
 	include = generic_heavy_tank_organization
@@ -16,27 +35,21 @@ GER_porsche_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = CZE
+			tag = CRO
+			tag = ITA
 		}
 	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = GER }
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.1
+			hardness = 0.1
+			armor_value = 0.1
 		}
 	}
 }
@@ -48,58 +61,20 @@ GER_henschel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = CZE
+			tag = CRO
 		}
 	}
-	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = { 
-				OR = { 
-					FROM = { original_tag = BUL }
-					FROM = { original_tag = ETH } 
-				} 
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_henschel_mio_flag
-				}
-			}
-			
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+			maximum_speed = 0.1
+			reliability = 0.1
 		}
 	}
 }
@@ -111,20 +86,20 @@ GER_man_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = CZE
+			tag = CRO
+			tag = ITA
 		}
 	}
-	
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
+	initial_trait = {
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+			hardness = 0.025
+			build_cost_ic = 0.025
 		}
 	}
 }
@@ -137,93 +112,19 @@ GER_daimler_benz_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = CZE
+			tag = CRO
 		}
-	}
-
-	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = BRA
-				}
-			}
-			FROM = {
-				has_completed_focus = BRA_german_tanks
-			}
-		}
-	}
-
-	tree_header_text = {
-		text = mio_header_tank_construction
-		x = 3
-	}
-
-	tree_header_text = {
-		text = mio_header_equipment_and_specialization
-		x = 7
-	}
-
-	tree_header_text = {
-		text = mio_header_armor
-		x = 9
 	}
 	initial_trait = {
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-	}
-
-	add_trait = {  
-		token = GER_mio_trait_hotrolled_armor
-		name = GER_mio_trait_hotrolled_armor
-		icon = GFX_generic_mio_department_icon_tank_general_technology
-		special_trait_background = yes
-
-		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
-		production_bonus = {
-			production_efficiency_cap_factor = 0.05
-			production_efficiency_gain_factor = 0.05
-		}
-
-		position = { x=9 y=0 }  
-		ai_will_do = {
-			base = 2
-			modifier = {
-				factor = 1.5
-				date > 1937.1.1
-			}
-		}
-	}
-
-	add_trait = {
-		token = GER_mio_trait_multilayer_armour
-		name = GER_mio_trait_multilayer_armour
-		icon = GFX_generic_mio_trait_icon_armor_value
-		special_trait_background = yes
-
-		any_parent = { GER_mio_trait_hotrolled_armor }
-		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
 		equipment_bonus = {
-			armor_value = 0.1
-		} 
-
-		position = { x=9 y=2 }  
-		ai_will_do = {
-			base = 2
-			modifier = {
-				factor = 1.5
-				date > 1937.1.1
-			}
+			soft_attack = 0.1
+			hard_attack = 0.1
+			hardness = -0.025
+			build_cost_ic = -0.025
 		}
 	}
 }
@@ -241,18 +142,47 @@ GER_daimler_benz_organization = {
 GER_germaniawerft_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_germaniawerft
+
+	equipment_type = {
+		mio_cat_eq_all_battleship
+	}
+	research_categories = {
+		mio_cat_tech_all_capital_ship_and_modules
+	}
 	
 	allowed = {	
 		tag = GER 
+	}
+	initial_trait = {
+		equipment_bonus = {
+			hg_attack = 0.15
+			armor_value = 0.15
+		}
 	}
 }
 
 GER_blohm_und_voss_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_blohm_und_voss
-	
+
+	equipment_type = {
+		mio_cat_eq_all_cruiser
+		mio_cat_eq_all_destroyer
+	}
+	research_categories = {
+		mio_cat_tech_all_cruiser_and_modules
+		mio_cat_tech_all_destroyer_and_modules
+	}
+
 	allowed = {	
 		tag = GER 
+	}
+	initial_trait = {
+		equipment_bonus = {
+			lg_attack = 0.15
+			maximum_speed = 0.1
+			torpedo_attack = 0.15
+		}
 	}
 }
 
@@ -269,172 +199,95 @@ GER_blohm_und_voss_organization = {
 GER_messerschmitt_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_messerschmitt
-	
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+	}
+
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+	}
+
 	allowed = {	
-		OR = {
-			tag = GER
-		}
+		tag = GER
 	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-	}
-
-	add_trait = {
-		token = GER_mio_trait_maintenance_first_design
-		name = GER_mio_trait_maintenance_first_design
-
-		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
-		special_trait_background = yes
-		
-		position = { x=-2 y=1 }
-		relative_position_id = generic_mio_trait_expanded_production_facilities
-
-		all_parents = { generic_mio_trait_expanded_production_facilities }
-
+	initial_trait = {
 		equipment_bonus = {
-			reliability = 0.05
+			air_agility = 0.1
+			maximum_speed = 0.1
+			air_attack = 0.1
 		}
-
-		production_bonus = {
-			production_efficiency_gain_factor = 0.05
-		}
-	}
-
-	add_trait = {
-		token = GER_mio_trait_fuselage_based_weapons
-		name = GER_mio_trait_fuselage_based_weapons
-
-		icon = GFX_generic_mio_trait_icon_anti_air_attack
-		special_trait_background = yes
-		
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_gun_pods
-
-		any_parent = { generic_mio_trait_heavier_airframe generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
-
-		equipment_bonus = {
-			air_attack = 0.05
-			air_agility = 0.05
-		} 
 	}
 }
 
 GER_junkers_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_junkers
-	
+
+	equipment_type = {
+		small_plane_cas_airframe
+	}
+
+	research_categories = {	mio_cat_all_cas_and_modules }
+
 	allowed = {	 
-		OR = {
-			tag = GER 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
+		tag = GER 
 	}
-	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { NOT  = { original_tag = GER } }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_GER_junkers_organization_flag
-				}
-			}
-		}
-	}
-
-	add_trait = {
-		token = GER_mio_trait_psychological_warfare
-		name = GER_mio_trait_psychological_warfare
-
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
-		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_reinforced_wings
-
+	initial_trait = {
 		equipment_bonus = {
-			fuel_consumption = -0.05
-		} 
+			air_ground_attack = 0.1
+			air_defence = 0.05
+			air_agility = 0.1
+			air_range = 0.1
+		}
 	}
 }
 
 GER_focke_wulf_organization = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_focke_wulf
-	
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+	}
+
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+	}
+
 	allowed = {	
 		tag = GER 
+	}
+	available = {
+		has_completed_focus = "Develop the Ta 152"
+	}
+	initial_trait = {
+		equipment_bonus = {
+			air_agility = 0.15
+			maximum_speed = 0.15
+			air_attack = 0.15
+		}
 	}
 }
 
 GER_heinkel_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_heinkel
-	
-	allowed = {	
-		OR = {
-			tag = GER 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+
+	equipment_type = {
+		mio_cat_eq_all_medium_plane
 	}
 
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = BUL }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_heinkel_mio_flag
-				}
-			}
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
+	research_categories = { mio_cat_all_medium_aircraft_and_modules }
+	
+	allowed = {	
+		tag = GER 
+	}
+	initial_trait = {
+		equipment_bonus = {
+			air_ground_attack = 0.1
+			air_defence = 0.1
+			air_range = 0.1
 		}
 	}
 }
@@ -442,9 +295,22 @@ GER_heinkel_organization = {
 GER_dornier_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_dornier
-	
+
+	equipment_type = {
+		small_plane_naval_bomber_airframe
+	}
+
+	research_categories = { mio_cat_all_naval_bomber_and_modules }
+
 	allowed = {	
 		tag = GER 
+	}
+
+	initial_trait = {
+		equipment_bonus = {
+			naval_strike_attack = 0.1
+			air_range = 0.1
+		}
 	}
 }
 

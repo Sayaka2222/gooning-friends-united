@@ -14,8 +14,7 @@ NZL_nz_railways_organization = {
 	name = NZL_nz_railways_organization
 	icon = GFX_idea_NZL_nz_railways
 	allowed = {
-		original_TAG = NZL
-		has_dlc = "Together for Victory"
+		always = no
 	}
 }
 NZL_christchurch_workshops_organization = {
@@ -23,8 +22,7 @@ NZL_christchurch_workshops_organization = {
 	name = NZL_christchurch_workshops_organization
 	icon = GFX_idea_NZL_christchurch_workshops
 	allowed = {
-		original_TAG = NZL
-		has_dlc = "Together for Victory"
+		always = no
 	}
 }
 

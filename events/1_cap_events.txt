@@ -83,6 +83,14 @@ country_event = {
 					transfer_state=769
 				}
 			}
+			if={limit={tag=BEL}
+				FRA={
+					annex_country = { target = ROOT transfer_troops = yes }
+					transfer_state=6
+					transfer_state=34
+					transfer_state=8
+				}
+			}
 		}
 		else_if = { 
 			limit = {
@@ -98,7 +106,7 @@ country_event = {
 				GER={transfer_state=PREV}}
 		}
 		else_if={limit = {
-				OR={tag=POL tag=LUX
+				OR={tag=POL tag=BEL
 					}}
 			transfer_navy={target=ENG}
 			every_owned_state={limit={is_core_of=ROOT}
