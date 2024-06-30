@@ -121,7 +121,17 @@ USA_historical_plan = {
 	ai_strategy = {
 		type = support
 		id = "ENG"			
-		value = 200
+		value = 400
+	}
+	ai_strategy = {
+		type = support
+		id = "AST"			
+		value = 100
+	}
+	ai_strategy = {
+		type = support
+		id = "RAJ"			
+		value = 100
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

@@ -1804,36 +1804,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_indian_gurkhas			
-			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
-			hidden_effect = {	
-				division_template = {
-					name = "Gorkha Rifles"
-					priority = 2
-					division_names_group = RAJ_MNT_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
-			
-	    	   		 	mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-
-						mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-					}
-				}
-	
-				random_owned_controlled_state = {
-					prioritize = { 439 }
-					create_unit = {
-						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
-						owner = RAJ
-					}	
-				}
-			}
-
 		}
 	}
 
@@ -1927,37 +1897,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
 			army_experience = 30
-			custom_effect_tooltip = RAJ_create_unit_sikh_tt
-			hidden_effect = {
-
-				division_template = {
-				name = "Sikh Regiment" #sikh regiment, bro
-				division_names_group = RAJ_INF_01
-				regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-		
-		        		infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-							}
-						}
-		
-					random_owned_controlled_state = {
-							prioritize = { 439 }
-							create_unit = { 
-								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
-								owner = RAJ
-								}
-		
-					}
-				}
-
 		}
 	}
 

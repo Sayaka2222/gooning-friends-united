@@ -32,11 +32,7 @@ AST_cockatoo_doe_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_Cockatoo_doe
 	allowed = {
-		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = { has_completed_focus = AST_cockatoo_island_shipyards}
+		always = no
 	}
 }
 AST_evans_deakin_co_organization = {
@@ -44,11 +40,7 @@ AST_evans_deakin_co_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_evans_deakin_co
 	allowed = {
-		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = { has_completed_focus = AST_kangaroo_point_shipyards}
+		always = no
 	}
 }
 
@@ -68,14 +60,7 @@ AST_com_aircraft_corporation_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_com_aircraft_corporation
 	allowed = {
-		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = {
-			has_completed_focus = AST_commonwealth_aircraft_corporation
-			is_subject_of = ENG 
-		}
+		always = no
 	}
 }
 

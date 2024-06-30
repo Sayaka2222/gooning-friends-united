@@ -10910,7 +10910,13 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
-
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				date > 1937.9.1
+				factor = 100
+			}
+		}
 		search_filters = {}
 
 		completion_reward = {
@@ -10973,12 +10979,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 0
-				date < 1937.9.1
-			}
-			modifier = {
-				factor = 10
-				date > 1937.9.1
+				factor = 100
+				date > 1937.10.1
 			}
 		}
 		completion_reward = {
