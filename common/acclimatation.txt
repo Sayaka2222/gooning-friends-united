@@ -40,7 +40,7 @@
 # It is possible to script multiple keywords in "change_camo_when", for example in hot_climate
 # it may change the camo while in desert jungle marsh etc. In this case the correct one will be
 # picked due to the location.
-
+# hii
 cold_climate =
 {
 	gain_when = 
