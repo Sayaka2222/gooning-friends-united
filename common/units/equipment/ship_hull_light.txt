@@ -44,11 +44,11 @@ equipments = {
 			}
 			fixed_ship_fire_control_system_slot = {
 				required = no
-				allowed_module_categories = { ship_fire_control_system ship_sonar }
+				allowed_module_categories = { ship_fire_control_system }
 			}
 			fixed_ship_radar_slot = {
 				required = no
-				allowed_module_categories = { ship_radar ship_sonar }
+				allowed_module_categories = { ship_radar }
 			}
 			fixed_ship_torpedo_slot = {
 				required = no
@@ -63,10 +63,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_anti_air
-					ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = mid_1_custom_slot
@@ -100,15 +96,15 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 40
 		
-		anti_air_attack = 0
+		anti_air_attack = 10
 		
-		armor_value = 0
+		armor_value = 1
 
 		
 		surface_detection = 20
-		sub_detection = 1
+		sub_detection = 15
 		surface_visibility = 10
 		naval_speed = 32
 		reliability = 0.80
@@ -160,10 +156,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 					dp_light_battery
 				}
@@ -208,8 +200,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_depth_charge
-					ship_anti_air
+					ship_torpedo
 					ship_light_battery
 					dp_light_battery
 				}
@@ -218,10 +209,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 					dp_light_battery
 				}
@@ -230,10 +217,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 					dp_light_battery
 				}
@@ -279,8 +262,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_depth_charge
-					ship_anti_air
+					ship_torpedo
 					ship_light_battery
 					dp_light_battery
 				}
@@ -289,10 +271,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 					dp_light_battery
 				}
@@ -302,10 +280,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 					dp_light_battery
 				}
@@ -320,7 +294,6 @@ equipments = {
 		build_cost_ic = 600
 		resources = {
 			steel = 4
-			chromium = 1
 		}
 		manpower = 500
 	}
