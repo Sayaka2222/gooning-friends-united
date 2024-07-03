@@ -265,11 +265,6 @@ on_actions = {
 					}
 					GER = { has_completed_focus = GER_ussr_war_goal }
 				}
-				hidden_effect = {
-					GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 180 }
-					}
-				}
 			}
 		}
 	}

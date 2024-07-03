@@ -831,15 +831,16 @@ technologies = {
 
 	heavy_bombs = {
 		enable_equipment_modules = {
-					heavy_bomb_locks
+			heavy_bomb_locks
+			rocket_rails
 		}
 			
 		research_cost = 1
-		start_year = 1940
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -869,7 +870,9 @@ technologies = {
 		enable_equipment_modules = {
 			armor_piercing_bomb_locks
 		}
-			
+		allow_branch = {
+			always = no
+		}
 		research_cost = 1
 		start_year = 1936
 
@@ -910,7 +913,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 2 y = 4 }
 		}
 
 		allow_branch = { has_dlc = "La Resistance" }
@@ -978,12 +981,12 @@ technologies = {
 			torpedo_mounting_2
 		}
 			
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 
 		path = {
@@ -1019,12 +1022,12 @@ technologies = {
 			torpedo_mounting_3
 		}
 			
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 6 }
 		}
 
 		categories = {
@@ -1073,12 +1076,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = aa_cannon_1
+			leads_to_tech = photo_reconnaisance
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = survivability_studies
+			leads_to_tech = aa_cannon_2
 			research_cost_coeff = 1
 		}
 		
@@ -1121,7 +1124,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 5 }
+			position = { x = -2 y = 6 }
 		}
 
 		categories = {
@@ -1157,6 +1160,7 @@ technologies = {
 	aa_hmg = {
 
 		enable_equipment_modules = {
+			tank_buster_1
 			heavy_mg_2x
 			heavy_mg_4x
 			hmg_defense_turret
@@ -1164,11 +1168,16 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = aa_cannon_1
+			research_cost_coeff = 1
 		}
 
 		categories = {
@@ -1204,6 +1213,7 @@ technologies = {
 	aa_cannon_1 = {
 
 		enable_equipment_modules = {
+			tank_buster_2
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 		}
@@ -1213,11 +1223,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 5 }
-		}
-		path = {
-			leads_to_tech = aa_cannon_2
-			research_cost_coeff = 1
+			position = { x = 0 y = 6 }
 		}
 
 		path = {
@@ -1261,8 +1267,6 @@ technologies = {
 		enable_equipment_modules = {
 			large_aircraft_cannon_1x
 			large_aircraft_cannon_2x
-			cannon_defense_turret
-			cannon_defense_turret_2x
 		}
 		
 		research_cost = 1.5
@@ -1270,7 +1274,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = -2 y = 4 }
 		}
 
 		categories = {
@@ -1318,7 +1322,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 12 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
@@ -1620,6 +1624,11 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = -2 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = survivability_studies
+			research_cost_coeff = 1
 		}
 
 		categories = {

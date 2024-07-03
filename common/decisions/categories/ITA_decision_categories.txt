@@ -82,10 +82,6 @@ ITA_diplomacy_balkan_decision_category = {
 	priority = 8
 	
 	visible = {
-		OR = {
-			has_completed_focus = ITA_balkan_ambition
-			has_completed_focus = ITA_potential_allies_in_the_balkans
-		}
 		any_country = {
 			BUL_is_balkan_nation = yes
 			exists = yes
@@ -105,7 +101,6 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 	priority = 7
 	
 	visible = {
-		has_completed_focus = ITA_vallo_alpino_del_littorio
 	}
 }
 

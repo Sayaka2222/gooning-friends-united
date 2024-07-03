@@ -65,12 +65,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
-		}
-
 		path = {
 			leads_to_tech = artillery1
 			research_cost_coeff = 1
@@ -381,7 +375,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
-			rocket_rails
 		}
 
 		path = {
@@ -846,9 +839,6 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
-		enable_equipment_modules = {
-			tank_buster_1
-		}
 		path = {
 			leads_to_tech = antitank1
 			research_cost_coeff = 1
@@ -994,9 +984,6 @@ technologies = {
 
 		enable_equipments = {
 			anti_tank_equipment_2
-		}
-		enable_equipment_modules = {
-			tank_buster_2
 		}
 		path = {
 			leads_to_tech = antitank3

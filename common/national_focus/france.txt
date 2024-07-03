@@ -24,7 +24,7 @@
 		
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 1
 		}
@@ -834,16 +834,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			IF = {
-				limit = { has_dlc = "Arms Against Tyranny" }
-				mio:FRA_renault_organization = {
-					add_mio_funds = 2000
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = FRA_hotchkiss
-			}
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -1157,25 +1148,17 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = FRA_victors_of_wwi
-			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = FRA_army_reform
 				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:FRA_hotchkiss_organization = {
-					add_mio_funds = 1500
-					add_mio_research_bonus = 0.02
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = FRA_AMX
+			add_tech_bonus = {
+				name = FRA_cas_focus
+				bonus = 1
+				uses = 1
+				technology = improved_medium_tank_chassis
 			}
 		}
 	}	
@@ -1190,7 +1173,7 @@
 
 		prerequisite = {}
 		mutually_exclusive = { focus = FRA_revive_the_national_bloc }
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2426,7 +2409,7 @@
 			focus = FRA_form_the_popular_front
 		}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2496,7 +2479,7 @@
 			focus = FRA_form_the_popular_front
 		}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -3528,7 +3511,7 @@
 		x = 42
 		y = 0
 
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}

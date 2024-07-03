@@ -99,13 +99,12 @@ focus_tree = {
 		id = ENG_motorized_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = { 	
-			date > 1937.6.1		
 		}
 		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -129,7 +128,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -142,7 +141,7 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
-				ahead_reduction = 2
+				ahead_reduction = 1
 				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
@@ -227,7 +226,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -534,9 +533,7 @@ focus_tree = {
 		prerequisite = { focus = uk_industrial_focus }
 		available = {
 			OR = {
-				GER = {
-					has_completed_focus = GER_anschluss
-				}
+				threat > 0.1
 				date > 1938.1.1
 			}
 		}
@@ -784,7 +781,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 150
+			air_experience = 300
 		}
 	}
 
@@ -792,6 +789,7 @@ focus_tree = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
 		icon = GFX_focus_usa_escort_fighters
+		text = "Develop the Spitfire"
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
@@ -803,13 +801,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
-				category = cat_heavy_fighter
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -828,7 +824,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 1.0
@@ -853,7 +848,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = coastal_command_focus
 				bonus = 1.0
@@ -867,6 +861,7 @@ focus_tree = {
 		id = aircraft_production_focus
 		prerequisite = { focus = fighter_command_focus focus = bomber_command_focus focus = coastal_command_focus }
 		icon = GFX_goal_generic_air_production
+		text = "Spitfire Griffon"
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
@@ -882,6 +877,32 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			set_technology = {
+				advanced_small_airframe = 1
+			}
+		}
+	}
+
+	focus = {
+		id = eng_jet_focus
+		prerequisite = { focus = aircraft_production_focus }
+		icon = GFX_goal_generic_air_production
+		text = "Introduce the Gloster Meteor"
+		x = 0
+		y = 1
+		relative_position_id = aircraft_production_focus
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+			date > 1944.1.1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			set_technology = {
+				jet_engines = 1
 				advanced_small_airframe = 1
 			}
 		}
@@ -1183,9 +1204,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 50
-			navy_experience = 50
-			air_experience = 50
+			army_experience = 100
 			add_ideas = ENG_service_overseas_idea
 		}
 	}
@@ -1232,7 +1251,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			army_experience = 50
 			add_ideas = ENG_chiefs_of_staff_committee_idea
 		}
 	}
@@ -1280,7 +1298,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_parachute_regiments
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
 				category = special_forces_doctrine
 			}
@@ -1936,7 +1954,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = uk_iran_focus
+		id = uk_iraq_focus
 		available = {
 			date > 1940.1.1
 		} #UK at war with fascist/commie. iran is fascist/commie
@@ -1952,8 +1970,53 @@ focus_tree = {
 		}	
 		completion_reward = {
 			annex_country = {
+				target = IRQ
+				transfer_troops = no
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					add_compliance = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = uk_iran_focus
+		available = {
+			date > 1940.6.1
+		} #UK at war with fascist/commie. iran is fascist/commie
+
+		prerequisite = { focus = uk_iraq_focus }
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = uk_iraq_focus
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			annex_country = {
 				target = PER
 				transfer_troops = no
+			}
+			SOV = {
+				transfer_state = 419
+				transfer_state = 420
+				transfer_state = 266
+				transfer_state = 416
+				transfer_state = 418
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = PER
+					}
+					add_compliance = 100
+				}
 			}
 		}
 	}
@@ -2030,15 +2093,8 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2062,7 +2118,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_prepare_for_the_inevitable
 
-		cost = 0
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	

@@ -20,7 +20,6 @@ ITA_alt_fascist_balbo = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 	#35	IND/COL
 		ITA_italian_highways_bba			#35	IND
 		ITA_undermine_the_duce				#35	POL
 		ITA_conspiracies_in_the_shadows		#35	POL
@@ -62,7 +61,6 @@ ITA_alt_fascist_balbo = {
 		ITA_the_fourth_shore				#70	IND/COL
 		ITA_the_fate_of_mussolini			#35	POL
 		ITA_italian_irredentism				#70	DIP/WAR
-		ITA_expand_rome_flying_school		#70	AIR
 		ITA_a_bandits_war					#70	ARM/PRO
 
 		#1941
@@ -79,7 +77,6 @@ ITA_alt_fascist_balbo = {
 		ITA_superaereo						#35	AIR
 
 		#1943
-		ITA_specialization					#70	AIR/IND/MIL
 		ITA_combined_land_and_air_warfare	#70	AIR/ARM
 		ITA_albanian_oil					#35	IND
 		ITA_self_propelled_guns				#70	ARM
@@ -149,7 +146,6 @@ ITA_alt_fascist_grandi = {
 
 	ai_national_focuses = {
 		#1936	
-		ITA_ethiopian_war_logistics_bba 			#35		
 		ITA_italian_highways_bba					#35	
 		ITA_undermine_the_duce						#35	
 		ITA_conspiracies_in_the_shadows				#35	
@@ -212,8 +208,6 @@ ITA_alt_fascist_grandi = {
 		ITA_superaereo								#35	
 		ITA_expand_naval_facilities					
 		ITA_supermarina								#35	
-		ITA_expand_rome_flying_school				
-		ITA_officers_of_the_service_role			#35	
 		ITA_redirect_alfa_romeo_production			
 
 	}	
@@ -268,7 +262,6 @@ ITA_monarchist_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
 		ITA_undermine_the_duce						#35
@@ -300,7 +293,6 @@ ITA_monarchist_plan = {
 				
 		#1939
 		ITA_develop_libya							#35
-		ITA_develop_eritrea							#35
 		ITA_regional_development
 		ITA_industria_della_gomma_sintetica 		#35
 		ITA_air_innovations_bba						#35
@@ -394,7 +386,6 @@ ITA_christian_democracy_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
 		ITA_undermine_the_duce						#35
@@ -435,7 +426,6 @@ ITA_christian_democracy_plan = {
 		ITA_italian_tankettes						#35
 		ITA_extraction_industry
 		ITA_new_corporations
-		ITA_strengthen_ascari_corps
 		ITA_expand_national_universities
 		
 		#1941	
@@ -443,7 +433,6 @@ ITA_christian_democracy_plan = {
 		ITA_superesercito							#35
 		ITA_air_innovations_bba						#35
 		ITA_increase_artillery_production
-		ITA_comandante_diavolo
 		ITA_self_propelled_guns
 		ITA_setting_course
 
@@ -517,7 +506,6 @@ ITA_communist_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_unite_the_opposition					#35
 		ITA_the_southern_farmlands					#35
@@ -549,9 +537,6 @@ ITA_communist_plan = {
 		ITA_develop_libya							#35
 
 		#1939
-		ITA_develop_eritrea							#35
-		ITA_develop_ethiopia						#35
-		ITA_develop_somaliland						#35
 		ITA_regional_development
 		ITA_litoranea_balbo							#35
 		ITA_new_ricostruzione_industriale
@@ -572,7 +557,6 @@ ITA_communist_plan = {
 		ITA_investments_in_edison
 		ITA_expand_national_universities
 		ITA_political_commissars
-		ITA_strengthen_ascari_corps
 		ITA_special_brigades						#35
 		ITA_combined_research_effort				#35
 		ITA_il_sol_dell_avvenire
@@ -640,7 +624,6 @@ ITA_democratic_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_unite_the_opposition					#35
 		ITA_organize_strikes_in_the_north			#35

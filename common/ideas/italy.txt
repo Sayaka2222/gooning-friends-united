@@ -1182,23 +1182,14 @@ ideas = {
 			}
 					
 			equipment_bonus = {
-				armored_car_equipment = {
-					instant = yes
-					build_cost_ic = -0.1
-					reliability = 0.05
-				}
 				motorized_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
 				}
 				mechanized_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
 				}
-			}
-
-			modifier = {
-				modifier_army_sub_unit_armored_car_max_org_factor = 0.1
 			}
 		}
 

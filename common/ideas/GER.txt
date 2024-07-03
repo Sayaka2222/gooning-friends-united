@@ -1,6 +1,50 @@
 ideas = {
 
 	country = {
+		GER_typhoon = {
+			name = "Unternehmen Taifun"
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+			}
+		}
+		GER_blau = {
+			name = "Fall Blau"
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+		}
+		GER_citadel = {
+			name = "Unternehmen Zitadelle"
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+		}
+		ger_endsieg = {
+			name = "Endsieg"
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
 		ger_reichskommissariats = {
 			name = "Reichskommissariats"
 			allowed = {
@@ -935,7 +979,6 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.10
-				defense_bonus_against = 0.05
 			}
 
 		}
