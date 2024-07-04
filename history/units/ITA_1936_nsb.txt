@@ -174,19 +174,6 @@ instant_effect = {
 
 		add_equipment_production = { 
 			equipment = { 
-				type = light_tank_chassis_1 
-				creator = "ITA" 
-				version_name = "L3/35"
-			}
-
-			requested_factories = 1 
-			progress = 0.4 
-			efficiency = 50
-			industrial_manufacturer = mio:ITA_fiat_organization
-		}
-
-		add_equipment_production = { 
-			equipment = { 
 				type = motorized_equipment_1 
 				creator = "ITA" 
 			}

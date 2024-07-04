@@ -101,28 +101,6 @@ ETH_improve_country_category = {
 
 	visible = {
 		has_dlc = "By Blood Alone"
-		OR = {
-			# We can develop a state 
-			any_owned_state = {  
-				OR = {
-					has_state_flag = ETH_can_electrify_state_flag
-					has_state_flag = ETH_can_improve_communication_state_flag
-				}
-			}
-			# a state is expanding on it's own 
-			has_active_mission = ETH_local_development_improved_production_mission
-			has_active_mission = ETH_local_development_state_grows_mission
-			has_active_mission = ETH_local_development_industry_grows_mission
-			has_active_mission = ETH_local_development_arms_industry_grows_mission
-			AND = {
-				has_completed_focus = ETH_the_lion_and_the_sun
-				any_owned_state = { 
-					is_on_continent = africa 
-					is_controlled_by = ROOT 
-				}
-				check_variable = { ETH_japanese_invesment_states < 3 }
-			}
-		}
 	}
 	visible_when_empty = yes 
 }
@@ -178,7 +156,6 @@ ETH_freedom_at_gunpoint_category = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		has_completed_focus = ETH_freedom_at_gunpoint
 	}
 	priority = 5
 	visible_when_empty = yes
@@ -192,10 +169,6 @@ ETH_exploit_french_weakness_category = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		OR = {
-			has_completed_focus = ETH_exploit_french_weakness
-			has_completed_focus = ETH_demand_DJI
-		}
 	}
 	priority = {
 		base = 10
@@ -211,7 +184,6 @@ ETH_reintegrate_former_territory_category = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		has_completed_focus = ETH_reclaim_the_empire
 	}
 	on_map_area = {
 		target_array = controlled_states
@@ -249,7 +221,6 @@ ETH_italo-ethiopian_empire_decisions = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		has_completed_focus = ETH_the_italo-ethiopian_empire
 	}
 	
 	priority = {
@@ -266,7 +237,6 @@ ETH_consolidate_east_africa_category = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		has_completed_focus = ETH_consolidate_east_africa
 	}
 	on_map_area = {
 		target_array = controlled_states
@@ -295,7 +265,6 @@ ETH_improve_the_horn_of_africa_category = {
 		has_dlc = "By Blood Alone"
 	}
 	visible = {
-		has_completed_focus = ETH_develop_the_horn_of_africa
 	}
 	
 	priority = {

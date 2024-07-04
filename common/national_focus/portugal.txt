@@ -879,15 +879,7 @@ focus_tree = {
 		relative_position_id = POR_roads_bridges_and_dams
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = { 	
-			if = {
-				limit = { has_full_control_of_state = 112 }	
-				unlock_decision_tooltip = POR_develop_lisbon_tungsten_deposits
-			}
-			if = {
-				limit = { has_full_control_of_state = 795 }
-				unlock_decision_tooltip = POR_develop_santarem_chromium_deposits
-			}			
+		completion_reward = { 			
 		}
 	}
 

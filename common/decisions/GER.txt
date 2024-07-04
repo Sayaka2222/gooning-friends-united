@@ -313,13 +313,6 @@ special_projects = {
 		available = {
 			#has_war = yes
 			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				controls_state = 18
-				controls_state = 29
-			}
 		}
 
 		cost = 50
@@ -331,13 +324,6 @@ special_projects = {
 		visible = {
 			#has_war = yes
 			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				controls_state = 18
-				controls_state = 29
-			}
 		}
 		days_remove = 180
 		modifier = {
@@ -357,46 +343,13 @@ special_projects = {
 			}
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				18 = {
-					set_building_level = {
-						type = bunker
-						level = 2
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 2
-						}
-					}
-				}
-				29 = {
-					set_building_level = {
-						type = bunker
-						level = 2
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 2
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
 					has_idea = FRA_protected_by_the_maginot_line
 				}
 				remove_ideas = FRA_protected_by_the_maginot_line
 			}
 		}
 		complete_effect = {
-			if = {
-				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
-				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
-				else = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
-				}
-			}
+			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
 		}
 	}
 	GER_dismantle_czechoslovakian_forts = {

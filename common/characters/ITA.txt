@@ -846,14 +846,13 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { irregulars_officer desert_fox cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
+			traits = { desert_fox cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_comandante_diavolo }
 		}
 	}
 
@@ -891,14 +890,13 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { ascari_officer trickster guerilla_fighter reckless desert_fox } # Ascari
+			traits = { ascari_officer trickster guerilla_fighter trait_reckless desert_fox } # Ascari
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_strengthen_ascari_corps }
 		}
 	}
 
@@ -920,7 +918,6 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_strengthen_ascari_corps
 				has_completed_focus = ITA_forza_navale_especiale
 			}
 		}

@@ -67,7 +67,6 @@ BUL_communsit_plan = {
 		BUL_prussia_of_the_balkans
 		BUL_soviet_bulgarian_war_industry
 		BUL_steel_plant_in_pernik
-		BUL_mineral_extraction_in_the_rhodopes
 		#1943		
 		BUL_heavy_industry
 		BUL_utmost_optimization
@@ -293,7 +292,6 @@ BUL_fascist_axis_plan = {
 		BUL_steel_plant_in_pernik
 		BUL_utmost_optimization
 		#1944
-		BUL_mineral_extraction_in_the_rhodopes
 		BUL_uranium_prospecting		
 	}
 
@@ -626,7 +624,6 @@ BUL_democratic_liberal = {
 		BUL_contract_foreign_companies #Short focus					
 		#1943
 		BUL_land_reorganization
-		BUL_mineral_extraction_in_the_rhodopes
 		BUL_modernize_the_industry
 		BUL_free_balkan_states
 		BUL_utmost_optimization

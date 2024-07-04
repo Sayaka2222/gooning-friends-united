@@ -6553,12 +6553,6 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					tag = ITA
-				}
-				HUN = { bba_get_fighter_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
 					tag = FRA
 				}
 				HUN = { bba_get_fighter_FRA_effect = yes }
@@ -6696,12 +6690,6 @@ country_event = {
 					tag = ENG
 				}
 				HUN = { bba_get_heavy_fighter_ENG_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ITA
-				}
-				HUN = { bba_get_heavy_fighter_ITA_effect = yes }
 			}
 			else_if = {
 				limit = {
@@ -8274,12 +8262,6 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					tag = ITA
-				}
-				HUN = { bba_get_cas_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
 					tag = FRA
 				}
 				HUN = { bba_get_cas_FRA_effect = yes }
@@ -8402,41 +8384,6 @@ country_event = {
 					cost_factor = 0
 				}
 			}
-		}
-		else = {
-			HUN = { set_variable = { tac_buy_amount = 200 } }
-			FROM = { save_event_target_as = license_target }
-			if = {
-				limit = {
-					tag = GER
-				}
-				HUN = { bba_get_tac_GER_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ENG
-				}
-				HUN = { bba_get_tac_ENG_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ITA
-				}
-				HUN = { bba_get_tac_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = FRA
-				}
-				HUN = { bba_get_tac_FRA_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = USA
-				}
-				HUN = { bba_get_tac_USA_effect = yes }
-			}
-			bba_create_tac_license_effect = yes
 		}
 	}
 

@@ -2693,12 +2693,6 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ETH_deescalate_the_war_effect = yes
-			}
 			
 			if = {
 				limit = {
@@ -4637,9 +4631,6 @@ focus_tree = {
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = { 
-				ITA_anglo_italian_cooperation_effect = yes
-			}
 		}
 	}
 
@@ -4725,9 +4716,6 @@ focus_tree = {
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = { 
-				ITA_franco_italian_cooperation_effect = yes
-			}
 		}
 	}
 
@@ -6827,7 +6815,6 @@ focus_tree = {
 				hidden_effect = {
 					add_ideas = ITA_hidden_super_heavy_tank_ns
 				}
-				ITA_add_modern_musculus_sh_tank_template_and_production = yes
 			}
 			else = {
 				add_tech_bonus = {
@@ -7318,20 +7305,6 @@ focus_tree = {
 				custom_effect_tooltip = ITA_modern_musculus_military_industry_dm_tt
 				hidden_effect = {
 					add_ideas = ITA_hidden_super_heavy_tank_ns
-				}
-
-				if = {
-					limit = {
-						has_tech = super_heavy_tank_chassis
-					}
-					#SH template
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_focus_sh_tank_template_tt
-					effect_tooltip = {
-						ITA_add_hand_of_god_sh_tank_template_and_production = yes
-					}
 				}
 			}
 			else = {

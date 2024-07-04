@@ -860,6 +860,7 @@ infantry_ENG = {
 			armored_car_recon
 			anti_air
 			anti_air_brigade
+			mot_recon
 		}
 	}
 }

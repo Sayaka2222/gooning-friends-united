@@ -629,7 +629,6 @@ focus_tree = {
 			    category = industry
 			}
 			set_variable = { var = BUL_plovdiv_chromium_duration value = 15 }
-			unlock_decision_tooltip = BUL_mineral_extraction_in_the_rhodopes
 		}
 	}
 

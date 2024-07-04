@@ -1131,16 +1131,5 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:JAP_nissan_organization
 	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_1
-			creator = "JAP" 
-			version_name = "Type 95 Ha-Go"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-		industrial_manufacturer = mio:JAP_osaka_army_arsenal_organization
-	}
 
 }

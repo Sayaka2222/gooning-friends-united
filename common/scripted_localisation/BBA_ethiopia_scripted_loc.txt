@@ -504,22 +504,6 @@ defined_text = {
 	name = GetEthiopianRailwayName
 	text = {
 		trigger = {
-			has_government = communism
-			has_completed_focus = ETH_callout_to_the_world
-		}
-		#TODO_ASD Set name
-		localization_key = ETH_cie_anarcho_communist
-	}
-	text = {
-		trigger = {
-			has_government = communism
-			has_completed_focus = ETH_soviet_aid
-		}
-		#TODO_ASD Set name
-		localization_key = ETH_cie_stalinist
-	}
-	text = {
-		trigger = {
 			has_government = fascism 
 			is_subject_of = ITA
 		}
@@ -555,113 +539,6 @@ defined_text = {
 	}
 	text = {
 		localization_key = ETH_mesafint_influence_range_fallback
-	}
-}
-
-defined_text = {
-	name = Get_ETH_assertiveness_name
-	text = {
-		trigger = { 
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_assertiveness_gojjam
-	}
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_assertiveness_jimma
-	}
-	text = {
-		localization_key = ETH_assertiveness_ethiopia
-	}
-}
-defined_text = {
-	name = Get_ETH_replace_the_abuna_name
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_change_state_religion
-	}
-	text = {
-		localization_key = ETH_replace_the_abuna_original
-	}
-}
-defined_text = {
-	name = Get_ETH_replace_the_abuna_desc
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_replace_the_abuna_desc_jimma
-	}
-	text = {
-		trigger = { 
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_replace_the_abuna_desc_gojjam
-	}
-	text = {
-		localization_key = ETH_replace_the_abuna_desc_ethiopia
-	}
-}
-defined_text = {
-	name = Get_ETH_cooperation_name
-	text = {
-		trigger = { 
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_cooperation_gojjam
-	}
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_cooperation_jimma
-	}
-
-	text = {
-		localization_key = ETH_cooperation_gugsa
-	}
-}
-defined_text = {
-	name = Get_ETH_reinforce_dynamic_identity_name
-	text = {
-		trigger = { 
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_reinforce_gojjam_identity
-	}
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_reinforce_jimman_identity
-	}
-
-	text = {
-		localization_key = ETH_reinforce_ethiopian_identity
-	}
-}
-
-defined_text = {
-	name = Get_ETH_the_liberator_of_country_short_name
-	text = {
-		trigger = { 
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_the_liberator_of_gojjam
-	}
-	text = {
-		trigger = { 
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_the_liberator_of_jimma
-	}
-
-	text = {
-		localization_key = ETH_the_liberator_of_ethiopia
 	}
 }
 
@@ -735,26 +612,6 @@ defined_text = {
 	}
 	text = {
 		localization_key = ETH_chitet_name
-	}
-} 
-
-defined_text = {
-	name = GetEthiopianCollaboratorName
-	text = {
-		trigger = {
-			is_or_will_be_jimma = yes 
-		}
-		localization_key = ETH_abba_jofir
-	}
-	text = {
-		trigger = {
-			is_or_will_be_gojjam = yes 
-		}
-		localization_key = ETH_hailu_tekle_haymanot
-	}
-
-	text = {
-		localization_key = ETH_haile_selassie_gugsa
 	}
 } 
 
@@ -872,20 +729,6 @@ defined_text = {
 	}
 	text = {
 		localization_key = ETH_seize_assets_default_title
-	}
-} 
-
-defined_text = {
-	name = ETH_GetCentralBankName
-	text = {
-		trigger = {
-			has_government = communism
-			has_completed_focus = ETH_callout_to_the_world
-		}
-		localization_key = ETH_anarchist_bank
-	}
-	text = {
-		localization_key = ETH_central_bank
 	}
 } 
 

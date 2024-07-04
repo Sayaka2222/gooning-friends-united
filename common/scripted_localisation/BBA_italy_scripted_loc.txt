@@ -65,12 +65,7 @@ defined_text = {
 	name = GetAppropriatePeriodOrColon
 	text = {
 		trigger = {
-			OR = {
-				has_completed_focus = ITA_develop_ethiopia
-				has_completed_focus = ITA_develop_libya
-				has_completed_focus = ITA_develop_eritrea
-				has_completed_focus = ITA_develop_somaliland
-			}
+			has_completed_focus = ITA_develop_libya
 		}
 		localization_key = generic_current_effects
 	}
@@ -187,12 +182,6 @@ defined_text = {
 			has_completed_focus = ITA_standardization #Focus grants bonuses
 		}
 		localization_key = ITA_standardization_dynamic_modifier_tt
-	}
-	text = {
-		trigger = {
-			has_completed_focus = ITA_specialization #Focus grants bonuses
-		}
-		localization_key = ITA_specialization_dynamic_modifier_tt
 	}
 	text = {
 		localization_key = generic_null

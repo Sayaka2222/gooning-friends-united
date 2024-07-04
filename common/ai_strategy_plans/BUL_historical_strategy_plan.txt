@@ -80,7 +80,6 @@ BUL_historical_plan = {
 		BUL_military_secrets_sharing
 		#1943
 		BUL_pilot_training_program
-		BUL_mineral_extraction_in_the_rhodopes
 		BUL_darzhavna_aeroplanna_rabotilnitsa
 		BUL_darzhavna_samoletna_fabrika
 		BUL_utmost_optimization

@@ -231,13 +231,6 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = ITA } 
 			}
-			else_if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				set_variable = { fighter_buy_amount = 50 } 
-				bba_get_fighter_ITA_effect = yes
-			}
 		}
 
 		if = {
@@ -448,13 +441,6 @@ country_event = {
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = ITA } 
-			}
-			else_if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				set_variable = { tac_buy_amount = 25 } 
-				bba_get_tac_ITA_effect = yes
 			}
 		}
 
@@ -2411,12 +2397,6 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					tag = ITA
-				}
-				YUG = { bba_get_fighter_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
 					tag = FRA
 				}
 				YUG = { bba_get_fighter_FRA_effect = yes }
@@ -2555,12 +2535,6 @@ country_event = {
 					tag = ENG
 				}
 				YUG = { bba_get_heavy_fighter_ENG_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ITA
-				}
-				YUG = { bba_get_heavy_fighter_ITA_effect = yes }
 			}
 			else_if = {
 				limit = {
@@ -4135,12 +4109,6 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					tag = ITA
-				}
-				YUG = { bba_get_cas_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
 					tag = FRA
 				}
 				YUG = { bba_get_cas_FRA_effect = yes }
@@ -4278,12 +4246,6 @@ country_event = {
 					tag = ENG
 				}
 				YUG = { bba_get_tac_ENG_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ITA
-				}
-				YUG = { bba_get_tac_ITA_effect = yes }
 			}
 			else_if = {
 				limit = {

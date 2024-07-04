@@ -1748,8 +1748,6 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_workers_congress
-			unlock_decision_tooltip = YUG_instigate_in_bulgaria
-			unlock_decision_tooltip = YUG_instigate_in_albania
 			hidden_effect = { news_event = { id = news.330 } }
 		}
 	}
@@ -1982,9 +1980,6 @@ focus_tree = {
 
 		completion_reward = {
 			set_faction_name = panbalkan_workers_congress
-			unlock_decision_tooltip = YUG_instigate_in_greece
-			unlock_decision_tooltip = YUG_instigate_in_romania
-			unlock_decision_tooltip = YUG_instigate_in_hungary
 		}
 	}
 
@@ -2043,13 +2038,6 @@ focus_tree = {
 		completion_reward = {
 			ROM = {
 				country_event = generic.5
-			}
-			if = {
-				limit = {
-					has_completed_focus = YUG_invite_greece
-					has_completed_focus = YUG_invite_hungary
-				}
-				unlock_decision_tooltip = YUG_instigate_in_turkey
 			}
 		}
 	}
@@ -2110,13 +2098,6 @@ focus_tree = {
 			GRE = {
 				country_event = generic.5
 			}
-			if = {
-				limit = {
-					has_completed_focus = YUG_invite_hungary
-					has_completed_focus = YUG_invite_romania
-				}
-				unlock_decision_tooltip = YUG_instigate_in_turkey
-			}
 		}
 	}
 
@@ -2175,13 +2156,6 @@ focus_tree = {
 		completion_reward = {
 			HUN = {
 				country_event = generic.5
-			}
-			if = {
-				limit = {
-					has_completed_focus = YUG_invite_greece
-					has_completed_focus = YUG_invite_romania
-				}
-				unlock_decision_tooltip = YUG_instigate_in_turkey
 			}
 		}
 	}

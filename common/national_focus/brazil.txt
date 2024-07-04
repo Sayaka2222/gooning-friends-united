@@ -5992,7 +5992,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 
 		completion_reward = {
-			ETH_add_random_civ_factory_effect = yes
 		}
 	}
 
@@ -6438,10 +6437,6 @@ focus_tree = {
 				}	
 				custom_effect_tooltip = invites_mio_tt
 
-				show_mio_tooltip = SOV_rubin_design_bureau_organization
-				mio:SOV_rubin_design_bureau_organization = {
-					add_mio_size = 3
-				}
 
 				show_mio_tooltip = SOV_mig_design_bureau_organization
 				mio:SOV_mig_design_bureau_organization = {
@@ -7722,7 +7717,6 @@ focus_tree = {
 				#ideology = despotism
 				trait = BRA_sugar_king
 			}
-			ETH_add_random_civ_factory_effect = yes
 		}
 	}
 

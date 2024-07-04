@@ -1172,7 +1172,6 @@ ITA_attack_addis = {
 	}
 	enable = {
 		has_war_with = ETH
-		has_active_mission = ETH_conquer_addis_ababa_mission
 		ITA_is_communist_ai = no
 		ITA_is_socialist_ai = no
 	}
@@ -1196,7 +1195,6 @@ ITA_attack_harar = {
 	}
 	enable = {
 		has_war_with = ETH
-		has_active_mission = ETH_conquer_harar_mission
 		ITA_is_communist_ai = no
 		ITA_is_socialist_ai = no
 	}

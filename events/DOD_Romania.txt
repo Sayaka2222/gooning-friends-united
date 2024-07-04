@@ -3631,12 +3631,6 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					tag = ITA
-				}
-				ROM = { bba_get_fighter_ITA_effect = yes }
-			}
-			else_if = {
-				limit = {
 					tag = FRA
 				}
 				ROM = { bba_get_fighter_FRA_effect = yes }
@@ -3775,12 +3769,6 @@ country_event = {
 					tag = ENG
 				}
 				ROM = { bba_get_heavy_fighter_ENG_effect = yes }
-			}
-			else_if = {
-				limit = {
-					tag = ITA
-				}
-				ROM = { bba_get_heavy_fighter_ITA_effect = yes }
 			}
 			else_if = {
 				limit = {

@@ -813,15 +813,6 @@ ITA_missiolinis = {
 			#	limit = {
 			#		NOT = { has_country_flag = ITA_missiolini_strengthen_the_army_repeatable_flag } #First time it's a fixed amopunt. Then if the mission is repeated it will require +500k MP in the field (compare to current)
 			#	}
-				if = {
-					limit = {
-						ITA_has_missiolini_easier_goals = yes
-					}
-					has_army_manpower = { size > 650000 } #650k
-				}
-				else = {
-					has_army_manpower = { size > 750000 } #750k
-				}
 			#}
 			#else = { #IF REPEATING
 			#	has_army_manpower = { size > 1000000 } #TODO_Manu: Current MP + 500 -> Code Support for this (has_army_manpower does not take vars)
@@ -4077,13 +4068,6 @@ ITA_colonial_management_dec_cat = {
 
 		ai_will_do = {
 			base = 0.5
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = ITA_comandante_diavolo
-					has_completed_focus = ITA_irregulars
-				}
-			}
 		}
 	}
 
@@ -4095,7 +4079,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_strengthen_ascari_corps
 			NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 		}
 
@@ -4362,13 +4345,6 @@ ITA_colonial_management_dec_cat = {
 
 		ai_will_do = {
 			base = 1
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = ITA_strengthen_ascari_corps
-					has_completed_focus = ITA_ascari
-				}
-			}
 		}
 	}
 
@@ -4845,7 +4821,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 			original_tag = ITA
 			has_civil_war = no
 			has_completed_focus = ITA_cooperation_programs
-			has_completed_focus = ITA_midget_submarines
 			NOT = { FROM = { has_country_flag = ITA_midget_submarines_flag } } #To prevent visible trigger to check every tick after this happens
 		}
 

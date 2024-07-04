@@ -181,10 +181,35 @@ units= {
 			ship = { name = "RI Pompeo Magno" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
 			ship = { name = "RI Ulpio Traiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
 			ship = { name = "RI Cornelio Silla" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Canarias" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Tripoli" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
 			ship = { name = "RI Conte Di Cavour" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Conte Di Cavour Class" } } }
 			ship = { name = "RI Giulio Cesare" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Conte Di Cavour Class" } } }
 			ship = { name = "RI Littorio" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class" } } }
 			ship = { name = "RI Vittorio Veneto" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class" } } }
+			ship = { name = "ARE B1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE B2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE B3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE Almirante Miranda" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			# Flotilla de Destructores n.1
+			ship = { name = "ARE Almirante Ferrándiz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE Sánchez Barcáiztegui" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE Alcalá Galiano" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE Almirante Valdés" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			# Flotilla de Destructores n.2
+			ship = { name = "ARE Churucca" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE José Luis Díez" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE Lepanto" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE Almirante Antequera" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "ARE B5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE B6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "ARE C1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "ARE C2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "ARE C3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "ARE C4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "ARE C5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "ARE C6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
 		} 
 	}
 } 

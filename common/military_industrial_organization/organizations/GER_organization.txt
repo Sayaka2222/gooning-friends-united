@@ -15,9 +15,6 @@ GER_nibel_organization = {
 	allowed = {	
 		tag = GER
 	}
-	available = {
-		has_completed_focus = "Quality Tank Production"
-	}
 	initial_trait = {
 		equipment_bonus = {
 			build_cost_ic = 0.1
@@ -258,9 +255,6 @@ GER_focke_wulf_organization = {
 	allowed = {	
 		tag = GER 
 	}
-	available = {
-		has_completed_focus = "Develop the Ta 152"
-	}
 	initial_trait = {
 		equipment_bonus = {
 			air_agility = 0.15
@@ -365,10 +359,6 @@ GER_mauser_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {

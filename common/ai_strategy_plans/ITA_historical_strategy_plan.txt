@@ -26,7 +26,6 @@ ITA_historical_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba #35
 		ITA_italian_highways_bba #35
 		ITA_servizio_informazione_militare #ASAP after Solid Progress / Struggle in Ethiopia
 		ITA_triumph_in_africa_bba #35 ASAP after winning in Ethiopia
@@ -43,7 +42,6 @@ ITA_historical_plan = {
 		ITA_fiocchi_munizioni #35
 		ITA_naval_power_projection #35
 		ITA_air_innovations_bba #35
-		ITA_expand_rome_flying_school #35
 		ITA_oto_naval_guns #35
 		ITA_develop_libya #35
 
@@ -55,12 +53,10 @@ ITA_historical_plan = {
 		ITA_expand_foggia_farm_fields
 
 		#1939
-		ITA_develop_eritrea #35
 		ITA_industria_della_gomma_sintetica #35
 		ITA_albanian_occupation #35 #Apr 1939
 		ITA_pact_of_steel #35 #May 39
 		ITA_expand_naval_facilities #35
-		ITA_develop_ethiopia #35
 		ITA_regional_development
 
 		#1940 (Oct -> Invasion of Greece)
@@ -94,7 +90,6 @@ ITA_historical_plan = {
 		ITA_brescia_small_arms_industry #35
 		ITA_milan_comms_industry #35
 		ITA_redirect_alfa_romeo_production
-		ITA_polizia_dell_africa_italiana
 		ITA_increase_production #35
 
 		#1944

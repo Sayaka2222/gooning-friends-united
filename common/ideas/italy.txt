@@ -1259,6 +1259,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 
@@ -2604,7 +2605,6 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_italys_destiny
 			}
 			
 			modifier = {

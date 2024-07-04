@@ -17,10 +17,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_anarchist_government = yes 
-					CHL_hub_of_the_revolution_trigger = yes
-				}
 			}
 			visible = { 
 				OR = { 
@@ -48,7 +44,6 @@ characters = {
 						}
 						
 						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
 						}
 					}				
 				}
@@ -72,12 +67,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					AND = {
-						has_anarchist_government = yes 
-						NOT = { has_idea = IA_sanshiro_ishikawa }
-					}
-				}
 			}
 			visible = { 
 				OR = {
@@ -98,7 +87,6 @@ characters = {
 						}
 						
 						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
 						}
 					}				
 				}
@@ -122,12 +110,6 @@ characters = {
 				}
 			}
 			available = {	
-				OR = {
-					AND = {
-						has_anarchist_government = yes 
-						NOT = { has_idea = IA_sakutaro_iwasa }
-					}
-				}
 			}
 			visible = {
 				OR ={ 
@@ -148,7 +130,6 @@ characters = {
 						}
 						
 						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
 						}
 					}				
 				}

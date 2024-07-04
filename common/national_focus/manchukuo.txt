@@ -765,7 +765,6 @@
 			else = {
 				set_technology = { excavation1 = 1 }
 			}
-			unlock_decision_tooltip = MAN_develop_kirin_aluminium_deposits
 		}
 	}
 
@@ -807,7 +806,6 @@
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = MAN_develop_liaotung_iron_ore_deposits
 		}
 	}
 

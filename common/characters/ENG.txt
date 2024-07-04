@@ -1886,7 +1886,6 @@ characters={
 						}
 						
 						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
 						}
 					}				
 				}

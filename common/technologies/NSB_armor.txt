@@ -176,14 +176,6 @@ technologies = {
 
 					load_oob = "unlock_tanks"
 				}
-
-				if = { #Italian templates
-					limit = {
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_improved_light_tank_templates = yes
-				}
 			}
 
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
@@ -313,13 +305,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_italian_tankettes
-				}
-				ITA_add_improved_light_tank_templates = yes
-			}
 		}
 
 		categories = {
@@ -661,16 +646,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_medium_tank_templates = yes
-			}
 		}
 
 		ai_will_do = {
@@ -754,13 +729,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_medium_tank_templates = yes
-			}
 		}
 
 		ai_will_do = {
@@ -975,16 +943,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_heavy_tank_templates = yes
-			}
 		}
 
 		ai_will_do = {
@@ -1050,13 +1008,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_heavy_tank_templates = yes
-			}
 		}
 
 		ai_will_do = {
