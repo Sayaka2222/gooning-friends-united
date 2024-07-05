@@ -5,8 +5,8 @@ state= {
 	
 	state_category = town
 	resources = {
-		tungsten = 4
-		aluminium = 12
+		tungsten = 24
+		aluminium = 17
 	}
 	history= {
 		owner = ENG

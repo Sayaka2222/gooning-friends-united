@@ -59,6 +59,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_ai_strategy = {
+				type = building_target
+				id = industrial_complex
+				value = 10
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -550,6 +555,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
+			add_ai_strategy = {
+				type = building_target
+				id = arms_factory
+				value = 50
+			}
 			add_ideas = british_austerity_idea
 		}
 	}
@@ -949,6 +959,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ai_strategy = {
+				type = building_target
+				id = dockyard
+				value = 10
+			}
 			add_timed_idea = {
 				idea = naval_rearmament_focus
 				days = 60

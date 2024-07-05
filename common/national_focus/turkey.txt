@@ -2432,9 +2432,6 @@ focus_tree = {
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		available = {
 			is_subject = no
-			NOT = {
-				HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary }
-			}
 		}
 		mutually_exclusive = { focus = TUR_join_the_central_powers }
 		prerequisite = { focus = TUR_reclaim_macedonia }
@@ -8784,32 +8781,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary } }
-				}
-				every_state = { 
-					limit = { 
-						OR = {
-							is_core_of = HUN 
-							is_claimed_by = HUN
-						}
-					}
-					add_claim_by = TUR
-				}
-			}
-			else = {
-				43 = { add_claim_by = TUR }
-				154 = { add_claim_by = TUR }
-				155 = { add_claim_by = TUR }
-				76 = { add_claim_by = TUR }
-				84 = { add_claim_by = TUR }
-				83 = { add_claim_by = TUR }
-				82 = { add_claim_by = TUR }
-				764 = { add_claim_by = TUR }
-				45 = { add_claim_by = TUR }
-				664 = { add_claim_by = TUR }
-			}
 			create_wargoal = {
 				type = annex_everything
 				target = HUN

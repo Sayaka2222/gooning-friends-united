@@ -542,27 +542,6 @@ ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.41 day
 ITA_set_up_character_cw_flags_effect = yes
 
 
-#PURGE FLAGS
-ITA_achille_starace = { set_character_flag = ITA_character_can_be_purged }
-ITA_renato_ricci = { set_character_flag = ITA_character_can_be_purged }
-ITA_carlo_scorza = { set_character_flag = ITA_character_can_be_purged }
-ITA_roberto_farinacci = { set_character_flag = ITA_character_can_be_purged }
-ITA_alberto_beneduce = { set_character_flag = ITA_character_can_be_purged }
-ITA_carlo_favagrossa = { set_character_flag = ITA_character_can_be_purged }
-ITA_giacomo_acerbo = { set_character_flag = ITA_character_can_be_purged }
-ITA_guido_jung = { set_character_flag = ITA_character_can_be_purged }
-ITA_serafino_mazzolini = { set_character_flag = ITA_character_can_be_purged }
-ITA_rodolfo_graziani = { set_character_flag = ITA_character_can_be_purged }
-ITA_ubaldo_soddu = { set_character_flag = ITA_character_can_be_purged }
-ITA_ugo_cavallero = { set_character_flag = ITA_character_can_be_purged }
-ITA_francesco_zingales = { set_character_flag = ITA_character_can_be_purged }
-ITA_alessandro_pirzio_biroli = { set_character_flag = ITA_character_can_be_purged }
-ITA_ettore_baldassarre = { set_character_flag = ITA_character_can_be_purged }
-ITA_annibale_bergonzoli = { set_character_flag = ITA_character_can_be_purged }
-ITA_pietro_badoglio = { set_character_flag = ITA_character_can_be_purged } 
-ITA_emilio_de_bono = { set_character_flag = ITA_character_can_be_purged }
-
-
 
 if = {
 	limit = {

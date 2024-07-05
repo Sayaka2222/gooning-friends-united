@@ -1538,7 +1538,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 100
 		}
 	}
 
@@ -1570,12 +1570,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = CZE_mountain_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = mountaineers_tech
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
 			}
 		}
 	}
@@ -1611,9 +1610,9 @@
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement
 				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
+				uses = 2
+				technology = improved_infantry_weapons
+				technology = advanced_infantry_weapons
 			}
 		}
 	}
@@ -1648,16 +1647,11 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_support_bonus #@#
-				bonus = 1.0
-				uses = 2
-				category = support_tech	
-			}
-			add_tech_bonus = {
-				name = CZE_support_bonus #@#
-				bonus = 1.0
-				uses = 1
-				technology = support_weapons2
-				technology = support_weapons3
+				bonus = 0.75
+				uses = 3
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_engineers4
 			}
 		}
 	}
@@ -1692,10 +1686,11 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement_2 #@#
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = artillery
+				bonus = 0.75
+				uses = 3
+				technology = artillery2
+				technology = artillery3
+				technology = artillery4
 			}
 		}
 	}
@@ -1731,8 +1726,8 @@
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 1
-				uses = 1
+				cost_reduction =0.5
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1768,8 +1763,9 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
+				bonus = 1.5
+				uses = 1
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -1806,7 +1802,8 @@
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
-				category = armor
+				technology = basic_medium_tank_chassis
+				technology = basic_heavy_tank_chassis
 			}
 		}
 	}
@@ -1843,7 +1840,7 @@
 				name = CZE_mechanization #@#
 				bonus = 1.0
 				uses = 1
-				category = cat_mechanized_equipment
+				technology = mechanised_infantry2
 			}
 		}
 	}
@@ -1880,7 +1877,9 @@
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
-				category = armor
+				technology = improved_medium_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
@@ -1953,13 +1952,7 @@
 
 		completion_reward = {
 			add_ideas = CZE_war_college_idea
-			if = {
-				limit = {
-					NOT = { amount_research_slots > 4 }
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = CZE_war_college_effect_tt
-			}
+			add_research_slot = 1
 		}
 	}
 }

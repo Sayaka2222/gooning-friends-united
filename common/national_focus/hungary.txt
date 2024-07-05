@@ -389,8 +389,7 @@ focus_tree = {
 	focus = {
 		id = HUN_proclaim_greater_hungary
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = { focus = HUN_claim_overlordship_over_slovakia }
-		prerequisite = { focus = HUN_joint_aluminum_mining_company }
+		prerequisite = { focus = HUN_claim_overlordship_over_slovakia focus = HUN_joint_aluminum_mining_company }
 		x = -1
 		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims

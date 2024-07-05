@@ -7,8 +7,10 @@ state = {
 	history = {
 		owner = CAN
 		add_core_of = CAN
+		buildings = {
+			infrastructure = 2
+		}
 	}
-	
 	provinces = {
 		7683 7807 7810 10534 10715 12600 13293
 	}

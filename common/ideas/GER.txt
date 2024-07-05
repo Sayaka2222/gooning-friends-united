@@ -213,6 +213,14 @@ ideas = {
 			modifier = {
 				political_power_gain = 1
 			}
+			targeted_modifier = {
+				tag = VIC
+				trade_cost_for_target_factor = -0.66
+			}
+			targeted_modifier = {
+				tag = SWE
+				trade_cost_for_target_factor = -0.66
+			}
 			rule = {
 				can_create_factions = yes
 			}

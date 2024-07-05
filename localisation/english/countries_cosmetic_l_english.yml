@@ -1960,3 +1960,8 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  LGF_UNIFIED_communsim: "Socialist League"
  LGF_UNIFIED_communsim_DEF: "the Socialist League"
  LGF_UNIFIED_communism_ADJ: "Socialist League"
+ CZE_SLO:0 "State of Slovakia"
+ CZE_SLO_fascism:0 "State of Slovakia"
+ CZE_SLO_DEF:0 "the State of Slovakia"
+ CZE_SLO_ADJ:0 "Slovak"
+

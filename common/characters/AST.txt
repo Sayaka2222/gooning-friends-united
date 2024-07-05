@@ -337,7 +337,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				army_chief_offensive_1
+				army_chief_offensive_2
 			}
 			cost =  50
 			ai_will_do = {
@@ -486,7 +486,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				air_air_superiority_3
+				army_regrouping_2
 			}
 			cost = 200
 			ai_will_do = {
@@ -535,7 +535,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				army_artillery_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -655,7 +655,6 @@ characters={
 				smooth_talking_charmer 
 			}
 			available = {
-				has_completed_focus = AST_never_another_gallipoli 
 			}
 		}		
 	}
@@ -723,7 +722,7 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			traits = {
-				compassionate_gentleman 
+				captain_of_industry 
 			}
 		}		
 	}
@@ -742,12 +741,6 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_support_the_centre_party 
-				}
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -785,12 +778,6 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_empower_the_workers 
-				}
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -832,10 +819,7 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-					or = {
-						has_completed_focus = AST_protect_the_homeland 
-						has_completed_focus = AST_support_the_policy_of_appeasement 
-					}
+					has_completed_focus = AST_support_the_policy_of_appeasement 
 				}
 				if = {
 					limit = {

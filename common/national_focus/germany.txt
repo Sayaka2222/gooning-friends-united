@@ -2180,6 +2180,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
+			add_ai_strategy = {
+				type = building_target
+				id = industrial_complex
+				value = 10
+			}
 			set_global_flag = rhineland_remilitarized
 			add_political_power = 150
 			army_experience = 100
@@ -2231,7 +2236,7 @@ focus_tree = {
 		completion_reward = {
 			give_resource_rights = {
 				receiver = ROOT 
-				state = 918 #Västerbotten 
+				state = 300 #Västerbotten 
 			}
 			give_resource_rights = {
 				receiver = ROOT 
@@ -2370,6 +2375,11 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			add_ai_strategy = {
+				type = building_target
+				id = arms_factory
+				value = 50
+			}
 			add_war_support = 0.05
 			add_threat = 5
 			hidden_effect = {
@@ -2428,7 +2438,7 @@ focus_tree = {
 			if = {
 				limit = {
 					CZE = {
-						is_ai = yes
+						is_ai = no
 					}
 				}
 				annex_country = {
@@ -2440,6 +2450,19 @@ focus_tree = {
 				transfer_state = 9
 				transfer_state = 75	
 				transfer_state = 72
+				CZE = {
+					set_cosmetic_tag = CZE_SLO
+					set_capital = {
+						state = 70
+					}
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+					set_popularities = {
+						fascism = 100
+					}
+				}
 			}
 		}
 	}
@@ -2576,10 +2599,73 @@ focus_tree = {
 				target = POL
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
 			SOV = {
 				declare_war_on = {
 					target = POL
 					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				ITA= {add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+			}}
+		   		ROM= {add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+			}}
+		   		HUN= {add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+			}}
+				BUL= {add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+			}}
+				CRO= {add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+			}}
+				if = {
+					limit = { 
+						CZE = {
+							exists = yes
+						}
+					}
+					CZE= {add_to_war = {
+						targeted_alliance = GER
+						enemy = ENG
+					}}
+				}
+				####
+				FRA= {add_to_war = {
+					targeted_alliance = ENG
+					enemy = GER
+			}}
+		   		RAJ= {add_to_war = {
+					targeted_alliance = ENG
+					enemy = GER
+			}}
+		   		SAF= {add_to_war = {
+					targeted_alliance = ENG
+					enemy = GER
+			}}
+				AST= {add_to_war = {
+					targeted_alliance = ENG
+					enemy = GER
+			}}
+				CAN= {add_to_war = {
+					targeted_alliance = ENG
+					enemy = GER
+			}}
+				###
+				set_truce = {
+					target = USA
+					days = 488
 				}
 			}
 		}

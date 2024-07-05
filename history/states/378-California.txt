@@ -4,12 +4,13 @@ state={
 	name="STATE_378"
 	manpower = 5677248
 	
-	state_category = megalopolis
+	state_category = american_state
 	
 	resources={
 		oil=180 # was: 350
 		aluminium=8 # was: 14
-		tungsten = 30
+		tungsten = 50
+		chromium = 16
 	}
 
 	history={

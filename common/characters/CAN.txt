@@ -817,7 +817,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				ideological_crusader 
+				backroom_backstabber 
 			}
 		}
 	}

@@ -161,8 +161,6 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_secure_interests_in_africa
-				SAF_support_the_german_coup
-				SAF_anti_colonialist_crusade
 			}
 		}
 		"RAJ"={

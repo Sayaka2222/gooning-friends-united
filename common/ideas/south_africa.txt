@@ -17,7 +17,6 @@ ideas = {
 			picture = saf_ossewabrandwag
 
 			modifier = {
-				fascism_drift = 0.01
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -37,8 +36,8 @@ ideas = {
 			picture = saf_ossewabrandwag_2
 
 			modifier = {
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 
@@ -176,9 +175,9 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.07
-				production_speed_arms_factory_factor = 0.07
-				production_speed_infrastructure_factor = 0.07
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
 			}
 
 		}
@@ -197,9 +196,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
-				conscription_factor = -0.05
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
 			}
 
 		}
@@ -218,10 +216,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				consumer_goods_factor = -0.10
-				conscription_factor = -0.05
 			}
 
 		}
@@ -240,10 +237,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.06
-				industrial_capacity_dockyard = 0.06
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
 				consumer_goods_factor = -0.20
-				conscription_factor = -0.05
 			}
 
 		}

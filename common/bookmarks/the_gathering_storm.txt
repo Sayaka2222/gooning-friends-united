@@ -155,8 +155,6 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_behead_the_snake
-				SOV_the_supreme_soviet
-				SOV_reconvene_the_zemsky_sobor
 			}	
 		}
 		"SOV"={
@@ -171,7 +169,6 @@ bookmarks = {
 			focuses = {
 				SOV_behead_the_snake
 				SOV_father_of_nations
-				SOV_the_supreme_soviet
 			}	
 		}
 
@@ -231,8 +228,6 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_secure_interests_in_africa
-				SAF_support_the_german_coup
-				SAF_anti_colonialist_crusade
 			}
 		}
 		"RAJ"={
@@ -272,7 +267,6 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_proclaim_the_restoration_of_austria_hungary
 				HUN_secret_rearmament
 				HUN_renounce_the_treaty_of_trianon
 			}
@@ -287,7 +281,6 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_balkans_dominance
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
 			}

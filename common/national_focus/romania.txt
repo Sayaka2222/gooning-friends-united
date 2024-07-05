@@ -1065,7 +1065,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ROM_the_zb_53
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				technology = improved_infantry_weapons
 				technology = advanced_infantry_weapons
 			}

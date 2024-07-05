@@ -9,7 +9,7 @@ state={
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 6 #was: 6
 			arms_factory = 1
 			industrial_complex = 4
 			air_base = 3
@@ -27,6 +27,9 @@ state={
 			4543 5 
 		}
 		add_core_of = AST
+	}
+	resources = {
+		steel = 16
 	}
 
 	provinces={

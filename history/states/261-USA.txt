@@ -2,11 +2,11 @@ state={
 	id=261
 	name="STATE_261"
 	resources={
-		steel=88 # was: 48.000
+		steel=108 # was: 48.000
 		aluminium=9 # was: 16.000
 	}
 	
-	state_category = metropolis
+	state_category = american_state
 
 	history={
 		owner = USA

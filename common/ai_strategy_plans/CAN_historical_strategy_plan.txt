@@ -29,7 +29,6 @@ CAN_historical = {
 
 	ai_national_focuses = {
 		CAN_crown_corporations							#1936
-		CAN_rcaf_station_borden							#1930s
 		CAN_rowell_sirois_commission					#1937
 		CAN_national_housing_act						#1938
 		CAN_defence_of_canada_regulations				#1939
@@ -44,8 +43,6 @@ CAN_historical = {
 		CAN_war_bonds									#1939
 		CAN_department_of_munitions_and_supply			#1939
 		CAN_destroyer_effort							#
-		CAN_we_have_the_hurricane						#1940
-		CAN_commonwealth_air_training_plan				#1939
 		CAN_victory_aircraft_limited					#
 		CAN_dollar_a_year_men							#1940
 		CAN_national_resources_mobilization_act 		#1940
@@ -79,16 +76,12 @@ CAN_historical = {
 		CAN_1st_canadian_parachute_battalion			#1942
 		CAN_turner_valley_oilfield						#1940s
 		CAN_the_black_devils							#1942
-		CAN_the_pacific_coast_air_defence_radar_system	#1942
 		CAN_trade_fleet									#
 		CAN_degauss_ship_hulls							#
 		CAN_united_shipyards							#
-		CAN_fund_fairchilds_development					#
 		CAN_the_rocky_mountain_rangers					#1940s
 		#CAN_habakkuk_carrier							#1942
 		CAN_maritime_colonial_railway					#
-		CAN_cookie_carriers								#
-		CAN_the_sabre_project	
 	}
 
 	research = {

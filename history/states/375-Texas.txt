@@ -5,7 +5,7 @@ state={
 	manpower = 5824712
 	
 	
-	state_category = megalopolis
+	state_category = american_state
 	
 	resources={
 		oil=320 # was: 580

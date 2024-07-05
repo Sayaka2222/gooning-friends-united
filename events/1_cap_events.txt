@@ -155,7 +155,7 @@ country_event = {
 			ITA = {transfer_state = 187}
 			ITA = {transfer_state = 182}
 			BUL = {transfer_state = 184}
-			BUL = {transfer_state = 731}
+			GER = {transfer_state = 731}
 			ENG={annex_country={target=ROOT transfer_troops=no}}
 		}
 	}

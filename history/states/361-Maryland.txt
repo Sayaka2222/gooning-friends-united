@@ -4,7 +4,7 @@ state={
 	name="STATE_361"
 	manpower = 2118394
 	
-	state_category = megalopolis
+	state_category = american_state
 
 	history={
 		owner = USA
