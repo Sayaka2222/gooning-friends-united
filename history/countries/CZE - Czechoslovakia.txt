@@ -117,7 +117,9 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-}
+		peace_training
+		trade_with_axis
+	}
 }
 
 if = {

@@ -91,7 +91,6 @@ recruit_character = SLO_anton_pulanick
 	
 	set_technology = {
 		#doctrines
-		formation_flying = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 

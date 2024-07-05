@@ -153,6 +153,8 @@ if = {
 		#laws
 		low_economic_mobilisation
 		limited_conscription
+		peace_training
+		trade_with_allies
 	}
 
 	
@@ -167,7 +169,6 @@ if = {
 		support_weapons2 = 1
 
 		#doctrines
-		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1

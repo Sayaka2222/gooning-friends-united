@@ -56,16 +56,6 @@ characters={
 				small="GFX_idea_ROM_armand_calinescu"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ROM_armand_calinescu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				prince_of_terror 
-			}
-		}
 
 		country_leader={
 			ideology=centrism
@@ -170,19 +160,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_ROM_emanoil_ionescu"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ROM_emanoil_ionescu
-			ledger = air
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = {
-				air_warfare_theorist
 			}
 		}
 	}
@@ -447,7 +424,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_strategic_bombing_2
+				army_regrouping_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -461,21 +438,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_ROM_gheorghe_vasiliu"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = ROM_gheorghe_vasiliu
-			ledger = air
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				air_airborne_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -509,7 +471,7 @@ characters={
 				}
 			}
 			traits = {
-				democratic_reformer 
+				war_industrialist 
 			}
 		}
 	}

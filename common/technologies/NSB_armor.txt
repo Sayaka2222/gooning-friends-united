@@ -95,6 +95,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = radio_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = stabilizer_tech
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 1918
 		folder = {
@@ -1218,7 +1227,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1941 }
+			position = { x = 3 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -1264,7 +1273,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1944 }
+			position = { x = 3 y = @1942 }
 		}
 
 		on_research_complete = {
@@ -1438,7 +1447,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1941 }
+			position = { x = 2 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -1486,7 +1495,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
+			position = { x = 2 y = @1942 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -1529,6 +1538,128 @@ technologies = {
 		}
 	}
 
+	radio_1 = {
+		enable_equipment_modules = {
+			tank_radio_1
+		}
+		path = {
+			leads_to_tech = radio_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = @1935 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	radio_2 = {
+		enable_equipment_modules = {
+			tank_radio_2
+		}
+		path = {
+			leads_to_tech = radio_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = @1938 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	radio_3 = {
+		enable_equipment_modules = {
+			tank_radio_3
+		}
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = @1940 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	stabilizer_tech = {
+		enable_equipment_modules = {
+			stabilizer
+		}
+		path = {
+			leads_to_tech = auto_loader_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 10 y = @1938 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	auto_loader_tech = {
+		enable_equipment_modules = {
+			auto_loader
+		}
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 10 y = @1940 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
 	NOR_rikstanken_tech = {
 
 		allow = { always = no } #Only obtained through Rikstanken Event
@@ -1536,9 +1667,6 @@ technologies = {
 		enable_equipment_modules = {
 			NOR_rikstanken_turret
 			NOR_tank_rikstanken_armor
-		}
-
-		path = {
 		}
 
 		on_research_complete = {

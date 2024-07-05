@@ -107,13 +107,6 @@ if = {
 }
 
 if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
-if = {
 	limit = { has_dlc = "Together for Victory" }
 
 	add_ideas = {
@@ -143,7 +136,7 @@ if = {
 	}
 }
 
-set_convoys = 20
+set_convoys = 150
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
@@ -212,6 +205,8 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		#laws
 		volunteer_only
 		low_economic_mobilisation
+		peace_training
+		trade_with_allies
 	}
 
 	
@@ -219,7 +214,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		
 		#doctrines
 		#Air
-		force_rotation = 1
 		fighter_baiting = 1
 		grand_battle_plan = 1
 

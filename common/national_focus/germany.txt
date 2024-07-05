@@ -1891,7 +1891,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
-			army_experience = 100
+			army_experience = 200
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -2142,7 +2142,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 50
+			army_experience = 200
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -2182,7 +2182,7 @@ focus_tree = {
 		completion_reward = {
 			set_global_flag = rhineland_remilitarized
 			add_political_power = 150
-			army_experience = 50
+			army_experience = 100
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			hidden_effect = {
 				POL = {
@@ -2681,6 +2681,7 @@ focus_tree = {
 				target = FRA
 				type = annex_everything
 			}
+			add_ideas = GER_france
 		}
 	}
 

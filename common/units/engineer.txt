@@ -36,13 +36,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment = 2
-		
-		battalion_mult = {
-			category = category_light_infantry
-			entrenchment = 0.20
-			add = yes
-		}
+		entrenchment = 5
 
 				
 		defense = 0.1
@@ -59,11 +53,10 @@ sub_units = {
 			infantry_equipment = 10
 			support_equipment = 30
 		}
-
+		same_support_type = flame
 		can_be_parachuted = yes
 		forest = {
-			defence = 0.25
-			movement = 0.05
+			defence = 0.1
 		}
 
 		hills = {
@@ -71,26 +64,26 @@ sub_units = {
 		}
 
 		jungle = {
-			defence = 0.25
+			defence = 0.1
 		}
 
 		marsh = {
-			defence = 0.25
+			defence = 0.1
 			movement = 0.2
 		}
 
 		fort = {
 			attack = 0.1
-			defence = 0.25
+			defence = 0.1
 		}
 
 		river = {
-			defence = 0.25
+			defence = 0.1
 			movement = 0.25
 		}
 
 		amphibious = {
-			attack = 0.15
+			attack = 0.3
 		}
 
 		same_support_type = engineer

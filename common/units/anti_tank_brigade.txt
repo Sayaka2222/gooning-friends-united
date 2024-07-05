@@ -19,6 +19,7 @@ sub_units = {
 			category_front_line
 			category_army
 			category_line_artillery
+			category_mobile_artillery
 		}		
 		
 		combat_width = 1
@@ -77,7 +78,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1197
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			motorized

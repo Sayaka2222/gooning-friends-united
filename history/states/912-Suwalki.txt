@@ -1,0 +1,28 @@
+state={
+	id=912
+	name="STATE_912"
+
+	history={
+		owner = POL
+		victory_points = {
+			3254 1
+		}
+		victory_points = {
+			11312 1 #Marijampole
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		11312 3254
+	}
+	manpower=57200
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=5.0 
+}

@@ -103,6 +103,8 @@ if = {
 
 add_ideas = {
 	german_advisors
+	peace_training
+	trade_with_copro
 }
 
 600 = { #Jiangxi

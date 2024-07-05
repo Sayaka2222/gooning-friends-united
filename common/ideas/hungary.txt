@@ -27,10 +27,6 @@ ideas = {
 				has_war = no
 			}
 
-			rule = {
-  				can_access_market = no
-  			}
-
 			modifier = {
 				conscription = -0.005
 				production_speed_arms_factory_factor = -0.5
@@ -125,13 +121,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					has_government = democratic
-					AND = {
-						has_government = neutrality
-						NOT = { has_completed_focus = HUN_responsible_government }
-					}
-				}
 			}
 			
 			modifier = {
@@ -307,10 +296,6 @@ ideas = {
 				always = no
 			}
 			available = {
-				OR = {
-					has_idea = disarmed_nation 
-					has_idea = volunteer_only 
-				}
 			}
 
 			allowed_civil_war = {
@@ -318,9 +303,8 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.0025
+				conscription = 0.005
 				industrial_capacity_factory = 0.05
-				custom_modifier_tooltip = HUN_secret_rearmament_tt_2
 			}
 		}
 
@@ -451,10 +435,6 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			available = {
-				if = {
-					limit = { has_dlc = "Death or Dishonor" }
-					has_completed_focus = HUN_naval_warfare
-				}
 			}
 
 			allowed = {

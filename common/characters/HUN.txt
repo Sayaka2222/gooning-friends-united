@@ -662,7 +662,6 @@ characters={
 				}
 			}
 			traits = {
-				communist_revolutionary 
 			}
 			ai_will_do = {
 				base = 0
@@ -704,7 +703,6 @@ characters={
 				}
 			}
 			traits = {
-				democratic_reformer 
 			}
 		}
 	}

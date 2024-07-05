@@ -1,0 +1,23 @@
+state = {
+	id = 913
+	name = "STATE_913"
+	manpower = 77073
+	state_category = town
+
+	history = {
+		owner = POL
+		add_core_of = POL
+		add_core_of = SOV
+		victory_points = {
+			9494 1
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces = {
+		9494 6580 3434
+	}
+	
+	local_supplies = 0.000
+}

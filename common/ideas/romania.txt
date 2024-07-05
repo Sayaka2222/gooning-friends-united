@@ -422,9 +422,8 @@ ideas = {
 
 			}
 			
-			modifier = {				
-				resistance_damage_to_garrison = -0.2 
-				foreign_subversive_activites = -0.2
+			modifier = {		
+				conscription = 0.01
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
@@ -463,8 +462,7 @@ ideas = {
 
 			
 			modifier = {
-				guarantee_tension = -1.0
-				guarantee_cost = -0.5
+				production_speed_infrastructure_factor = 0.2
 			}
 		}
 
@@ -720,7 +718,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription_factor = 0.07
+				conscription_factor = 0.05
 			}
 		}
 
@@ -852,7 +850,6 @@ ideas = {
 			cost = 50
 
 			available = {
-				has_completed_focus = ROM_mobile_tank_destroyers
 			}
 			
 			allowed = {

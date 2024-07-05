@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+		GER_france = {
+			name = "Fall Rot"
+			allowed = {
+				original_tag = GER
+			}
+			cancel = {
+				has_global_flag = fall_of_france
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+		}
 		GER_typhoon = {
 			name = "Unternehmen Taifun"
 			allowed = {

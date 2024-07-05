@@ -1,0 +1,48 @@
+sub_units = {
+	support_motorized_rocket = {
+		abbreviation = "smrb"
+		sprite = motorized
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+
+		same_support_type = artillery
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+			category_mobile_artillery
+		}
+
+		combat_width = 0
+
+		need = {
+			motorized_rocket_equipment = 16
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		training_time = 180
+		weight = 0.75
+		fuel_capacity = 50
+
+		soft_attack = 8
+		breakthrough = 4.2
+
+		supply_consumption = 0.15
+		ap_attack = -0.3
+		defense = -0.3
+		soft_attack = 0.0
+		hard_attack = -0.3
+		armor_value = -0.3
+	}
+}

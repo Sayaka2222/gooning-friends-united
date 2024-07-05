@@ -261,7 +261,6 @@ IF = {
 
 		#doctrines
 		#Air
-		air_superiority = 1
 		infrastructure_destruction = 1
 		naval_strike_tactics = 1
 
@@ -338,13 +337,8 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
-}
-
-
-# DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
+	peace_training
+	trade_with_allies
 }
 
 1939.1.1 = {
@@ -630,8 +624,8 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
 			front_1_custom_slot = ship_heavy_battery_2
-			mid_1_custom_slot = ship_anti_air_2
-			mid_2_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
@@ -649,6 +643,7 @@ if = {
 			fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
 		}
 	}
 }

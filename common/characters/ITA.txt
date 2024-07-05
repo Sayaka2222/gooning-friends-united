@@ -170,7 +170,7 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				grand_battle_plan_expert
+				superior_firepower_expert
 			}
 			ai_will_do = {
 				base = 3.000
@@ -205,7 +205,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_morale_2
+				army_chief_offensive_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -240,7 +240,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_defensive_1
+				army_chief_defensive_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -278,12 +278,6 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
 			}
 			
 			traits = {
@@ -357,21 +351,6 @@ characters = {
 			army = {
 				small = GFX_idea_ugo_cavallero
 				large = GFX_portrait_ITA_ugo_cavallero
-			}
-		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = ugo_cavallero
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 		
@@ -474,22 +453,6 @@ characters = {
 			army = {
 				small = GFX_idea_vittorio_ambrosio
 				large = GFX_portrait_ITA_vittorio_ambrosio
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = vittorio_ambrosio
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				army_cavalry_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 		
@@ -952,9 +915,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_decisive_battle_2
 			}
-			cost = 50
+			cost = 100
 			ai_will_do = {
 				base = 1.000
 			}
@@ -977,22 +940,6 @@ characters = {
 			navy = {
 				small = GFX_idea_alberto_da_zara
 				large = GFX_portrait_ITA_alberto_da_zara
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = alberto_da_zara
-			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				navy_anti_submarine_1
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 		
@@ -1080,7 +1027,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				navy_capital_ship_2
+				navy_capital_ship_1
 			}
 			cost = 100
 			ai_will_do = {
@@ -1197,19 +1144,6 @@ characters = {
 				small = GFX_idea_amedeo_mecozzi
 			}
 		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = amedeo_mecozzi
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				assault_avaition
-			}
-		}
 	}
 
 	ITA_renato_sandalli = {
@@ -1219,17 +1153,6 @@ characters = {
 				small = GFX_idea_renato_sandalli
 			}
 		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = renato_sandalli
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = { air_warfare_theorist }
-		}		
 	}
 
 	ITA_gaetano_crocco = {
@@ -1295,24 +1218,6 @@ characters = {
 				small = GFX_portrait_ITA_alberto_pariani_small
 			}
 		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = ITA_alberto_pariani
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_completed_focus = ITA_a_bandits_war
-			}
-			traits = {
-				army_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 	}
 
 
@@ -1325,21 +1230,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_idea_domenico_cavagnari
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = domenico_cavagnari
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				navy_chief_commerce_raiding_1
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 	}
@@ -1376,24 +1266,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_raffaele_de_courten_small
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = ITA_raffaele_de_courten
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 	}
@@ -1528,26 +1400,7 @@ characters = {
 			army = {
 				small = GFX_idea_marziale_cerutti
 			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = marziale_cerutti
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}		
+		}	
 	}
 	
 	ITA_silvio_scaroni = {
@@ -1555,25 +1408,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_idea_silvio_scaroni
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = silvio_scaroni
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {
-				air_bomber_interception_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 	}
@@ -1621,16 +1455,8 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-				NOT = { has_completed_focus = ITA_disband_the_blackshirts }
-				has_completed_focus = ITA_army_leaders
-			}
 			traits = {
-				army_logistics_1 # Blackshirt related trait instead?
+				army_commando_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -1667,7 +1493,7 @@ characters = {
 				}
 				ITA_government_is_somewhat_fascist = yes
 			}
-			cost = 75
+			cost = 100
 			traits = {
 				hierarch_minister_of_foreign_affairs
 			}
@@ -1729,7 +1555,7 @@ characters = {
 				}
 			}
 			
-			cost = 75
+			cost = 100
 			traits = {
 				hierarch_minister_of_justice 
 			}
@@ -1780,7 +1606,7 @@ characters = {
 					has_country_leader_with_trait = mussolini_minister_of_education
 				}
 			}
-			cost = 75
+			cost = 100
 			traits = {
 				hierarch_minister_of_education # Hierarch / Minister of Education
 			}
@@ -1884,41 +1710,13 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				army_regrouping_1
+				army_armored_2
 			}
 			cost = 50
 			ai_will_do = {
 				base = 1.000
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = mario_roatta_political_advisor
-			allowed = {
-				original_tag = ITA
-				has_dlc = "La Resistance"
-			}
-			available = {
-				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
-			}
-			traits = {
-				head_of_intelligence 
-			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
-				}
 			}
 		}
 
@@ -2056,7 +1854,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				armaments_organizer
+				captain_of_industry
 			}
 
 			ai_will_do = {
@@ -2409,31 +2207,6 @@ characters = {
 				large = GFX_portrait_ITA_giovanni_duca
 			}
 		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = ITA_giovanni_duca
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
-				}
-			}
-			traits = {
-				army_chief_drill_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 		
 		corps_commander = {
 			traits = { militias_officer infantry_officer hill_fighter } #Regno del Sud
@@ -2445,14 +2218,8 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					AND = {
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
+					has_government = democratic
+					has_government = neutrality
 				}
 			}
 		}
@@ -3067,32 +2834,6 @@ characters = {
 				large = GFX_portrait_ITA_randolfo_pacciardi
 			}
 		}
-		
-		advisor = {
-			slot = high_command
-			idea_token = ITA_randolfo_pacciardi
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				OR = {
-					has_government = communism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-			}
-			cost = 50
-			traits = {
-				army_regrouping_2 
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
 
 		corps_commander = {
 			traits = { politically_connected skilled_staffer infantry_officer } #SCW + Partisan Commander
@@ -3103,10 +2844,6 @@ characters = {
 			logistics_skill = 1
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
 				OR = {
 					has_government = communism
 					has_government = democratic

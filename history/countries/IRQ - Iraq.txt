@@ -23,14 +23,6 @@ set_technology = {
 	fuel_silos = 1
 }
 
-
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
 set_convoys = 5
 
 recruit_character = IRQ_ghazi_i

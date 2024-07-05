@@ -30,14 +30,12 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		max_strength = 2
+		max_strength = 5
 		default_morale = 0.3
 		training_time = 180
-		weight = 1.5
+		weight = 1.25
 		
-		supply_consumption = 0.25
-
-		breakthrough = 0.15
+		supply_consumption = 0.3
 
 		#Tanks are awesome
 		# soft_attack = 0.5
@@ -45,33 +43,39 @@ sub_units = {
 		suppression = 2.5
 		
 		forest = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
+			attack = -0.1
+			movement = -0.35
 			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
+		hills = 	{
+			attack = -0.1
+			defence = -0.25
 		}
-		amphibious = { 
-			attack = -0.7
+		mountain = 	{
+			attack = -0.35
+			defence= -0.55
+			movement = -0.15
+		}
+		jungle = {
+			attack = -0.35
+			movement = -0.35
+			defence= -0.45
+		}
+		marsh = {
+			attack = -0.25
+			defence= -0.45
+			movement = -0.05
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.65
+		}
+		river = {
+			attack = -0.15
+			movement = -0.15
+		}
+		amphibious = {
+			attack = -2
 		}
 	}
 }

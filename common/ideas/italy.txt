@@ -1961,11 +1961,6 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-
-			targeted_modifier = {
-				attack_bonus_against = 0.05
-				breakthrough_bonus_against = 0.05
-			}
 		}
 
 		ITA_nuclear_research = {

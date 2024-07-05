@@ -104,7 +104,128 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-		
+		peace_training = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.7
+				air_training_xp_gain_factor = 10
+				attrition = -1
+				experience_gain_navy_unit_factor = 10
+			}
+		}
+		trade_with_copro = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = SIA
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CHI
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = MAN
+				trade_cost_for_target_factor = -0.5
+			}
+			modifier = {
+				license_production_speed = 0.15
+				license_tech_difference_speed = 0.25
+			}
+		}
+		trade_with_axis = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CRO
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = HUN
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = ROM
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CZE
+				trade_cost_for_target_factor = -0.5
+			}
+			modifier = {
+				license_production_speed = 0.15
+				license_tech_difference_speed = 0.25
+			}
+		}
+		trade_with_allies = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.5
+			}
+			modifier = {
+				license_production_speed = 0.15
+				license_tech_difference_speed = 0.25
+			}
+		}
+
 		TO_chose_neutrality = {
 
 			picture = generic_pp_unity_bonus

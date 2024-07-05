@@ -1943,6 +1943,52 @@ leader_traits = {
 		
 		gui_row = 14
 	}
+
+	zbearer_of_fort_defense = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier= {
+			fort = {
+				defence = 0.05
+			}
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	zbearer_of_cas_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			cas_damage_reduction = 0.1
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	zbearer_of_terrain_penalty = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			terrain_penalty_reduction = 0.05
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 	
 	
 
@@ -1959,8 +2005,7 @@ leader_traits = {
 		}
 		modifier = {
 			naval_retreat_chance = 0.2
-			naval_retreat_speed = 0.15
-			convoy_retreat_speed = 0.05
+			convoy_retreat_speed = 0.2
 		}
 		custom_gain_xp_trigger_tooltip = BLOCKADE_RUNNER_TRIGGER_TT
 		
@@ -1978,7 +2023,7 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
-			navy_submarine_attack_factor = 0.2 # +X% stronger damage for submarines
+			navy_submarine_attack_factor = 0.1 # +X% stronger damage for submarines
 		}
 		custom_gain_xp_trigger_tooltip = SEAWOLF_TRIGGER_TT
 		
@@ -2002,7 +2047,7 @@ leader_traits = {
 		gain_xp_on_spotting = 10
 		cost = 500
 		modifier = {
-			spotting_chance = 0.1
+			spotting_chance = 0.2
 		}
 		custom_gain_xp_trigger_tooltip = SPOTTER_TRIGGER_TT
 		
@@ -2022,7 +2067,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = FLEET_PROTECTOR_TRIGGER_TT
 		cost = 500
 		modifier = {
-			screening_efficiency = 0.2
+			navy_org = 20
 		}
 		
 		slot = high_command
@@ -2044,7 +2089,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			positioning = 0.25
+			naval_damage_factor = 0.05
 		}
 		custom_gain_xp_trigger_tooltip = SUPERIOR_TACTICIAN_TRIGGER_TT
 		
@@ -2070,8 +2115,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			navy_carrier_air_targetting_factor = 0.1 # Airplanes from carriers has better naval targetting
-			sortie_efficiency = 0.1
+			sortie_efficiency = 0.05
 		}
 		
 		ai_will_do = {
@@ -2094,7 +2138,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT
 		cost = 500
 		modifier = {
-			navy_capital_ship_defence_factor = 0.1
+			navy_capital_ship_defence_factor = 0.05
 		}
 
 		ai_will_do = {
@@ -2117,7 +2161,9 @@ leader_traits = {
 		ai_will_do = {
 			factor = 0
 		}
-		
+		allowed = {
+			always = no
+		}
 		slot = navy_chief
 		specialist_advisor_trait = navy_chief_commerce_raiding_1
 		expert_advisor_trait = navy_chief_commerce_raiding_2
@@ -2127,15 +2173,14 @@ leader_traits = {
 		any_parent = {
 			blockade_runner
 		}
-		mutually_exclusive = lone_wolf
-		gui_row = 0
+		gui_row = 1
 		gui_column = 1
 	}
 
 	lone_wolf = { 
 		type = navy
 		modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+			naval_enemy_fleet_size_ratio_penalty_factor = 0.5
 		}
 				
 		ai_will_do = {
@@ -2144,8 +2189,7 @@ leader_traits = {
 		
 		trait_type = assignable_trait
 		any_parent = { blockade_runner }
-		mutually_exclusive = concealment_expert
-		gui_row = 1
+		gui_row = 0
 		gui_column = 1
 	}
 
@@ -2213,8 +2257,6 @@ leader_traits = {
 		sub_unit_modifiers = {
 			destroyer = {
 				naval_damage_factor = 0.1
-				naval_torpedo_hit_chance_factor = 0.1
-				navy_visibility = -0.1
 			}
 		}	
 		ai_will_do = {
@@ -2236,11 +2278,9 @@ leader_traits = {
 		sub_unit_modifiers = {
 			light_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
 			}
 			heavy_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
 			}
 		}	
 		ai_will_do = {
@@ -2257,6 +2297,9 @@ leader_traits = {
 	#This trait has combined both mine_layer and mine_sweeper into one. 
 	mine_craft = { 
 		type = navy
+		allowed = {
+			always = no
+		}
 		modifier = {
 			mines_planting_by_fleets_factor = 0.25
 			mines_sweeping_by_fleets_factor = 0.25
@@ -2276,7 +2319,7 @@ leader_traits = {
 	flight_deck_manager = { 
 		type = navy
 		modifier = {
-			 sortie_efficiency = 0.1
+			 sortie_efficiency = 0.05
 		}
 		
 		slot = high_command
@@ -2305,6 +2348,9 @@ leader_traits = {
 		ai_will_do = {
 			factor = 0
 		}
+		allowed = {
+			always = no
+		}
 		
 		trait_type = assignable_trait
 		any_parent = { ironside }
@@ -2316,7 +2362,7 @@ leader_traits = {
 	big_guns_expert = { 
 		type = navy
 		modifier = {
-			navy_capital_ship_attack_factor = 0.15
+			navy_capital_ship_attack_factor = 0.1
 		}
 				
 		slot = high_command
@@ -2331,7 +2377,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { ironside }
 		
-		gui_row = 10
+		gui_row = 9
 		gui_column = 1
 	}
 
@@ -2370,7 +2416,6 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = {
 		 	lone_wolf
-			concealment_expert
 		}
 		gui_row = 0
 		gui_column = 2
@@ -2461,14 +2506,14 @@ leader_traits = {
 		modifier = {
 			fighter_sortie_efficiency = 0.2
 		}
-				
+		allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
 		
 		trait_type = assignable_trait
-		mutually_exclusive = dive_bomber
-		mutually_exclusive = torpedo_bomber
 		any_parent = { flight_deck_manager }
 		
 		gui_row = 7
@@ -2480,9 +2525,11 @@ leader_traits = {
 		sub_unit_modifiers = {
 			cv_cas = {
 				ground_attack_factor = 0.1
-				air_cas_efficiency = 0.1
 			}
 		}	
+		allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
@@ -2493,11 +2540,9 @@ leader_traits = {
 		genius_advisor_trait = navy_chief_naval_aviation_3
 		
 		trait_type = assignable_trait
-		mutually_exclusive = fighter_director
-		mutually_exclusive = torpedo_bomber
 		any_parent = { flight_deck_manager }
 		
-		gui_row = 8
+		gui_row = 9
 		gui_column = 2
 	}
 
@@ -2505,9 +2550,8 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			cv_nav_bomber = {
-				naval_strike_attack_factor = 0.1
-				air_nav_efficiency = 0.1
-				naval_strike_targetting_factor = 0.05
+				air_cas_efficiency = 0.1
+				naval_strike_targetting_factor = 0.1
 			}
 		}	
 
@@ -2521,11 +2565,9 @@ leader_traits = {
 		}
 		
 		trait_type = assignable_trait
-		mutually_exclusive = fighter_director
-		mutually_exclusive = dive_bomber
 		any_parent = { flight_deck_manager }
 		
-		gui_row = 9
+		gui_row = 8
 		gui_column = 2
 	}
 
@@ -2548,7 +2590,7 @@ leader_traits = {
 		mutually_exclusive = crisis_magician
 		any_parent = { big_guns_expert }
 		
-		gui_row = 10
+		gui_row = 9
 		gui_column = 2
 	}
 
@@ -2566,7 +2608,7 @@ leader_traits = {
 		mutually_exclusive = marksman
 		any_parent = { safety_first }
 		
-		gui_row = 11
+		gui_row = 10
 		gui_column = 2
 	}
 

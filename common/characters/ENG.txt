@@ -202,7 +202,7 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_maneuver_3
+				army_chief_drill_3
 			}
 			cost = 200
 			ai_will_do = {
@@ -276,7 +276,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				army_logistics_2
+				army_armored_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -781,21 +781,6 @@ characters={
 				large=GFX_portrait_ENG_henry_harwood
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = henry_harwood
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				navy_screen_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.700
-			}
-		}
 		
 		navy_leader={
 			traits={ old_guard_navy bold }
@@ -1060,18 +1045,6 @@ characters={
 				small="GFX_idea_hugh_dowding"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = hugh_dowding
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_warfare_theorist
-			}
-		}
 	}
 
 	ENG_arthur_harris={
@@ -1079,19 +1052,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_arthur_harris"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = arthur_harris
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = {
-				victory_through_airpower
 			}
 		}
 	}
@@ -1402,7 +1362,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				army_infantry_2
+				army_infantry_3
 			}
 			cost = 100
 			ai_will_do = {
@@ -1418,21 +1378,6 @@ characters={
 				small="GFX_idea_sholto_douglas"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = sholto_douglas
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	ENG_trafford_leigh_mallory={
@@ -1440,21 +1385,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_trafford_leigh_mallory"
-			}
-		}
-		advisor={	
-			slot = high_command
-			idea_token = trafford_leigh_mallory
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_bomber_interception_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -1466,21 +1396,6 @@ characters={
 				small="GFX_idea_frederick_bowhill"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = frederick_bowhill
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_naval_strike_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	ENG_louis_mountbatten={ #This guy is duplicated in RAJ
@@ -1490,23 +1405,6 @@ characters={
 				small="GFX_idea_louis_mountbatten"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = louis_mountbatten
-			ledger = army
-			allowed = {
-				original_tag = ENG
-			}
-			available = {
-			}
-			traits = {
-				navy_amphibious_assault_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	ENG_max_horton={
@@ -1514,21 +1412,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_max_horton"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = max_horton
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				navy_submarine_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.200
 			}
 		}
 	}
@@ -1553,7 +1436,7 @@ characters={
 			traits = {
 				army_commando_3
 			}
-			cost = 200
+			cost = 100
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1598,7 +1481,7 @@ characters={
 				original_tag  = ENG
 			}
 			traits  = {
-				democratic_reformer 
+				captain_of_industry 
 			}
 			do_effect  = {
 				NOT = {
@@ -1749,7 +1632,7 @@ characters={
 				original_tag  = ENG
 			}
 			traits  = {
-				armaments_organizer 
+				smooth_talking_charmer 
 			}
 		}
 	}

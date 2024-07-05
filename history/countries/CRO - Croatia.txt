@@ -12,6 +12,10 @@ set_technology = {
 	tech_recon = 1
 	tech_trucks = 1	
 }
+add_ideas = {
+	peace_training
+	trade_with_axis
+}
 
 if = {
 	limit = {

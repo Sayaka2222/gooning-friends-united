@@ -2873,30 +2873,24 @@ leader_traits = {
 	hierarch_minister_of_foreign_affairs = {
 		random = no
 		sprite = 13
-		fascism_drift = 0.05
-		political_power_factor = 0.05
-		opinion_gain_monthly_factor = 0.15
-		resistance_damage_to_garrison = -0.15
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
 		custom_modifier_tooltip = ITA_hierarch_bop_tt
 	}
 
 	hierarch_minister_of_justice = {
 		random = no
 		sprite = 13
-		fascism_drift = 0.05
-		political_power_factor = 0.05
-		improve_relations_maintain_cost_factor = -0.5
-		resistance_decay = 0.05
+		political_power_factor = 0.1
+		war_support_factor = 0.1
 		custom_modifier_tooltip = ITA_hierarch_bop_tt
 	}
 
 	hierarch_minister_of_education = {
 		random = no
 		sprite = 13
-		political_power_factor = 0.05
-		fascism_drift = 0.05
-		research_speed_factor = 0.02
-		stability_factor = 0.05
+		research_speed_factor = 0.05
+		stability_factor = 0.1
 		custom_modifier_tooltip = ITA_hierarch_bop_tt
 	}
 
@@ -8893,7 +8887,7 @@ leader_traits = {
 	army_infantry_1 = { # +4 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.05
-		army_infantry_defence_factor = 0.1
+		army_infantry_defence_factor = 0.05
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8910,7 +8904,7 @@ leader_traits = {
 	army_infantry_2 = { # +8 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.1
-		army_infantry_defence_factor = 0.15
+		army_infantry_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8927,7 +8921,7 @@ leader_traits = {
 	army_infantry_3 = { # +12 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.15
-		army_infantry_defence_factor = 0.2
+		army_infantry_defence_factor = 0.15
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8945,7 +8939,6 @@ leader_traits = {
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.05
-		special_forces_cap_flat = 3
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8962,7 +8955,7 @@ leader_traits = {
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.10
-		special_forces_cap_flat = 6
+		special_forces_defence_factor = 0.05
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8979,7 +8972,7 @@ leader_traits = {
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.15
-		special_forces_cap_flat = 10
+		special_forces_defence_factor = 0.10
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -9646,9 +9639,7 @@ leader_traits = {
 
 	air_naval_strike_1 = {
 		sprite = 2
-		naval_strike_attack_factor = 0.02
-		naval_strike_targetting_factor = 0.02
-		naval_strike_agility_factor = 0.02
+		naval_strike_targetting_factor = 0.025
 		#experience_gain_air = @experience_gain_low
 
 		command_cap = @tier1
@@ -9664,9 +9655,7 @@ leader_traits = {
 
 	air_naval_strike_2 = {
 		sprite = 2
-		naval_strike_attack_factor = 0.03
-		naval_strike_targetting_factor = 0.03
-		naval_strike_agility_factor = 0.03
+		naval_strike_targetting_factor = 0.05
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9682,9 +9671,7 @@ leader_traits = {
 
 	air_naval_strike_3 = {
 		sprite = 2
-		naval_strike_attack_factor = 0.05
-		naval_strike_targetting_factor = 0.05
-		naval_strike_agility_factor = 0.05
+		naval_strike_targetting_factor = 0.1
 		#experience_gain_air = @experience_gain_high
 
 		command_cap = @tier3

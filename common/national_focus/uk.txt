@@ -136,7 +136,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			army_experience = 100
+			army_experience = 200
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -2310,7 +2310,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.5
-				uses = 3
+				uses = 2
 				category = naval_doctrine
 			}
 		}

@@ -484,6 +484,7 @@ country_event = {
 			transfer_state = 97
 			transfer_state = 89
 			transfer_state = 784
+			transfer_state = 913
 			country_event = germany.15 
 		}
 	}

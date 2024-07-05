@@ -433,3 +433,12 @@
  
  expanded_fuel_tank:0 "Fuel Drum"
  expanded_fuel_tank_desc:0 "An externally mounted fuel drum designed to extend the operational range of an armored vehicle."
+
+ radio_1:0 "Early Radio Equipment"
+ radio_2:0 "Improved Radio Equipment"
+ radio_3:0 "Advanced Radio Equipment"
+ stabilizer_tech:0 "Single-Plane Stabilizer"
+ auto_loader_tech:0 "Auto Loader"
+ continuous_offensive_tt:0 "§YMotorized§! and §YMechanized Brigades§! require \n §Y5 Motorized Rocket Equipment§!"
+ category_mobile_infantry:0 "Mobile Infantry"
+ category_mobile_artillery:0 "Mobile Artillery"

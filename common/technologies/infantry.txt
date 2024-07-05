@@ -1087,9 +1087,9 @@ technologies = {
 
 		#If you change these
 		#Change the custom tooltip too: HUN_light_infantry_divisions_doctrine_effect
-		infantry = {
+		paratrooper = {
 			forest = {
-				attack = 0.02
+				attack = 0.025
 				movement = 0.05
 			}
 
@@ -1539,12 +1539,6 @@ technologies = {
 
 	tech_trucks = {
 
-		enable_subunits = {
-			mot_anti_tank_brigade
-			mot_artillery_brigade
-			mot_anti_air_brigade
-		}
-
 		enable_equipments = {
 			motorized_equipment_0
 		}
@@ -1632,10 +1626,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			
-		}
-
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -1682,12 +1672,12 @@ technologies = {
 		}
 	}
 	motorized_rocket_unit = {
-
-		enable_subunits = {
-			motorized_rocket_brigade
-		}
+		
 		enable_equipments = {
 			motorized_rocket_equipment_1
+		}
+		enable_subunits = {
+			support_motorized_rocket
 		}
 		dependencies = {
 			rocket_artillery = 1
@@ -1712,10 +1702,6 @@ technologies = {
 	}
 	
 	armored_car1 = {
-
-		enable_subunits = {
-			armored_car
-		}
 
 		enable_equipments = {
 			gw_armored_car_equipment

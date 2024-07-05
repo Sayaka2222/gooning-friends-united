@@ -15,7 +15,7 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.8
-
+		maximum_speed = 4
 		#Defensive Abilities
 		defense = -12.5
 		breakthrough = 4
@@ -55,14 +55,13 @@ equipments = {
 		visual_level = 1
 
 		soft_attack = 4
-		hard_attack = 33
+		hard_attack = 35
 		breakthrough = 4
 		ap_attack = 26
 		
 		build_cost_ic = 3.75
 		resources = {
 			tungsten = 2
-			chromium = 1
 			steel = 2
 		}
 	}
@@ -76,7 +75,7 @@ equipments = {
 		visual_level = 2
 		
 		soft_attack = 4
-		hard_attack = 38
+		hard_attack = 40
 		breakthrough = 4
 		ap_attack = 36
 		
@@ -84,8 +83,7 @@ equipments = {
 		
 		resources = {
 			tungsten = 2
-			chromium = 1
-			steel = 3
+			steel = 2
 		}
 	}
 }

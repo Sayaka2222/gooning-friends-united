@@ -16,6 +16,8 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_5
+	add_ideas = peace_training
+	add_ideas = trade_with_copro
 	recruit_character = MAN_songgotu_zhanshan
 }
 

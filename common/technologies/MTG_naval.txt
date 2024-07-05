@@ -9,6 +9,8 @@ technologies = {
 
 	early_ship_hull_light = {
 
+		naval_retreat_speed = 0.2
+
 		enable_equipments = {
 			ship_hull_light_1
 		}
@@ -196,10 +198,10 @@ technologies = {
 
 	smoke_generator = {
 
-		naval_retreat_speed = 0.2
-
 		research_cost = 0.75
-
+		allow_branch = {
+			always = no
+		}
 		start_year = 1922
 
 		folder = {
@@ -242,7 +244,9 @@ technologies = {
 		enable_equipment_modules = {
 			ship_depth_charge_1
 		}
-
+		allow_branch = {
+			always = no
+		}
 		on_research_complete = {
 			custom_effect_tooltip = depth_charges_advice_tt
 		}
@@ -426,6 +430,9 @@ technologies = {
 		enable_equipment_modules = {
 			ship_sonar_1
 		}
+		allow_branch = {
+			always = no
+		}
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
@@ -573,6 +580,7 @@ technologies = {
 			ship_hull_cruiser_2
 		}
 		enable_equipment_modules = {
+			ship_airplane_launcher_2
 			cruiser_ship_engine_2
 		}
 
@@ -699,10 +707,8 @@ technologies = {
 	}
 
 	improved_airplane_launcher = {
-
-
-		enable_equipment_modules = {
-			ship_airplane_launcher_2
+		allow_branch = {
+			always = no
 		}
 		on_research_complete = {
 			custom_effect_tooltip = airplane_launcher_advice_tt
@@ -758,6 +764,10 @@ technologies = {
 			leads_to_tech = basic_heavy_armor_scheme
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = basic_fire_control_system
+			research_cost_coeff = 1
+		}
 
 		XOR = {
             
@@ -772,7 +782,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 6 y = 2 }
 		}
 
 		ai_will_do = {
@@ -875,11 +885,6 @@ technologies = {
 			leads_to_tech = improved_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = basic_heavy_armor_scheme
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 
@@ -933,7 +938,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1940
 
 		ai_will_do = {
 			factor = 1
@@ -1061,7 +1066,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
+			position = {  x = 6 y = 8 }
 		}
 
 		ai_will_do = {
@@ -1101,12 +1106,14 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.25
-		research_cost = 1.25
+		xp_research_bonus = 1.5
+		research_cost = 1.5
+
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 14 }
+			position = {  x = 6 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1406,6 +1413,7 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_3
 		}
 		enable_equipment_modules = {
+			ship_sub_snorkel_1
 			ship_torpedo_sub_3
 			sub_ship_engine_3
 		}
@@ -1454,6 +1462,7 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_4
 		}
 		enable_equipment_modules = {
+			ship_sub_snorkel_2
 			ship_torpedo_sub_4
 			sub_ship_engine_4
 		}
@@ -1488,8 +1497,8 @@ early_ship_hull_carrier = {
 
 	basic_submarine_snorkel = {
 
-		enable_equipment_modules = {
-			ship_sub_snorkel_1
+		allow_branch = {
+			always = no
 		}
 		path = {
 			leads_to_tech = improved_submarine_snorkel
@@ -1536,10 +1545,6 @@ early_ship_hull_carrier = {
 
 	improved_submarine_snorkel = {
 
-		enable_equipment_modules = {
-			ship_sub_snorkel_2
-		}
-
 		on_research_complete = {
 			custom_effect_tooltip = snorkel_advice_tt
 		}
@@ -1579,6 +1584,141 @@ early_ship_hull_carrier = {
 			mio_cat_tech_all_submarine_and_modules
 		}
 	}
+
+	basic_fire_control_system = {
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
+		path = {
+			leads_to_tech = improved_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 8 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			ship_modules_tech
+			naval_equipment
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_carrier_and_modules
+		}
+	}
+
+	improved_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+		}
+		path = {
+			leads_to_tech = advanced_fire_control_system
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		start_year = 1938
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 8 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			ship_modules_tech
+			naval_equipment
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_carrier_and_modules
+		}
+	}
+
+	advanced_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		start_year = 1940
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 8 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			ship_modules_tech
+			naval_equipment
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_carrier_and_modules
+		}
+	}
+
 	###Special snowflake hulls for special snowflake nations
 	panzerschiffe = {
 

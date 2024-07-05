@@ -56,7 +56,7 @@ sub_units = {
 		active = yes
 		type = naval_bomber
 		need = { cv_small_plane_naval_bomber_airframe = 1 }
-		categories = { category_nav_bomber }
+		categories = { category_fighter }
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}

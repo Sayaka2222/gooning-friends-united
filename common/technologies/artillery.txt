@@ -304,10 +304,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 
-		enable_equipment_modules = {
-			auto_loader
-		}
-
 		research_cost = 1
 
 		start_year = 1943
@@ -796,11 +792,6 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 
-		enable_equipment_modules = {
-			ship_anti_air_4
-			auto_loader
-		}
-
 		research_cost = 1
 
 		start_year = 1943
@@ -1050,9 +1041,6 @@ technologies = {
 	}
 
 	antitank3 = {
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-		}
 		anti_tank = {
 			hard_attack = 0.1
 		}
@@ -1121,9 +1109,6 @@ technologies = {
 	}
 
 	antitank4 = {
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
 		anti_tank = {
 			hard_attack = 0.1
 		}
@@ -1190,9 +1175,6 @@ technologies = {
 
 		enable_equipments = {
 			anti_tank_equipment_3
-		}
-		enable_equipment_modules = {
-			auto_loader
 		}
 		research_cost = 1
 
