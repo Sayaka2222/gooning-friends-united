@@ -3298,7 +3298,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 100
 		}
 	}
 
@@ -3337,8 +3337,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_motorize_the_cavalry
-				bonus = 3.0
-				technology = motorised_infantry
+				bonus = 1.5
+				uses = 1
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -3423,45 +3424,8 @@ focus_tree = {
 				name = YUG_armored_cavalry
 				bonus = 1.0
 				uses = 1
-				category = cat_mechanized_equipment
+				technology = mechanised_infantry2
 			}
-		}
-	}
-
-	focus = {
-		id = YUG_tank_conversions
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = YUG_armored_cavalry }
-		mutually_exclusive = { focus = YUG_modern_tanks }
-		x = -2
-		y = 2
-		relative_position_id = YUG_motorize_the_cavalry
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				is_in_faction_with = GER
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_ideas = YUG_idea_tank_conversions
 		}
 	}
 
@@ -3469,7 +3433,6 @@ focus_tree = {
 		id = YUG_modern_tanks
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = YUG_armored_cavalry }
-		mutually_exclusive = { focus = YUG_tank_conversions }
 		x = 0
 		y = 2
 		relative_position_id = YUG_motorize_the_cavalry
@@ -3503,7 +3466,8 @@ focus_tree = {
 				name = YUG_modern_tanks
 				bonus = 1.0
 				uses = 1
-				category = armor
+				technology = basic_medium_tank_chassis
+				technology = basic_heavy_tank_chassis
 			}
 		}
 	}
@@ -3540,7 +3504,14 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = YUG_tank_licenses
+			add_tech_bonus = {
+				name = YUG_modern_tanks
+				bonus = 1.0
+				uses = 1
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+			}
 		}
 	}
 
@@ -3845,6 +3816,7 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			army_experience = 100
 		}
 	}
 
@@ -3958,45 +3930,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = YUG_artillery_regiments
-		}
-	}
-	
-	focus = {
-		id = YUG_medal_for_extreme_bravery
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = YUG_artillery_regiments }
-		x = 0
-		y = 3
-		relative_position_id = YUG_army_maneuvers
-
-		cost = 10
-		
-		allow_branch = {
-			has_dlc = "By Blood Alone"
-		}
-		
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			any_neighbor_country = {
-				is_major = yes
-				has_war_with = ROOT
-			}
-		}
-
-		bypass = {
-
-		}
-
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-
-
-		completion_reward = {
-			custom_effect_tooltip = yug_extreme_bravery_medal
 		}
 	}
 }

@@ -53,12 +53,8 @@ RAJ_historical = {
 		RAJ_british_army_support							
 		RAJ_indian_gentlemen_officers						
 		RAJ_princely_state_donations						
-		RAJ_imperial_service_troops							
-		RAJ_raf_funding										
-		RAJ_navy_funding									
-		RAJ_army_motorization								
-		RAJ_british_pilot_training							
-		RAJ_expand_air_bases								
+		RAJ_imperial_service_troops															
+		RAJ_army_motorization															
 		RAJ_found_scindia_shipyard							
 		RAJ_red_eagle_division								
 		RAJ_indian_gurkhas									
@@ -68,19 +64,13 @@ RAJ_historical = {
 		RAJ_quit_india_movement								
 		RAJ_screening_effort								
 		RAJ_cruiser_effort									
-		RAJ_air_support_effort								
-		RAJ_fighter_effort									
 		RAJ_submarine_effort								
 		RAJ_capital_ship_effort								
 		RAJ_chindits										
-		RAJ_jungle_training									
 		RAJ_modernizing_navy								
 		RAJ_strengthen_ties_with_british_investors			
 		RAJ_british_rail_investors							
 		RAJ_british_arms_investors							
-		RAJ_institute_of_fundamental_research				
-		RAJ_royal_indian_air_force							
-		RAJ_the_smiling_buddha								
 	}
 
 	research = {

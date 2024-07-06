@@ -251,9 +251,7 @@ technologies = {
 		mountaineers = {
 			defense = 0.15
 		}	
-		
-		xor = { mountaineers_combat_1 }
-		
+				
 		doctrine = yes	
 		research_cost = 4.5
 
@@ -664,7 +662,7 @@ technologies = {
 		marine = {
 			marsh = {
 				attack = 0.1
-				defense = 0.1
+				defence = 0.1
 				movement = 0.1
 			}
 		}

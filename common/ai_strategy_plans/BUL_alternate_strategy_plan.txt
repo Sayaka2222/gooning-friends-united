@@ -61,7 +61,6 @@ BUL_communsit_plan = {
 		BUL_train_the_youth_wings
 		BUL_collectivization_of_the_countryside
 		BUL_found_dvf_sopot
-		BUL_foreign_aircraft_designers #Short Focus
 		#1942
 		BUL_soviet_military_exercises
 		BUL_prussia_of_the_balkans
@@ -69,11 +68,8 @@ BUL_communsit_plan = {
 		BUL_steel_plant_in_pernik
 		#1943		
 		BUL_heavy_industry
-		BUL_utmost_optimization
 		BUL_georgi_benkovski_aircraft_repair_facilities
 		BUL_pilot_training_program
-		BUL_uranium_prospecting
-		BUL_a_black_sea_fleet
 		#1944
 		BUL_carry_the_revolution_abroad
 		
@@ -84,10 +80,8 @@ BUL_communsit_plan = {
 		BUL_dissolve_the_military_union = 0
 		BUL_support_macedonian_organizations = 0
 		BUL_power_to_the_tsar = 0
-		BUL_attract_foreign_capitals = 0
 		BUL_the_unification_of_the_balkans = 0
 		BUL_democratic_principles = 0
-		BUL_dominance_in_the_black_sea = 0
 	}
 
 	research = {
@@ -141,7 +135,6 @@ BUL_communsit_alternate_plan = {
 		BUL_improve_the_road_system
 		#1937
 		BUL_unify_the_bourgeois_movement
-		BUL_attract_foreign_capitals
 		BUL_expand_sofia_university
 		BUL_united_front_against_fascism
 		BUL_the_spanish_struggle #Short focus
@@ -186,7 +179,6 @@ BUL_communsit_alternate_plan = {
 		BUL_full_voting_rights_for_women
 		BUL_abolish_the_tarnovo_constitution
 		#1944
-		BUL_nationalization
 	}
 
 	focus_factors = {
@@ -195,7 +187,6 @@ BUL_communsit_alternate_plan = {
 		BUL_support_macedonian_organizations = 0
 		BUL_power_to_the_tsar = 0
 		BUL_democratic_principles = 0
-		BUL_dominance_in_the_black_sea = 0
 	}
 
 	research = {
@@ -283,16 +274,12 @@ BUL_fascist_axis_plan = {
 		BUL_corporatism
 		BUL_national_railway_lines
 		BUL_light_metal_exploitation
-		BUL_improve_coastal_defenses
 		BUL_prussia_of_the_balkans
 		#1943
 		BUL_the_eastern_front
 		BUL_expand_varna_naval_base
-		BUL_a_black_sea_fleet
 		BUL_steel_plant_in_pernik
-		BUL_utmost_optimization
 		#1944
-		BUL_uranium_prospecting		
 	}
 
 	focus_factors = {
@@ -302,8 +289,6 @@ BUL_fascist_axis_plan = {
 		BUL_condemn_macedonian_organizations = 0
 		BUL_found_the_brannik = 0
 		BUL_peaceful_development = 0
-		BUL_attract_foreign_capitals = 0
-		BUL_dominance_in_the_black_sea = 0
 		BUL_the_return_of_ferdinand_i = 0
 	}
 
@@ -389,21 +374,15 @@ BUL_the_return_of_ferdinand_plan = {
 		BUL_prussia_of_the_balkans
 		#1942
 		BUL_bulgarian_academy_of_sciences
-		BUL_a_black_sea_fleet
 		BUL_expand_varna_naval_base
 		BUL_guardians_of_the_balkans
 		BUL_bulgarian_administration_of_the_balkans ### Long focus
 		#1943
-		BUL_utmost_optimization
 		BUL_the_third_bulgarian_empire
 		BUL_restore_the_bulgarian_patriarchate
-		BUL_improve_coastal_defenses
 		#1944
-		BUL_reinforce_naval_bases
 		BUL_amend_old_grudges
 		BUL_develop_burgas_shipyards
-		BUL_national_submarine_production
-		BUL_bulgarian_shipping_chamber
 		#1945
 		BUL_consolidate_dominance_of_the_seas
 	}
@@ -416,7 +395,6 @@ BUL_the_return_of_ferdinand_plan = {
 		BUL_ban_far_right_organizations = 0
 		BUL_join_the_tripartite_pact = 0
 		BUL_join_the_allies = 0
-		BUL_dominance_in_the_black_sea = 0
 		BUL_form_a_regency_council = 0
 	}
 
@@ -503,14 +481,9 @@ BUL_democratic_socialist = {
 		#1942
 		BUL_national_railway_lines
 		BUL_light_metal_exploitation
-		BUL_a_black_sea_fleet
-		BUL_improve_coastal_defenses
-		BUL_reinforce_naval_bases
 		BUL_steel_plant_in_pernik
 		#1943
 		BUL_darzhavna_aeroplanna_rabotilnitsa
-		BUL_utmost_optimization
-		BUL_supremacy_on_the_bosporus #Rare availability	
 		BUL_recover_italian_territories		
 		BUL_the_unification_of_the_balkans
 		#1944
@@ -530,10 +503,8 @@ BUL_democratic_socialist = {
 		BUL_restrained_paramilitary_organizations = 0
 		BUL_join_the_allies = 0
 		BUL_free_balkan_states = 0
-		BUL_attract_foreign_capitals = 0
 		BUL_the_fate_of_the_balkans = 0
 		BUL_the_return_of_ferdinand_i = 0
-		BUL_dominance_in_the_black_sea = 0
 	}
 
 	research = {
@@ -585,7 +556,6 @@ BUL_democratic_liberal = {
 		#1937
 		BUL_petorka
 		BUL_improve_the_road_system
-		BUL_attract_foreign_capitals
 		BUL_expand_sofia_university	
 		BUL_negotiate_bulgarian_rearmament #Short focus
 		BUL_legislative_elections
@@ -603,7 +573,6 @@ BUL_democratic_liberal = {
 		BUL_war_logistics
 		BUL_defensive_lines
 		#1940				
-		BUL_foreign_aircraft_designers #Short focus
 		BUL_rebuild_the_army
 		BUL_vasil_levsky_national_military_university
 		BUL_found_dvf_sopot
@@ -626,17 +595,11 @@ BUL_democratic_liberal = {
 		BUL_land_reorganization
 		BUL_modernize_the_industry
 		BUL_free_balkan_states
-		BUL_utmost_optimization
 		#1944
-		BUL_uranium_prospecting
 		BUL_develop_burgas_shipyards
-		BUL_a_black_sea_fleet
 		BUL_pilot_training_program
-		BUL_bulgarian_shipping_chamber		
 		#1945
-		BUL_national_submarine_production
 		BUL_consolidate_dominance_of_the_seas
-		BUL_strike_from_the_seas
 	}
 
 	focus_factors = {
@@ -648,10 +611,8 @@ BUL_democratic_liberal = {
 		BUL_ban_far_right_organizations = 0
 		BUL_a_balkan_confederation = 0
 		BUL_invigorate_national_industry = 0
-		BUL_nationalization = 0
 		BUL_the_fate_of_the_balkans = 0
 		BUL_the_return_of_ferdinand_i = 0
-		BUL_dominance_in_the_black_sea = 0
 	}
 
 	research = {

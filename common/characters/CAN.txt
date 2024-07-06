@@ -649,12 +649,6 @@ characters={
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = CAN_swastika_clubs 
-				}
-				if = {
-					limit = {
 						has_dlc = "Man the Guns"
 					}
 					NOT = {
@@ -696,7 +690,6 @@ characters={
 					}
 					OR = {
 						has_completed_focus = CAN_strengthen_the_commonwealth_ties 
-						has_completed_focus = CAN_permanent_joint_defense_board 
 					}
 				}
 				if = {
@@ -736,12 +729,6 @@ characters={
 				original_tag = CAN
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = CAN_burn_the_royal_portraits 
-				}
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -877,7 +864,6 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			available = {
-				has_completed_focus = CAN_forced_quebec_conscription 
 			}
 			traits = {
 				compassionate_gentleman 

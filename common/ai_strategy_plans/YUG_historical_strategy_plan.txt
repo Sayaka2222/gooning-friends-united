@@ -52,7 +52,6 @@ YUG_historical = {
 		YUG_expand_the_sarajevo_arsenals
 		YUG_motorized_logistics
 		YUG_armored_cavalry
-		YUG_tank_conversions
 		YUG_army_maneuvers
 		YUG_supremacy_of_defense
 		YUG_artillery_regiments

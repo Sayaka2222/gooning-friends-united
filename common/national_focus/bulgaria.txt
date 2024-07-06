@@ -5078,28 +5078,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_promote_bulgarian_nationalism
-
-		prerequisite = { focus = BUL_appoint_right_wing_ministers }
-		icon = GFX_focus_BUL_promote_bulgarian_nationalism
-		relative_position_id = BUL_appoint_right_wing_ministers
-		x = -4
-		y = 2
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
-		completion_reward = {
-			add_political_power = 70
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
 		id = BUL_crush_the_communists
 
 		prerequisite = { focus = BUL_the_tsars_regime focus = BUL_appoint_right_wing_ministers }
@@ -6134,6 +6112,28 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_political_power = 70
+		}
+	}
+
+	focus = {
+		id = BUL_promote_bulgarian_nationalism
+
+		prerequisite = { focus = BUL_appoint_right_wing_ministers }
+		icon = GFX_focus_BUL_promote_bulgarian_nationalism
+		relative_position_id = BUL_appoint_right_wing_ministers
+		x = -4
+		y = 2
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+		completion_reward = {
+			add_political_power = 70
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 

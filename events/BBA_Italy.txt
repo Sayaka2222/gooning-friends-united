@@ -3965,7 +3965,6 @@ country_event = {
 
 		ITA_promote_cln_to_country_leader_communism = yes
 
-		ITA_civil_war_deal_with_militias = yes
 
 		ITA_anti_fascist_civil_war_deal_with_fascist_side = yes
 	}
@@ -3988,7 +3987,6 @@ country_event = {
 
 		ITA_promote_cln_to_country_leader_democratic = yes
 
-		ITA_civil_war_deal_with_militias = yes
 
 		ITA_anti_fascist_civil_war_deal_with_fascist_side = yes
 	}
@@ -4127,8 +4125,6 @@ country_event = {
 		ITA_bop_very_low_increase_effect = yes
 
 		hidden_effect = {
-			ITA_purge_advisors_effect = yes
-			ITA_clear_purge_flag_effect = yes
 			if = {
 				limit = {
 					NOT = { has_country_flag = ITA_some_fascists_purged }
@@ -4162,8 +4158,6 @@ country_event = {
 		ITA_bop_very_low_increase_effect = yes
 
 		hidden_effect = {
-			ITA_purge_generals_effect = yes
-			ITA_clear_purge_flag_effect = yes
 			if = {
 				limit = {
 					NOT = { has_country_flag = ITA_no_fascists_purged }
@@ -4242,9 +4236,6 @@ country_event = {
 		ITA_bop_medium_increase_effect = yes
 
 		hidden_effect = {
-			ITA_purge_advisors_effect = yes
-			ITA_purge_generals_effect = yes
-			ITA_clear_purge_flag_effect = yes
 			if = {
 				limit = {
 					NOT = { has_country_flag = ITA_many_fascists_purged }

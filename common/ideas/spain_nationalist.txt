@@ -99,6 +99,25 @@ ideas = {
 			}
 		}
 
+		SPA_no_meme = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				ai_get_ally_desire_factor = -300
+				ai_join_ally_desire_factor = -300
+			}
+
+			rule = { can_decline_call_to_war = yes }
+		}
+
 		SPA_recovering_from_civil_war = {
 
 			name = SPA_recovering_from_civil_war

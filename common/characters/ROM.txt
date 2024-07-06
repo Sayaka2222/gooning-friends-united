@@ -235,7 +235,7 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=111
 		}
 	}
 
@@ -487,12 +487,6 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_appoint_soviet_friendly_government 
-				}
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"

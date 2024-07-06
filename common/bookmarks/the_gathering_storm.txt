@@ -187,9 +187,7 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
+				CAN_a_motorized_army
 			}
 		}
 		"AST"={
@@ -200,9 +198,7 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
+				AST_additional_militia_training
 			}
 		}
 		"NZL"={
@@ -239,9 +235,7 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_all_india_forward_bloc
 				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
 			}
 		}
 		"CZE"={

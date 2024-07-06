@@ -34,37 +34,9 @@ ideas = {
 			removal_cost = -1
 
 			cancel = {
-				has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-				OR = {
-					has_non_aggression_pact_with = GRE
-					has_non_aggression_pact_with = YUG
-					has_non_aggression_pact_with = ROM
-					has_non_aggression_pact_with = TUR
-				}
 			}
 
 			on_remove = {
-				if = {
-					limit = {
-						has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-						NOT = { has_country_flag = BUL_refused_arms_restrictions_flag }
-						NOT = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
-					}
-					country_event = bftb_bulgaria_rearmament.4
-					ENG = { country_event = bftb_bulgaria_rearmament.5 }
-				}
-				if = {
-					limit = { has_country_flag = BUL_refused_arms_restrictions_flag }
-					clr_country_flag = BUL_refused_arms_restrictions_flag
-				}
-				if = {
-					limit = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
-					clr_country_flag = BUL_uk_gives_in_to_pressure_flag
-				}
-				if = {
-					limit = { has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag }
-					clr_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-				}
 				country_lock_all_division_template = no
 				clear_rule = {
 					can_not_declare_war = yes
@@ -92,37 +64,9 @@ ideas = {
 			removal_cost = -1
 
 			cancel = {
-				has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-				OR = {
-					has_non_aggression_pact_with = GRE
-					has_non_aggression_pact_with = YUG
-					has_non_aggression_pact_with = ROM
-					has_non_aggression_pact_with = TUR
-				}
 			}
 
 			on_remove = {
-				if = {
-					limit = {
-						has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-						NOT = { has_country_flag = BUL_refused_arms_restrictions_flag }
-						NOT = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
-					}
-					country_event = bftb_bulgaria_rearmament.4
-					ENG = { country_event = bftb_bulgaria_rearmament.5 }
-				}
-				if = {
-					limit = { has_country_flag = BUL_refused_arms_restrictions_flag }
-					clr_country_flag = BUL_refused_arms_restrictions_flag
-				}
-				if = {
-					limit = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
-					clr_country_flag = BUL_uk_gives_in_to_pressure_flag
-				}
-				if = {
-					limit = { has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag }
-					clr_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
-				}
 				country_lock_all_division_template = no
 				clear_rule = {
 					can_not_declare_war = yes
@@ -2014,7 +1958,6 @@ ideas = {
 					is_subject_of = GER
 				}
 				is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2085,7 +2028,6 @@ ideas = {
 					is_subject_of = ENG
 				}
 				is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2156,7 +2098,6 @@ ideas = {
 					is_subject_of = SOV
 				}
 				is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2227,7 +2168,6 @@ ideas = {
 					is_subject_of = ITA
 				}
 				is_in_faction_with = ITA
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2277,7 +2217,6 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_an_aegean_sea_fleet }
 			}
 
 			available = {
@@ -2307,7 +2246,6 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = BUL_an_aegean_sea_fleet
 			}
 
 			available = {
@@ -2358,7 +2296,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2425,7 +2362,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = SOV
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2492,7 +2428,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = ITA
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2685,7 +2620,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2756,7 +2690,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -2827,7 +2760,6 @@ ideas = {
 					is_subject = no
 					is_subject_of = SOV
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -3042,7 +2974,7 @@ ideas = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3109,7 +3041,7 @@ ideas = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3176,7 +3108,7 @@ ideas = {
 					is_subject = no
 					is_subject_of = SOV
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3245,7 +3177,7 @@ ideas = {
 					is_subject = no
 					is_subject_of = ITA
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3293,13 +3225,11 @@ ideas = {
 			}	
 
 			visible = {
-				NOT = { has_completed_focus = BUL_utmost_optimization }
 			}
 
 			available = {
 				OR = {
 					has_completed_focus = BUL_invigorate_national_industry
-					has_completed_focus = BUL_nationalization
 				}
 			}
 			
@@ -3353,13 +3283,11 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_utmost_optimization }
 			}
 
 			available = {
 				OR = {
 					has_completed_focus = BUL_invigorate_national_industry
-					has_completed_focus = BUL_nationalization
 				}
 			}		
 			
@@ -3412,13 +3340,11 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_utmost_optimization }
 			}
 
 			available = {
 				OR = {
 					has_completed_focus = BUL_invigorate_national_industry
-					has_completed_focus = BUL_nationalization
 				}
 			}
 
@@ -3469,13 +3395,11 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_utmost_optimization }
 			}
 
 			available = {
 				OR = {
 					has_completed_focus = BUL_invigorate_national_industry
-					has_completed_focus = BUL_nationalization
 				}
 			}
 
@@ -3552,7 +3476,7 @@ ideas = {
 					tooltip = BUL_foreign_industrial_concern_requirements_ger_tt
 					NOT = { check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_medium_cap } }
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3606,7 +3530,7 @@ ideas = {
 					tooltip = BUL_foreign_industrial_concern_requirements_eng_tt
 					NOT = { check_variable = { BUL_british_industrial_investments < BUL_industrial_investments_medium_cap } }
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -3660,7 +3584,7 @@ ideas = {
 					tooltip = BUL_foreign_industrial_concern_requirements_sov_tt
 					NOT = { check_variable = { BUL_soviet_industrial_investments < BUL_industrial_investments_medium_cap } }
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {

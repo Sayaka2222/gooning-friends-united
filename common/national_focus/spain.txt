@@ -96,7 +96,7 @@ focus_tree = {
 		
 		
 		icon = GFX_goal_generic_demand_territory
-		x = 31
+		x = 20
 		y = 0
 		offset = {
 			x = -14
@@ -150,7 +150,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_a_great_spain }
 		
 		icon = GFX_focus_generic_concessions
-		x = -15
+		x = 0
 		y = 1
 		offset = {
 			x = 15
@@ -216,7 +216,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_negotiate_carlist_support
-		cost = 5
+		cost = 4
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -240,7 +240,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_army_of_africa
-		cost = 5
+		cost = 4
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -311,6 +311,7 @@ focus_tree = {
 	focus = {
 		id = SPA_sin_paquito
 		available = {
+			always = no
 		}
 		bypass = {
 		}
@@ -322,7 +323,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = SPA_secure_the_northern_garrisons
 		cost = 4
-
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
@@ -357,6 +357,7 @@ focus_tree = {
 				}
 				add_unit_leader_trait = trait_SPA_nationalist_sympathies
 			}
+			country_event = lar_spain.2
 		}
 	}
 
@@ -373,30 +374,13 @@ focus_tree = {
 				has_country_flag = SPR_spanish_elections_flag
 			}
 		}
-		
 		bypass = {
 			has_global_flag = spanish_civil_war
 		}
 		mutually_exclusive = { focus = SPA_a_great_spain }
 		cancel_if_invalid = yes
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				OR = {
-					NOT = {
-						has_global_flag = spanish_civil_war
-					}
-					AND = {
-						NOT = { has_completed_focus = SPA_a_great_spain }
-						has_global_flag = spanish_civil_war
-					}
-				}
-			}
+			always = no
 		}
 		
 		icon = GFX_goal_generic_national_unity

@@ -14001,7 +14001,37 @@ SPR_civil_war_offensives = {
 }
 
 political_actions = {
-	
+	SPA_end_scw = {
+		
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			tag = SPA
+		}
+
+		available = {
+			date > 1939.1.1
+			SPD = {
+				exists = yes
+			}
+			has_war = yes
+		}
+
+		priority = 100
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		complete_effect = {
+			annex_country = {
+				target = SPD
+			}
+			add_threat = 5
+		}
+	}
 	SPA_carlist_uprising_mission = {
 
 		icon = generic_ignite_civil_war

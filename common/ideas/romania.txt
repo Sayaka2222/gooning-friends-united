@@ -1,6 +1,42 @@
 ideas = {
 
 	country = {
+		ROM_rubber_trade = {
+			name = "Rubber Exports"
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		ROM_refinery_expenses = {
+			name = "Refinery Expenses"
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
 		ROM_revenge_against_soviet = {
 
 			picture = anti_soviet_pact

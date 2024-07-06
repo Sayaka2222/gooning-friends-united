@@ -521,7 +521,7 @@ technologies = {
 		category_support_battalions = {
 			max_organisation = 15
 		}
-		motorized_rocket_artillery_support = {
+		support_motorized_rocket = {
 			breakthrough = 0.05
 		}
 		coordination_bonus = 0.05
@@ -1262,7 +1262,7 @@ technologies = {
 		category_army = {
 			max_organisation = 5
 		}
-		motorized_rocket_artillery_support = {
+		support_motorized_rocket = {
 			breakthrough = 0.05
 		}
 		category_mobile_infantry = {
@@ -1907,7 +1907,7 @@ technologies = {
 		category_all_infantry = {
 			default_morale = 0.05
 		}
-		motorized_rocket_artillery_support = {
+		support_motorized_rocket = {
 			breakthrough = 0.05
 		}
 		max_planning = 0.1
@@ -2681,7 +2681,7 @@ technologies = {
 		xp_unlock_cost = 100
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
-		motorized_rocket_artillery_support = {
+		support_motorized_rocket = {
 			breakthrough = 0.05
 		}
 				
