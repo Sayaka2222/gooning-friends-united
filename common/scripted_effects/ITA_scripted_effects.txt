@@ -2663,39 +2663,6 @@ ITA_set_special_characters_as_antifascists_effect = {
 	}
 }
 
-ITA_civil_war_deal_with_militias = {
-	#SPAWN UNITS AND KILL BLACKSHIRTS TACK
-	delete_unit_template_and_units = {
-		division_template = "Camicie Nere"
-	}
-	ITA_add_redshirts_div_template = yes
-	if = {
-		limit = {
-			OR = {
-				has_completed_focus = ITA_organize_strikes_in_the_north
-				has_completed_focus = ITA_the_southern_farmlands
-			}
-		}
-		capital_scope = {
-			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-				owner = ROOT
-				count = 3
-			}
-		}
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-			}
-			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-				owner = ROOT
-				count = 2
-			}
-		}
-	}
-}
-
 ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
 	ITA_bop_remove_bop_effect = yes

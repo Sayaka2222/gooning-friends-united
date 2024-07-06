@@ -3,7 +3,7 @@ autonomy_state = {
 	
 	min_freedom_level = 0.8
 	
-	manpower_influence = 0.2
+	manpower_influence = 0.0
 	
 	rule = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
@@ -45,19 +45,7 @@ autonomy_state = {
 	can_take_level = {
 		if = {
 			limit = {
-				original_tag = AST
 			}
-			OR = {
-				has_completed_focus = AST_adopt_westminster
-				has_completed_focus = AST_abandon_the_westminster_system
-				has_completed_focus = AST_sever_ties_with_uk
-			}
-		}
-		if = {
-			limit = {
-				original_tag = SAF
-			}
-			has_completed_focus = SAF_abandon_westminster
 		}
 	}
 
