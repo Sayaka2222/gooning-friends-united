@@ -105,3 +105,10 @@
  DEN_northern_national_front: "Northern National Front"
  DEN_northern_security_pact: "Northern Security Pact"
  BRA_socialist_latin_american_cooperative: "The Latin American Socialist Cooperative"
+
+ PRODUCTION_MATERIALS_ALUMINIUM:0 "Aluminum"
+ PRODUCTION_MATERIALS_RUBBER:0 "Rubber"
+ PRODUCTION_MATERIALS_CHROMIUM:0 "Chromium"
+ PRODUCTION_MATERIALS_STEEL:0 "Steel"
+ PRODUCTION_MATERIALS_TUNGSTEN:0 "Tungsten"
+ PRODUCTION_MATERIAL_VAL:0 "$VALUE|0H$"

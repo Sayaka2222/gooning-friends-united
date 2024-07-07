@@ -1,7 +1,9 @@
 ﻿capital = 282
-
-
-
+set_country_flag=fuel_system_enabled
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.85
 

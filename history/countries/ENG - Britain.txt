@@ -1,18 +1,8 @@
 ﻿capital = 126
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 20000
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 1000
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 1000
-	producer = ENG
+set_country_flag=fuel_system_enabled
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
 if = {
 	limit = {

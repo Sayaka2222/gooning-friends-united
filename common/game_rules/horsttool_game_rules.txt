@@ -1,0 +1,101 @@
+horst_host_country = {
+	name = "Select Host"
+	group = "HFU Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = ENG
+		text = "UK"
+		desc = ""
+	}
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = RAJ
+		text = "India"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = ""
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = ""
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = ""
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+	option = {
+		name = CZE
+		text = "Slovakia"
+		desc = ""
+	}
+	option = {
+		name = CRO
+		text = "Croatia"
+		desc = ""
+	}
+	option = {
+		name = MAN
+		text = "Manchukuo"
+		desc = ""
+	}
+	option = {
+		name = SIA
+		text = "Siam"
+		desc = ""
+	}
+	option = {
+		name = CHI
+		text = "China"
+		desc = ""
+	}
+}
