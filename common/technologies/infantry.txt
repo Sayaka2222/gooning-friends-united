@@ -404,6 +404,11 @@ technologies = {
 	
 	advanced_infantry_weapons2 = {
 
+		path = {
+			leads_to_tech = assault_rifles
+			research_cost_coeff = 1
+		}
+
 		category_light_infantry = {
 			soft_attack = 0.05
 		}		
@@ -445,6 +450,54 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1946.1.1"
+			}
+		}
+	}
+
+	assault_rifles = {
+
+		enable_equipments = {
+			infantry_equipment_4
+		}	
+
+		research_cost = 2.2
+		start_year = 1945
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 1
+			
+			
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
 			}
 		}
 	}

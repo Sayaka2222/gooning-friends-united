@@ -99,16 +99,14 @@ ideas = {
 			}
 		}
 		ger_quality = {
-			name = "Quality Tank Production"
+			name = "Mass Tank Production"
 			allowed = {
 				original_tag = GER
 			}
 			removal_cost = -1
 			equipment_bonus = {
 				medium_tank_chassis = {
-					build_cost_ic = 0.05
-					soft_attack = 0.05
-					hard_attack = 0.05
+					build_cost_ic = -0.025
 				}
 			}
 		}
@@ -340,7 +338,7 @@ ideas = {
 			picture = generic_fortify_the_borders
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.4
 			}
 		}
 

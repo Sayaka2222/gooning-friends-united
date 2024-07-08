@@ -4000,5 +4000,12 @@
  BRA_mechanized_equipment_3_short: "M5 Half-Track"
 
  EQUIPMENT_DESCRIPTION: "$NAME$"
+
+ infantry_equipment_4:0 "Assault Rifles"
+ SOV_infantry_equipment_4:0 "AK-47"
+ GER_infantry_equipment_4:0 "StG-45"
+ ENG_infantry_equipment_4:0 "Sterling MK2"
+ USA_infantry_equipment_4:0 "M14"
+ FRA_infantry_equipment_4:0 "MAS-49"
  
  

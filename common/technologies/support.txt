@@ -137,7 +137,7 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {	
-			entrenchment = 0.50
+			entrenchment = 1
 			fort = {
 				defence = 0.10
 				attack = 0.10
@@ -203,7 +203,7 @@ technologies = {
 	tech_engineers3 = {
 
 		engineer = {
-			entrenchment = 0.50
+			entrenchment = 1
 			river = {
 				attack = 0.1	
 				defence = 0.10
@@ -211,27 +211,24 @@ technologies = {
 		}
 
 		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
+			entrenchment = 0.5
+			river = {
+				attack = 0.1	
+				defence = 0.10
 			}
 		}
 		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
+			entrenchment = 0.5
+			river = {
+				attack = 0.1	
+				defence = 0.10
 			}
 		}
 		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
+			entrenchment = 0.5
+			river = {
+				attack = 0.1	
+				defence = 0.10
 			}
 		}
 		path = {
@@ -279,13 +276,14 @@ technologies = {
 	tech_engineers4 = {
 
 		engineer = {
-			entrenchment = 0.50
+			entrenchment = 1
 			urban = {
 				attack = 0.1	
 				defence = 0.1
 			}
 		}
 		light_flame_tank = {
+			entrenchment = 0.5
 			urban = {
 				attack = 0.1
 			}
@@ -294,6 +292,7 @@ technologies = {
 			}
 		}
 		medium_flame_tank = {
+			entrenchment = 0.5
 			urban = {
 				attack = 0.1
 			}
@@ -302,6 +301,7 @@ technologies = {
 			}
 		}
 		heavy_flame_tank = {
+			entrenchment = 0.5
 			urban = {
 				attack = 0.1
 			}
@@ -592,7 +592,7 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 15
 		}
 		
 		
@@ -626,7 +626,7 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 15
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -657,7 +657,7 @@ technologies = {
 	tech_military_police4 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 15
 		}
 
 		research_cost = 2.0
@@ -743,7 +743,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			default_morale = 0.15
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -791,12 +791,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			
-			battalion_mult = {
-				category = category_all_armor
-				equipment_capture_factor = 0.01
-				add = yes
-			}
+			default_morale = 0.15
 			
 		}
 		path = {
@@ -839,7 +834,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			default_morale = 0.15
 		}
 
 		research_cost = 2.0
@@ -928,6 +923,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
+			max_strength = 0.5
 		}
 		
 		path = {
@@ -974,6 +970,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 0.5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -1018,6 +1015,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 0.5
 		}
 
 		research_cost = 2.0
