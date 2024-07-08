@@ -29,9 +29,27 @@ set_technology = {
 	tech_recon = 1
 	tech_trucks = 1
 	gw_artillery = 1
-
 	fuel_silos = 1
+	fuel_refining = 1
 	basic_train = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	radio = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	engine_tech_1 = 1
+	armor_tech_1 = 1
+	motorised_infantry = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	superior_firepower = 1
 }
 
 if = {
@@ -61,6 +79,10 @@ if = {
 		disarmed_nation
 		peace_training
 		trade_with_axis
+	}
+	add_timed_idea = {
+		idea = autarky
+		days = 1461
 	}
 	if = {
 		limit = { has_dlc = "Arms Against Tyranny" }

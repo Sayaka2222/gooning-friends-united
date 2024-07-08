@@ -360,7 +360,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		start_year = 1942
 		folder = {
 			name = infantry_folder
@@ -507,7 +507,6 @@ technologies = {
 	paratroopers2 = {
 
 		paratrooper = {
-			max_organisation = 5
 			soft_attack = 0.05
 		}
 		
@@ -551,7 +550,7 @@ technologies = {
 	paratroopers3 = {
 
 		paratrooper = {
-			max_organisation = 5
+			soft_attack = 0.05
 		}
 		
 
@@ -645,7 +644,6 @@ technologies = {
 	marines2 = {
 
 		marine = {
-			max_organisation = 5
 			soft_attack = 0.05
 		}
 		path = {
@@ -683,7 +681,7 @@ technologies = {
 	marines3 = {
 
 		marine = {
-			max_organisation = 5
+			soft_attack = 0.05
 		}
 
 		research_cost = 2.0
@@ -757,7 +755,6 @@ technologies = {
 	tech_mountaineers2 = {
 
 		mountaineers = {
-			max_organisation = 5
 			soft_attack = 0.05
 		}
 		path = {
@@ -785,7 +782,7 @@ technologies = {
 	
 	tech_mountaineers3 = {	
 		mountaineers = {
-			max_organisation = 5
+			soft_attack = 0.05
 		}
 
 		research_cost = 2.0
@@ -1463,15 +1460,7 @@ technologies = {
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		}	
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1965,8 +1954,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1940
+		research_cost = 2.2
+		start_year = 1939
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1940 }

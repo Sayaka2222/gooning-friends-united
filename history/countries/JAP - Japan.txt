@@ -14,7 +14,7 @@ add_ideas = {
 	closed_economy
 	limited_conscription
 	partial_economic_mobilisation
-
+	volunteers
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
@@ -61,6 +61,12 @@ set_technology = {
 	radio = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
+	improved_light_tank_chassis = 1
+	engine_tech_1 = 1
+	armor_tech_1 = 1
+	paratroopers = 1
+	photo_reconnaisance = 1
+	basic_medium_airframe = 1
 }
 
 if = {
@@ -213,6 +219,66 @@ if = {
 	set_autonomy = {
 		target = MAN
 		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Ki-27"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1
+			engine_type_slot = engine_2_1x
+		}
+		icon = "GFX_JAP_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-32"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1					
+			engine_type_slot = engine_2_1x					
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "G3M1"
+		type = small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = floats	
+			engine_type_slot = engine_2_1x
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_JAP_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-21"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_3 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_4 = Medium_bomb_bay
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = radio_navigation_1
+			special_type_slot_2 = hmg_defense_turret_2x
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_JAP_tactical_bomber1_medium"
 	}
 }
 

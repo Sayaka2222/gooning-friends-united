@@ -94,13 +94,13 @@ characters={
 				small=GFX_portrait_SAF_george_edwin_brink_small
 			}
 		}
-		corps_commander={
-			traits={ desert_fox }
+		field_marshal={
+			traits={ desert_fox panzer_leader trait_engineer trickster }
 			skill=4
 			attack_skill=4
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=1
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}

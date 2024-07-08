@@ -248,11 +248,11 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
-			skill=4
-			attack_skill=2
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard infantry_leader desert_fox }
+			skill=5
+			attack_skill=5
 			defense_skill=4
-			planning_skill=3
+			planning_skill=5
 			logistics_skill=4
 			legacy_id=996
 		}
@@ -285,11 +285,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ inflexible_strategist career_officer }
-			skill=5
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
+			traits={ inflexible_strategist career_officer panzer_leader desert_fox }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=5
 			legacy_id=0
 		}
@@ -303,12 +303,12 @@ characters={
 				small=GFX_portrait_ENG_neil_ritchie_small
 			}
 		}
-		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
+		field_marshal={
+			traits={ inflexible_strategist panzer_leader trait_engineer politically_connected }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
 			logistics_skill=3
 			legacy_id=0
 		}
@@ -341,10 +341,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ war_hero trickster }
+			traits={ war_hero trickster infantry_leader trait_mountaineer trait_engineer trickster }
 			skill=5
-			attack_skill=3
-			defense_skill=3
+			attack_skill=5
+			defense_skill=5
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=0
@@ -360,11 +360,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=4
-			attack_skill=2
+			traits = {
+				panzer_leader trait_engineer
+			}
+			skill=6
+			attack_skill=5
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=999
 		}
 	}
@@ -440,11 +443,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ politically_connected }
+			traits={ politically_connected infantry_leader trait_mountaineer }
 			skill=5
 			attack_skill=4
 			defense_skill=4
-			planning_skill=3
+			planning_skill=4
 			logistics_skill=5
 			legacy_id=995
 		}
@@ -647,11 +650,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer politically_connected }
-			skill=4
+			traits={ harsh_leader panzer_leader politically_connected desert_fox trait_engineer trickster }
+			skill=5
 			attack_skill=4
-			defense_skill=2
-			planning_skill=3
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=4
 			legacy_id=993
 		}
@@ -666,12 +669,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist career_officer infantry_officer }
-			skill=4
-			attack_skill=3
+			traits={ brilliant_strategist career_officer infantry_leader naval_invader trait_engineer }
+			skill=6
+			attack_skill=4
 			defense_skill=4
-			planning_skill=4
-			logistics_skill=2
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -724,11 +727,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
+			traits={ infantry_leader trait_mountaineer trait_engineer }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=4
 			legacy_id=998
 		}
@@ -743,12 +746,12 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { jungle_rat }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 1
+			traits = { jungle_rat infantry_leader trait_engineer }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 		}
 	}
 
@@ -810,7 +813,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				navy_chief_naval_aviation_2
+				navy_chief_decisive_battle_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -819,12 +822,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
-			skill=5
+			traits={ bold blockade_runner superior_tactician fleet_protector }
+			skill=6
 			attack_skill=5
-			defense_skill=4
-			maneuvering_skill=3
-			coordination_skill=4
+			defense_skill=5
+			maneuvering_skill=5
+			coordination_skill=5
 			legacy_id=985
 		}
 	}
@@ -914,12 +917,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ gunnery_expert fly_swatter }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=3
+			traits={ superior_tactician fleet_protector blockade_runner }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			maneuvering_skill=5
+			coordination_skill=5
 			legacy_id=990
 		}
 	}
@@ -1258,7 +1261,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_naval_aviation_2
 			}
 			cost =  50
 			ai_will_do = {

@@ -64,12 +64,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=1
+			traits={ infantry_leader organizer }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -83,12 +83,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
+			traits={ hill_fighter infantry_leader trait_engineer }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -102,7 +102,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ desert_fox infantry_leader trait_engineer }
 			skill=3
 			attack_skill=1
 			defense_skill=3

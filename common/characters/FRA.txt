@@ -126,12 +126,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist cavalry_officer war_hero trickster }
-			skill=4
+			traits={ brilliant_strategist panzer_leader war_hero trickster desert_fox }
+			skill=6
 			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -145,10 +145,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer }
+			traits={ career_officer trait_cautious infantry_leader }
 			skill=4
-			attack_skill=3
-			defense_skill=2
+			attack_skill=4
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=0
@@ -185,12 +185,12 @@ characters={
 		}
 
 		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
-			skill=2
-			attack_skill=1
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine infantry_leader }
+			skill=5
+			attack_skill=4
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=4
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -280,12 +280,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ old_guard defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			traits={ old_guard defensive_doctrine infantry_leader trait_mountaineer inflexible_strategist }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -327,13 +327,13 @@ characters={
 			}
 		}
 		
-		corps_commander={
-			traits={ media_personality harsh_leader armor_officer }
-			skill=4
+		field_marshal={
+			traits={ media_personality brilliant_strategist panzer_leader trait_engineer }
+			skill=5
 			attack_skill=4
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=101
 		}
 	}
@@ -365,12 +365,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			traits={ career_officer trait_reckless panzer_leader trait_engineer }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -503,11 +503,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard infantry_officer trait_mountaineer }
-			skill=3
-			attack_skill=2
+			traits={ old_guard infantry_leader trait_mountaineer }
+			skill=5
+			attack_skill=4
 			defense_skill=4
-			planning_skill=2
+			planning_skill=4
 			logistics_skill=2
 			legacy_id=0
 		}

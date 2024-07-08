@@ -88,27 +88,26 @@ weather_arctic_water = { # on Region
 }
 
 weather_mud = { # on Province
-	army_attack_factor = -0.4
-	army_speed_factor = -0.5
-	attrition = 0.7
+	army_attack_factor = -0.1
+	army_speed_factor = -0.2
+	attrition = 0.5
 	org_loss_when_moving = 0.25
-	supply_factor = -0.15
+	supply_factor = -0.1
 	truck_attrition_factor = 5.0
 }
 weather_extreme_cold = { # on Province
-	army_attack_factor = -0.2
-	breakthrough_factor = -0.3
+	army_attack_factor = -0.3
+	breakthrough_factor = -0.4
 	dig_in_speed_factor = -0.6
-	local_org_regain = -0.05
-	supply_factor = -0.15
+	supply_factor = -0.1
 	truck_attrition_factor = 1.0
-	winter_attrition = 0.25
+	winter_attrition = 0.4
 }
 weather_very_cold = { # on Province
-	army_attack_factor = -0.1
-	breakthrough_factor = -0.15
+	army_attack_factor = -0.15
+	breakthrough_factor = -0.2
 	dig_in_speed_factor = -0.3
-	winter_attrition = 0.25
+	winter_attrition = 0.3
 }
 weather_very_hot = { # on Province
 	heat_attrition = 0.1
@@ -123,25 +122,24 @@ weather_extreme_hot = { # on Province
 	truck_attrition_factor = 0.1
 }
 weather_ground_snow_medium = { # on Province
-	army_attack_factor = -0.2
+	army_attack_factor = -0.15
 	army_speed_factor = -0.2
 	army_attack_speed_factor = -0.25
-	breakthrough_factor = -0.15
+	breakthrough_factor = -0.2
 	org_loss_when_moving = 0.1
-	supply_factor = -0.20
+	supply_factor = -0.15
 	truck_attrition_factor = 0.5
-	dig_in_speed_factor = 0.05
+	dig_in_speed_factor = 0.1
 }
 weather_ground_snow_high = { # on Province
-	army_attack_factor = -0.4
-	army_speed_factor = -0.5
-	army_attack_speed_factor = -0.5
-	breakthrough_factor = -0.3
-	local_org_regain = -0.05
+	army_attack_factor = -0.3
+	army_speed_factor = -0.4
+	army_attack_speed_factor = -0.4
+	breakthrough_factor = -0.4
 	org_loss_when_moving = 0.25
-	supply_factor = -0.40
+	supply_factor = -0.3
 	truck_attrition_factor = 1.0
-	dig_in_speed_factor = 0.15
+	dig_in_speed_factor = 0.2
 }
 
 flooded = { # on Province
@@ -155,7 +153,7 @@ flooded = { # on Province
 
 unplanned_offensive = { # on Province
 	air_cas_present_factor = -0.75
-	army_attack_factor = -0.9
+	army_attack_factor = -0.75
 	army_speed_factor = -0.75
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
@@ -163,7 +161,7 @@ unplanned_offensive = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	air_bombing_targetting = -0.5
-	carrier_traffic = -1.0
+	carrier_traffic = -0.75
 	naval_hit_chance = -0.25
 	naval_retreat_speed = 0.1
 	air_attack_factor = -0.50

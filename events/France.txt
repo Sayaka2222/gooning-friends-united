@@ -104,6 +104,11 @@ country_event = {
 				transfer_state = 735
 				transfer_state = 665
 				transfer_state = 458
+				every_unit_leader = {
+					remove_trait = {
+						trait = double_green_water_expert
+					}
+				}
 			}
 		}
 		JAP = {

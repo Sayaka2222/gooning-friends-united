@@ -14006,7 +14006,7 @@ political_actions = {
 		icon = generic_ignite_civil_war
 
 		allowed = {
-			tag = SPA
+			tag = SPR
 		}
 
 		available = {
@@ -14030,6 +14030,7 @@ political_actions = {
 				target = SPD
 			}
 			add_threat = 5
+			set_global_flag = scw_over
 		}
 	}
 	SPA_carlist_uprising_mission = {

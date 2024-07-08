@@ -5160,51 +5160,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_limited_womens_suffrage
-
-		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
-		prerequisite = { focus = BUL_bulgarian_irredentism }
-
-		icon = GFX_focus_generic_concessions
-		relative_position_id = BUL_illusions_of_a_non_partisan_system
-		x = 2
-		y = 0
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-
-	focus = {
-		id = BUL_found_the_brannik
-
-		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
-
-		icon = GFX_focus_BUL_found_the_brannik
-		relative_position_id = BUL_promote_bulgarian_nationalism
-		x = 0
-		y = 2
-		cost = 10
-
-		mutually_exclusive = { focus = BUL_depose_the_tsar }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_ideas = BUL_brannik
-		}
-	}
-
-	focus = {
 		id = BUL_bulgarian_irredentism
 
 		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
@@ -5226,6 +5181,28 @@ focus_tree = {
 				remove_idea = BUL_second_national_catastrophe
 				add_idea = BUL_bulgarian_irredentism
 			}
+		}
+	}
+
+	focus = {
+		id = BUL_limited_womens_suffrage
+
+		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
+		prerequisite = { focus = BUL_bulgarian_irredentism }
+
+		icon = GFX_focus_generic_concessions
+		relative_position_id = BUL_illusions_of_a_non_partisan_system
+		x = 2
+		y = 0
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -6138,6 +6115,29 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BUL_found_the_brannik
+
+		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
+
+		icon = GFX_focus_BUL_found_the_brannik
+		relative_position_id = BUL_promote_bulgarian_nationalism
+		x = 0
+		y = 2
+		cost = 10
+
+		mutually_exclusive = { focus = BUL_depose_the_tsar }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = BUL_brannik
+		}
+	}
+
+	focus = {
 		id = BUL_the_path_towards_a_greater_bulgaria
 
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
@@ -6167,7 +6167,6 @@ focus_tree = {
 		id = BUL_depose_the_tsar
 
 		prerequisite = { focus = BUL_the_path_towards_a_greater_bulgaria }
-		prerequisite = { focus = BUL_bulgarian_irredentism }
 		icon = GFX_focus_rom_abdicate
 		relative_position_id = BUL_the_path_towards_a_greater_bulgaria
 		x = 0

@@ -60,13 +60,78 @@ if = {
 	}
 }
 
-load_oob = "ENG_Motorized"
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Hurricane"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1
+			engine_type_slot = engine_2_1x
+		}
+		icon = "GFX_ENG_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "Hector"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1					
+			engine_type_slot = engine_2_1x					
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_ENG_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Swordfish"
+		type = small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = floats	
+			engine_type_slot = engine_2_1x
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "Wellington"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_3 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_4 = Medium_bomb_bay
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = radio_navigation_1
+			special_type_slot_2 = hmg_defense_turret_2x
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_ENG_tactical_bomber1_medium"
+	}
+}
 
-set_research_slots = 4
+
+set_research_slots = 5
 
 set_stability = 0.6
-set_war_support = 0.15
+set_war_support = 0.2
 add_command_power = 20
+
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 200
+	producer = ENG
+}
 
 # Starting tech
 set_technology = {
@@ -98,7 +163,8 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 	interwar_antitank = 1
-	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	paratroopers = 1
 }
 
 if = {
@@ -185,6 +251,7 @@ add_ideas = {
 	ENG_george_vi
 	peace_training
 	trade_with_allies
+	volunteers
 }
 	
 
@@ -276,10 +343,8 @@ recruit_character = ENG_john_vereker
 recruit_character = ENG_henry_wilson
 recruit_character = ENG_william_gott
 recruit_character = ENG_jock_campbell
-recruit_character = ENG_oliver_leese
 recruit_character = ENG_miles_dempsey
 recruit_character = ENG_brian_horrocks
-recruit_character = ENG_archibald_wavell
 recruit_character = ENG_james_fownes_somerville
 recruit_character = ENG_henry_harwood
 recruit_character = ENG_andrew_cunningham
@@ -338,7 +403,6 @@ recruit_character = ENG_random_communist_minister_10
 recruit_character = ENG_philip_kerr
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
-recruit_character = ENG_thomas_moore
 
 
 

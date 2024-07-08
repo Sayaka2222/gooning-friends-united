@@ -327,7 +327,9 @@ technologies = {
 
 
 	amphibious_tank_chassis = { #SchwimmPanzer II
-
+		allow_branch = {
+			always = no
+		}
 		enable_equipments = {
 			amphibious_tank_chassis_1
 		}
@@ -508,7 +510,6 @@ technologies = {
 	}
 
 	basic_medium_tank_chassis = { #Panzer III
-
 		enable_equipments = {
 			medium_tank_chassis_1
 			medium_tank_destroyer_chassis_1
@@ -709,7 +710,9 @@ technologies = {
 	}
 
 	advanced_medium_tank_chassis = { #Panther
-
+		allow = {
+			date > 1941.1.1
+		}
 		enable_equipments = {
 			medium_tank_chassis_3
 			medium_tank_destroyer_chassis_3
@@ -768,7 +771,9 @@ technologies = {
 	}
 
 	main_battle_tank_chassis = { #E-50
-
+		allow = {
+			date > 1943.1.1
+		}
 		enable_equipments = {
 			modern_tank_chassis_1
 			modern_tank_destroyer_chassis_1
@@ -987,7 +992,9 @@ technologies = {
 
 
 	advanced_heavy_tank_chassis = { #King Tiger
-
+		allow = {
+			date > 1941.1.1
+		}
 		enable_equipments = {
 			heavy_tank_chassis_3
 			heavy_tank_destroyer_chassis_3

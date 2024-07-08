@@ -168,11 +168,11 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
-			skill = 5
+			traits = { media_personality panzer_leader war_hero winter_specialist trickster }
+			skill = 6
 			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
+			defense_skill = 4
+			planning_skill = 5
 			logistics_skill = 5
 			legacy_id = 410
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
@@ -211,12 +211,12 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
+		field_marshal = {
+			traits = { brilliant_strategist trait_cautious panzer_leader winter_specialist trickster }
+			skill = 6
 			attack_skill = 3
 			defense_skill = 4
-			planning_skill = 2
+			planning_skill = 3
 			logistics_skill = 4
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
@@ -266,12 +266,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer politically_connected }
-			skill = 4
+			traits = { panzer_leader politically_connected winter_specialist trickster }
+			skill = 6
 			attack_skill = 4
 			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 407
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -332,7 +332,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer trait_cautious }
+			traits = { career_officer trait_cautious winter_specialist }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -352,12 +352,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+			traits = { trait_reckless infantry_leader ranger winter_specialist skilled_staffer }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -405,12 +405,12 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { harsh_leader armor_officer politically_connected }
-			skill = 5
+		field_marshal = {
+			traits = { panzer_leader politically_connected brilliant_strategist winter_specialist trickster }
+			skill = 6
 			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 2
+			defense_skill = 4
+			planning_skill = 3
 			logistics_skill = 5
 			legacy_id = 408
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
@@ -458,12 +458,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
+			traits = { career_officer cavalry_leader politically_connected winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 404
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -511,12 +511,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard inflexible_strategist politically_connected infantry_leader winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 			legacy_id = 405
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -632,11 +632,14 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
+			traits = {
+				infantry_leader swamp_fox winter_specialist
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -671,12 +674,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
+			traits = { trait_reckless infantry_leader winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -691,12 +694,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
+			traits = { infantry_leader winter_specialist brilliant_strategist hill_fighter }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
 			planning_skill = 3
-			logistics_skill = 1
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -811,12 +814,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer commando }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			traits = { infantry_leader commando trait_mountaineer winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -926,12 +929,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist infantry_officer winter_specialist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
+			traits = { brilliant_strategist infantry_leader ranger winter_specialist }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

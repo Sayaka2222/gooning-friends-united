@@ -5705,7 +5705,7 @@ leader_traits = {
 		# Boosts Fascism
 		sprite = 13
 		fascism_drift = 0.3
-		war_support_weekly_factor = 0.003
+		war_support_weekly = 0.003
 
 		ai_will_do = {
 			factor = 1

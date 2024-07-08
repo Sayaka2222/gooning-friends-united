@@ -66,6 +66,10 @@ if = { #DLC
 		peace_training
 		trade_with_axis
 	}
+	add_timed_idea = {
+		idea = autarky
+		days = 1461
+	}
 
 	#Army limitations due to Treaty of Neuilly sur Seine
 	set_rule = { #DLC
@@ -195,8 +199,27 @@ set_technology = { #VANILLA & DLC
 	tech_trucks = 1
 	motorised_infantry = 1
 	fuel_silos = 1
+	fuel_refining = 1
 	basic_train = 1
 	tech_mountaineers = 1
+	marines = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	radio = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	superior_firepower = 1
 }
 if = {
 	limit = {

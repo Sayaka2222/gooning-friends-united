@@ -1628,6 +1628,24 @@ focus_tree = {
 				uses = 1
 				technology = improved_small_airframe
 			}
+			add_tech_bonus = {
+				name = ITA_superaereo
+				bonus = 2
+				uses = 1
+				technology = aa_cannon_1
+			}
+			add_tech_bonus = {
+				name = ITA_superaereo
+				bonus = 2
+				uses = 1
+				technology = engines_3
+			}
+			add_tech_bonus = {
+				name = ITA_superaereo
+				bonus = 2
+				uses = 1
+				technology = survivability_studies
+			}
 		}
 	}
 
@@ -3202,13 +3220,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_political_power = 50
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_stability = 0.02
-
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_giuseppe_bottai
 		}
@@ -3263,7 +3274,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = ITA_battaglia_per_la_nascite days = 730 }
-			add_political_power = 25
 		}
 	}
 
@@ -3339,13 +3349,7 @@ focus_tree = {
 				show_ideas_tooltip = ITA_dino_grandi
 			}
 
-			add_political_power = 75
-			add_war_support = 0.02
-			add_stability = 0.02
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
+			add_political_power = 100
 		}
 	}
 
@@ -3370,9 +3374,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
 
 			if = {
 				limit = {
@@ -3414,8 +3415,9 @@ focus_tree = {
 
 		completion_reward = {
 			#TODO_Manu: Need to do something here because it is super redundant with everything else
-
-			custom_effect_tooltip = form_greater_italy_tt
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 
@@ -3429,11 +3431,15 @@ focus_tree = {
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 5
 		available = {
+			GER = {
+				has_completed_focus = GER_improve_national_spirit
+			}
 		}
 
 		search_filters = {}
 
 		completion_reward = {	
+			set_cosmetic_tag = greater_italy
 		}
 	}
 

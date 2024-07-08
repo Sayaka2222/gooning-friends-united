@@ -83,6 +83,9 @@ set_technology = {
 	radio = 1
 	armor_tech_1 = 1
 	interwar_antitank = 1
+	improved_light_tank_chassis = 1
+	iw_large_airframe = 1
+	photo_reconnaisance = 1
 }
 
 if = {

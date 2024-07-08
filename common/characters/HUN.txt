@@ -129,11 +129,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			traits = {
+				urban_assault_specialist infantry_leader trait_engineer
+			}
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -147,11 +150,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster }
-			skill=4
-			attack_skill=3
+			traits={ trickster infantry_leader ranger trait_engineer }
+			skill=5
+			attack_skill=5
 			defense_skill=4
-			planning_skill=2
+			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1
 		}
@@ -166,11 +169,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits = {
+				infantry_leader ranger trait_engineer organizer
+			}
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -184,12 +190,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			traits={ panzer_leader ranger trait_engineer }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -203,11 +209,12 @@ characters={
 			}
 		}
 		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			traits={ panzer_leader trait_engineer organizer  }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -400,7 +407,7 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				air_air_combat_training_1
+				army_infantry_2
 			}
 			cost =  50
 			ai_will_do = {
@@ -496,7 +503,7 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				army_cavalry_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {

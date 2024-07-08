@@ -2,7 +2,7 @@ focus_tree = {
 	id = sweden_focus
 	
 	country = {
-		factor = 0
+		factor = 1
 		
 		modifier = {
 			add = 10
@@ -13,5 +13,482 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 2500 }
+	focus = {
+		id = SWE_stockpiles
+		text = "Stockpiles"
+		icon = GFX_CAS1_medium
+		cost = 0
+		x = 5
+		y = 1
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			GER = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 80000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 5000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 5000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 5000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 300
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 1500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					amount = 400
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 400
+					producer = GER
+				}
+			}
+
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 250000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 10000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 15000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 10000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 10000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2500
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 300
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 1500
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					amount = 400
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 400
+					producer = SOV
+				}
+			}
+
+			ENG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 40000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2500
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2500
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 2500
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 2500
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 300
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 2000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_naval_bomber_airframe_1
+					amount = 400
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					amount = 800
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 400
+					producer = ENG
+				}
+			}
+
+			ITA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 60000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 3000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 3000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 3000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 300
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 1000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_naval_bomber_airframe_1
+					amount = 400
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 400
+					producer = ITA
+				}
+			}
+
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 60000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 3000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 3000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 3000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 150
+					producer = FRA
+				}
+			}
+
+			JAP = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 60000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 3000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 3000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 3000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 300
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 1000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_naval_bomber_airframe_1
+					amount = 400
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					amount = 400
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 400
+					producer = JAP
+				}
+			}
+
+			USA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 500
+					producer = USA
+				}
+			}
+			every_country = {
+				limit = {
+					tag = CRO
+					tag = CZE
+					tag = ROM
+					tag = HUN
+					tag = BUL
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 250
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 250
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 50
+					producer = GER
+				}
+			}
+			every_country = {
+				limit = {
+					tag = CAN
+					tag = AST
+					tag = SAF
+					tag = RAJ
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 250
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 250
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 50
+					producer = ENG
+				}
+			}
+			every_country = {
+				limit = {
+					tag = SIA
+					tag = MAN
+					tag = CHI
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 250
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 250
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 50
+					producer = JAP
+				}
+			}
+		}
+	}
 }
 

@@ -79,9 +79,9 @@ ideas = {
 			ledger = air
 			available = { }
 			research_bonus = {
-				light_air = 0.15
-				medium_air = 0.15
-				heavy_air = 0.15
+				light_air = 0.05
+				medium_air = 0.05
+				heavy_air = 0.05
 			}
 			ai_will_do = {
 				factor = 1
@@ -111,7 +111,6 @@ ideas = {
 			available = { }
 			modifier = {
 				experience_gain_air = 0.1
-				airforce_intel_to_others = -5
 			}
 			ai_will_do = {
 				factor = 1
@@ -125,8 +124,7 @@ ideas = {
 			ledger = air
 			available = { }
 			modifier = {
-				air_doctrine_cost_factor = -0.15
-				air_accidents_factor = -0.25
+				air_accidents_factor = -0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -156,7 +154,7 @@ ideas = {
 		}
 		cag_night_fighting_spirit = {
 			ledger = air
-			visible = { tag = ENG }
+			visible = { always = no }
 			modifier = {
 				air_carrier_night_penalty_reduction_factor = 0.33
 				carrier_night_traffic = 0.5
@@ -217,7 +215,7 @@ ideas = {
 			ledger = air
 			available = { }
 			modifier = {
-				ace_effectiveness_factor = 0.5
+				ace_effectiveness_factor = 0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -231,7 +229,7 @@ ideas = {
 			ledger = air
 			available = { }
 			modifier = {
-				air_power_projection_factor = 0.1
+				air_power_projection_factor = 0.05
 			}
 			ai_will_do = {
 				factor = 1

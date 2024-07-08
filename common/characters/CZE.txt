@@ -92,12 +92,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ offensive_doctrine fast_planner }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=1
+			traits={ organizer panzer_leader ranger trait_engineer }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -111,12 +111,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ defensive_doctrine thorough_planner }
-			skill=3
-			attack_skill=3
+			traits={ brilliant_strategist panzer_leader ranger trait_engineer }
+			skill=5
+			attack_skill=5
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -130,12 +130,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=4
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ panzer_leader ranger trait_engineer trickster }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -149,12 +149,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ winter_specialist }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
+			traits={ urban_assault_specialist panzer_leader trait_engineer trickster }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}

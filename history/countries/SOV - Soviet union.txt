@@ -502,7 +502,6 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
-			aa_cannon_1 = 1
 			early_bombs = 1
 			engines_1 = 1
 			engines_2 = 1
@@ -522,6 +521,53 @@ if = {
 			strategic_bomber1 = 1
 			naval_bomber1 = 1
 		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "I-16"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1
+			engine_type_slot = engine_2_1x
+		}
+		icon = "GFX_SOV_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "LBSh"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1					
+			engine_type_slot = engine_2_1x					
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_SOV_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "SB-2M"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_3 = Medium_bomb_bay
+			fixed_auxiliary_weapon_slot_4 = Medium_bomb_bay
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = radio_navigation_1
+			special_type_slot_2 = hmg_defense_turret_2x
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_SOV_tactical_bomber1_medium"
 	}
 }
 
@@ -554,6 +600,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	tech_field_hospital = 1
 	tech_logistics_company = 1
 	tech_signal_company = 1
+
 }
 
 if = {
@@ -575,7 +622,6 @@ if = {
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
-		engine_tech_2 = 1
 	}
 }
 if = {
@@ -627,6 +673,7 @@ add_ideas = {
 	trotskyite_plot_nsb
 	SOV_politicized_military
 	closed_economy
+	volunteers
 }
 
 

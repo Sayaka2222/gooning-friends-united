@@ -237,12 +237,7 @@ ideas = {
 				custom_modifier_tooltip=academy_weekly_training_speed_tooltip_current
 			}
 			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
+				base = 0
 			}
 		}
 		professional_officer_corps_spirit = {

@@ -27,6 +27,11 @@ add_ideas = {
 	partial_economic_mobilisation
 	peace_training
 	trade_with_axis
+	volunteers
+}
+add_timed_idea = {
+	idea = autarky
+	days = 1461
 }
 
 
@@ -321,6 +326,9 @@ set_technology = {
 	interwar_antitank = 1
 	synth_oil_experiments = 1
 	improved_light_tank_chassis = 1
+	tech_recon = 1
+	paratroopers = 1
+	photo_reconnaisance = 1
 }
 if = {
 	limit = {
@@ -413,6 +421,49 @@ if = {
 			naval_bomber1 = 1
 			CAS1 = 1
 		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "C.200 Saetta"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1
+			engine_type_slot = engine_2_1x
+		}
+		icon = "GFX_ITA_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ba.65"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1					
+			engine_type_slot = engine_2_1x					
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_ITA_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "SM.79 Sparviero"
+		type = small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting_2
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = floats	
+			engine_type_slot = engine_2_1x
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_ITA_naval_bomber1_medium"
 	}
 }
 

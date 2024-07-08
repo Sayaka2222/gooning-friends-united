@@ -618,7 +618,7 @@ equipment_modules = {
 			}
 		}
 		add_stats = {
-			build_cost_ic = 10
+			build_cost_ic = 8
 			breakthrough = 30
 		}
 		dismantle_cost_ic = 1

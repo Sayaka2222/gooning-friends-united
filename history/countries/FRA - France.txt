@@ -21,6 +21,11 @@ add_ideas = {
 	FRA_inefficient_economy_2
 	peace_training
 	trade_with_allies
+	volunteers
+}
+add_timed_idea = {
+	idea = autarky
+	days = 1461
 }
 recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
@@ -88,13 +93,12 @@ if = {
 }
 
 starting_train_buffer = 2
-
+set_convoys = 500
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "FRA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -150,6 +154,7 @@ set_technology = {
 	radio = 1
 	marines = 1
 	interwar_antitank = 1
+	paratroopers = 1
 }
 
 if = {
@@ -170,7 +175,6 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
 		improved_light_tank_chassis = 1
 		armor_tech_1 = 1
 		engine_tech_1 = 1

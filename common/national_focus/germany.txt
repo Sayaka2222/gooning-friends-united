@@ -1396,12 +1396,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-	
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
         	   amount = 2
         	}
+			64 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+				}
+			}
+			65 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+				}
+			}
 		}
 	}
 
@@ -1595,22 +1606,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_grosraumwirtschaft
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2IC
-			}
 		}
 	}
 
@@ -1912,9 +1907,27 @@ focus_tree = {
 			air_experience = 250
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
+				bonus = 1.2
 				uses = 1
 				technology = improved_small_airframe
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 2
+				uses = 1
+				technology = aa_cannon_1
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 2
+				uses = 1
+				technology = engines_3
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 2
+				uses = 1
+				technology = survivability_studies
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
@@ -2106,6 +2119,18 @@ focus_tree = {
 				uses = 3
 				category = radar_tech
 			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.5
+				uses = 1
+				technology = aa_cannon_3
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.5
+				uses = 1
+				technology = engines_4
+			}
 		}
 	}
 
@@ -2217,13 +2242,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			give_resource_rights = {
-				receiver = ROOT 
-				state = 300 #Västerbotten 
-			}
-			give_resource_rights = {
-				receiver = ROOT 
-				state = 666
+			SWE = {
+				give_resource_rights = {
+					receiver = ROOT 
+					state = 300 #Västerbotten 
+				}
+				give_resource_rights = {
+					receiver = ROOT 
+					state = 666
+				}
 			}
 		}
 	}
@@ -2851,6 +2878,12 @@ focus_tree = {
 			}
 			remove_ideas = sour_loser
 			add_ideas = triumphant_will
+			SWE = {
+				add_ideas = ai_trade
+			}
+			VIC = {
+				add_ideas = ai_trade
+			}
 			add_state_core = 85
 			add_state_core = 762
 			add_state_core = 86
@@ -3653,11 +3686,11 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_2
-				amount = 4000
+				amount = 6000
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment_2
-				amount = 4000
+				amount = 6000
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_2

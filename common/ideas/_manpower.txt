@@ -309,7 +309,15 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
-				casualties > 10000000
+				if = {
+					limit = { 
+						tag = SOV
+					}
+					casualties > 10000000
+				}
+				else = {
+					casualties > 2500000
+				}
 			}
 
 			ai_will_do = {
@@ -387,7 +395,15 @@ ideas = {
 
 
 			available = {
-				casualties > 20000000
+				if = {
+					limit = { 
+						tag = SOV
+					}
+					casualties > 20000000
+				}
+				else = {
+					casualties > 5000000
+				}
 			}
 
 			ai_will_do = {
@@ -446,7 +462,15 @@ ideas = {
 		scraping_the_barrel = {
 
 			available = {
-				casualties > 30000000
+				if = {
+					limit = { 
+						tag = SOV
+					}
+					casualties > 30000000
+				}
+				else = {
+					casualties > 10000000
+				}
 			}
 
 			ai_will_do = {

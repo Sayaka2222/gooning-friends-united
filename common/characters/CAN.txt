@@ -81,11 +81,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=5
+			traits = {
+				organizer panzer_leader desert_fox trait_engineer
+			}
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -99,11 +102,14 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = {
+				organizer panzer_leader hill_fighter trait_engineer
+			}
 			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -117,11 +123,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=5
+			traits = {
+				panzer_leader desert_fox trait_engineer trickster
+			}
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -135,12 +144,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			traits={ hill_fighter panzer_leader trait_engineer trickster }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}

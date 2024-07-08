@@ -1207,7 +1207,7 @@ leader_traits = {
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 900
 		}
 		
 		ai_will_do = {
@@ -1982,6 +1982,28 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	double_green_water_expert = {
+		type = navy
+
+		trait_type = personality_trait
+
+		modifier = {
+			water_shallow_sea = {
+				attack = 0.1
+				movement = 0.1
+				defence = 0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 	
 	
 
@@ -2392,7 +2414,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { ironside }
 		
-		gui_row = 11
+		gui_row = 10
 		gui_column = 1
 	}
 
@@ -3070,8 +3092,6 @@ leader_traits = {
 		trait_type = status_trait
 		
 		non_shared_modifier = {
-			skill_bonus_factor = -0.5
-			cannot_use_abilities = 1
 		}
 	}
 
@@ -3080,8 +3100,6 @@ leader_traits = {
 		trait_type = status_trait
 		
 		non_shared_modifier = {
-			skill_bonus_factor = -0.5
-			cannot_use_abilities = 1
 		}
 	}
 
@@ -3090,8 +3108,6 @@ leader_traits = {
 		trait_type = status_trait
 		
 		non_shared_modifier = {
-			skill_bonus_factor = -1
-			cannot_use_abilities = 1
 		}
 	}
 	
