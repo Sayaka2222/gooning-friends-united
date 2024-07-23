@@ -54,46 +54,53 @@ USA_historical_plan = {
 	ai_national_focuses = {
 		USA_continue_the_new_deal
 		USA_wpa
+		USA_agricultural_adjustment_act
+		USA_office_of_scientific_research_and_development
+		USA_reach_out_to_the_ware_group
 		USA_war_department
-		USA_air_war_plans_division
+		USA_two_ocean_navy_act
+		USA_selective_training_act
 		USA_war_plans_division
 		#1937
-		USA_agricultural_adjustment_act
 		USA_neutrality_act
+		USA_fair_labour_standards_act
+		USA_bureau_of_ships
+		USA_battleship_primacy
 		USA_intervention_in_asia
 		USA_war_plan_orange
 		USA_intervention_in_europe
 		#1938
+		USA_air_war_plans_division
 		USA_war_plan_black
 		USA_strategic_bombing
-		USA_fair_labour_standards_act
 		USA_escort_fighters
+		USA_limited_intervention
 		USA_arsenal_of_democracy
 		#1939
-		USA_scientist_haven
-		USA_military_construction
 		USA_USACE_projects
 		USA_manhattan_project
 		USA_federal_housing_act
 		#1940
+		USA_lend_lease_act
 		USA_the_giant_wakes
 		USA_military_construction
-		USA_two_ocean_navy_act
 		USA_selective_training_act
 		USA_destroyers_for_bases
+		USA_war_propaganda
+		USA_focus_on_asia
 		#1941
 		USA_maritime_commission
 		USA_liberty_ships
-		USA_lend_lease_act
-		USA_office_of_scientific_research_and_development
 		USA_louisiana_maneuvers
 		USA_support_rock_island
 		#1942
 		USA_tank_experiments
 		USA_tank_destroyer_doctrine
 		USA_combined_bomber_offensive
-		USA_bureau_of_ships
 		USA_carrier_primacy
+		USA_focus_on_europe
+		USA_office_of_strategic_services
+		USA_black_chamber
 		#1943
 		USA_wartime_industry
 		USA_build_the_pentagon
@@ -102,7 +109,6 @@ USA_historical_plan = {
 	}
 
 	focus_factors = {
-		USA_suspend_the_presecution = 0 # well done, not medium rare
 	}
 
 	research = {
@@ -113,9 +119,10 @@ USA_historical_plan = {
 
 	}
 	traits = {
-		war_industrialist = 5
+		captain_of_industry = 10
+		war_industrialist = 10
 		financial_expert = 10
-		silent_workhorse = 25
+		silent_workhorse = 30
 	}
 
 	ai_strategy = {

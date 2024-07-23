@@ -1,4 +1,9 @@
 on_actions = {
+	on_weekly_SWE={
+		effect={
+			update_pacific_war=yes
+		}
+	}
 	on_capitulation = {
 		effect = {
 		    if = {

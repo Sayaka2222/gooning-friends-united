@@ -266,7 +266,6 @@ southern_thrust = {
 		original_tag = SOV
 	}
 	enable = {
-		has_completed_focus = SOV_the_southern_thrust
 		OR = {
 			country_exists = IRQ
 			country_exists = PER
@@ -303,7 +302,6 @@ claims_on_poland = {
 		original_tag = SOV
 	}
 	enable = {
-		has_completed_focus = SOV_claims_on_poland
 		country_exists = POL
 	}
 	abort = {
@@ -344,77 +342,6 @@ claims_on_finland = {
 	ai_strategy = {
 		type = antagonize
 		id = "FIN"
-		value = 200
-	}
-}
-
-claims_on_sinkiang = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_spheres_of_influence_in_china
-		country_exists = CHI
-	}
-	abort = {
-		NOT = {
-			country_exists = CHI
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "CHI"
-		value = 200
-	}
-}
-
-japan_ally = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_reconcile_japan
-		country_exists = JAP
-	}
-	abort = {
-		NOT = { country_exists = JAP }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "JAP"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = 200
-	}
-}
-
-germany_ally = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		OR = {
-			has_completed_focus = SOV_anti_capitalist_policies
-		}
-		country_exists = GER
-	}
-	abort = {
-		NOT = { country_exists = GER }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "GER"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "GER"
 		value = 200
 	}
 }
@@ -894,7 +821,6 @@ SOV_dont_support_whites = {
 
 	allowed = { has_dlc = "No Step Back" }
 	enable = {
-		SOV = { SOV_is_exiles = yes}
 		NOT = {
 			tag = SOV
 		}
@@ -1545,7 +1471,6 @@ SOV_coming_to_getcha_iran = {
 		original_tag = SOV
 	}
 	enable = {
-		has_completed_focus = SOV_preemptive_invasion_of_iran
 		PER = {
 			exists = yes
 			is_in_faction = no
@@ -1587,8 +1512,6 @@ SOV_ENG_tagteam_iran = {
 		}
 	}
 	enable = {
-		has_completed_focus = SOV_preemptive_invasion_of_iran
-		has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
 		RAJ = {
 			is_in_faction_with = ENG
 		}

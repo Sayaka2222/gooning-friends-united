@@ -5683,7 +5683,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
 				factor = 0
 			}
 		}
@@ -5711,7 +5710,6 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				tag = USA
-				NOT = { has_completed_focus = USA_america_first }
 				factor = 0
 			}
 		}
@@ -5726,7 +5724,6 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				tag = HUN
-				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
 				factor = 0
 			}
 		}
@@ -5791,8 +5788,7 @@ leader_traits = {
 	}
 	anti_communist_crusader = {
 		sprite = 13
-		stability_factor = 0.05
-		communism_drift = -0.1
+		stability_factor = 0.15
 
 		ai_will_do = {
 			factor = 1
@@ -5942,7 +5938,7 @@ leader_traits = {
 	editor = {
 		sprite = 10
 		random = yes
-		political_power_factor = 0.05
+		political_power_factor = 0.15
 		stability_factor = 0.05
 
 		ai_will_do = {

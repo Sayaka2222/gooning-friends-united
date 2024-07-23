@@ -1004,6 +1004,28 @@ equipment_modules = {
 		}
 	}
 
+	subsonic_sam = {
+		abbreviation = "ssam"
+		category = ship_anti_air
+		parent = ship_anti_air_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 10
+			build_cost_ic = 340
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.005
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 100
+		}
+	}
+
 
 ### ### ###  ###      ##   ##  #  # ### ###   ##  #        ## #   #  ## ### ### #   # 
 #    #  #  # #       #  # #  # ## #  #  #  # #  # #       #    # #  #    #  #   ## ## 
@@ -1656,7 +1678,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.3
+			naval_speed = 0.35
 			build_cost_ic = 0.10
 			
 		}
@@ -1681,7 +1703,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.4
+			naval_speed = 0.45
 			build_cost_ic = 0.1
 			
 		}
@@ -1711,7 +1733,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.5
+			naval_speed = 0.55
 			build_cost_ic = 0.1
 			
 		}
@@ -1740,7 +1762,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.60
+			naval_speed = 0.65
 			build_cost_ic = 0.1
 		}
 		
@@ -2188,7 +2210,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			carrier_size = 2
-			build_cost_ic = 1500
+			build_cost_ic = 1000
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {

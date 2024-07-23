@@ -1,17 +1,30 @@
 state={
 	id=729
 	name="STATE_729"
-	manpower = 1
+	manpower = 1200000
 	
 	state_category = enclave
-	
+	resources = {
+		oil = 8
+	}
 	history={
-		owner = SWI
-		add_core_of = SWI
+		owner = CHI
+		add_core_of = CHI
+		victory_points = {
+			1047 5
+		}
+		buildings = {
+			infrastructure = 4
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
 	}
 	
 	provinces={
-		4189 
+		4189 1047
 	}
 
 	local_supplies=0.0 

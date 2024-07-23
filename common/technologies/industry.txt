@@ -719,6 +719,14 @@ technologies = {
 			leads_to_tech = fuel_refining 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = juggle1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = juggle2
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		start_year = 1936

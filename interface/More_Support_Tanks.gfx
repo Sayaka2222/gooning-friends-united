@@ -1,6 +1,8 @@
 spriteTypes = {	
 	
 	### Large Icons ###
+	spriteType = { name = "GFX_unit_paratrooper_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_shocktroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_desert_infantry_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_desertinfantry_icon.dds" noOfFrames = 2 }
 	#td
 	spriteType = { name = "GFX_unit_support_light_td_icon_medium" 						texturefile = "gfx/MST_gfx/unit_support_light_tank_at_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_support_medium_td_icon_medium" 						texturefile = "gfx/MST_gfx/unit_support_medium_tank_at_icon.dds" noOfFrames = 2 }
@@ -104,6 +106,18 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_MST_super_heavy_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
 	
 	### Texticons ###
+	spriteType = {
+		name = "GFX_unit_paratrooper_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_shocktroop_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_desert_infantry_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_desertinfantry_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 	#td
 	spriteType = {
 		name = "GFX_unit_support_modern_td_icon_small"

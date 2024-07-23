@@ -119,19 +119,19 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 20
+		surface_visibility = 30
 		naval_speed = 20
 		reliability = 0.80
 		
 		naval_range = 3000
 		
-		max_strength = 350
+		max_strength = 385
 
 		fuel_consumption = 67
 		
 		build_cost_ic = 3500
 		resources = {
-			steel = 1
+			steel = 4
 			chromium = 1
 		}
 
@@ -283,7 +283,7 @@ equipments = {
 
 		naval_range = 3000
 		
-		max_strength = 350
+		max_strength = 385
 		reliability = 0.80
 		fuel_consumption = 67
 		
@@ -335,14 +335,14 @@ equipments = {
 		}
 		naval_range = 3500
 		
-		max_strength = 370
+		max_strength = 410
 		reliability = 0.85
 		fuel_consumption = 67
 		naval_speed = 24
 		build_cost_ic = 3000
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 4
 			chromium = 1
 		}
 
@@ -403,14 +403,14 @@ equipments = {
 		}
 		naval_range = 4000
 		naval_speed = 25
-		max_strength = 400
+		max_strength = 440
 		reliability = 0.9
 		fuel_consumption = 67
 		
 		build_cost_ic = 3200
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 5
 			chromium = 1
 		}
 
@@ -470,14 +470,14 @@ equipments = {
 		}
 		naval_range = 4500
 		
-		max_strength = 450
+		max_strength = 500
 		naval_speed = 26
 		fuel_consumption = 67
 		reliability = 0.95
 		build_cost_ic = 3400
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 6
 			chromium = 1
 		}
 
@@ -561,7 +561,7 @@ equipments = {
 		}
 		naval_range = 4500
 		naval_speed = 24
-		max_strength = 700
+		max_strength = 770
 		fuel_consumption = 75
 		reliability = 0.80
 		build_cost_ic = 5500

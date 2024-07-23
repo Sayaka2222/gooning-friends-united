@@ -1,0 +1,22 @@
+state={
+	id=283
+	name="Bratislava"
+	manpower = 332479
+	state_category = large_city
+
+	history={
+		owner = CZE
+		add_core_of = CZE
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			9692 20
+		}
+	}
+
+	provinces={
+		9692 9539 541
+	}
+	local_supplies=0.000
+}

@@ -33,7 +33,7 @@ upgrades = {
 
 		#maximum_speed = 0.1
 		add_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.15
 			maximum_speed = 0.3
 		}
 	}

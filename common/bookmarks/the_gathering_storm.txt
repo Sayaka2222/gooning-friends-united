@@ -47,7 +47,6 @@ bookmarks = {
 			focuses = {
 				USA_war_plan_black
 				USA_limited_intervention
-				USA_reestablish_the_gold_standard
 			}
 		}
 		"ENG"={
@@ -168,7 +167,6 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_behead_the_snake
-				SOV_father_of_nations
 			}	
 		}
 
@@ -304,9 +302,7 @@ bookmarks = {
 				CHI_nine_power_treaty
 			}
 			focuses = {
-				CHI_united_front
 				CHI_army_reform
-				CHI_invite_the_flying_tigers
 			}
 		}
 		"PRC"={
@@ -335,8 +331,6 @@ bookmarks = {
 			}
 			focuses = {
 				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
 			}
 		}
 		

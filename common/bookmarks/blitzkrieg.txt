@@ -101,7 +101,6 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_found_the_comecon
-				SOV_father_of_nations
 				SOV_patriarch_of_all_russia
 			}
 		}
@@ -226,8 +225,6 @@ bookmarks = {
 			}
 			focuses = {
 				CHI_renegotiate_the_unequal_treaties
-				CHI_invite_the_flying_tigers
-				CHI_war_of_resistance
 			}
 		}
 		"PRC"={
@@ -360,7 +357,6 @@ bookmarks = {
 			focuses = {
 				BUL_the_third_bulgarian_empire
 				BUL_the_return_of_ferdinand_i
-				BUL_bulgaria_on_the_three_seas
 			}
 		}
 

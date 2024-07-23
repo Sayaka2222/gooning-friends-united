@@ -34,8 +34,6 @@ SOV_left_opposition_plan = {
 		
 
 		# 1938 
-		SOV_infrastructure_effort_nsb #35
-		SOV_heavy_industry #35
 		SOV_finish_the_five_year_plan
 		SOV_third_five_year_plan
 		SOV_national_specialists # 35
@@ -43,9 +41,6 @@ SOV_left_opposition_plan = {
 
 		# 1939
 		SOV_strengthen_the_mobilization_plan # 35
-		SOV_cohesion_first # 35
-		SOV_addressing_internal_affairs # 35
-		SOV_expand_the_agitprop # 35
 
 		# 1940 
 		SOV_rehabilitated_military
@@ -128,8 +123,6 @@ SOV_left_opposition_cooperative_plan = {
 		
 
 		# 1938 
-		SOV_infrastructure_effort_nsb #35
-		SOV_heavy_industry #35
 		SOV_finish_the_five_year_plan
 		SOV_third_five_year_plan
 		SOV_national_specialists # 35
@@ -137,9 +130,6 @@ SOV_left_opposition_cooperative_plan = {
 
 		# 1939
 		SOV_strengthen_the_mobilization_plan # 35
-		SOV_cohesion_first # 35
-		SOV_addressing_internal_affairs # 35
-		SOV_expand_the_agitprop # 35
 
 		# 1940 
 		SOV_rehabilitated_military
@@ -149,7 +139,6 @@ SOV_left_opposition_cooperative_plan = {
 		
 		# 1942
 		SOV_collectivist_propaganda
-		SOV_baltic_security #35
 		SOV_military_reorganization
 		SOV_secure_leningrad
 
@@ -224,9 +213,6 @@ SOV_right_opposition_plan = {
 
 		# 1938 
 		
-		SOV_infrastructure_effort_nsb #35
-		SOV_heavy_industry #35
-		
 
 		# 1939
 		SOV_finish_the_five_year_plan
@@ -248,15 +234,6 @@ SOV_right_opposition_plan = {
 		SOV_the_comintern # 35
 		SOV_policy_of_collective_security # 35
 		SOV_anti_fascist_policies
-		SOV_seek_a_defense_pact_with_the_allies # 35
-		
-
-		# 1943
-		SOV_addressing_internal_affairs # 35
-
-		# 1944 
-		SOV_expand_the_agitprop # 35
-		SOV_the_komsomol # 35
 	}
 
 	research = {
@@ -317,10 +294,6 @@ SOV_right_opposition_cooperative_plan = {
 		SOV_the_path_of_marxism_leninism # 35
 		
 		#1937
-
-		# 1938 
-		SOV_infrastructure_effort_nsb #35
-		SOV_heavy_industry #35
 		
 
 		# 1939
@@ -344,13 +317,9 @@ SOV_right_opposition_cooperative_plan = {
 		SOV_the_comintern # 35
 		SOV_policy_of_collective_security # 35
 		SOV_anti_fascist_policies
-		SOV_seek_a_defense_pact_with_the_allies # 35
 		
 
 		# 1943
-		SOV_addressing_internal_affairs # 35
-		SOV_expand_the_agitprop # 35
-		SOV_the_komsomol # 35
 
 		# 1944 
 		SOV_development_aid_for_eastern_allies

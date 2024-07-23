@@ -102,7 +102,6 @@ CHI_camco_medium_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_camco }
 	}
 }
 CHI_camco_fighter_organization = {
@@ -116,7 +115,6 @@ CHI_camco_fighter_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_local_fighter_production }
 	}
 }
 CHI_camco_bomber_organization = {
@@ -130,7 +128,6 @@ CHI_camco_bomber_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_local_bomber_production }
 	}
 }
 

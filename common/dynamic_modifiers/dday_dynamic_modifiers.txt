@@ -1,0 +1,10 @@
+atlantic_wall={
+	icon = "GFX_idea_YUG_federal_defense_council"
+	icon = "GFX_idea_YUG_federal_defense_council"
+	naval_invasion_penalty = GER.atlantic_wall_invasion_penalty
+}
+atlantic_wall_visual = {
+	icon = "GFX_idea_YUG_federal_defense_council"
+	icon = "GFX_idea_YUG_federal_defense_council"
+	naval_mine_hit_chance = GER.atlantic_wall_visual
+}

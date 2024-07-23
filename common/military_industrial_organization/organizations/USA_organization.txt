@@ -36,7 +36,7 @@ USA_chrysler_organization = {
 		tag = USA 
 	}
 	available = {
-		date > 1942.1.1
+		FROM = { has_completed_focus = USA_tank_destroyer_doctrine }
 	}
 	initial_trait = {
 		name = USA_mio_trait_medium_tank_manufacturer

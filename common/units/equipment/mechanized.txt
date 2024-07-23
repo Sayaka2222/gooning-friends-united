@@ -16,7 +16,7 @@ equipments = {
 		interface_category = interface_category_land
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 8
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -60,10 +60,10 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		maximum_speed = 10
+		maximum_speed = 9
 
 		#Defensive Abilities
-		defense = 20
+		defense = 18
 		breakthrough = 6
 		hardness = 0.55
 		armor_value = 15
@@ -87,10 +87,10 @@ equipments = {
 		priority = 40
 		visual_level = 2
 
-		maximum_speed = 12
+		maximum_speed = 10
 
 		#Defensive Abilities
-		defense = 24
+		defense = 22
 		breakthrough = 8
 		hardness = 0.6
 		armor_value = 20
@@ -101,6 +101,33 @@ equipments = {
 		build_cost_ic = 11
 		resources = {
 			steel = 4
+			#oil = 2
+		}
+	}
+
+	mechanized_equipment_4 = {
+		year = 1946
+
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_3
+		priority = 40
+		visual_level = 2
+
+		maximum_speed = 11
+
+		#Defensive Abilities
+		defense = 24
+		breakthrough = 8
+		hardness = 0.65
+		armor_value = 20
+
+		#Offensive Abilities
+		ap_attack = 30
+
+		build_cost_ic = 12
+		resources = {
+			steel = 4
+			tungsten = 1
 			#oil = 2
 		}
 	}

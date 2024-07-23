@@ -615,63 +615,6 @@ country_event = {
 							check_variable = { ITA_missiolini_reroll_from = 5 } #EXPAND INTELLIGENCE SERVICE
 						}
 					}
-					10 = { #OCCUPY ALBANIA
-						modifier = {
-							factor = 0
-							OR = {
-								NOT = { country_exists = ALB }
-								has_country_flag = ITA_missiolini_occupy_albania_triggered_flag #Trigger only once
-								focus_progress = {
-									focus = ITA_albanian_occupation
-									progress > 0
-								}
-								AND = {
-									44 = { #ALBANIA
-										OR = {
-											is_fully_controlled_by = ROOT
-											controller = {
-												is_subject_of = ROOT
-												hidden_trigger = { #To prevent unnecessary overcrowding
-													has_full_control_of_state = PREV
-												}
-											}
-										}
-									}
-									805 = { #NORTHERN EPIRUS
-										OR = {
-											is_fully_controlled_by = ROOT
-											controller = {
-												is_subject_of = ROOT
-												hidden_trigger = { #To prevent unnecessary overcrowding
-													has_full_control_of_state = PREV
-												}
-											}
-										}
-									}
-									934 = { #NORTHERN EPIRUS
-										OR = {
-											is_fully_controlled_by = ROOT
-											controller = {
-												is_subject_of = ROOT
-												hidden_trigger = { #To prevent unnecessary overcrowding
-													has_full_control_of_state = PREV
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-						modifier = {
-							factor = 10
-							date > 1938.6.1 #MM: If this makes ppl rush Albania for no real reason, it can be triggered in 1939.1.1
-						}
-						modifier = {
-							factor = 100
-							date > 1938.6.1 #MM: If this makes ppl rush Albania for no real reason, it can be triggered in 1939.1.1
-							is_historical_focus_on = yes
-						}
-					}
 					10 = { #OCCUPY DALMATIA
 						modifier = {
 							factor = 0
@@ -4096,164 +4039,6 @@ country_event = {
 #####################
 ###PURGE THE PARTY###
 #####################
-country_event = {
-	id = BBA_italy_purge_the_party.1
-	title = BBA_italy_purge_the_party.1.t
-	desc = BBA_italy_purge_the_party.1.desc
-	picture = GFX_report_event_generic_italian_fascists
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			ITA_characters_to_purge_effect = yes
-		}
-	}
-
-	option = { #KILL ADVISORS
-		name = BBA_italy_purge_the_party.1.a
-		ai_chance = {
-			base = 10
-		}
-		custom_effect_tooltip = SOV_characters_will_be_purged_tt
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_advisor
-			}
-		}
-		add_political_power = 50
-		ITA_bop_very_low_increase_effect = yes
-
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = ITA_some_fascists_purged }
-				}
-				set_country_flag = ITA_some_fascists_purged 
-			}			
-			if= { 
-				limit = {
-					NOT = { has_country_flag = ITA_first_purge_happened_flag }
-				}
-				set_country_flag = ITA_first_purge_happened_flag
-				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
-			}
-			else = {
-			}
-		}
-	}
-
-	option = { #KILL GENERALS
-		name = BBA_italy_purge_the_party.1.b
-		ai_chance = {
-			base = 10
-		}
-		custom_effect_tooltip = SOV_characters_will_be_purged_tt
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_general
-			}
-		}
-		add_political_power = 50
-		ITA_bop_very_low_increase_effect = yes
-
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = ITA_no_fascists_purged }
-				}
-				set_country_flag = ITA_some_fascists_purged 
-			}
-			if= {
-				limit = {
-					NOT = { has_country_flag = ITA_first_purge_happened_flag }
-				}
-				set_country_flag = ITA_first_purge_happened_flag 
-				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
-			}
-			else = {
-			}
-		}
-	}		
-
-	option = { #NO KILLING
-		name = BBA_italy_purge_the_party.1.c
-		ai_chance = {
-			base = 10
-		}
-		custom_effect_tooltip = ITA_characters_will_be_spared_tt
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_advisor
-			}
-		}
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_general
-			}
-		}
-
-		ITA_bop_very_low_decrease_effect = yes
-
-		hidden_effect = {
-			ITA_dont_purge_effect = yes
-			if = {
-				limit = {
-					NOT = { has_country_flag = ITA_no_fascists_purged }
-				}
-				set_country_flag = ITA_no_fascists_purged
-			}
-			if= {
-				limit = {
-					NOT = { has_country_flag = ITA_first_purge_happened_flag }
-				}
-				set_country_flag = ITA_first_purge_happened_flag 
-				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
-			}
-			else = {
-			}
-		}
-	}
-
-	option = { #KILL ALL
-		name = BBA_italy_purge_the_party.1.d
-		ai_chance = {
-			base = 10
-		}
-		custom_effect_tooltip = SOV_characters_will_be_purged_tt
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_advisor
-				
-			}
-		}
-		character_list_tooltip = {
-			limit = {
-				has_character_flag = ITA_purge_general
-			}
-		}
-		add_political_power = 75 
-		ITA_bop_medium_increase_effect = yes
-
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = ITA_many_fascists_purged }
-				}
-				set_country_flag = ITA_many_fascists_purged
-			}
-			if = { 
-				limit = {
-					NOT = { has_country_flag = ITA_first_purge_happened_flag }
-				}
-				set_country_flag = ITA_first_purge_happened_flag
-				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
-			}
-			else = {
-			}
-		}
-	}
-}
 
 ###########################
 ###THE FATE OF MUSSOLINI###
@@ -9195,7 +8980,6 @@ country_event = {
 		effect_tooltip = {
 			ITA = {
 				transfer_state = 269
-				transfer_state = 903
 			}
 			ENG = {
 				add_offsite_building = { type = industrial_complex level = 2 }
@@ -10151,7 +9935,6 @@ country_event = {
 			}
 			ITA = {
 				transfer_state = 269
-				transfer_state = 903
 			}
 			ENG = {
 				add_offsite_building = { type = industrial_complex level = 2 }
@@ -10304,7 +10087,6 @@ country_event = {
 			}
 			ITA = {
 				transfer_state = 269
-				transfer_state = 903
 			}
 			ENG = {
 				add_offsite_building = { type = industrial_complex level = 2 }

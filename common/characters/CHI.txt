@@ -696,7 +696,7 @@ characters={
 				original_tag  = CHI
 			}
 			traits  = {
-				compassionate_gentleman 
+				war_industrialist 
 			}
 		}
 	}

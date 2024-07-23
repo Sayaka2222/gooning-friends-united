@@ -33,6 +33,7 @@ division_template = {
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 		signal_company = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 5 }
 	}
 }
 division_template = {
@@ -107,7 +108,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Armored-Division"
+	name = "Armored Division"
 	division_names_group = ITA_Arm_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -133,9 +134,13 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		mot_recon = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
+		anti_tank = { x = 0 y = 4  }
+		logistics_company = { x = 0 y = 5  }
+		field_hospital = { x = 0 y = 6  }
+		maintenance_company = { x = 0 y = 7  }
 	}
 }
 
@@ -183,5 +188,23 @@ instant_effect = {
 			efficiency = 50 
 			industrial_manufacturer = mio:ITA_lancia_organization
 		}
+	}
+}
+units = {
+	division= {
+	location = 9904
+	division_template = "Armored Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "1st Armored Division"
+
+	}
+	division= {
+	location = 9904
+	division_template = "Armored Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "2nd Armored Division"
+
 	}
 }

@@ -250,15 +250,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-
-	### 8e Armée (CO: Garchéry) ###
-	division= {	
-		name = "506e Rgt. de Chars de Combat"
-		location = 698
-		division_template = "Brigade de Chars de Combat"				# FT-17s, R-35s
-		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_chassis_0 = { owner = "FRA" version_name = "FT mod. 31" } }
-	}
 	# XIIIe Corps d'Armée (CO: Missery) #
 	division= {	# "19ème Division d'Infanterie"
 		division_name = {
@@ -1017,13 +1008,6 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "503e Rgt. de Chars de Combat"
-		location = 454
-		division_template = "Brigade de Chars de Combat"					# FT-17s, R-35s
-		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_chassis_0 = { owner = "FRA" version_name = "FT mod. 31" } }
-	}
 
 
 	####### Théatre d'Opérations du Sud-Est  (CO: Besson) #######
@@ -1060,13 +1044,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
-	}
-	division= {	
-		name = "504e Rgt. de Chars de Combat"
-		location = 6975
-		division_template = "Brigade de Chars de Combat"					# FT-17s, R-35s
-		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_chassis_0 = { owner = "FRA" version_name = "FT mod. 31" } }
 	}
 	# XIVe Corps d'Armée (CO: Touchon) #
 	division= {	# "27ème Division d'Infanterie Alpine"

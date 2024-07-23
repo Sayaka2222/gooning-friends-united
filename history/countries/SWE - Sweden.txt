@@ -1,6 +1,5 @@
 ﻿capital = 141	
 recruit_character = SWE_per_albin_hansson
-complete_national_focus = SWE_stockpiles
 oob = "SWE_1936"
 set_politics = {
 	ruling_party = democratic

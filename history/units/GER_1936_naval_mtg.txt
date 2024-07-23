@@ -8,8 +8,8 @@ units= {
 		task_force = {				
 			name = "Hochseeflotte"
 			location = 241  # Wilhemshaven
-			ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-			ship = { name = "Admiral Scheer" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+			ship = { name = "Deutschland" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }	
+			ship = { name = "Admiral Scheer" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
 			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 		
 			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
 			ship = { name = "Weimar" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
@@ -56,12 +56,12 @@ units= {
 			ship = { name = "U-18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { name = "Z1 Leberecht Maass" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class" } } }
 			ship = { name = "Z2 Georg Thiele" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class" } } }
-			ship = { name = "Admiral Graf Spee" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-			ship = { name = "Admiral Hipper" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }	
+			ship = { name = "Admiral Graf Spee" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }	
+			ship = { name = "Admiral Hipper" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }	
 			ship = { name = "Z3 Max Schultz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class" } } }
 			ship = { name = "Z4 Richard Beitzen" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class" } } }
 			ship = { name = "Z5 Paul Jacobi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class" } } }
-			ship = { name = "Scharnhorst" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }			
+			ship = { name = "Scharnhorst" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }			
 			ship = { name = "Gneisenau" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }
 		}
 	}

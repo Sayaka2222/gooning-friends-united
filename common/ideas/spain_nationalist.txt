@@ -113,6 +113,7 @@ ideas = {
 			modifier = {
 				ai_get_ally_desire_factor = -300
 				ai_join_ally_desire_factor = -300
+				industrial_capacity_dockyard = -10
 			}
 
 			rule = { can_decline_call_to_war = yes }

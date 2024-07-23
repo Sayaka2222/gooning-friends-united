@@ -197,7 +197,7 @@ characters={
 			slot = army_chief
 			idea_token = alan_brooke
 			allowed = {
-				original_tag = ENG
+				always = no
 			}
 			available = {
 			}
@@ -668,6 +668,23 @@ characters={
 				small=GFX_portrait_ENG_miles_dempsey_small
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = miles_dempsey
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={
 			traits={ brilliant_strategist career_officer infantry_leader naval_invader trait_engineer }
 			skill=6
@@ -713,19 +730,19 @@ characters={
 			idea_token = archibald_wavell
 			ledger = army
 			allowed = {
-				original_tag = ENG
+				original_tag = RAJ
 			}
 			available = {
+				has_war_with = JAP
 			}
 			traits = {
-				army_regrouping_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
-		
 		corps_commander={
 			traits={ infantry_leader trait_mountaineer trait_engineer }
 			skill=5
@@ -743,6 +760,24 @@ characters={
 			army={
 				large=GFX_portrait_ENG_thomas_moore
 				small=GFX_portrait_ENG_thomas_moore_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = thomas_moore
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				has_war_with = JAP
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
@@ -811,6 +846,9 @@ characters={
 			idea_token = andrew_cunningham
 			allowed = {
 				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_vanguard
 			}
 			traits = {
 				navy_chief_decisive_battle_2

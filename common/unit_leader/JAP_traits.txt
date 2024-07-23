@@ -16,7 +16,7 @@ leader_traits = {
 			}
 		}
 		modifier = {
-			
+			promote_cost_factor = 10
 		}
 		
 		ai_will_do = {

@@ -16,9 +16,6 @@ country_event = {
 	trigger = {
 		always = no
 	}
-	mean_time_to_happen = {
-		days = 151	# Historical outbreak time after elections
-	}
 
 	immediate = {
 		hidden_effect = {

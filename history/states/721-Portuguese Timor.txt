@@ -5,7 +5,9 @@ state={
 	manpower = 455604
 	
 	state_category = pastoral
-
+	resources = {
+		rubber = 10
+	}
 	history={
 		owner = USA
 		buildings = {

@@ -96,7 +96,6 @@ recruit_character = BEL_paul_van_zeeland
 		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 

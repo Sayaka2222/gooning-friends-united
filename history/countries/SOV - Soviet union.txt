@@ -3,6 +3,38 @@
 #### NO STEP BACK
 ####
 
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+	soviet_air = 1
+}
+
+if = { 
+	limit = { has_dlc = "No Step Back" }
+	#DEFAULT LIGHT TANK
+	create_equipment_variant = {
+		name = "BT-7"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			special_type_slot_1 = he_ammo
+			special_type_slot_2 = tank_heavy_machine_gun
+			special_type_slot_4 = empty
+
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+		}
+
+		icon = "gfx/interface/technologies/sov_basic_light_tank.dds"
+	}
+}
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = {
@@ -28,6 +60,7 @@ if = {
 }
 
 #POLITICAL ADVISORS
+recruit_character = SOV_maksim_litvinov
 recruit_character = SOV_mikhail_kalinin
 recruit_character = SOV_nikita_khrushchyov
 recruit_character = SOV_nikolay_voznesensky
@@ -560,7 +593,6 @@ if = {
 			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = Medium_bomb_bay
 			fixed_auxiliary_weapon_slot_3 = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_4 = Medium_bomb_bay
 			engine_type_slot = engine_2_4x
 			special_type_slot_1 = radio_navigation_1
 			special_type_slot_2 = hmg_defense_turret_2x
@@ -589,7 +621,6 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	gw_artillery = 1
 	interwar_antiair = 1
 	mass_assault = 1
-	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
@@ -674,6 +705,7 @@ add_ideas = {
 	SOV_politicized_military
 	closed_economy
 	volunteers
+	peace_training
 }
 
 

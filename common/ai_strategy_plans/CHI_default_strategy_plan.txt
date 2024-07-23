@@ -207,18 +207,12 @@ CHI_war_measures = {
 	abort = {
 		OR = {
 			has_war = no
-			has_completed_focus = CHI_war_of_national_liberation
-			has_completed_focus = CHI_dare_to_die_corps
 			controls_state = 527 #has successfully taken Manchuria
 		}
 	}
 	focus_factors = {
-		CHI_war_of_resistance = 20
 		CHI_military_affairs_commission = 20
-		CHI_industrial_evacuations = 30
-		CHI_scorched_earth_tactics = 30
 		CHI_democracy = 0 #can't have that nonsense right now
-		CHI_war_of_national_liberation = 20
 	}
 
 	research = {
@@ -289,7 +283,6 @@ CHI_befriend_britain = {
 	focus_factors = {
 		CHI_burma_road = 20
 		CHI_ledo_road = 20
-		CHI_fighter_purchases = 20
 	}
 
 	research = {
@@ -340,7 +333,6 @@ CHI_befriend_america = {
 	}
 	abort = {
 		OR = {
-			has_completed_focus = CHI_the_hump #they have served their purpose
 			USA = {
 				has_opinion	= {
 					target = ROOT
@@ -358,12 +350,6 @@ CHI_befriend_america = {
 				}
 			}
 		}
-	}
-	focus_factors = {
-		CHI_the_hump = 20
-		CHI_hire_chennault = 20
-		CHI_fighter_purchases = 20
-		CHI_invite_the_flying_tigers = 20
 	}
 
 	research = {

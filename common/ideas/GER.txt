@@ -42,6 +42,10 @@ ideas = {
 				tag = SOV
 				attack_bonus_against = 0.05
 			}
+			modifier = {
+				winter_attrition = 0.5
+				max_dig_in = -5
+			}
 		}
 		GER_blau = {
 			name = "Fall Blau"

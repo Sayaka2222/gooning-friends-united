@@ -50,12 +50,8 @@ every_possible_country = {
 		advisor = {
 			slot = air_chief
 			cost = 25
-			available = {
-				has_completed_focus = CHI_hire_chennault
-				NOT = { 
-					has_idea = CHI_claire_lee_chennault_theorist
-				}
-				NOT = { has_war_with = USA }
+			allowed = {
+				always = no
 			}
 			traits = { air_chief_ground_support_2 }
 			ai_will_do = {
@@ -66,12 +62,8 @@ every_possible_country = {
 			slot = theorist
 			ledger = air
 			cost = 25
-			available = {
-				has_completed_focus = CHI_hire_chennault
-				NOT = { 
-					has_idea = CHI_claire_lee_chennault_air_chief
-				}
-				NOT = { has_war_with = USA }
+			allowed = {
+				always = no
 			}
 			traits = { air_warfare_theorist }
 		}
@@ -257,7 +249,7 @@ every_possible_country = {
 				}
 			}
 			traits  = {
-				democratic_reformer 
+				fascist_demagogue
 			}
 		}
 	}

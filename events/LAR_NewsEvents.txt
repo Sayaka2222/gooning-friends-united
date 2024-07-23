@@ -757,21 +757,6 @@ news_event = {
 				}
 			}
 
-			#If POUM supported by SOV and won and SOV has not won/bypasssed their civil war yet -> POUM will help SOV in their CW
-			if = {
-				limit = {
-					has_global_flag = SOV_covert_support_for_poum_flag
-					has_global_flag = SPR_poum_won
-					SOV = {
-						OR = { #Do not trigger if Soviet civil war has finished or was bypassed
-							NOT = {	has_completed_focus = SOV_coup_detat }
-							has_global_flag = SOV_soviet_civil_war
-						}
-					}
-				}
-				SOV = { country_event = { id = NSB_soviet_spanish_civil_war.6 days = 8 random_days = 4 } }
-			}
-
 			SPR = {
 				every_state = {
 					limit = {
@@ -1396,7 +1381,6 @@ news_event = {
 		trigger = {
 			OR = {
 				has_completed_focus = SPA_restore_the_monarchy
-				has_completed_focus = SAF_a_king_for_our_people
 			}
 		}
 	}

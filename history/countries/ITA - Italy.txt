@@ -33,6 +33,37 @@ add_timed_idea = {
 	idea = autarky
 	days = 1461
 }
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
+
+if = { 
+	limit = { has_dlc = "No Step Back" }
+	#DEFAULT LIGHT TANK
+	create_equipment_variant = {
+		name = "L6"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			special_type_slot_1 = he_ammo
+			special_type_slot_2 = tank_heavy_machine_gun
+			special_type_slot_4 = empty
+
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+		}
+
+		icon = "gfx/interface/technologies/ita_basic_light_tank.dds"
+	}
+}
 
 
 #######################################
@@ -309,7 +340,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	trench_warfare = 1
-	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
@@ -329,6 +359,9 @@ set_technology = {
 	tech_recon = 1
 	paratroopers = 1
 	photo_reconnaisance = 1
+	fire_control_methods_1 = 1
+	improved_ship_torpedo_launcher = 1
+	basic_dp_light_battery = 1
 }
 if = {
 	limit = {
@@ -459,7 +492,7 @@ if = {
 			fixed_main_weapon_slot = torpedo_mounting_2
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			special_type_slot_1 = floats	
-			engine_type_slot = engine_2_1x
+			engine_type_slot = engine_2_2x
 			special_type_slot_2 = dive_brakes_small
 			
 		}
@@ -603,17 +636,6 @@ if = {
 }
 
 
-### STOCKPILE ###
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 150
-}
-add_equipment_to_stockpile = {
-	type = gw_armored_car_equipment
-	amount = 150
-}
-
-
 ### VARIANTS ###
 # 1936 Start #
 #plane variants
@@ -628,18 +650,6 @@ if = {
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 1
 		}
-	}
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	add_equipment_to_stockpile = {
-		type = gw_tank_equipment
-		amount = 190
-		producer = ITA
-		variant_name = "Fiat 3000"
 	}
 }
 

@@ -14,10 +14,13 @@ state={
 		add_core_of = SWE
 
 		victory_points = {
-			1145 5 
+			1145 15 
 		}
 		victory_points = {
-			7132 5 
+			7132 3
+		}
+		victory_points = {
+			12760 1
 		}
 		buildings = {
 			infrastructure = 4
@@ -32,7 +35,8 @@ state={
 	}
 
 	provinces={
-		1013 1145 4116 4131 4146 7132 9964 11923 11939 12760 
+		1013 1145 4116 4146 7132 9964 11923 11939 12760 
+		7040 7033 1128 12020 10045 11844 4150 3964 7008 3991 
 	}
 
 	local_supplies=0.0 

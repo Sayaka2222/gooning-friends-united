@@ -25,6 +25,8 @@
  EQ_MOD_CAT_tank_radio_module_TITLE:0 "Radio"
  EQ_MOD_CAT_tank_secondary_turret_TITLE:0 "Secondary Turret"
  EQ_MOD_CAT_tank_non_tracked_suspension_type_TITLE:0 "Non-tracked Suspension"
+ EQ_MOD_CAT_tank_ammo_module_TITLE:0 "Ammunition"
+ EQ_MOD_CAT_tank_flame_TITLE:0 "Flamethrower"
  
  ### EQUIPMENT MODULE SLOTS ###
  EQ_MOD_SLOT_main_armament_slot_TITLE:0 "Main Armament"
@@ -99,6 +101,7 @@
  tank_auto_cannon_desc:0 "Adapted from a fast-firing anti-air gun, this automatic cannon can lay down a hail of fire that is devastating to soft targets. The small caliber does limit its anti-armor performance."
  tank_auto_cannon_2:0 "Improved Automatic Cannon"
  tank_auto_cannon_2_desc:0 "Adapted from a fast-firing anti-air gun, this automatic cannon can lay down a hail of fire that is devastating to soft targets. The small caliber does limit its anti-armor performance."
+ tank_auto_cannon_3:0 "Advanced Automatic Cannon"
  tank_anti_air_cannon:0 "Basic Anti-Air Gun"
  tank_anti_air_cannon_desc:0 "A fast-firing automatic gun designed to engage aircraft. It has limited potential as a fire-support weapon against ground targets."
  tank_anti_air_cannon_2:0 "Improved Anti-Air Gun"
@@ -434,7 +437,15 @@
  
  expanded_fuel_tank:0 "Fuel Drum"
  expanded_fuel_tank_desc:0 "An externally mounted fuel drum designed to extend the operational range of an armored vehicle."
+ apcbc_ammo:0 "APCBC"
+ aphecbc_ammo:0 "APHECBC"
+ heat_ammo:0 "HEAT"
+ he_ammo:0 "HE"
+ ap_ammo:0 "AP"
 
+ tank_ammo_tech_1:0 "Armor Piercing, Capped, Ballistic Capped Shell"
+ tank_ammo_tech_2:0 "Armor Piercing, High Explosive, Capped, Ballistic Capped Shell"
+ tank_ammo_tech_3:0 "High Explosive Anti-Tank"
  radio_1:0 "Early Radio Equipment"
  radio_2:0 "Improved Radio Equipment"
  radio_3:0 "Advanced Radio Equipment"

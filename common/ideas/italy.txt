@@ -1277,7 +1277,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ITA_corpo_di_truppe_volontarie
 			}
 
 			modifier = {

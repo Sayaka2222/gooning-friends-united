@@ -176,7 +176,6 @@
 		available = {
 		}
 		prerequisite = { focus = FRA_metropolitan_france }
-		prerequisite = { focus = FRA_algerie_france }
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
@@ -1138,7 +1137,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_light_medium_armor
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2812,7 +2811,7 @@
 			focus = FRA_expand_the_citizenship
 		}
 		relative_position_id = FRA_expand_the_citizenship
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3350,7 +3349,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -6801,34 +6800,12 @@
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = FRA_naval_rearmament_2NB }
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}		
-		}
 
 		completion_reward = {
-			navy_experience = 25
-
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-				prioritize = { 21 } #Bouches du Rhone
+			779 = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -6841,17 +6818,7 @@
 				
 			
 
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					prioritize = { 14 } #Brittany
-	
+			777 = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -6870,54 +6837,18 @@
 		x = -3
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			459 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 1145
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
-			272 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 4948
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
 			539 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = naval_base
-						level = 3
+						level = 20
 						province = 5139
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
-			286 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 4401
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_naval_bases
@@ -6933,12 +6864,12 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_naval_bases
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			459 = {
+			539 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_extra_state_shared_building_slots = 2
@@ -6950,7 +6881,7 @@
 					set_state_flag = FRA_colonial_dockyards
 				}
 			}
-			272 = {
+			773 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_extra_state_shared_building_slots = 2
@@ -6962,7 +6893,7 @@
 					set_state_flag = FRA_colonial_dockyards
 				}
 			}
-			286 = {
+			772 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_extra_state_shared_building_slots = 2

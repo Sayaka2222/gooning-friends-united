@@ -33,6 +33,7 @@ division_template = {
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 		signal_company = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 5 }
 	}
 }
 division_template = {
@@ -98,9 +99,13 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		logistics_company = { x = 0 y = 2 }
-		maintenance_company = { x = 0 y = 3 }
+		light_tank_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+		anti_tank = { x = 0 y = 4  }
+		logistics_company = { x = 0 y = 5  }
+		field_hospital = { x = 0 y = 6  }
+		maintenance_company = { x = 0 y = 7  }
 	}
 }
 
@@ -162,5 +167,38 @@ instant_effect = {
 		industrial_manufacturer = mio:SOV_gaz_organization
 	}
 }
+units = {
+	division= {
+	location = 6380
+	division_template = "Mekhanizirovaniy Korpus"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "1st Red Guards Division"
 
+	}
+	division= {
+	location = 6380
+	division_template = "Mekhanizirovaniy Korpus"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "2nd Red Guards Division"
+
+	}
+	division= {
+	location = 6380
+	division_template = "Mekhanizirovaniy Korpus"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "3rd Red Guards Division"
+	
+	}
+	division= {
+	location = 6380
+	division_template = "Mekhanizirovaniy Korpus"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "4th Red Guards Division"
+	
+	}
+}
 	#####################

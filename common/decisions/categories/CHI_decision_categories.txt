@@ -33,7 +33,6 @@ CHI_integrate_the_warlords = {
 	}
 	icon = generic_political_actions
 	visible = {
-		has_completed_focus = CHI_subjugate_the_warlords
 		OR = {
 			any_of_scopes = {
 				array = subjects
@@ -55,7 +54,6 @@ CHI_industrial_evacuations = {
 	}
 	icon = generic_industry
 	visible = {
-		has_completed_focus = CHI_industrial_evacuations
 	}
 }
 

@@ -3257,7 +3257,6 @@ ideas = {
 
 			visible = {
 				has_completed_focus = BUL_invigorate_national_industry
-				has_completed_focus = BUL_utmost_optimization
 			}	
 			
 			research_bonus = {
@@ -3314,7 +3313,6 @@ ideas = {
 
 			visible = {
 				has_completed_focus = BUL_invigorate_national_industry
-				has_completed_focus = BUL_utmost_optimization
 			}
 			
 			research_bonus = {
@@ -3371,7 +3369,6 @@ ideas = {
 
 			visible = {
 				has_completed_focus = BUL_invigorate_national_industry
-				has_completed_focus = BUL_utmost_optimization
 			}
 			
 			research_bonus = {
@@ -3426,7 +3423,6 @@ ideas = {
 
 			visible = {
 				has_completed_focus = BUL_invigorate_national_industry
-				has_completed_focus = BUL_utmost_optimization
 			}
 			
 			research_bonus = {

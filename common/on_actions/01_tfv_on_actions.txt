@@ -4,27 +4,6 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = {
-						original_tag = INS
-						NOT = { has_government = fascism }
-					}
-					FROM = {
-						original_tag = INS
-						has_government = fascism
-					}
-					AST = {
-						has_completed_focus = AST_support_indonesian_uprising
-					}
-				}
-				AST = {
-					country_event = { 
-						id = tfv_australia.41 
-						hours = 12
-					}
-				}
-			}
-			if = {
-				limit = {
-					ROOT = {
 						original_tag = FRA
 						has_government = democratic
 					}
@@ -156,20 +135,6 @@ on_actions = {
 	#ROOT is subject FROM is overlord
 	on_subject_autonomy_level_change = {
 		effect = {
-			#Achievement
-			if = {
-				limit = { tag = EGY }
-				if = {
-					limit = { has_autonomy_state = autonomy_colony }
-					set_country_flag = achievement_EGY_colony
-					log = EGY_colony
-				}
-				if = {
-					limit = { has_autonomy_state = autonomy_dominion }
-					set_country_flag = achievement_EGY_dominion
-					log = EGY_dominion
-				}
-			}
 
 			#Add to commonwealth tech group
 			if = {

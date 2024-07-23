@@ -79,6 +79,18 @@ ENG_historical_plan = {
 
 	}
 
+	ai_strategy = {
+		type = contain
+		id = "ITA"			
+		value = 400
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "GER"			
+		value = 400
+	}
+
 	ideas = {
 		home_defence_spirit = 1
 	}

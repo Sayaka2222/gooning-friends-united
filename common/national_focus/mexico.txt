@@ -4844,7 +4844,6 @@ focus_tree = {
 				}							
 			}
 			OR = {
-				NOT = { SOV_is_left_opposition = yes }
 				SOV = { exists = no }
 			}
 		}

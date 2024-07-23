@@ -185,6 +185,7 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+				stability_factor = 0.15
 			}
 			
 			rule = {
@@ -209,7 +210,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.2
 			}
 		}
 		

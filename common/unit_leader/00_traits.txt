@@ -872,7 +872,6 @@ leader_traits = {
 		field_marshal_modifier = {
 			supply_consumption_factor = -0.15
 		}
-		enable_ability = extra_suplies
 		ai_will_do = {
 			factor = 1
 		}
@@ -890,9 +889,7 @@ leader_traits = {
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.30
 		}
-		
-		attack_skill = 1
-		
+				
 		slot = army_chief
 		specialist_advisor_trait = army_chief_offensive_1
 		expert_advisor_trait = army_chief_offensive_2
@@ -1044,7 +1041,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			land_reinforce_rate = 0.02
+			land_reinforce_rate = 0.05
 		}
 		
 		slot = army_chief
@@ -1177,7 +1174,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			army_infantry_defence_factor = 0.13
+			army_infantry_defence_factor = 0.1
 		}
 		
 		slot = high_command
@@ -1359,8 +1356,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			army_armor_speed_factor = 0.05 
-			army_armor_attack_factor = 0.16 
+			army_armor_attack_factor = 0.1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1677,10 +1673,11 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.15
+				attack = 0.2
 			}
+			fortification_damage = 0.5
+			fortification_collateral_chance = 0.5
 		}
-		enable_ability = siege_artillery
 		
 		slot = high_command
 		specialist_advisor_trait = army_artillery_1
@@ -1705,7 +1702,6 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.03
 		}
 		
 		ai_will_do = {
@@ -1726,7 +1722,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			army_infantry_attack_factor = 0.10
+			army_infantry_attack_factor = 0.075
 		}
 		
 		ai_will_do = {
@@ -1747,7 +1743,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			max_dig_in = 5
+			max_dig_in = 4
 			recon_factor_while_entrenched = 0.25
 		}
 		
@@ -1772,7 +1768,6 @@ leader_traits = {
 			extra_marine_supply_grace = 240
 		}
 		
-		enable_ability = faster_naval_invasion_planning
 		
 		ai_will_do = {
 			factor = 1
@@ -1816,7 +1811,6 @@ leader_traits = {
 			factor = 1
 		}
 		
-		enable_ability = probing_attack
 		
 		trait_type = assignable_trait
 		any_parent = { commando }
@@ -1834,7 +1828,6 @@ leader_traits = {
 			extra_paratrooper_supply_grace = 240
 		}
 		
-		enable_ability = glider_planes
 		
 		ai_will_do = {
 			factor = 1
@@ -1854,8 +1847,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.5
+			cas_damage_reduction = 0.1
+			air_superiority_bonus_in_combat = -0.2
 		}
 		
 		ai_will_do = {
@@ -1884,15 +1877,11 @@ leader_traits = {
 				attack = 0.05
 			}
 		}
-		
-		override_effect_tooltip = expert_improviser_movement_bonus_on_land
-			
+					
 		ai_will_do = {
 			factor = 1
 		}
-		
-		enable_ability = makeshift_bridges
-		
+				
 		trait_type = assignable_trait
 		any_parent = { trickster }
 		prerequisites = {
@@ -1990,10 +1979,11 @@ leader_traits = {
 
 		modifier = {
 			water_shallow_sea = {
-				attack = 0.1
-				movement = 0.1
-				defence = 0.1
+				attack = 0.2
+				movement = 0.2
+				defence = 0.2
 			}
+			navy_visibility = -0.2
 		}
 
 		ai_will_do = {

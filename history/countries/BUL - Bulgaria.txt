@@ -10,7 +10,11 @@ if = {
 	}
 }
 set_convoys = 150 #VANILLA & DLC
-
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 #You don't want Bulgarian party names? Just remove these lines
 set_party_name = { # DLC
 	ideology = communism

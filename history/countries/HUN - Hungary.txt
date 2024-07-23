@@ -17,7 +17,11 @@ if = {
 		}
 	}
 }
-
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
@@ -203,7 +207,6 @@ if = {
 		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 

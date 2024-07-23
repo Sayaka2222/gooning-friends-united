@@ -5,11 +5,11 @@ state = {
 	manpower = 11015000
 	state_category = metropolis
 	resources = {
-		aluminium = 3 # was: 6
+		aluminium = 23 # was: 6
 	}
 
 	history = {
-
+		add_extra_state_shared_building_slots = 5
 		owner = JAP
 		add_core_of = JAP
 
@@ -17,14 +17,14 @@ state = {
 			infrastructure = 8 #was: 8
 			arms_factory = 2
 			industrial_complex = 4
-			dockyard = 2
+			dockyard = 7
 			1136 = {
 				naval_base = 6
 			}
 			7072 = {
 				naval_base = 3
 			}
-
+			synthetic_refinery = 3
 		}
 
 		victory_points = {

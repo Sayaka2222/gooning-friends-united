@@ -34,44 +34,7 @@ country_event = {
 		}
 		custom_effect_tooltip = mtg_usa_civil_war_warning_tt
 		add_political_power = -120
-		USA_congress_small_opposition = yes 
-		country_event = { id = mtg_usa_civil_war_fascists.2 days = 90  }
-	}
-}
-#
-##second event for the fascist uprising
-country_event = {
-	id = mtg_usa_civil_war_fascists.2
-	title = mtg_usa_civil_war_fascists.2.t
-	desc = mtg_usa_civil_war_fascists.2.desc
-	picture = GFX_report_event_generic_riot
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		not = {
-			has_country_flag = mtg_usa_civil_war_fascists_2
-		}
-	}
-	option = { # welp
-		name = mtg_usa_civil_war_fascists.2.a
-		add_stability = -0.2	
-		set_country_flag = mtg_usa_civil_war_fascists_2
-		custom_effect_tooltip = fascists_uprising_tt
-		hidden_effect = {
-			country_event = { id = mtg_usa_civil_war_fascists.20 days = 200 }
-			country_event = { id = mtg_usa_civil_war_fascists.3 days = 15 }
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_union_representation_act
-						has_completed_focus = USA_democratic_socialism
-					}
-				}
-				country_event = { id = mtg_usa_civil_war_fascists.4 days = 15 }
-			}
-		}
-	}
+		USA_congress_small_opposition = yes 	}
 }
 
 ##dispatcher event - general
@@ -395,14 +358,6 @@ country_event = {
 				}
 			}
 			country_event = { id = mtg_usa_civil_war_fascists.21 days = 3 }
-			if = {
-				limit = {
-					not = {
-						has_completed_focus = USA_guarantee_the_american_dream
-					}
-				}
-				country_event = mtg_usa_civil_war_fascists.22 #forms neutral bloc
-			}	
 		}
 	}
 	option = {
@@ -852,7 +807,6 @@ country_event = {
 	mean_time_to_happen = { days = 20 }
 	fire_only_once = yes
 	immediate = {
-		country_event = mtg_usa_civil_war_fascists.2
 	}
 	option = {
 		name = OK
@@ -1090,29 +1044,6 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = mtg_usa_civil_war_democrats_2
-		hidden_effect = {	
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_ally_with_the_silver_shirts
-					}
-				}
-				country_event = { id = mtg_usa_civil_war_democrats.20 days = 280 }
-			}
-			else = {
-				country_event = { id = mtg_usa_civil_war_democrats.20 days = 180 }	
-			}
-		}
-		hidden_effect = {
-			country_event = { id = mtg_usa_civil_war_democrats.3 days = 15 random_days = 6 }
-			if = {
-				limit = {
-					has_completed_focus = USA_national_prosperity_program
-				}
-				country_event = { id = mtg_usa_civil_war_democrats.4 days = 15 random_days = 12 }
-			}
-		}
 	}
 
 	
@@ -1464,259 +1395,6 @@ country_event = {
 					set_variable = { var = quorum_high value = 58 }
 				}
 			}
-			if = {
-				limit = {
-					has_completed_focus = USA_recruit_the_free_corps
-				}
-				set_country_flag = USA_free_corps_raised
-				division_template = {
-					name = "Free Corps"
-						priority = 1
-						division_names_group = USA_INF_01
-						regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-	
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-	
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-				}
-				366 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				365 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				367 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				370 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				362 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				363 = {
-					create_unit = {
-						division = "name = \"I/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				364 = {
-					create_unit = {
-						division = "name = \"I/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				371 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				375 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				372 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-						owner = ROOT
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = MTG_work_with_the_bund
-					}
-					373 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-					394 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-					395 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-					261 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-					396 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-					393 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
-							owner = ROOT
-						}
-					}
-				}
-			}
 			every_other_country = {
 				limit = {
 					has_government = communism
@@ -1752,25 +1430,6 @@ country_event = {
 				type = infantry_equipment
 				amount = smuggled_weapons
 			}
-			if = {
-				limit = {
-					has_completed_focus = USA_work_with_the_bund
-				}
-				country_event = mtg_usa_civil_war_democrats.22
-				every_owned_state = {
-					limit = {
-						OR = {
-							state = 373
-							state = 394
-							state = 395
-							state = 261
-							state = 396
-							state = 393
-						}
-					}
-					set_state_flag = bund_midwest
-				}
-			}
 			USA_foreign_support_training_effect = yes
 			USA_foreign_support_pilots_effect = yes
 		}
@@ -1787,21 +1446,6 @@ country_event = {
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = USA_work_with_the_bund
-			}
-			create_corps_commander = {
-				name = "Fritz Kuhn"
-				GFX = GFX_portrait_ger_fritz_kuhn
-				skill = 2
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-				traits = { politically_connected }
 			}
 		}
 		
@@ -2444,27 +2088,6 @@ country_event = {
 			traits = {
 				great_architect
 			}
-		}
-	}
-	option = {
-		trigger = {
-			has_completed_focus = USA_send_lindbergh_to_germany
-		}
-		ai_chance = {
-			factor = 30
-		}
-		name = mtg_usa_civil_war_democrats.41.d
-
-		add_country_leader_role  = {
-			character = USA_charles_lindbergh
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					famous_aviator
-				}
-			}
-			promote_leader = yes
 		}
 	}
 }

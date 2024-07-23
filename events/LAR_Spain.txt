@@ -2350,37 +2350,6 @@ country_event = {
 					unlock_national_focus = SPR_enlarge_the_weapon_caches
 					unlock_national_focus = SPR_distribute_arms_to_the_people
 					unlock_national_focus = SPR_disband_the_army
-					random_list = {
-						10 = {
-							modifier = {
-								factor = 0
-								is_historical_focus_on = yes
-							}
-							modifier = {
-								factor = 0
-								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
-							}
-							complete_national_focus = SPR_regional_defense_council_of_aragon
-						}
-						10 = {
-							modifier = {
-								factor = 0
-								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
-							}
-							complete_national_focus = SPR_maintain_the_second_republic
-						}
-						10 = {
-							modifier = {
-								factor = 0
-								is_historical_focus_on = yes
-							}
-							modifier = {
-								add = 10
-								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
-							}
-							complete_national_focus = SPR_the_anti_fascist_workers_revolution
-						}
-					}
 				}
 				# Unlock division templates for Nationalists
 				country_lock_all_division_template = no
@@ -6852,18 +6821,6 @@ country_event = {
 						}
 					}
 				}
-				if = { #If Right Opposition is still under Stalin's rule, volunteers come back
-					limit = {
-						SOV = { has_completed_focus = SOV_covert_support_for_spanish_poum }
-						SPD = {
-							has_volunteers_amount_from = {
-								tag = SOV
-								count > 0
-							}
-						}
-					}
-					SOV = {	recall_volunteers_from = SPD }
-				}
 			}
 			else = { #REGULAR ANARCHIST UPRISING
 				if = {
@@ -7509,40 +7466,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = { #If POUM split + Right Oppo is in charge + tehy are supporting the POUM -> Then their volunteers stay in SPC
-				limit = {
-					has_completed_focus = SPR_the_anti_fascist_workers_revolution
-					SOV = {
-						has_completed_focus = SOV_covert_support_for_spanish_poum
-						has_completed_focus = SOV_coup_detat
-					}
-				}
-				every_other_country = { #Exclude SOV
-					limit = {
-						NOT = { tag = SOV }
-						ROOT = {
-							has_volunteers_amount_from = {
-							    tag = PREV
-							    count > 0
-							}
-						}
-					}
-					recall_volunteers_from = ROOT
-				}
-			}
-			else = {
-				every_other_country = { #Default
-					limit = {
-						ROOT = {
-							has_volunteers_amount_from = {
-							    tag = PREV
-							    count > 0
-							}
-						}
-					}
-					recall_volunteers_from = ROOT
-				}
-			}
 			
 			set_global_flag = SPR_anarchist_uprising_flag
 			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days

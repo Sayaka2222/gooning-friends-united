@@ -32,6 +32,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_tank_auto_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_auto_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_tank_bogie_suspension"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_bogie_suspension.dds"
 		legacy_lazy_load = no
@@ -533,6 +539,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_tank_ammo_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcrshell.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_tank_suspension_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_interleaved_roadwheels.dds"
 		legacy_lazy_load = no
@@ -541,6 +553,42 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_non_tracked_suspension_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_apcbc_ammo"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcbc.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_aphecbc_ammo"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aphecbc.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_heat_ammo"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heat.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_he_ammo"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/he.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ap_ammo"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ap.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_flame"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flamethrower.dds"
 		legacy_lazy_load = no
 	}
 

@@ -2305,26 +2305,6 @@ focus_tree = {
 					modifier = TUR_righteous_traditionalists
 				}
 			}
-			every_country_with_original_tag = {
-				original_tag_to_check = HUN
-				limit = {
-					has_completed_focus = HUN_elect_a_king
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = ROM
-				limit = {
-					has_completed_focus = ROM_his_majestys_loyal_government
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
 		}
 	}
 

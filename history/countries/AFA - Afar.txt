@@ -1,4 +1,4 @@
-﻿capital = 908
+﻿capital = 757
 
 OOB = "AFA_1936"
 
@@ -11,10 +11,6 @@ add_manpower = 15000
 
 add_ideas = {
 	bba_AFA_skilled_desert_warriors
-}
-
-ITA = {
-	give_guarantee = AFA
 }
 
 set_convoys = 10

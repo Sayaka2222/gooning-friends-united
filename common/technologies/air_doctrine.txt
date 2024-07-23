@@ -10,17 +10,6 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 9999
 		
-		xor = { force_rotation formation_flying }
-		
-		path = {
-			leads_to_tech = infrastructure_destruction
-			research_cost_coeff = 1
-		}		
-
-		path = {
-			leads_to_tech = home_defence
-			research_cost_coeff = 1
-		}
 		
 		doctrine = yes	
 		research_cost = 2.25
@@ -739,20 +728,12 @@ technologies = {
 
 	formation_flying = {
 		doctrine_name = "TITLE_BATTLEFIELD_SUPPORT"
-
-		xor = { force_rotation air_superiority }
-
 		xp_research_type = air
 		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
 		air_mission_xp_gain_factor = 0.05
 		###########
-		
-		path = {
-			leads_to_tech = dive_bombing
-			research_cost_coeff = 1
-		}
 		xp_research_type = air
 		xp_unlock_cost = 9999
 		doctrine = yes	
@@ -1380,20 +1361,23 @@ technologies = {
 
 	force_rotation = {
 		doctrine_name = "TITLE_OPERATIONAL_INTEGRITY"
-		
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = air
 		
-		xor = { formation_flying air_superiority }	
-
+		path = {
+			leads_to_tech = formation_flying
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_superiority
+			research_cost_coeff = 1
+		}
 		# EFFECT ########
 		air_interception_detect_factor = 0.20
 		air_mission_xp_gain_factor = 0.05
 		###########
-		
-		path = {
-			leads_to_tech = fighter_baiting
-			research_cost_coeff = 1
-		}
 		xp_research_type = air
 		xp_unlock_cost = 9999
 		doctrine = yes	

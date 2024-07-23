@@ -427,7 +427,7 @@ ENG_the_home_fleet  = {
 
 	ai_strategy = {
 		type = strike_force_home_base
-		id = 16 # north sea
+		id = 18 # north sea
 	}
 }
 
@@ -818,6 +818,18 @@ ENG_Allies_careful_with_early_invasions = {
 		value = -500
 	}
 
+	ai_strategy = {
+		type = invade
+		id = "BUL"
+		value = -500
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "CRO"
+		value = -500
+	}
+
 	ai_strategy = { #TODO why does this crash
 		type = invade
 		id = "JAP"
@@ -887,6 +899,18 @@ ENG_USA_careful_with_early_invasions = { #Same as above, alter in tandem
 	ai_strategy = {
 		type = invade
 		id = "VIC"
+		value = -500
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "BUL"
+		value = -500
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "CRO"
 		value = -500
 	}
 	
@@ -1150,11 +1174,77 @@ ENG_the_adriatic_is_dangerous = {
 		has_war_with = ITA
 	}
 	abort_when_not_enabled = yes
-
+	abort = {
+		ITA = {
+			has_navy_size = {
+				size < 75
+			}
+		}
+	}
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 168 #adriatic
-		value = 75
+		value = 150
+	}
+}
+
+ENG_the_tyrrhenian_is_dangerous = {
+	allowed = { original_tag = ENG }
+	enable = {
+		has_war_with = ITA
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		ITA = {
+			has_navy_size = {
+				size < 75
+			}
+		}
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 169 #tyrrhenian
+		value = 150
+	}
+}
+
+ENG_the_central_med_is_dangerous = {
+	allowed = { original_tag = ENG }
+	enable = {
+		has_war_with = ITA
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		ITA = {
+			has_navy_size = {
+				size < 75
+			}
+		}
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 29 #central med
+		value = 150
+	}
+}
+
+ENG_the_aegean_is_dangerous = {
+	allowed = { original_tag = ENG }
+	enable = {
+		has_war_with = ITA
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		ITA = {
+			has_navy_size = {
+				size < 75
+			}
+		}
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 202 #central med
+		value = 150
 	}
 }
 
@@ -1168,7 +1258,7 @@ ENG_the_channel_is_dangerous = {
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 18 #english channel
-		value = 75
+		value = 50
 	}
 }
 
@@ -1233,31 +1323,37 @@ ENG_USA_focus_on_europe = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = {
-			date > 1941.6.1
+			date > 1942.9.1
 			SOV = {
 				surrender_progress > 0.50
 			}
 		}
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
 		tag = GER
-		value = 10
+		value = 15
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = UK
+		value = 15
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = italy
-		value = 20
+		value = 25
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = north_africa
-		value = 15
+		value = 20
 	}
 }
 
@@ -1272,31 +1368,37 @@ ENG_USA_focus_on_europe_more = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = {
-			date > 1942.6.1
+			date > 1943.1.1
 			SOV = {
 				surrender_progress > 0.65
 			}
 		}
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
 		tag = GER
-		value = 20
+		value = 30
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = UK
+		value = 15
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = italy
-		value = 20
+		value = 50
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = north_africa
-		value = 15
+		value = 40
 	}
 	
 }
@@ -1312,14 +1414,14 @@ ENG_USA_focus_on_europe_loads_more = {
 	enable = {
 		is_historical_focus_on = yes
 		date > 1943.6.1
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
 		area = mainland_europe
-		value = 50
+		value = 75
 	}
 }
 
@@ -1342,7 +1444,7 @@ ENG_evacuate_troops_after_fall_of_france = {
 				date < 1942.6.1
 			}
 		}
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 	}
 
 	ai_strategy = {
@@ -1364,7 +1466,7 @@ ENG_time_to_ditch_FRA = {
 			surrender_progress > 0.25
 		}
 		OR = {
-			NOT = { has_global_flag = FRA_already_surrendered }
+			NOT = { has_global_flag = fall_of_france }
 			#lets give a month of retreat time after capitulation
 			set_temp_variable = { t = global.num_days }
 			subtract_from_temp_variable = { t = global.FRA_capitulation_days }
@@ -1403,6 +1505,7 @@ ENG_gang_up_GER_with_USA = {
 			OR = {
 				has_capitulated = yes
 				exists = no
+				has_global_flag = fall_of_france
 			}
 		}
 	}
@@ -1454,14 +1557,16 @@ ENG_Commonwealth_dont_get_sucked_into_FRA_and_die = {
 	enable = {
 		OR = {
 			tag = ENG
-			is_subject_of = ENG
+			tag = CAN
+			tag = AST
+			tag = SAF
 		}
 		has_war_with = GER
 		has_war_together_with = FRA
 
 		date < 1941.9.9
 
-		NOT = { has_global_flag = FRA_already_surrendered }
+		NOT = { has_global_flag = fall_of_france }
 	}
 	abort_when_not_enabled = yes
 
@@ -1472,9 +1577,10 @@ ENG_Commonwealth_dont_get_sucked_into_FRA_and_die = {
 	}
 
 	ai_strategy = {
-  		type = garrison
-   		value = 70
-   	}
+		type = front_unit_request
+		area = north_africa
+		value = 70
+	}
 }
 
 ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
@@ -1485,9 +1591,9 @@ ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
 			is_subject_of = ENG
 		}
 
-		date < 1942.1.1
+		date < 1940.1.1
 
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 	}
 	abort_when_not_enabled = yes
 
@@ -1538,7 +1644,7 @@ ENG_industry_we_on_an_island_bruv = {
 	ai_strategy = {
 		type = building_target
 		id = dockyard
-		value = 50
+		value = 25
 	}
 
 	ai_strategy = {
@@ -1622,12 +1728,6 @@ ENG_allies_dont_ask_for_diplo_access_to_SOV = {
 	}
 	ai_strategy = {
 		type = diplo_action_desire
-		id = TAN
-		target = military_access
-		value = -5000
-	}
-	ai_strategy = {
-		type = diplo_action_desire
 		id = MON
 		target = military_access
 		value = -5000
@@ -1635,12 +1735,6 @@ ENG_allies_dont_ask_for_diplo_access_to_SOV = {
 	ai_strategy = {
 		type = diplo_action_desire
 		id = SOV
-		target = docking_rights
-		value = -5000
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = TAN
 		target = docking_rights
 		value = -5000
 	}
@@ -1701,6 +1795,18 @@ ENG_convoy_raids_german_italian_convoys = {
 	ai_strategy = {
 		type = naval_convoy_raid_region
 		id = 61 # cape verde plain
+		value = 100
+	}
+
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 43 # cape verde plain
+		value = 100
+	}
+
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 47 # cape verde plain
 		value = 100
 	}
 
@@ -1892,7 +1998,7 @@ ENG_take_italys_spaghetti = {
 		is_historical_focus_on = yes
 	}
 	enable = {
-		date > 1942.6.1
+		date > 1940.6.1
 		ITA = {
 			surrender_progress < 0.2
 		}
@@ -1927,7 +2033,7 @@ ENG_onto_the_beaches = {
 		is_historical_focus_on = yes
 	}
 	enable = {
-		date > 1942.6.1
+		date > 1943.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1953,7 +2059,7 @@ ENG_onto_the_beaches_2 = {
 		is_historical_focus_on = yes
 	}
 	enable = {
-		date > 1943.1.1
+		date > 1943.6.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1984,7 +2090,7 @@ ENG_onto_the_beaches_3 = {
 		is_historical_focus_on = yes
 	}
 	enable = {
-		date > 1943.6.1
+		date > 1944.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -2003,7 +2109,7 @@ ENG_onto_the_beaches_4 = {
 		is_historical_focus_on = yes
 	}
 	enable = {
-		date > 1944.1.1
+		date > 1944.6.1
 	}
 	abort_when_not_enabled = yes
 
@@ -2124,7 +2230,7 @@ ENG_sardinia_is_a_stupid_island = {
 		original_tag = ENG
 	}
 	enable = {
-		date < 1943.1.1
+		date < 1942.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -2209,7 +2315,6 @@ ENG_dont_kick_russia_out_from_triple_entente_due_to_gobbling_up_breakaway_states
 
 	enable = {
 		is_in_faction_with = SOV
-		SOV = { has_completed_focus = SOV_the_triple_entente }
 	}
 
 	abort = {
@@ -2310,7 +2415,7 @@ ENG_to_tobruk = {
 	allowed = { original_tag = ENG }
 	enable = { 
 		is_historical_focus_on = yes
-		date > 1941.6.6
+		date > 1940.6.6
 		date < 1943.6.6
 		451 = { is_controlled_by = ITA }
 		ITA = { is_ai = yes }

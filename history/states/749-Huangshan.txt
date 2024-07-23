@@ -3,18 +3,25 @@ state={
 	name="STATE_749"
 	provinces={
 		1099 1125 1153 1171 4105 4173 7007 7104 10044 11937 12019 
+		996 7120 10076 11913 11982 13142
 	}
-	manpower=5000000
+	manpower=15000000
 	buildings_max_level_factor=1.000
 	state_category=town
 	history={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 		}
 		victory_points = {
 			12019 1
+		}
+		victory_points = {
+			10076 3
+		}
+		victory_points = {
+			11913 20 
 		}
 		
 		1938.10.25 = {

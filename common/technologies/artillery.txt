@@ -653,6 +653,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = subsonic_sam_tech
+			research_cost_coeff = 1
+		}
+
 		research_cost = 1
 
 		start_year = 1940
@@ -677,6 +682,62 @@ technologies = {
 				}
 				factor = 5
 			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_air
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	subsonic_sam_tech = {
+
+		enable_equipment_modules = {
+			subsonic_sam
+		}
+
+		path = {
+			leads_to_tech = sam_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.8
+
+		start_year = 1945
+
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			artillery
+			cat_anti_air
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	sam_tech = {
+		allow_branch = {
+			always = no
+		}
+
+		research_cost = 1
+
+		start_year = 1950
+
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
 		}
 
 		categories = {
@@ -981,6 +1042,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = infantry_at
+			research_cost_coeff = 1
+		}
+
 		research_cost = 1
 
 		start_year = 1940
@@ -1037,6 +1103,113 @@ technologies = {
 			artillery
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
+		}
+	}
+
+	infantry_at = {
+		enable_equipments = {
+			manpats_1
+		}
+		infantry = {
+			need = {
+				manpats = 15
+			}
+		}
+		desert_infantry = {
+			need = {
+				manpats = 15
+			}
+		}
+		marine = {
+			need = {
+				manpats = 15
+			}
+		}
+		mountaineers = {
+			need = {
+				manpats = 15
+			}
+		}
+		paratrooper = {
+			need = {
+				manpats = 15
+			}
+		}
+		custom_modifier_tooltip = "all Leg Infantry will require 15 RPGs"
+		
+		path = {
+			leads_to_tech = infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = 10 }
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	infantry_at2 = {
+		enable_equipments = {
+			manpats_2
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = 12 }
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
 		}
 	}
 

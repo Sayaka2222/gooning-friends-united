@@ -125,11 +125,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				tag = JAP
-				has_completed_focus = JAP_the_unthinkable_option
-			}
-			modifier = {
-				factor = 0
 				is_literally_china = yes
 				JAP = { has_completed_focus = JAP_purge_the_kodoha_faction }
 			}
@@ -446,7 +441,6 @@ country_event = {
 			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.32 }
 		}
 	}
 }
@@ -1362,26 +1356,12 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				NOT = { HUN = { has_completed_focus = HUN_protect_austria } }
-			}
-			modifier = {
 				GER = { has_army_size = { size > 39 } }
 				factor = 0.5
 			}
 			modifier = {
 				add = 20
 				GER = { has_army_size = { size < 30 } }
-			}
-			modifier = {
-				add = 100
-				HUN = {
-					OR = {
-						has_completed_focus = HUN_protect_austria
-						is_in_faction_with = AUS
-					}
-				}
 			}
 			modifier = {
 				factor = 2

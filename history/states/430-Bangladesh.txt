@@ -5,14 +5,22 @@ state={
 	history={
 		owner = RAJ
 		victory_points = {
-			11929 1 
+			11929 10
+		}
+		victory_points = {
+			9991 3
+		}
+		victory_points = {
+			4914 1 
 		}
 		buildings = {
 			infrastructure = 5 #was: 5
 			industrial_complex = 2
-			11968 = {
-				naval_base = 3
-
+			11929 = {
+				naval_base = 20
+			}
+			9991 = {
+				naval_base = 1
 			}
 
 		}
@@ -20,9 +28,16 @@ state={
 	}
 	resources = {
 		tungsten = 20
+		rubber = 20
 	}
 	provinces={
-		2843 4162 4616 7078 7124 7179 7662 9935 9991 9993 10035 10389 10416 10443 11911 11929 11968 12010 12423 13208
+		2843 4162 4616 7078 7124 7179 9935 9991 9993 10035 10389 10416 10443 11911 11929 11968 12010 12423 1497 7634 1075
+		5018
+		5011 8068
+		12815 10817 1882
+		8104 7988
+		8018 7940
+		5193 4914
 	}
 	manpower=31973300
 	buildings_max_level_factor=1.000

@@ -32,6 +32,7 @@
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 		signal_company = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 5 }
 	}
 }
 division_template = {
@@ -133,9 +134,13 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		logistics_company = { x = 0 y = 2 }
-		maintenance_company = { x = 0 y = 3 }
+		light_tank_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+		anti_tank = { x = 0 y = 4  }
+		logistics_company = { x = 0 y = 5  }
+		field_hospital = { x = 0 y = 6  }
+		maintenance_company = { x = 0 y = 7  }
 	}
 }
 
@@ -180,3 +185,21 @@ instant_effect = {
 	}
 }
 	#####################
+	units = {
+		division= {
+		location = 6103
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		name = "1st Armored Division"
+	
+		}
+		division= {
+		location = 6103
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		name = "2nd Armored Division"
+	
+		}
+	}

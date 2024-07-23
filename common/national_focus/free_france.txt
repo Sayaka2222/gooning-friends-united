@@ -51,7 +51,7 @@
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 			}
 		}
 	}
@@ -323,7 +323,7 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 100
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -414,7 +414,7 @@
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe
 					amount = 100
-					producer = FRA
+					producer = SOV
 				}
 			}
 		}

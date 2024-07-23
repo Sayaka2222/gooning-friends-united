@@ -96,6 +96,7 @@ division_template = {
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 		signal_company = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 5 }
 	}
 }
 division_template = {
@@ -128,10 +129,13 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		light_tank_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
-		signal_company = { x = 0 y = 4 }
+		anti_tank = { x = 0 y = 4  }
+		logistics_company = { x = 0 y = 5  }
+		field_hospital = { x = 0 y = 6  }
+		maintenance_company = { x = 0 y = 7  }
 	}
 }
 division_template = {
@@ -161,8 +165,46 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		mot_recon = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
+		anti_tank = { x = 0 y = 4  }
+		logistics_company = { x = 0 y = 5  }
+		field_hospital = { x = 0 y = 6  }
+		maintenance_company = { x = 0 y = 7  }
+	}
+}
+units = {
+	division= {
+	location = 6521
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "1st SS-Panzergrenadier"
+
+	}
+	division= {
+	location = 6521
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "2nd SS-Panzergrenadier"
+
+	}
+	division= {
+	location = 6521
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "3rd SS-Panzergrenadier"
+	
+	}
+	division= {
+	location = 6521
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.3
+	start_equipment_factor = 1
+	name = "4th SS-Panzergrenadier"
+	
 	}
 }

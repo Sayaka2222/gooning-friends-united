@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = RAJ
+		add_extra_state_shared_building_slots = 3
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -20,7 +21,7 @@ state={
 			}
 		}
 		victory_points = {
-			1349 10 
+			1349 20 
 		}
 
 	}

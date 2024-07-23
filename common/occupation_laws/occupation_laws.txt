@@ -475,7 +475,7 @@ brutally_oppressive_occupation = {
 	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
 
 	visible = {
-		has_government = fascism
+		always = no
 	}
 
 	state_modifier = {
@@ -541,15 +541,7 @@ colonial_police = {
 	fallback_law = colonial_police_improved
 
 	visible = {
-		original_tag = ITA
-		#NOT = { has_completed_focus = ITA_regional_development }
-		NOT = { has_country_flag = ITA_colonial_police_improved_flag }
-		OR = {
-			AND = {
-				has_completed_focus = ITA_ministry_of_italian_africa
-				FROM = { capital_scope = { is_on_continent = africa } }
-			}
-		}
+		always = no
 	}
 
 	state_modifier = { #CHANGES HERE NEED TO BE APPLIED ALSO IN ITA_fake_colonial_police_law idea
@@ -590,9 +582,7 @@ colonial_police_improved = {
 	fallback_law = colonial_police_final
 
 	visible = {
-		original_tag = ITA
-		has_completed_focus = ITA_regional_development
-		NOT = { has_country_flag = ITA_colonial_police_final_flag }
+		always = no
 	}
 
 	state_modifier = {

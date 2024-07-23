@@ -16,9 +16,6 @@ CHI_alternate_plan_1 = {
 		}
 		OR = {
 			AND = {
-				JAP = {
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
 				has_game_rule = {
 					rule = CHI_ai_behavior
 					option = DEFAULT
@@ -45,13 +42,9 @@ CHI_alternate_plan_1 = {
 		CHI_financial_policy
 		CHI_three_principles_of_the_people
 		#1937
-		CHI_nationalism
-		CHI_prioritize_the_interior
-		CHI_subjugate_the_warlords
 		CHI_military_affairs_commission
 		CHI_army_reform
 		#1938
-		CHI_anti_communism
 	}
 	focus_factors = {
 		CHI_rural_reconstruction_movement = 5
@@ -83,7 +76,6 @@ CHI_alternate_plan_1 = {
 		CHI_judicial_yuan = 5
 		CHI_combined_arms_warfare = 5
 		CHI_renegotiate_the_unequal_treaties = 5
-		CHI_pick_a_fight_with_japan = 0
 	}
 
 	research = {
@@ -129,7 +121,6 @@ CHI_alternate_plan_2 = {
 		CHI_closer_ties_with_germany = 10
 		CHI_purchase_tanks = 5
 		CHI_give_falkenhausen_citizenship = 5
-		CHI_anti_communism = 5
 		CHI_experimental_mechanised_unit = 5
 		CHI_chinese_general_staff = 5
 		CHI_chinese_panzers = 5

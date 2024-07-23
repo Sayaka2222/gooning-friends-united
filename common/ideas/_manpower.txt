@@ -174,19 +174,8 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
 				has_war_support > 0.2
 				#Special rules AST in TFV
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					is_subject = no
-				}
 				if = {
 					limit = {
 						original_tag = HUN
@@ -315,6 +304,15 @@ ideas = {
 					}
 					casualties > 10000000
 				}
+				if = {
+					limit = {
+						OR = {
+							original_tag = RAJ
+							original_tag = CHI
+						}
+						always = no
+					}
+				}
 				else = {
 					casualties > 2500000
 				}
@@ -401,6 +399,15 @@ ideas = {
 					}
 					casualties > 20000000
 				}
+				if = {
+					limit = {
+						OR = {
+							original_tag = RAJ
+							original_tag = CHI
+						}
+						always = no
+					}
+				}
 				else = {
 					casualties > 5000000
 				}
@@ -467,6 +474,15 @@ ideas = {
 						tag = SOV
 					}
 					casualties > 30000000
+				}
+				if = {
+					limit = {
+						OR = {
+							original_tag = RAJ
+							original_tag = CHI
+						}
+						always = no
+					}
 				}
 				else = {
 					casualties > 10000000

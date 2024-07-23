@@ -41,10 +41,11 @@ sub_units = {
 		hard_attack = -0.8
 		defense = -0.8
 		breakthrough = -0.8
-		air_attack = -0.99
+		air_attack = -1
 		
 		# Support nerfs to combat abilities
-		armor_value = -0.99
+		ap_attack = -1
+		armor_value = -1
 		affects_speed = no
 		need = {
 			light_tank_flame_chassis = 30
@@ -131,10 +132,11 @@ sub_units = {
 		hard_attack = -0.75
 		defense = -0.75
 		breakthrough = -0.75
-		air_attack = -0.99
-
+		air_attack = -1
+		
 		# Support nerfs to combat abilities
-		armor_value = -0.99
+		ap_attack = -1
+		armor_value = -1
 		affects_speed = no
 		need = {
 			medium_tank_flame_chassis = 25
@@ -221,10 +223,11 @@ sub_units = {
 		hard_attack = -0.65
 		defense = -0.65
 		breakthrough = -0.65
-		air_attack = -0.99
-
+		air_attack = -1
+		
 		# Support nerfs to combat abilities
-		armor_value = -0.99
+		ap_attack = -1
+		armor_value = -1
 		affects_speed = no
 		need = {
 			heavy_tank_flame_chassis = 20

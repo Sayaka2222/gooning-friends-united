@@ -29,10 +29,10 @@ units= {
 			ship = { name = "USS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
-			ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
+			ship = { name = "USS New Orleans" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Astoria" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Minneapolis" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Indianapolis" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Trenton" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Concord" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Oglala" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
@@ -89,16 +89,16 @@ units= {
 			ship = { name = "USS New York" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 			ship = { name = "USS Texas" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 			ship = { name = "USS Memphis" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
-			ship = { name = "USS Northampton" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Houston" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Pensacola" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Salt Lake City" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Chicago" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Chester" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Louisville" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }					
-			ship = { name = "USS Tuscaloosa" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Portland" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
+			ship = { name = "USS Northampton" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Houston" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Pensacola" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Salt Lake City" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Chicago" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Chester" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Louisville" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }					
+			ship = { name = "USS Tuscaloosa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS San Francisco" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Portland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Decatur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Badger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Jacob Jones" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
@@ -213,12 +213,7 @@ units= {
 			ship = { name = "USS Tattnall" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS J Fred Talbott" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }			
 			ship = { name = "USS S-42" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS Augusta" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
+			ship = { name = "USS Augusta" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Marblehead" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }
 			ship = { name = "USS Paul Jones" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Alden" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
@@ -233,15 +228,9 @@ units= {
 			ship = { name = "USS Peary" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Pillsbury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS John D Ford" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }					
-			ship = { name = "USS S-36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-			ship = { name = "USS Quincy" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Wichita" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
-			ship = { name = "USS Vincennes" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
+			ship = { name = "USS Quincy" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Wichita" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
+			ship = { name = "USS Vincennes" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Yorktown" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_1 = { amount = 1 owner = USA version_name = "Yorktown Class" } } }	
 			ship = { name = "USS Enterprise" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_1 = { amount = 1 owner = USA version_name = "Yorktown Class" } } }	
 			ship = { name = "USS Porter" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
@@ -250,12 +239,7 @@ units= {
 			ship = { name = "USS Mahan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Cummings" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
 			ship = { name = "USS Flusser" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Case" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Conyngham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Cassin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Shaw" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Cushing" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
-			ship = { name = "USS Perkins" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }		
+			ship = { name = "USS Case" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }			
 			ship = { name = "USS Tarpon" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
 		}					
 	}

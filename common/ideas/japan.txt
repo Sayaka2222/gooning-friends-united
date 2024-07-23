@@ -1,8 +1,58 @@
 ideas = {
 
 	country = {
-	
-	
+
+		jap_warrior = {
+			name = "Warrior Spirit"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+			cancel = {
+				ROOT = {
+					NOT = {
+						controls_state = 645
+						controls_state = 526
+					}
+				}
+			}
+		}
+		jap_agility = {
+			name = "Agility Focus"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+			}
+		}
+		jap_range = {
+			name = "Range Focus"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+			modifier = {
+				air_range_factor = 0.1
+			}
+		}
 		state_shintoism = {
 			allowed = {
 				always = no
@@ -195,9 +245,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				consumer_goods_factor = 0.10
@@ -240,13 +288,11 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.25
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				consumer_goods_factor = 0.10
 			}
 		}
@@ -330,10 +376,6 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = 0.2
-				mobilization_laws_cost_factor = -0.25
-				justify_war_goal_time = -0.2
-				research_speed_factor = -0.05
-				production_speed_industrial_complex_factor = -0.1
 				ai_desired_divisions_factor = 0.25
 			}
 		}
@@ -581,11 +623,9 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = -0.2
+				production_speed_dockyard_factor = -0.1
 				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = -0.2
-				naval_doctrine_cost_factor = 0.1
-				land_doctrine_cost_factor = -0.05
+				industrial_capacity_dockyard = -0.1
 			}
 		}
 
@@ -604,9 +644,9 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = -0.1
+				production_speed_dockyard_factor = -0.05
 				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 
@@ -638,8 +678,8 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_strengthened
 			
 			modifier = {
-				production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = 0.1
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = 0.05
 			}
@@ -659,13 +699,10 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 
 			modifier = {
-				production_speed_arms_factory_factor = -0.2
-				production_speed_dockyard_factor = 0.2
-				planning_speed = -0.1
-				industrial_capacity_factory = -0.05
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = 0.1
-				land_doctrine_cost_factor = 0.1
-				naval_doctrine_cost_factor = -0.05
 			}
 		}		
 
@@ -682,9 +719,8 @@ ideas = {
 
 			picture = jap_supremacy_of_technology
 			
-			research_bonus = {
-				infantry_weapons = 0.05
-				armor = 0.05
+			modifier = {
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -702,9 +738,8 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
 				army_morale_factor = 0.1
+				army_org_factor = 0.1
 			}
 		}
 
@@ -722,7 +757,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.05
+				special_forces_attack_factor = 0.05
 			}
 		}
 

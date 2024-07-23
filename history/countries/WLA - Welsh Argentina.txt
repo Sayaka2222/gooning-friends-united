@@ -1,4 +1,4 @@
-﻿capital = 955 # Rawson, Chubut
+﻿capital = 509 # Rawson, Chubut
 
 oob = "WLA_1936"
 

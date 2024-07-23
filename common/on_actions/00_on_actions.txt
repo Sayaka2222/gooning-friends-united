@@ -77,15 +77,6 @@ on_actions = {
 	# country
 	on_new_term_election = {
 		random_events = {
-			100 = usa.6
-			100 = usa.7
-			100 = usa.8
-			100 = usa.9
-			100 = usa.10
-			100 = usa.11
-			100 = usa.12
-		}
-		random_events = {
 			100 = spain.9
 			100 = lar_spain.1
 		}
@@ -709,28 +700,6 @@ on_actions = {
 						idea = civil_war_surprise_attack_plan
 						days = 30
 					}
-				}
-			}
-
-			if = {
-				limit = {
-					FROM = {
-						has_civil_war = yes
-						original_tag = SPR
-					}
-					has_civil_war = yes
-					original_tag = SPR
-
-				}
-				random_country = {
-					limit = {
-						original_tag = FRA
-						OR = {
-							has_completed_focus = FRA_right_wing_rhetoric
-							has_completed_focus = FRA_utilize_the_leagues
-						}
-					}
-					country_event = { id = france.32 }
 				}
 			}
 		}

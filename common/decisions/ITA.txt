@@ -2858,24 +2858,6 @@ ITA_balance_of_power_category = {
 		days_re_enable = 365
 
 		remove_effect = {
-			effect_tooltip = {
-				FROM = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 2500
-						producer = ROOT
-					}
-					add_equipment_to_stockpile = {
-						type = support_equipment
-						amount = 50
-						producer = ROOT
-					}
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = SOV_sent_us_weapons
-					}
-				}
-			}
 			hidden_effect = {
 				FROM = { country_event = { id = BBA_italy_sends_military_support.1 } }
 			}
@@ -4041,7 +4023,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 		target_root_trigger = {
 			original_tag = ITA
 			has_civil_war = no
-			has_completed_focus = ITA_corpo_di_truppe_volontarie #It's totally ok that the decision gets unlocked even if the focus gets bypassed
 			NOT = { has_country_flag = ITA_ceded_aquila_class_destroyers_flag } #To prevent visible trigger to check every tick after this happens
 			OR = {
 				has_global_flag = spanish_civil_war
@@ -4261,10 +4242,6 @@ ITA_italian_mafia_dec_cat = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_equipment_to_stockpile = { 
-					type = infantry_equipment
-					amount = -500
-				}
 				add_manpower = -1000
 				add_command_power = -25
 			}

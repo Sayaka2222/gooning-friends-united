@@ -10,6 +10,21 @@ ideas = {
 
 
 	country= {
+		SOV_labor_defense = {
+			name = "Civilian Labor Defense"
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_air_base_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+			}
+		}
 		SOV_tankograd = {
 			name = "Tankograd"
 
@@ -23,6 +38,20 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
+			}
+		}
+		SOV_rzhev = {
+			name = "Rzhev Counteroffensive"
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				winter_attrition_factor = -1
 			}
 		}
 		SOV_bagration = {
@@ -119,7 +148,6 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					SOV_is_right_opposition = yes
 					has_country_leader = {
 						character = SOV_iosif_stalin
 						ruling_only = yes
@@ -146,7 +174,6 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					SOV_is_right_opposition = yes
 					has_country_leader = {
 						character = SOV_iosif_stalin
 						ruling_only = yes
@@ -173,7 +200,6 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					SOV_is_right_opposition = yes
 					has_country_leader = {
 						character = SOV_iosif_stalin
 						ruling_only = yes
@@ -200,7 +226,6 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					SOV_is_right_opposition = yes
 					has_country_leader = {
 						character = SOV_iosif_stalin
 						ruling_only = yes
@@ -1543,7 +1568,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.15
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 
@@ -2142,7 +2167,6 @@ ideas = {
 			modifier = {
 				mines_planting_by_fleets_factor = 0.1
 				mines_sweeping_by_fleets_factor = 0.1
-				naval_mine_hit_chance = -0.05
 				naval_mines_damage_factor = 0.05
 			}
 		}
@@ -3025,7 +3049,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = {
-				SOV_is_right_opposition = yes
 			}
 			available = {
 
@@ -3149,8 +3172,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = {
-				has_completed_focus = SOV_the_fourth_international
-				SOV_is_left_opposition = yes
 			}
 
 			modifier = {
@@ -3448,7 +3469,6 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = 0.05
 				army_morale_factor = 0.1
 				modifier_army_sub_unit_infantry_speed_factor = 0.25
 			}

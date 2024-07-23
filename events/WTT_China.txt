@@ -1391,7 +1391,6 @@ country_event = {
 		hidden_effect = {
 			news_event = { id = wtt_news.34 days = 1 }
 		}
-		unlock_decision_tooltip = CHI_flying_tigers
 	}
 
 	option = { #refuse
@@ -1434,7 +1433,6 @@ country_event = {
 			id = ROOT
 			value = 200
 		}
-		unlock_decision_tooltip = CHI_soviet_volunteer_group
 	}
 
 	option = { #refuse

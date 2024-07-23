@@ -50,6 +50,85 @@ sub_units = {
 		transport = infantry_equipment
 	}
 
+	desert_infantry = {
+		abbreviation = "DINF"
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		#can_exfiltrate_from_coast = yes #Can this subunit board convoys from a non-port location. 
+		#Intended for use with special forces marine templates; all non-support subunits in the division must have this flag set to yes
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 22
+		max_organisation = 75
+		default_morale = 0.3
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1.5
+		weight = 0.5
+		initiative = 0.01
+		supply_consumption = 0.1
+		supply_consumption_factor=-0.01
+		need = {
+			infantry_equipment = 50
+		}
+		plains = {
+			attack = -0.15
+			defence = -0.15
+		}
+		urban = {
+			attack = -0.15
+			defence = -0.15
+		}
+		hills = {
+			attack = -0.15
+			defence = -0.15
+		}
+		mountain = {
+			attack = -0.15
+			defence = -0.15
+		}
+		forest = {
+			attack = -0.15
+			defence = -0.15
+		}
+		marsh = {
+			attack = -0.15
+			defence = -0.15
+		}
+		jungle = {
+			attack = -0.15
+			defence = -0.15
+		}
+		desert = {
+			attack = 0.1
+			defence = 0.1
+			movement = 0.1
+		}
+		transport = infantry_equipment
+	}
+
 	bicycle_battalion = {
 		abbreviation = "BIC"
 		sprite = bicycle
@@ -132,6 +211,7 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
+		initiative = 0.01
 		supply_consumption = 0.15
 		supply_consumption_factor=-0.01
 		need = {
@@ -282,7 +362,7 @@ sub_units = {
 		map_icon_category = infantry
 		special_forces = yes
 
-		priority = 2
+		priority = 601
 		ai_priority = 2
 		active = no
 
@@ -305,7 +385,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 24
-		max_organisation = 70
+		max_organisation = 75
 		default_morale = 0.4
 		manpower = 1000
 
@@ -361,8 +441,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 65
-		max_organisation = 45
+		max_strength = 50
+		max_organisation = 60
 		default_morale = 0.30
 		manpower = 1200
 
@@ -373,13 +453,15 @@ sub_units = {
 		supply_consumption = 0.2
 		initiative = 0.01
 		supply_consumption_factor=-0.01
+		soft_attack = 1
+		hard_attack = 1
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
 	
 		need = {
 			infantry_equipment = 100
-			motorized_equipment = 55
+			motorized_equipment = 50
 		}
 
 		forest = {
@@ -392,7 +474,7 @@ sub_units = {
 		}
 		jungle = {
 			attack = -0.6
-			defence = -0.6
+			defence = -0.8
 			movement = -0.5
 		}
 		hills = {

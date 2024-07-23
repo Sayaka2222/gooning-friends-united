@@ -471,8 +471,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_engineers_medium"
 		texturefile = "gfx/interface/technologies/engineers.dds"
-	}		
-	
+	}	
+
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/support_weapons5.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_support_weapons4_medium"
 		texturefile = "gfx/interface/technologies/support_weapons4.dds"
@@ -6016,6 +6021,18 @@ spriteTypes = {
 
 	### Tank Designer Tech ###
 	SpriteType = {
+		name = "GFX_tank_ammo_tech_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/apcbc.dds"
+	}
+	SpriteType = {
+		name = "GFX_tank_ammo_tech_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/aphecbc.dds"
+	}
+	SpriteType = {
+		name = "GFX_tank_ammo_tech_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/heat.dds"
+	}
+	SpriteType = {
 		name = "GFX_stabilizer_tech_medium"
 		texturefile = "gfx/interface/technologies/stabilizer_tech.dds"
 	}
@@ -7672,5 +7689,41 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_CRO_assault_rifles_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mechanised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/land/usa/m5_halftrack.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_support_mortars_medium"
+		texturefile = "gfx/interface/technologies/land/eng/mortars1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_mortars_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/mortars2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_mortars_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/mortars3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_mortars_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/mortars4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_mortars_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/mortars5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_subsonic_sam_tech_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_anti_ship_missile_icon.dds"
+		legacy_lazy_load = no
 	}
 }

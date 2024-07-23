@@ -21,6 +21,11 @@ if = {
 		set_naval_oob = "CAN_1936_naval_legacy"
 	}
 }
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "CAN_1936_air_bba"
@@ -93,7 +98,6 @@ set_technology = {
 	tech_trucks = 1
 	gw_artillery = 1
 	trench_warfare = 1
-	fleet_in_being = 1
 	basic_train = 1
 	tech_military_police = 1
 	tech_maintenance_company = 1
@@ -257,7 +261,6 @@ if = {
 
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
 		battlefleet_concentration = 1
 		subsidiary_carrier_role = 1
 		convoy_sailing = 1

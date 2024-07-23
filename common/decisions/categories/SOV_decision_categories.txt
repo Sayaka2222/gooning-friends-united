@@ -35,10 +35,6 @@ SOV_propaganda_campaigns = {
 	}
 
 	visible = {
-		OR = {
-			has_completed_focus = SOV_expand_the_agitprop
-			has_country_flag = SOV_debug_show_propaganda_system_flag #Debug
-		}
 	}
 }
 
@@ -88,17 +84,7 @@ SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM
 	}
 
 	visible = {
-		has_completed_focus = SOV_covert_support_for_spanish_poum
-		NOT = { has_global_flag = scw_over }
-		NOT = {
-			AND = {
-				has_global_flag = SPR_anarchist_uprising_flag
-				OR = {
-					NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
-					NOT = { country_exists = SPC }
-				}
-			}
-		}
+		always = no
 	}
 }
 
@@ -111,9 +97,6 @@ SOV_great_patriotic_war = {
 		original_tag = SOV
 	}
 	visible = {
-		any_enemy_country = {
-			SOV_is_major_not_original_sov = yes
-		}
 	}	
 }
 
@@ -127,13 +110,6 @@ SOV_diplomacy_baltic_decision_category = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_baltic_security
-		OR = {
-			country_exists = EST
-			country_exists = LAT
-			country_exists = LIT
-		}
-		is_subject = no
 	}
 }
 
@@ -188,10 +164,6 @@ SOV_diplomacy_middle_east_decision_category = {
 
 	visible = {
 		OR = {
-			has_completed_focus = SOV_support_afghan_ideology
-			has_completed_focus = SOV_the_khakimov_proposal
-		}
-		OR = {
 			country_exists = IRQ
 			country_exists = PER
 			country_exists = AFG
@@ -211,32 +183,6 @@ SOV_diplomacy_asia_decision_category = {
 	}
 
 	visible = {
-		OR = {
-			AND = {
-				has_completed_focus = SOV_the_threat_from_the_land_of_the_rising_sun
-				any_country = {
-					OR = {
-						SOV_is_free_chinese_tag = yes
-					}
-					exists = yes
-				}
-			}
-			AND = {
-				has_completed_focus = SOV_reconcile_japan
-				any_country = {
-					OR = {
-						AND = {
-							tag = JAP
-							is_subject = no
-						}
-						AND = {
-							SOV_is_free_chinese_tag = yes
-							is_in_faction_with = JAP
-						}
-					}
-				}
-			}
-		}
 	}
 }
 
@@ -336,23 +282,7 @@ SOV_soviet_civil_war_dec_cat = {
 	} 
 
 	visible = {
-		OR = {
-			SOV_is_left_opposition = yes 
-			SOV_is_right_opposition = yes
-			SOV_is_exiles = yes 
-		}
-		NOT = { has_global_flag = SOV_soviet_civil_war_over }
-	}
-
-	highlight_states = {
-		highlight_states_trigger = {
-			OR = {
-				state = var:SOV.SOV_civil_war_start_state
-				SOV_is_opposition_state = yes  
-			}
-			NOT = { has_global_flag = SOV_soviet_civil_war }
-		}
-		highlight_color_while_active = 3
+		always = no
 	}
 	# TODO THOMAS decide whether to keep
 	custom_icon = {
@@ -378,7 +308,6 @@ SOV_permanent_revolution_dec_cat = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_the_permanent_revolution
 	}
 }
 
@@ -392,7 +321,6 @@ SOV_panslavic_nationalism = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_panslavic_nationalism
 	}
 }
 

@@ -1149,7 +1149,34 @@ technologies = {
 	
 		start_year = 1945
 		research_cost = 5
-		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = "Minor Nations cannot research Nuclear Bombs."
+			}
+			date > 1943.6.1
+			hidden_trigger = {
+				if = {
+					limit = {
+						OR = {
+							tag = CAN
+							tag = AST
+							tag = SAF
+							tag = RAJ
+							tag = FRA
+							tag = MAN
+							tag = SIA
+							tag = CHI
+							tag = ROM
+							tag = HUN
+							tag = BUL
+							tag = CZE
+							tag = CRO
+						}
+					}
+					always = no
+				}
+			}
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }

@@ -313,20 +313,6 @@ characters={
 				small="GFX_idea_RAJ_archibald_wavell" #small="GFX_idea_generic_army_europe_5"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = RAJ_archibald_wavell
-			allowed = {
-				original_tag = RAJ
-			}
-			traits = {
-				army_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	RAJ_reginald_savory={

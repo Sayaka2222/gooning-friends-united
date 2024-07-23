@@ -2150,7 +2150,6 @@ focus_tree = {
 				}
 				AND = { 
 					ENG = { has_government = communism }
-					ROM = { NOT = { has_completed_focus = ROM_the_cordon_sanitaire } }
 				}
 			}
 		}
@@ -2164,15 +2163,6 @@ focus_tree = {
 					}
 				}
 				ENG = { country_event = { id  = generic.2 days = 7 } }
-			}
-			else_if = {
-				limit = { 
-					ROM = { 
-						has_completed_focus = ROM_the_cordon_sanitaire
-						is_faction_leader = yes
-					}
-				}
-				ROM = { country_event = { id  = generic.2 days = 7 } }
 			}
 			else = { 
 				add_political_power = 120

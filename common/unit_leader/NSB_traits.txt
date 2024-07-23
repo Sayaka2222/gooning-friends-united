@@ -133,12 +133,10 @@ leader_traits = {
 		}
 
 		attack_skill = -2
-		defense_skill = -2
 		
 		modifier = {
 			custom_modifier_tooltip = SOV_cowed_by_stalin_trait_tt
 			army_morale_factor = -0.1
-			land_reinforce_rate = -0.02
 		}
 	}
 

@@ -122,7 +122,7 @@ equipments = {
 
 		naval_range = 3000
 
-		max_strength = 250
+		max_strength = 275
 
 
 		fuel_consumption = 87
@@ -133,7 +133,6 @@ equipments = {
 		build_cost_ic = 2094
 		resources = {
 			steel = 3
-			chromium = 1
 		}
 
 		manpower = 4500
@@ -156,6 +155,9 @@ equipments = {
 
 		default_modules = {
 			fixed_ship_engine_slot = carrier_ship_engine_2
+		}
+		resources = {
+			steel = 4
 		}
 	}
 
@@ -195,20 +197,22 @@ equipments = {
 		}
 
 		default_modules = {
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
 			fixed_ship_engine_slot = carrier_ship_engine_3
 		}
 		naval_range = 4000
 		reliability = 0.75
-		max_strength = 325
+		max_strength = 357
 
 
 
 		build_cost_ic = 2600
 		resources = {
-			steel = 4
-			chromium = 1
+			steel = 5
 		}
 		manpower = 5000
 	}
@@ -254,21 +258,24 @@ equipments = {
 			}
 		}
 		default_modules = {
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+			rear_1_custom_slot = ship_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_4
 		}
 
 		naval_range = 5000
 		reliability = 0.8
-		max_strength = 350
+		max_strength = 385
 
 
 
 		build_cost_ic = 3250
 		resources = {
-			steel = 4
-			chromium = 2
+			steel = 6
 		}
 		manpower = 5500
 	}
@@ -308,14 +315,13 @@ equipments = {
 		}
 		naval_range = 4000
 		reliability = 0.65
-		max_strength = 325
+		max_strength = 357
 		naval_speed = 25
 
 
 		build_cost_ic = 2700
 		resources = {
 			steel = 4
-			chromium = 1
 		}
 		manpower = 5000
 	}
@@ -350,7 +356,7 @@ equipments = {
 		}
 		naval_range = 4000
 
-		max_strength = 125
+		max_strength = 137
 
 		reliability = 0.65
 		naval_speed = 22.5

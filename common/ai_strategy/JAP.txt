@@ -323,54 +323,11 @@ southern_expansion = {
 	}
 }
 
-northern_expansion = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		has_completed_focus = JAP_prepare_for_war_with_the_soviet_union
-		country_exists = SOV
-	}
-	abort = {
-		NOT = {
-			country_exists = SOV
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "SOV"
-		value = 200
-	}
-}
-
-chinese_war = {
-	allowed = {
-		original_tag = JAP
-	}
-	enable = {
-		has_completed_focus = JAP_intervene_in_china
-		country_exists = CHI
-	}
-	abort = {
-		NOT = {
-			country_exists = CHI
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "CHI"
-		value = 200
-	}
-}
-
 strike_usa = {
 	allowed = {
 		original_tag = JAP
 	}
 	enable = {
-		has_completed_focus = JAP_secure_the_philippines
 		country_exists = USA
 	}
 	abort = {
@@ -384,12 +341,6 @@ strike_usa = {
 		id = "USA"
 		value = 200
 	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "PHI"
-		value = 200
-	}
 }
 
 # "I can run wild for six months… after that, I have no expectation of success"
@@ -398,7 +349,6 @@ jap_hush_yamamoto_its_gonna_be_ok = {
 		original_tag = JAP
 	}
 	enable = {
-		has_completed_focus = JAP_secure_the_philippines
 		has_war_with = USA
 	}
 
@@ -555,7 +505,6 @@ germany_ally = {
 		original_tag = JAP
 	}
 	enable = {
-		has_completed_focus = JAP_technological_exchange
 		country_exists = GER
 	}
 	abort = {

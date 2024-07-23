@@ -184,7 +184,6 @@ SOV_dont_support_if_exiles_and_friendly_with_japan = {
 	abort = {
 		OR ={
 			SOV = { has_war_with = JAP }
-			SOV = { has_completed_focus = SOV_memories_of_1905 }
 		}
 	}
 	

@@ -18,7 +18,11 @@ if = {
 		}
 	}
 }
-
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 set_stability = 0.6
 set_war_support = 0.15
 # Starting tech
@@ -30,7 +34,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	trench_warfare = 1
-	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	tech_military_police = 1
@@ -75,7 +78,6 @@ recruit_character = RAJ_bhaskar_soman
 recruit_character = RAJ_rajendra_prasad
 recruit_character = RAJ_ravindra_darshan_singh
 recruit_character = RAJ_ram_dass_katari
-recruit_character = RAJ_archibald_wavell
 recruit_character = RAJ_louis_mountbatten
 recruit_character = RAJ_kodandera_cariappa
 recruit_character = RAJ_ram_singh_thakur
@@ -160,25 +162,6 @@ set_convoys = 150
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
-640 = { #Mandalay
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-432 = { #Assam
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-427 = { #Hyderabad
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-436 = { #Jabalpur
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-437 = { #Indore
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-433 = { #Rajahsthan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-
 1939.1.1 = {
 	
 	if = {
@@ -188,7 +171,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		complete_national_focus = RAJ_lessons_of_the_great_war
 		complete_national_focus = RAJ_vickers_berthier_gun
 		complete_national_focus = RAJ_army_motorization
-		complete_national_focus = RAJ_british_pilot_training
 		complete_national_focus = RAJ_great_indian_peninsula_railway
 		complete_national_focus = RAJ_east_india_railways
 		complete_national_focus = RAJ_found_scindia_shipyard

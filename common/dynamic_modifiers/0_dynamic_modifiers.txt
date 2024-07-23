@@ -447,12 +447,11 @@ SOV_invaders_must_die = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_invaders_must_die
 	
-	compliance_growth = -0.05
-	resistance_growth = 0.05
+	compliance_growth = -0.15
+	resistance_growth = 0.15
 	resistance_target = 0.15
 	resistance_decay = -0.30
 	state_resources_factor = -0.25
-	disable_strategic_redeployment = 1
 }
 
 SOV_seraya_loshad_battery = { #STATE MODIFIER
@@ -460,8 +459,6 @@ SOV_seraya_loshad_battery = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.1
-	cas_damage_reduction = 0.1
 	dig_in_speed_factor = 0.25
 	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
@@ -472,9 +469,8 @@ SOV_krasnaya_gorka_battery = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.1
 	dig_in_speed_factor = 0.25
-	max_dig_in_factor = 0.05
+	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
 }
 
@@ -483,8 +479,6 @@ SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.1
-	cas_damage_reduction = 0.1
 	dig_in_speed_factor = 0.25
 	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
@@ -495,7 +489,6 @@ SOV_factory_worker_militias_raised = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_factory_worker_militias
 	
-	army_core_defence_factor = 0.05
 	local_org_regain = 0.1
 	local_factories = -1
 	state_resources_factor = -0.5
@@ -506,9 +499,8 @@ SOV_civilian_labor_in_defense_mod = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 	
-	army_core_defence_factor = 0.05
-	state_production_speed_bunker_factor = 0.6
-	state_production_speed_coastal_bunker_factor = 0.6
+	state_production_speed_bunker_factor = 0.4
+	state_production_speed_coastal_bunker_factor = 0.4
 	local_manpower = -0.25
 	local_factories = -0.5
 	state_resources_factor = -0.5

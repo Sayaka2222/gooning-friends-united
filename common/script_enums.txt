@@ -222,6 +222,7 @@ script_enum_equipment_bonus_type = {
 	mechanized_equipment_1
 	mechanized_equipment_2
 	mechanized_equipment_3
+	mechanized_equipment_4
 	motorized_equipment
 	motorized_equipment_0
 	motorized_equipment_1
@@ -576,4 +577,7 @@ script_enum_equipment_bonus_type = {
 	super_heavy_tank_aa_equipment_1
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
+	manpats
+	manpats_1
+	manpats_2
 }

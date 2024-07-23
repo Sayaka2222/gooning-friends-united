@@ -129,7 +129,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -637,7 +637,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -972,7 +972,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1109,7 +1109,7 @@ technologies = {
 		xp_research_bonus = 1.5
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1251,7 +1251,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1430,7 +1430,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder
@@ -1689,7 +1689,7 @@ early_ship_hull_carrier = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-		start_year = 1940
+		start_year = 1939
 		research_cost = 1
 		
 		folder = {

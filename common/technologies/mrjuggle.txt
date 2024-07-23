@@ -1,0 +1,24 @@
+technologies = {
+	juggle1 = {
+		# units with radios can more efficiently join combats when there is room
+		research_cost = 0
+		XOR = {
+			juggle2
+		}
+		folder = {
+			name = industry_folder
+			position = { x = -3 y = 0 }
+		}
+	}
+	juggle2 = {
+		XOR = {
+			juggle1
+		}
+		research_cost = 0
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 0 }
+		}
+	}
+}
+

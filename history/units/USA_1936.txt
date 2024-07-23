@@ -33,6 +33,7 @@ division_template = {
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 		signal_company = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 5 }
 	}
 }
 division_template = {

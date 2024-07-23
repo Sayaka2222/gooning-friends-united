@@ -11,13 +11,8 @@ ability = {
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_completed_focus = CHI_dare_to_die_corps }
-				}
 			}
+			always = no
 		}
 		
 		ai_will_do = {
@@ -67,6 +62,7 @@ ability = {
 					has_completed_focus = SPA_cultivate_fanaticism
 				}
 			}
+			always = no
 		}
 		
 		cost = 1
@@ -109,6 +105,7 @@ ability = {
 		
 		allowed = {
 			is_border_war = no
+			always = no
 		}
 		
 		cost = 0.12
@@ -143,6 +140,7 @@ ability = {
 		
 		allowed = {
 			is_border_war = no
+			always = no
 		}
 		
 		unit_modifiers = {
@@ -158,7 +156,7 @@ ability = {
 				days = 7
 			}
 		}
-		cost = 0.75
+		cost = 0.1
 		duration = 168
 		
 		

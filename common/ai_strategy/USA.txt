@@ -61,7 +61,7 @@ USA_unit_buffer_for_europe = {
 			122
 		}
 
-		ratio = 0.20
+		ratio = 0.5
 
 		area = europe
 
@@ -85,7 +85,7 @@ USA_unit_buffer_for_europe = {
 			167
 		}
 
-		ratio = 0.1
+		ratio = 0.5
 		area = europe
 
 		subtract_invasions_from_need = no
@@ -112,7 +112,7 @@ USA_unit_buffer_for_europe = {
 			447
 		}
 
-		ratio = 0.15
+		ratio = 0.5
 
 		area = europe
 
@@ -243,7 +243,7 @@ USA_gang_up_GER_with_ENG = {
 	}
 	enable = {
 		tag = USA
-		date > 1940.6.6
+		date > 1942.9.1
 		is_in_faction_with = ENG
 	}
 	abort_when_not_enabled = yes
@@ -290,7 +290,7 @@ USA_focus_on_africa = {
 	enable = {
 		is_historical_focus_on = yes
 		has_war_with = GER
-		has_global_flag = FRA_already_surrendered
+		has_global_flag = fall_of_france
 		OR = { # Check whole north-african coast
 			448 = { CONTROLLER = { has_war_with = ROOT } } # tripoli
 			450 = { CONTROLLER = { has_war_with = ROOT } } # benghazi
@@ -362,7 +362,6 @@ USA_save_the_aussies = {
 		JAP = {	has_war_with = AST }
 		AST = {
 			has_government = democratic
-			surrender_progress > 0.15
 		}
 		has_opinion = {
 			target = AST
@@ -388,7 +387,7 @@ USA_save_the_aussies = {
 	ai_strategy = {
 		type = protect
 		id = "AST"
-		value = 200
+		value = 400
 	}
 	ai_strategy = {
 		type = support
@@ -410,7 +409,6 @@ USA_save_india = { # in the case where japan has beaten china and is moving on i
 		}
 		RAJ = {
 			is_in_faction_with = ENG
-			surrender_progress > 0.15
 		}
 	}
 	abort = {
@@ -432,7 +430,7 @@ USA_save_india = { # in the case where japan has beaten china and is moving on i
 	ai_strategy = {
 		type = protect
 		id = "RAJ"
-		value = 200
+		value = 400
 	}
 }
 
@@ -1123,7 +1121,7 @@ USA_lets_do_a_navy = {
 	enable = {
 		has_government = democratic
 		has_war = no
-		date > 1937.10.1
+		date > 1939.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1146,7 +1144,7 @@ USA_srsly_mils_now = {
 	ai_strategy = {
 		type = building_target
 		id = arms_factory
-		value = 200
+		value = 250
 	}
 }
 
@@ -1208,7 +1206,7 @@ USA_go_time = {
 	}
 	enable = {
 		has_war_with = JAP
-		date > 1943.6.1
+		date > 1943.1.1
 		surrender_progress < 0.20
 	}
 	abort_when_not_enabled = yes
@@ -1243,7 +1241,7 @@ USA_start_buffering_in_pacific = {
 		tag = USA
 	}
 	enable = {
-		date > 1941.9.2
+		date > 1941.1.1
 		OR = {
 			has_war_with = JAP
 			has_war_with = CHI
@@ -1336,7 +1334,7 @@ USA_start_buffering_in_australia = {
 		tag = USA
 	}
 	enable = {
-		date > 1943.1.1
+		date > 1941.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1472,6 +1470,56 @@ USA_sugar_daddy_for_SOV = {
 		type = send_lend_lease_desire
 		id = SOV
 		value = 500
+	}
+}
+
+USA_avoid_the_med = {
+	allowed = { original_tag = USA }
+	enable = {
+		has_war_with = ITA
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		ITA = {
+			has_navy_size = {
+				size < 75
+			}
+		}
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 29 #central med
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 69 #eastern med
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 68 #western med
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 168 #tyrrhenian
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 168 #adriatic
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 202 #aegean
+		value = 1000
 	}
 }
 

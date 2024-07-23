@@ -213,7 +213,7 @@ characters={
 		
 		corps_commander={
 			traits={ brilliant_strategist trickster trait_engineer panzer_leader trickster ranger hill_fighter organizer }
-			skill=6
+			skill=7
 			attack_skill=6
 			defense_skill=4
 			planning_skill=3
@@ -245,7 +245,7 @@ characters={
 		
 		corps_commander={
 			traits={ brilliant_strategist trickster panzer_leader trait_engineer urban_assault_specialist ranger organizer }
-			skill=6
+			skill=7
 			attack_skill=6
 			defense_skill=4
 			planning_skill=3

@@ -32,7 +32,6 @@ ITA_alt_fascist_balbo = {
 		#1937
 		ITA_foreign_affairs 				#35	DIP
 		ITA_steel_industry_in_terni			#70	CIV
-		ITA_corpo_di_truppe_volontarie 		#35	DIP
 		ITA_topple_amhara_rulers 			#35	COL
 		ITA_railway_innovations				#70	CIV
 		ITA_air_innovations_bba 			#35 AIR
@@ -41,7 +40,6 @@ ITA_alt_fascist_balbo = {
 		
 
 		#1938
-		ITA_albanian_occupation 			#35	WAR/DIP
 		ITA_army_primacy_bba 				#35	ARM
 		ITA_industria_della_gomma_sintetica #35	IND
 		ITA_strengthen_northern_industry	#70	CIV/MIL
@@ -157,7 +155,6 @@ ITA_alt_fascist_grandi = {
 			
 		#1937	
 		ITA_foreign_affairs 						#35	
-		ITA_corpo_di_truppe_volontarie 				#35 
 		ITA_fiocchi_munizioni 						#35	
 		ITA_ministry_of_italian_africa 				#35
 		ITA_power_plants_in_terni					
@@ -165,7 +162,6 @@ ITA_alt_fascist_grandi = {
 		ITA_topple_amhara_rulers 					#35	
 			
 		#1938	
-		ITA_albanian_occupation						#35	
 		ITA_railway_innovations					
 		ITA_industria_della_gomma_sintetica 		#35	
 		ITA_army_primacy_bba						#35	
@@ -275,7 +271,6 @@ ITA_monarchist_plan = {
 		ITA_power_to_the_king						#35
 		ITA_the_new_emperor_of_ethiopia				#35
 		ITA_foreign_affairs 						#35
-		ITA_corpo_di_truppe_volontarie 				#35
 		ITA_ministry_of_italian_africa 				#35
 		ITA_army_primacy_bba						#35
 		ITA_fiocchi_munizioni 						#35
@@ -285,7 +280,6 @@ ITA_monarchist_plan = {
 			
 		#1938	
 		ITA_steel_industry_in_terni
-		ITA_albanian_occupation						#35
 		ITA_railway_innovations
 		ITA_investments_in_edison
 		ITA_expand_national_universities
@@ -411,7 +405,6 @@ ITA_christian_democracy_plan = {
 		ITA_disband_the_blackshirts					#35
 		ITA_expand_intelligence_services			#35
 		ITA_steel_industry_in_terni
-		ITA_albanian_occupation						#35
 		ITA_railway_innovations
 		ITA_investments_in_edison
 				

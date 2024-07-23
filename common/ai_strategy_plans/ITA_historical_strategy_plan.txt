@@ -36,7 +36,6 @@ ITA_historical_plan = {
 		ITA_topple_amhara_rulers #35 ASAP after winning in Ethiopia
 
 		#1937
-		ITA_corpo_di_truppe_volontarie #35 ASAP after winning in Ethiopia
 		ITA_army_primacy_bba #35
 		ITA_culto_del_duce
 		ITA_fiocchi_munizioni #35
@@ -50,11 +49,9 @@ ITA_historical_plan = {
 		ITA_citta_dell_aria
 		ITA_the_man_of_providence #35
 		ITA_railway_innovations
-		ITA_expand_foggia_farm_fields
 
 		#1939
 		ITA_industria_della_gomma_sintetica #35
-		ITA_albanian_occupation #35 #Apr 1939
 		ITA_pact_of_steel #35 #May 39
 		ITA_expand_naval_facilities #35
 		ITA_regional_development

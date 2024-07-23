@@ -79,7 +79,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_secondary_turret
+			category = tank_ammo_module
 			count < 2
 		}
 		module_count_limit = {
@@ -131,9 +131,9 @@ equipments = {
 		maximum_speed = 4
 		build_cost_ic = 1
 		reliability = 0.8
-		hardness = 0.8
+		hardness = 0.6
 		armor_value = 10
-		defense = 6
+		defense = 4
 		resources = {
 			steel = 1
 		}
@@ -155,7 +155,6 @@ equipments = {
 
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -167,7 +166,7 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_0
 		priority = 2000
-		maximum_speed = 5
+		maximum_speed = 4
 		build_cost_ic = 1.25
 		reliability = 0.95
 		armor_value = 15
@@ -210,8 +209,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 	
@@ -233,9 +232,10 @@ equipments = {
 		parent = light_tank_chassis_1
 		priority = 2000
 		build_cost_ic = 1.6
-		maximum_speed = 6
+		maximum_speed = 5
 		reliability = 1.1
 		armor_value = 20
+		hardness = 0.65
 		resources = {
 			steel = 1
 		}
@@ -278,8 +278,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -308,9 +308,10 @@ equipments = {
 		parent = light_tank_chassis_2
 		priority = 2000
 		build_cost_ic = 2
-		maximum_speed = 7
+		maximum_speed = 6
 		reliability = 1.3
 		armor_value = 25
+		hardness = 0.7
 		resources = {
 			steel = 2
 		}
@@ -353,8 +354,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 	
@@ -456,8 +457,8 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			category = tank_ammo_module
+			count < 2 #two secondary turrets only
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -509,7 +510,7 @@ equipments = {
 		reliability = 0.5
 		armor_value = 20
 		hardness = 0.85
-		defense = 6
+		defense = 4
 		resources = {
 			steel = 1
 		}
@@ -529,7 +530,6 @@ equipments = {
 		module_slots = inherit
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
 		build_cost_ic = 2.5
@@ -549,7 +549,7 @@ equipments = {
 		parent = medium_tank_chassis_0
 		priority = 2000
 		armor_value = 55
-		build_cost_ic = 3
+		build_cost_ic = 3.5
 		reliability = 0.9
 		maximum_speed = 5
 		hardness = 0.7
@@ -596,8 +596,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -666,8 +666,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -743,8 +743,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -880,7 +880,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 30
 		hardness = 0.95
-		defense = 6
+		defense = 4
 		resources = {
 			steel = 1
 		}
@@ -901,7 +901,6 @@ equipments = {
 		module_slots = inherit
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 3
 		build_cost_ic = 10
@@ -961,8 +960,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -1031,8 +1030,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -1108,8 +1107,8 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
+					tank_flame
+					tank_ammo_module
 				}
 			}
 
@@ -1295,7 +1294,7 @@ equipments = {
 		reliability = 1.2
 		armor_value = 65
 		hardness = 0.95
-		defense = 6
+		defense = 4
 		resources = {
 			steel = 2
 			chromium = 1
@@ -1318,7 +1317,6 @@ equipments = {
 
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -1388,7 +1386,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					tank_ammo_module
 				}
 			}
 
@@ -1396,7 +1394,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					tank_ammo_module
 					tank_radio_module
 				}
 			}
@@ -1405,7 +1403,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					tank_ammo_module
 					tank_radio_module
 				}
 			}
@@ -1414,7 +1412,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					tank_ammo_module
 					tank_radio_module
 				}
 			}
@@ -1500,7 +1498,6 @@ equipments = {
 		module_slots = inherit
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -1679,7 +1676,6 @@ equipments = {
 		priority = 2000
 		upgrades = {
 			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
 		}
 		module_slots = inherit
 	}

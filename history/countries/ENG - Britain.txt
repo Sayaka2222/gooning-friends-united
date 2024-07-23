@@ -4,6 +4,11 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 if = {
 	limit = {
 		NOT = {
@@ -60,6 +65,32 @@ if = {
 	}
 }
 
+if = { 
+	limit = { has_dlc = "No Step Back" }
+	#DEFAULT LIGHT TANK
+	create_equipment_variant = {
+		name = "Matilda"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			special_type_slot_1 = he_ammo
+			special_type_slot_2 = tank_heavy_machine_gun
+			special_type_slot_4 = empty
+
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+		}
+
+		icon = "gfx/interface/technologies/eng_basic_light_tank.dds"
+	}
+}
+
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -109,7 +140,6 @@ if = {
 			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = Medium_bomb_bay
 			fixed_auxiliary_weapon_slot_3 = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_4 = Medium_bomb_bay
 			engine_type_slot = engine_2_4x
 			special_type_slot_1 = radio_navigation_1
 			special_type_slot_2 = hmg_defense_turret_2x
@@ -127,12 +157,6 @@ set_stability = 0.6
 set_war_support = 0.2
 add_command_power = 20
 
-add_equipment_to_stockpile = {
-	type = train_equipment
-	amount = 200
-	producer = ENG
-}
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -146,7 +170,6 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 	trench_warfare = 1
-	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
@@ -165,6 +188,7 @@ set_technology = {
 	interwar_antitank = 1
 	improved_light_tank_chassis = 1
 	paratroopers = 1
+	improved_ship_torpedo_launcher = 1
 }
 
 if = {
@@ -248,7 +272,6 @@ set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
-	ENG_george_vi
 	peace_training
 	trade_with_allies
 	volunteers
@@ -662,7 +685,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = dp_ship_secondaries_1
 			mid_2_custom_slot = dp_ship_secondaries_1

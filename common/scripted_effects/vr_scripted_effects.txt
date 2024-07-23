@@ -54,3 +54,40 @@ share_intel_with_allies={
 		}
 	}
 }
+update_pacific_war = {
+###Atlantic Wall###
+set_variable={GER.atlantic_wall_invasion_penalty=0.5}
+set_variable = {GER.atlantic_wall_visual=0.5}
+if= { 
+	limit = {GER={ has_completed_focus = GER_atlantikwall }}
+	every_state = { limit = { is_core_of = BEL } add_dynamic_modifier = { modifier = atlantic_wall } }
+	every_state = { limit = { is_core_of = HOL } add_dynamic_modifier = { modifier = atlantic_wall } }
+	every_state = { limit = { is_core_of = DEN } add_dynamic_modifier = { modifier = atlantic_wall } }
+	every_state = { limit = { is_core_of = FRA } add_dynamic_modifier = { modifier = atlantic_wall } }
+}
+if= { 
+	limit = { date > 1941.6.1 }
+	add_to_variable={GER.atlantic_wall_invasion_penalty=-0.1}
+	add_to_variable = {GER.atlantic_wall_visual=-0.1}
+}
+if= { 
+	limit = { date > 1942.1.1 }
+	add_to_variable={GER.atlantic_wall_invasion_penalty=-0.1}
+	add_to_variable = {GER.atlantic_wall_visual=-0.1}
+}
+if= { 
+	limit = { date > 1942.6.1 }
+	add_to_variable={GER.atlantic_wall_invasion_penalty=-0.1}
+	add_to_variable = {GER.atlantic_wall_visual=-0.1}
+}
+if= { 
+	limit = { date > 1943.1.1 }
+	add_to_variable={GER.atlantic_wall_invasion_penalty=-0.1}
+	add_to_variable = {GER.atlantic_wall_visual=-0.1}
+}
+if= { 
+	limit = { date > 1943.6.1 }
+	add_to_variable={GER.atlantic_wall_invasion_penalty=-0.1}
+	add_to_variable = {GER.atlantic_wall_visual=-0.1}
+}
+}

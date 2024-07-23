@@ -143,7 +143,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -626,6 +626,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
 		}
 	}
 
@@ -651,25 +652,6 @@ focus_tree = {
 				uses = 1
 				category = train_tech
 			}
-		}
-	}
-
-	focus = {
-		id = ITA_expand_foggia_farm_fields
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = ITA_railway_innovations }
-
-		x = -1
-		y = 1
-		relative_position_id = ITA_railway_innovations
-		cost = 10
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
 		}
 	}
 
@@ -788,8 +770,8 @@ focus_tree = {
 				name = ITA_brescia_small_arms_industry
 				bonus = 0.5
 				uses = 2
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
 			}
 		}
 	}
@@ -949,7 +931,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ITA_army_primacy_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -976,7 +958,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_fiocchi_munizioni
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1197,7 +1179,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_army_primacy_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1235,7 +1217,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_a_bandits_war
 				uses = 1
-				bonus = 1
+				bonus = 1.25
 				technology = mechanised_infantry
 			}
 			add_ideas = ITA_bandits_war
@@ -1312,6 +1294,12 @@ focus_tree = {
 				bonus = 1.25
 				uses = 1
 				technology = basic_medium_tank_chassis
+			}
+			add_tech_bonus = {
+				name = ITA_italian_tankettes
+				bonus = 1
+				uses = 1
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -1391,7 +1379,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_superesercito
-		cost = 10
+		cost = 5
 		available = {
 			if = {
 				limit = {
@@ -1407,6 +1395,12 @@ focus_tree = {
 			custom_effect_tooltip = ITA_self_propelled_guns_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_spg_production_ns
+			}
+			add_tech_bonus = {
+				name = ITA_ferrea_mole_ferreo_cuore
+				bonus = 1.25
+				uses = 1
+				technology = improved_medium_tank_chassis
 			}
 		}
 	}
@@ -1485,8 +1479,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_ferrea_mole_ferreo_cuore
 				bonus = 1
-				uses = 2
-				technology = improved_medium_tank_chassis
+				uses = 1
 				technology = advanced_medium_tank_chassis
 			}
 
@@ -1578,9 +1571,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_superaereo
-				bonus = 1.5
+				bonus = 1
 				uses = 1
-				technology = air_torpedoe_2
+				technology = air_torpedoe_3
 			}
 			add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
 			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.05 }
@@ -1971,8 +1964,8 @@ focus_tree = {
 					name = ITA_oto_naval_guns
 					bonus = 1.0
 					uses = 2
-					category = cat_ship_medium_battery
-					category = cat_ship_heavy_battery
+					technology = improved_light_battery
+					technology = improved_medium_battery
 				}
 			}
 		}
@@ -2028,6 +2021,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			set_technology = {
+				improved_heavy_battery = 1
+			}
+			add_tech_bonus = {
+				name = ITA_incrociatori_leggeri
+				bonus = 1
+				uses = 1
+				technology = improved_heavy_armor_scheme
+			}
 			add_to_variable = { ITA_rm_naval_morale_factor = 0.1 }
 			custom_effect_tooltip = ITA_supermarina_rm_tt
 
@@ -2334,6 +2336,7 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_pesanti
 		cost = 5
 		available = {
+			has_tech = improved_ship_hull_heavy
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -2346,14 +2349,34 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
+				create_equipment_variant = {
+					name = "Marco Polo Class"
+					type = ship_hull_heavy_3
+					name_group = ITA_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_3
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_heavy_battery_3
+						mid_2_custom_slot = ship_secondaries_2
+						mid_3_custom_slot = ship_secondaries_2
+						rear_1_custom_slot = ship_heavy_battery_3
+					}
+				}
 				#Line Production
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_2
+						type = ship_hull_heavy_3
 						creator = "ITA"
-						version_name = "Littorio Class"
+						version_name = "Marco Polo Class"
 					}
-					name = "Roma"
+					name = "Marco Polo"
 					requested_factories = 1
 					progress = 0.8
 					amount = 1
@@ -2362,9 +2385,9 @@ focus_tree = {
 				#Line Production
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_2
+						type = ship_hull_heavy_3
 						creator = "ITA"
-						version_name = "Littorio Class"
+						version_name = "Marco Polo Class"
 					}
 					name = "Impero"
 					requested_factories = 1
@@ -7501,7 +7524,7 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		x = 15
+		x = 10
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -7511,7 +7534,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			add_political_power = 50
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_gian_galeazzo_ciano
 		}
@@ -7538,8 +7560,66 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_named_threat = { threat = 4 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
-			add_war_support = 0.05
+			add_named_threat = { threat = 6 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
+			if = {
+				limit = {
+					has_idea = vittorio_emanuele
+				}
+				swap_ideas = {
+					remove_idea = vittorio_emanuele
+					add_idea = vittorio_emanuele_king_of_albania
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = vittorio_emanuele_emperor_of_ethiopia
+				}
+				swap_ideas = {
+					remove_idea = vittorio_emanuele_emperor_of_ethiopia
+					add_idea = vittorio_emanuele_albania_ethiopia
+				}
+			}
+			if = {
+				limit = {
+					 has_character = ITA_vittorio_emanuele_iii
+				}
+				ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
+			}
+			annex_country = { target = ALB }
+		}
+	}
+
+	focus = {
+		id = ITA_pact_of_steel
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ITA_balkan_ambition }
+		x = 0
+		y = 1
+		relative_position_id = ITA_balkan_ambition
+		cost = 5
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				date > 1937.12.1
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				news_event = { hours = 6 id = news.184 }
+			}
+			add_timed_idea = {
+				idea = ITA_pact_of_steel
+				days = 365
+			}
 			BUL = {
 				random_owned_controlled_state = {
 					limit = {
@@ -7573,134 +7653,6 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_albanian_occupation
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_balkan_ambition }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_balkan_ambition
-		cost = 5
-		available = {
-		}
-
-		bypass = {
-			44 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
-		}
-
-		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 100
-				date > 1937.10.1
-			}
-		}
-		completion_reward = {
-			annex_country = { target = ALB }
-			add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-			if = {
-				limit = {
-					has_idea = vittorio_emanuele
-				}
-				swap_ideas = {
-					remove_idea = vittorio_emanuele
-					add_idea = vittorio_emanuele_king_of_albania
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = vittorio_emanuele_emperor_of_ethiopia
-				}
-				swap_ideas = {
-					remove_idea = vittorio_emanuele_emperor_of_ethiopia
-					add_idea = vittorio_emanuele_albania_ethiopia
-				}
-			}
-			if = {
-				limit = {
-					 has_character = ITA_vittorio_emanuele_iii
-				}
-				ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_albanian_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ITA_albanian_occupation }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_albanian_occupation
-		cost = 5
-		available = {
-			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			has_tech = synth_oil_experiments
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			44 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_pact_of_steel
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ITA_balkan_ambition }
-		x = -6
-		y = 1
-		relative_position_id = ITA_balkan_ambition
-		cost = 5
-
-		bypass = {
-		}
-
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 5
-				date > 1937.12.1
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				news_event = { hours = 6 id = news.184 }
-			}
-			add_timed_idea = {
-				idea = ITA_pact_of_steel
-				days = 365
 			}
 		}
 	}
@@ -7786,13 +7738,53 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_treaty_with_germany
-		icon = GFX_focus_generic_diplomatic_treaty
+		id = ITA_albanian_oil
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ITA_pact_of_steel }
 
 		x = 0
 		y = 1
 		relative_position_id = ITA_pact_of_steel
+		cost = 5
+		available = {
+			44 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			has_tech = synth_oil_experiments
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			44 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_treaty_with_germany
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ITA_albanian_oil }
+
+		x = 0
+		y = 1
+		relative_position_id = ITA_albanian_oil
 		cost = 5
 		available = {
 		}
@@ -7837,7 +7829,6 @@ focus_tree = {
 			add_state_claim = 665 #GABES
 			add_state_claim = 458 #TUNISIA
 			add_state_claim = 735 #SAVOY
-			add_state_claim = 856 #VAR
 			add_state_claim = 185 #EPIRUS
 			add_state_claim = 1 #CORSICA
 			add_state_claim = 116 #MALTA
@@ -7900,124 +7891,6 @@ focus_tree = {
 			transfer_state = 846
 			846 = {
 				add_core_of = ITA
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_corpo_di_truppe_volontarie
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = ITA_foreign_affairs }
-
-		x = 2
-		y = 1
-		relative_position_id = ITA_foreign_affairs
-		cost = 5
-
-		bypass = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				OR = {
-					has_global_flag = scw_over
-					AND = {
-						has_global_flag = spanish_civil_war
-						NOT = { country_exists = SPA }
-					}
-				}
-			}
-			else = {
-				has_global_flag = spanish_civil_war
-				NOT = {
-					any_country = {
-						original_tag = SPR
-						OR = {
-							has_government = fascism
-							has_civil_war = yes
-						}
-					}
-				}
-			}
-		}
-
-		available = {
-		}
-		cancel = {
-		}
-
-		cancel_if_invalid = no
-
-		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_AIR_XP}
-
-		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
-			add_timed_idea = {
-				idea = ITA_aviazione_legionaria
-				days = 365
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_demand_balearic_islands_bba
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_corpo_di_truppe_volontarie }
-		x = 0
-		y = 1
-		relative_position_id = ITA_corpo_di_truppe_volontarie
-		cost = 5
-		available = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				any_other_country = {
-					original_tag = SPR
-					has_government = fascism
-					has_war = no
-					owns_state = 177
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPA = {
-					has_war = no
-					owns_state = 177
-				}
-			}
-			is_puppet = no
-		}
-		cancel = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				any_other_country = {
-					original_tag = SPR
-					has_government = fascism
-					has_war_with = ROOT
-					owns_state = 177
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				has_war_with = ROOT
-				owns_state = 177
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-
-		completion_reward = {
-			random_other_country = {
-				limit = {
-					owns_state = 177
-				}
-				country_event = { id = italy.9 }
 			}
 		}
 	}
@@ -9931,16 +9804,6 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
 				amount = 100
-			}
-			add_equipment_to_stockpile = {
-				type = light_tank_chassis_0
-				amount = 60
-				variant_name = "Fiat 3000"
-			}
-			add_equipment_to_stockpile = {
-				type = light_tank_chassis_0
-				amount = 20
-				variant_name = "Fiat 3000B"
 			}
 			add_manpower = 20000
 

@@ -948,10 +948,10 @@ NMilitary = {
 
 	PLANNING_DECAY = 0.01,
 	PLAYER_ORDER_PLANNING_DECAY = 0.03,				-- Amount of planning lost due to player manual order
-	PLANNING_GAIN = 0.02,
+	PLANNING_GAIN = 0.04,
 	NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.05,		-- Planning Bonus gain per day for naval invasions
 	NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.9,		-- Malus in percentage for the planning bonus gain for naval invasions
-	PLANNING_MAX = 0.25,                           	-- can get more from techs
+	PLANNING_MAX = 0.2,                           	-- can get more from techs
 	CIVILWAR_ORGANIZATION_FACTOR = 0.3,			  	-- Multiplier of org for both sides when civilwar.
 	PLAN_CONSIDERED_GOOD = 0.25,					-- Plan evaluations above this value are considered more or less safe
 	PLAN_CONSIDERED_BAD = -0.25,					-- Plan evaluations below this value are considered unsafe
@@ -1219,9 +1219,9 @@ NAir = {
 	CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 3,          -- how often carrier planes do battle inside naval combat
 	CARRIER_SIZE_STAT_INCREMENT = 10,					-- Each Point of carrier_size state adds capacity for this many planes
 	NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3,			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
-	NAVAL_STRIKE_DAMAGE_TO_STR = 1.0,					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
-	NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5,					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
-	NAVAL_STRIKE_CARRIER_MULTIPLIER = 10.0,              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+	NAVAL_STRIKE_DAMAGE_TO_STR = 0.75,					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+	NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0,					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+	NAVAL_STRIKE_CARRIER_MULTIPLIER = 7.5,              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 	FIELD_EXPERIENCE_SCALE = 0.0004,
 	FIELD_EXPERIENCE_MAX_PER_DAY = 2,					-- Most xp you can gain per day
 	CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0005,		-- How much the experinence gained by CAS is scaled
@@ -1443,7 +1443,7 @@ NNavy = {
 	MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 30,						-- maximum number of submarines the auto-task force creation will put together when designing wolfpack
 	BEST_CAPITALS_TO_CARRIER_RATIO = 1,							-- capitals / carriers ratio used when auto-task force creation designs CarrierTaskForce
 	BEST_CAPITALS_TO_SCREENS_RATIO = 0.25, 							-- capitals / screens ratio used for creating FEX groups in naval combat
-	COMBAT_BASE_HIT_CHANCE = 0.1,									-- base chance for hit
+	COMBAT_BASE_HIT_CHANCE = 0.2,									-- base chance for hit
 
 	COMBAT_MIN_HIT_CHANCE = 0.05,									-- never less hit chance then this?
 	COMBAT_EVASION_TO_HIT_CHANCE = 0.007,							-- we take ship evasion stats, and mult by this value, so it gives hit chance reduction. So if reduction is 0.025 and ship evasion = 10, then there will be 0.25 (25%) lower hit chance. (Fe. 50% base -25% from evasion +10% bcoz it's very close).
@@ -1539,8 +1539,8 @@ NNavy = {
 
 	NAVAL_TRANSFER_DAMAGE_REDUCTION = 0.25,							-- its hard to specifically balance 1-tick naval strikes vs unit transports so here is a factor for it
 	CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0,							-- hours from start of combat when carriers get to fight
-	CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12,                          -- hours from start of combat when only carriers, capitals and subs get to attack
-	ALL_SHIPS_ACTIVATE_TIME = 16,                                    -- hours where all get to attack
+	CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 16,                          -- hours from start of combat when only carriers, capitals and subs get to attack
+	ALL_SHIPS_ACTIVATE_TIME = 20,                                    -- hours where all get to attack
 
 	MINIMUM_SHIP_SPEED = 1.0,										-- slowest speed a ship can have
 
@@ -1691,18 +1691,18 @@ NNavy = {
 	NAVAL_MINES_INTEL_DIFF_FACTOR = 0.5,							-- Better our decryption over enemy encryption will reduce the penalties from the enemy mines in the region. This value is a factor to be used for balancing.
 	NAVAL_MINES_NAVAL_SUPREMACY_FACTOR = 1.0,						-- Factor for max amount of mines increasing naval supremacy
 
-	ATTRITION_WHILE_MOVING_FACTOR = 1.5,							-- attrition multiplier while moving & doing missions
-	ATTRITION_DAMAGE_ORG = 0.01,					   				-- damage from attrition to Organisation (relative to max org)
-	ATTRITION_DAMAGE_STR = 0.03,					   				-- damage from attrition to str (relative to max str)
-	ATTRITION_STR_DAMAGE_CHANCE = 0.2,								-- chance to get damaged at highest attrition
+	ATTRITION_WHILE_MOVING_FACTOR = 0.0,							-- attrition multiplier while moving & doing missions
+	ATTRITION_DAMAGE_ORG = 0.0,					   				-- damage from attrition to Organisation (relative to max org)
+	ATTRITION_DAMAGE_STR = 0.0,					   				-- damage from attrition to str (relative to max str)
+	ATTRITION_STR_DAMAGE_CHANCE = 0.0,								-- chance to get damaged at highest attrition
 
-	NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0.01,					-- Scale of the current chance for an accident to happen, applied for the pride of the fleet.
-	NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0.01,		-- Scale of the current chance for a critical hit when an accident happens, applied for the pride of the fleet.
+	NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0.0,					-- Scale of the current chance for an accident to happen, applied for the pride of the fleet.
+	NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0.0,		-- Scale of the current chance for a critical hit when an accident happens, applied for the pride of the fleet.
 
-	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.14,				-- If an accident happens, how likely it is to be a critical hit (caused by naval mines)
-	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 5.0,			-- Scale the value below in case of critical hit (caused by naval mines)
-	NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 50.0,						-- Amount of strength loss when hit by naval mine
-	NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0.5,						-- Amount of strength loss when hit by naval mine
+	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.0,				-- If an accident happens, how likely it is to be a critical hit (caused by naval mines)
+	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0.0,			-- Scale the value below in case of critical hit (caused by naval mines)
+	NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0.0,						-- Amount of strength loss when hit by naval mine
+	NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0.0,						-- Amount of strength loss when hit by naval mine
 
 	TRAINING_ACCIDENT_CHANCES = 0.0,						-- Chances one ship get damage each hour while on training
 	TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0.0,					-- If an accident happens, how likely it is to be a critical hit
@@ -1817,7 +1817,7 @@ NNavy = {
 	BASE_POSITIONING												= 1.0,	-- base value for positioning
 
 	RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.01,	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
-	MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.0,  -- will clamp the bonus that you get from detection
+	MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.1,  -- will clamp the bonus that you get from detection
 
 	HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.5, -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
 	MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.75,  -- maximum penalty to get from larger fleets
@@ -1825,9 +1825,9 @@ NNavy = {
 	HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR					= 0.2;  -- penalty if other side has stronger carrier air force
 	MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.2;  -- max penalty from stronger carrier air force
 
-	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.01, -- each ship that joins the combat will have this penalty to be added into positioning
-	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.25,  -- the accumulated penalty from new ships will be clamped to this value
-	POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.05,-- the accumulated penalty from new ships will decay hourly by this value
+	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.0, -- each ship that joins the combat will have this penalty to be added into positioning
+	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.0,  -- the accumulated penalty from new ships will be clamped to this value
+	POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.0,-- the accumulated penalty from new ships will decay hourly by this value
 
 	DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.8,	-- damage penalty at 0% positioning
 	SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.5,  -- screening efficiency (screen to capital ratio) at 0% positioning

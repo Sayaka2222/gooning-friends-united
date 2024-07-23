@@ -1,5 +1,9 @@
 ﻿capital = 9
-
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 if = {
 	limit = {
 		NOT = {
@@ -118,9 +122,8 @@ set_politics = {
 
 set_popularities = {
 	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
+	neutrality = 15
+	fascism = 20
 }
 
 if = {

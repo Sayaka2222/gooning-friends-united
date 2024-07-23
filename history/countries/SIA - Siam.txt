@@ -8,22 +8,15 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SIA_1936_air_bba"
-	else = {
-		set_air_oob = "SIA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
 add_ideas = {
 	peace_training
 	trade_with_copro
 }
-
+set_technology = {
+	airfield_allowed = 1
+	fort_5 = 1
+	naval_base_allowed = 1
+}
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena
@@ -98,7 +91,8 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-set_convoys = 15
+set_research_slots = 3
+set_convoys = 100
 
 1939.1.1 = {
 
