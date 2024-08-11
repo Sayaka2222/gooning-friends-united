@@ -4,12 +4,11 @@ state={
 	name="STATE_547"
 	manpower = 1085440
 	state_category=rural
-
+	
 	history={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 			
 		}
 		victory_points = {

@@ -101,7 +101,6 @@ equipments = {
 		anti_air_attack = 10
 		
 		armor_value = 1
-
 		
 		surface_detection = 20
 		sub_detection = 20

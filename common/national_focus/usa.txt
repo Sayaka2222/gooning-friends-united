@@ -452,7 +452,9 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
-			date > 1940.1.1
+			ENG = {
+				has_war = yes
+			}
 		}
 
 		bypass = {
@@ -465,7 +467,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -489,7 +491,12 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1942.9.1
+			OR = {
+				date > 1942.9.1
+				ENG = {
+					surrender_progress > 0.3
+				}
+			}
 		}
 		
 		bypass = {
@@ -599,6 +606,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_war = yes
 		}
 		
 		bypass = {
@@ -647,7 +655,12 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1942.6.1
+			OR = {
+				date > 1942.6.1
+				ENG = {
+					surrender_progress > 0.3
+				}
+			}
 		}
 		
 		bypass = {
@@ -989,6 +1002,103 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_last_bastion
+		text = "Ready the National Guard"
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+			ENG = {
+				has_capitulated = yes
+			}
+		}
+		continue_if_invalid = yes
+		x = 2
+		y = -5
+		relative_position_id = USA_the_giant_wakes
+		cost = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = USA_last_bastion_idea
+		}
+	}
+	focus = {
+		id = USA_militia
+		icon = GFX_goal_generic_construct_civ_factory
+		text = "I'm lookin' at fighter jets over I-95!"
+		prerequisite = {
+			focus = USA_last_bastion
+		}
+		available = {
+			surrender_progress > 0.01
+		}
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		relative_position_id = USA_last_bastion
+		cost = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50000
+				producer = USA
+			}
+		}
+	}
+	focus = {
+		id = USA_militia2
+		icon = GFX_goal_generic_construct_civ_factory
+		text = "How the hell did they get through?!"
+		prerequisite = {
+			focus = USA_militia
+		}
+		available = {
+			surrender_progress > 0.01
+		}
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		relative_position_id = USA_militia
+		cost = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 5000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 5000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 5000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 5000
+				producer = USA
+			}
+		}
+	}
+	focus = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
@@ -1092,9 +1202,10 @@ focus_tree = {
 
  	focus = {
 		id = USA_war_plans_division
+		text = "War Powers Act"
 		icon = GFX_goal_generic_position_armies
 		x = 10
-		y = 6
+		y = 5
 		
 		cost = 5
 
@@ -1103,7 +1214,6 @@ focus_tree = {
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
@@ -1121,20 +1231,65 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_intervention_in_europe
-		icon = GFX_goal_generic_territory_or_war
-		x = -2
+		id = USA_torch
+		text = "Operation Torch"
+		icon = GFX_goal_generic_position_armies
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_war_plans_division }
+		prerequisite = {
+			focus = USA_war_plans_division
+		}
 		relative_position_id = USA_war_plans_division
-		cost = 10
+		
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+			date > 1942.1.1
+		}
+		
+		bypass = {
 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			transfer_state = 461
+			transfer_state = 462
+			hidden_effect = {
+				GER = {
+					annex_country = {
+						target = VIC
+						transfer_troops = no
+					}
+				}
+			}
+			custom_effect_tooltip = "Germany will annex Vichy France!"
+		}
+	}
+	focus = {
+		id = USA_intervention_in_europe
+		icon = GFX_goal_generic_territory_or_war
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_war_plans_division }
+		relative_position_id = USA_war_plans_division
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_idea = not_our_war
+			}
 		}
 		
 		bypass = {
@@ -1163,7 +1318,7 @@ focus_tree = {
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1204,7 +1359,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 1
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1293,10 +1448,16 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_war_plan_orange
+		text = "Consolidate and Counterattack"
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_intervention_in_asia }
 		available = {
-			
+			has_war = yes
+			JAP = {
+				NOT = {
+					has_idea = JAP_tora_tora_tora_idea
+				}
+			}
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1304,16 +1465,13 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 1
 		#ai_will_do = {
 		#	factor = 1
 		#}
 
 
 		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
-			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
@@ -1324,14 +1482,19 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_intervention_in_asia }
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			has_war = yes
+			JAP = {
+				NOT = {
+					has_idea = JAP_tora_tora_tora_idea
+				}
+			}
 		}
 		
 		bypass = {
@@ -1357,7 +1520,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 14
+		x = 15
 		y = 0
 		relative_position_id = USA_continue_the_new_deal
 		

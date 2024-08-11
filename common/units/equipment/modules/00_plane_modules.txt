@@ -748,9 +748,9 @@ equipment_modules = {
 		add_equipment_type = { naval_bomber }
 		add_stats = {
 			air_ground_attack = 5
-			naval_strike_attack = 10
+			naval_strike_attack = 15
 			air_attack = 12
-			build_cost_ic = 5
+			build_cost_ic = 4
 			air_agility = -2
 			weight = 3
 		}
@@ -773,7 +773,7 @@ equipment_modules = {
 			air_ground_attack = 10
 			naval_strike_targetting = 10
 			air_attack = 24
-			build_cost_ic = 10
+			build_cost_ic = 8
 			air_agility = -4
 			weight = 5
 		}

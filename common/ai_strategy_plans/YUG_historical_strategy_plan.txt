@@ -41,7 +41,6 @@ YUG_historical = {
 		YUG_domestic_artillery_production
 		YUG_anti_tank_defenses
 		YUG_independent_engineer_regiments 
-		YUG_invite_german_military_mission
 		YUG_motorize_the_cavalry
 		YUG_expand_the_university_of_zagreb
 		YUG_join_axis #It is critical this stays early.

@@ -207,7 +207,6 @@ YUG_fascist = {
 		YUG_the_ik_3
 		YUG_small_arms 
 		YUG_domestic_artillery_production
-		YUG_invite_german_military_mission
 		YUG_join_axis
 		YUG_expand_the_university_of_zagreb
 		YUG_improve_serbian_rail_network

@@ -39,6 +39,10 @@ recruit_character = SIA_phraya_chalermarkiart
 recruit_character = SIA_kuang_abhayavongsa
 recruit_character = SIA_thawee_punyaketu
 recruit_character = SIA_phot_bhahalyodin
+recruit_character = JAP_seishiro_itagaki
+recruit_character = JAP_naruhiko_higashikuni
+recruit_character = JAP_takashi_sakai
+recruit_character = JAP_otozo_yamada
 
 
 # Starting tech

@@ -592,19 +592,6 @@ defined_text = { #Propaganda Tooltips
 	}
 }
 
-defined_text = { #Propaganda Tooltips
-	name = GetKomsomolFocus
-	text = {
-		trigger = {
-			has_completed_focus = SOV_the_komsomol
-		}
-		localization_key = SOV_paranoia_tooltip_null
-	}
-	text = {
-		localization_key = SOV_propaganda_campaign_locked_slot_focus_komsomol
-	}
-}
-
 
 #####
 ##### PARANOIA SYSTEM #####

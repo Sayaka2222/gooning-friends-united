@@ -250,6 +250,7 @@ add_ideas = {
 	peace_training
 	trade_with_axis
 	volunteers
+	no_winter_clothes
 #	SWE_historical_trade_with_Germany_dummy CUT
 }
 add_timed_idea = {

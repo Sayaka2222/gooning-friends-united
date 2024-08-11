@@ -158,6 +158,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.4
 				political_power_factor = -0.15
+				stability_weekly = -0.004
+				research_speed_factor = -0.1
 			}
 		}
 
@@ -184,6 +186,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				political_power_factor = -0.1
+				stability_weekly = -0.003
+				research_speed_factor = -0.075
 			}
 		}
 
@@ -210,6 +214,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				political_power_factor = -0.05
+				stability_weekly = -0.002
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -236,6 +242,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = -0.05
+				stability_weekly = -0.001
+				research_speed_factor = -0.025
 			}
 		}
 
@@ -394,34 +402,14 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
 			}
 
 			picture = SOV_purged_junior_army_officers
 
-			on_add = {
-				add_ideas = SOV_purged_junior_army_officers_equipment_effects_1
-			}
-
-			on_remove = {
-				remove_ideas = SOV_purged_junior_army_officers_equipment_effects_1
-			}
-
 			modifier = {
-				army_org_factor = -0.1
-				max_dig_in_factor = -0.15
-				supply_consumption_factor = 0.1
-				land_doctrine_cost_factor = 0.2
-				custom_modifier_tooltip = SOV_purged_junior_army_officers_1_tt
+				army_morale_factor = -0.1
+				max_dig_in_factor = -0.2
+				air_attack_factor = -0.2
 			}
 		}
 
@@ -435,34 +423,14 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
 			}
 
 			picture = SOV_purged_junior_army_officers
 
-			on_add = {
-				add_ideas = SOV_purged_junior_army_officers_equipment_effects_2
-			}
-
-			on_remove = {
-				remove_ideas = SOV_purged_junior_army_officers_equipment_effects_2
-			}
-
 			modifier = {
-				army_org_factor = -0.2
-				max_dig_in_factor = -0.30
-				supply_consumption_factor = 0.2
-				land_doctrine_cost_factor = 0.4
-				custom_modifier_tooltip = SOV_purged_junior_army_officers_2_tt
+				army_morale_factor = -0.05
+				max_dig_in_factor = -0.15
+				air_attack_factor = -0.15
 			}
 		}
 
@@ -476,34 +444,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
 			}
 
 			picture = SOV_purged_junior_army_officers
 
-			on_add = {
-				add_ideas = SOV_purged_junior_army_officers_equipment_effects_3
-			}
-
-			on_remove = {
-				remove_ideas = SOV_purged_junior_army_officers_equipment_effects_3
-			}
-
 			modifier = {
-				army_org_factor = -0.3
-				max_dig_in_factor = -0.45
-				supply_consumption_factor = 0.3
-				land_doctrine_cost_factor = 0.6
-				custom_modifier_tooltip = SOV_purged_junior_army_officers_3_tt #Reliability and only Politically Connected as available trait for new Generals
+				max_dig_in_factor = -0.1
+				air_attack_factor = -0.1
 			}
 		}
 
@@ -1408,9 +1355,9 @@ ideas = {
 			}
 
 			modifier = {
-				mobilization_speed = 0.25
-				minimum_training_level = -0.05
-				training_time_factor = -0.1
+				training_time_factor = -0.2
+				army_speed_factor = 0.1
+				army_org_regain = 0.1
 			}
 		}
 
@@ -2098,13 +2045,11 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.1
-				defense_bonus_against = -0.05
 			}
 
 			modifier = {
 				army_speed_factor = 0.1
 				war_support_factor = 0.1
-				army_org_regain = -0.05
 			}
 		}
 

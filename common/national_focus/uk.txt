@@ -179,6 +179,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {	
+			add_timed_idea = {
+				idea = british_fighter_discount
+				days = 400
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -262,6 +266,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_research_slot = 1
+			hidden_effect = {
+				country_event = britain.22
+			}
 		}
 	}
 
@@ -1143,6 +1150,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_war = yes
 		}
 
 		available_if_capitulated = yes
@@ -2075,7 +2085,10 @@ focus_tree = {
 	focus = {
 		id = uk_iraq_focus
 		available = {
-			date > 1940.1.1
+			OR = {
+				date > 1940.1.1
+				controls_state = 448
+			}
 		} #UK at war with fascist/commie. iran is fascist/commie
 
 		prerequisite = { focus = uk_protect_suez }
@@ -2105,7 +2118,10 @@ focus_tree = {
 	focus = {
 		id = uk_iran_focus
 		available = {
-			date > 1940.6.1
+			OR = {
+				date > 1940.6.1
+				controls_state = 448
+			}
 		} #UK at war with fascist/commie. iran is fascist/commie
 
 		prerequisite = { focus = uk_iraq_focus }
@@ -2255,30 +2271,11 @@ focus_tree = {
 				}
 				add_ideas = war_economy
 			}
-			if = {
-				limit = { 
-					num_of_civilian_factories > 80
-					num_of_civilian_factories < 90
-				}
-				126 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = arms_factory
-						level = 5
-					}
-				}
-			}
-			if = {
-				limit = { 
-					num_of_civilian_factories > 90
-					num_of_civilian_factories > 100
-				}
-				126 = {
-					add_extra_state_shared_building_slots = 10
-					add_building_construction = {
-						type = arms_factory
-						level = 10
-					}
+			126 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
 				}
 			}
 		}
@@ -2303,6 +2300,13 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_ideas = ENG_every_man_will_do_his_duty
+			128 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
 		}
 	}
 
@@ -2326,6 +2330,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = britain_stands_alone
+			129 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
 		}
 	}
 
@@ -2348,6 +2359,13 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_ideas = ENG_no_further_appeasement_idea
+			132 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
 		}
 	}
 

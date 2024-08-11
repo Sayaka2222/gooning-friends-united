@@ -1,6 +1,27 @@
 ideas = {
 
 	country = {
+		USA_last_bastion_idea = {
+			picture = YUG_federal_defense_council
+			name = "America Stands Alone"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
 		USA_no_rubber = {
 			picture = generic_production_bonus
 			name = "Reliance on Natural Rubber"
@@ -262,7 +283,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.2
 				local_resources_factor = 0.2
-				production_speed_dockyard_factor = 0.6
+				production_speed_dockyard_factor = 0.4
 				production_speed_arms_factory_factor = -0.4
 			}
 		}
@@ -400,7 +421,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				command_power_gain_mult = 0.1	
+				naval_invasion_capacity = 50
+				fortification_collateral_chance = 1
 			}
 		}
 		USA_airborne_divisions = {

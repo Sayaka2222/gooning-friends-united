@@ -1279,7 +1279,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1300,19 +1300,12 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
+					tag = USA
+					tag = JAP
 					tag = ENG
+					tag = ITA
 				}
-				factor = 3
+				factor = 100
 			}
 		}
 	}

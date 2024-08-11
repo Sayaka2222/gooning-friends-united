@@ -65,7 +65,7 @@ on_actions = {
 			SOV = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 250000
+					amount = 300000
 					producer = SOV
 				}
 				add_equipment_to_stockpile = {
@@ -75,17 +75,17 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 15000
+					amount = 20000
 					producer = SOV
 				}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
-					amount = 10000
+					amount = 15000
 					producer = SOV
 				}
 				add_equipment_to_stockpile = {
 					type = anti_tank_equipment_1
-					amount = 10000
+					amount = 15000
 					producer = SOV
 				}
 				add_equipment_to_stockpile = {

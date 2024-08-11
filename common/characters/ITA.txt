@@ -207,7 +207,7 @@ characters = {
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -283,7 +283,7 @@ characters = {
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -493,7 +493,7 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 2.000
 			}
@@ -917,7 +917,7 @@ characters = {
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1029,7 +1029,7 @@ characters = {
 			traits = {
 				navy_capital_ship_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1056,7 +1056,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = angelo_iachino
 			ledger = navy
@@ -1164,7 +1164,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = gaetano_crocco
 			ledger = air
@@ -1189,7 +1189,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ITA_romeo_bernotti
 			ledger = navy
@@ -1316,7 +1316,7 @@ characters = {
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1387,7 +1387,7 @@ characters = {
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1493,7 +1493,7 @@ characters = {
 				}
 				ITA_government_is_somewhat_fascist = yes
 			}
-			cost = 100
+			cost = 150
 			traits = {
 				hierarch_minister_of_foreign_affairs
 			}
@@ -1555,7 +1555,7 @@ characters = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			traits = {
 				hierarch_minister_of_justice 
 			}
@@ -1606,7 +1606,7 @@ characters = {
 					has_country_leader_with_trait = mussolini_minister_of_education
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = {
 				hierarch_minister_of_education # Hierarch / Minister of Education
 			}

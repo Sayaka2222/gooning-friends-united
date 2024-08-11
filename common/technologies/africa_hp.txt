@@ -37,6 +37,8 @@ technologies = {
 		category_all_infantry = {
 			max_strength = 6
 		}
+		heat_attrition_factor = -0.25
+		attrition = -0.25 
 	}
 	africa_hp_off = {
 		motorized = {

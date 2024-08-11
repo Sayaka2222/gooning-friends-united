@@ -88,7 +88,7 @@ characters={
 				traits = {
 					army_chief_morale_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -170,7 +170,7 @@ characters={
 			traits = {
 				army_regrouping_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -202,7 +202,7 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -233,7 +233,7 @@ characters={
 				traits = {
 					navy_chief_decisive_battle_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -275,7 +275,7 @@ characters={
 			legacy_id=-1
 		}
 		advisor={
-			cost = 100		
+			cost = 150		
 			slot = theorist
 			idea_token = YUG_marijan_polic
 			ledger = navy
@@ -321,7 +321,7 @@ characters={
 				traits = {
 					air_chief_safety_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -343,7 +343,7 @@ characters={
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -366,7 +366,7 @@ characters={
 				traits = {
 					army_logistics_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -388,7 +388,7 @@ characters={
 				traits = {
 					navy_chief_commerce_raiding_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -410,7 +410,7 @@ characters={
 				traits = {
 					air_chief_ground_support_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -424,7 +424,7 @@ characters={
 	}
 	YUG_ljubomir_maric={
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = YUG_ljubomir_maric
 			ledger = army
@@ -454,7 +454,7 @@ characters={
 				traits = {
 					army_entrenchment_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}

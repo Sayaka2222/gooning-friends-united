@@ -1928,7 +1928,11 @@ spriteTypes = {
 	}	
 	
 	### INDUSRTY TECH ###
-	
+	SpriteType = {
+		name = "GFX_excavation6_medium"
+		texturefile = "gfx/interface/technologies/excavation5.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_excavation5_medium"
 		texturefile = "gfx/interface/technologies/excavation5.dds"
@@ -2028,6 +2032,11 @@ spriteTypes = {
 		name = "GFX_concentrated_industry5_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_concentrated_industry6_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry_medium"
@@ -2051,6 +2060,11 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry5_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_dispersed_industry6_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
 	}	
 	SpriteType = {
@@ -2149,6 +2163,11 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_construction5_medium"
+		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_construction6_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
 	

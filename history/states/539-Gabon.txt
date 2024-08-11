@@ -3,6 +3,11 @@ state={
 	name="STATE_539"
 
 	history={
+		add_state_modifier = {
+			modifier = {
+				local_building_slots_factor = 0.75
+			}
+		}
 		owner = FRA
 		add_core_of = SWE
 		victory_points = {

@@ -1174,7 +1174,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			army_infantry_defence_factor = 0.1
+			army_infantry_defence_factor = 0.075
 		}
 		
 		slot = high_command
@@ -1407,8 +1407,8 @@ leader_traits = {
 		modifier = {
 			desert = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		new_commander_weight = {
@@ -1435,8 +1435,8 @@ leader_traits = {
 		modifier = {
 			marsh = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1456,8 +1456,8 @@ leader_traits = {
 		modifier = {
 			mountain = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1477,8 +1477,8 @@ leader_traits = {
 		modifier = {
 			hills = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1498,8 +1498,8 @@ leader_traits = {
 		modifier = {
 			jungle = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1519,8 +1519,8 @@ leader_traits = {
 		modifier = {
 			forest = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1540,8 +1540,8 @@ leader_traits = {
 		modifier = {
 			urban = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.075
+				defence = 0.075
 			}
 		}
 		
@@ -1673,7 +1673,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.2
+				attack = 0.1
 			}
 			fortification_damage = 0.5
 			fortification_collateral_chance = 0.5
@@ -1702,6 +1702,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
+			attrition = -0.15
 		}
 		
 		ai_will_do = {

@@ -28,6 +28,7 @@ add_ideas = {
 	peace_training
 	trade_with_axis
 	volunteers
+	no_winter_clothes
 }
 add_timed_idea = {
 	idea = autarky

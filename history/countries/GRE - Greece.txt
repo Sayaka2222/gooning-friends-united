@@ -100,6 +100,7 @@ if = {
 		set_country_flag = GRE_factions_unlocked
 		add_ideas = {
 			SWI_swiss_neutrality
+			limited_conscription
 		}
 
 		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }

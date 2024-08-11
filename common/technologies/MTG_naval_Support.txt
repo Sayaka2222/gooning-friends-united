@@ -182,7 +182,9 @@ technologies = {
 	}
 
 	improved_light_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1939
@@ -293,7 +295,9 @@ technologies = {
 	}
 
 	advanced_light_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1944
@@ -424,7 +428,9 @@ technologies = {
 	}
 
 	improved_medium_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1939
@@ -519,7 +525,9 @@ technologies = {
 	}
 
 	advanced_medium_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1944
@@ -595,7 +603,9 @@ technologies = {
 	}
 
 	improved_heavy_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1939
@@ -635,7 +645,9 @@ technologies = {
 	}
 
 	advanced_heavy_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1944
@@ -757,7 +769,9 @@ technologies = {
 	}
 
 	basic_dp_light_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1939
@@ -807,7 +821,9 @@ technologies = {
 	}
 
 	improved_dp_light_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1939
@@ -855,7 +871,9 @@ technologies = {
 	}
 
 	advanced_dp_light_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1944
@@ -898,7 +916,9 @@ technologies = {
 	}
 
 	basic_dp_medium_battery = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1.5
 
 		start_year = 1944
@@ -1146,7 +1166,9 @@ technologies = {
 		}
 	}
 	improved_ship_torpedo_launcher = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1.5
 
 		start_year = 1936
@@ -1193,7 +1215,9 @@ technologies = {
 		}
 	}
 	advanced_ship_torpedo_launcher = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1.5
 
 		start_year = 1940
@@ -1240,7 +1264,9 @@ technologies = {
 		}
 	}
 	modern_ship_torpedo_launcher = {
-
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1.5
 
 		start_year = 1944

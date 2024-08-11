@@ -241,7 +241,7 @@ characters = {
 			traits = {
 				army_armored_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -294,7 +294,7 @@ characters = {
 			traits = {
 				army_regrouping_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -310,7 +310,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = boris_shaposhnikov
 			ledger = army
@@ -375,7 +375,7 @@ characters = {
 				army_infantry_2
 				army_commando_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -427,7 +427,7 @@ characters = {
 			traits = {
 				army_chief_offensive_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1090,7 +1090,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = sergey_gorshkov
 			ledger = navy
@@ -1157,7 +1157,7 @@ characters = {
 			traits = {
 				navy_capital_ship_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1212,7 +1212,7 @@ characters = {
 			traits = {
 				navy_amphibious_assault_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1267,7 +1267,7 @@ characters = {
 			traits = {
 				navy_submarine_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1303,7 +1303,7 @@ characters = {
 			traits = {
 				air_air_combat_training_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1350,7 +1350,7 @@ characters = {
 			traits = {
 				air_close_air_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1374,7 +1374,7 @@ characters = {
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1422,7 +1422,7 @@ characters = {
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1446,7 +1446,7 @@ characters = {
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1470,7 +1470,7 @@ characters = {
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1494,7 +1494,7 @@ characters = {
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1510,7 +1510,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = alexander_golovanov
 			ledger = air
@@ -1554,7 +1554,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = igor_kurchatov
 			ledger = army
@@ -1579,7 +1579,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = sergei_korolev
 			ledger = air
@@ -1666,7 +1666,7 @@ characters = {
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1701,7 +1701,7 @@ characters = {
 			traits = {
 				army_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -3309,7 +3309,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = SOV_aleksandr_prokofyev_seversky
 			ledger = air
@@ -3349,7 +3349,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = air_chief
 			idea_token = SOV_vyacheslav_tkachyov
 			allowed = {
@@ -3388,7 +3388,7 @@ characters = {
 		}
 		
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = air_chief
 			idea_token = SOV_yan_nagursky
 			allowed = {
@@ -3427,7 +3427,7 @@ characters = {
 		}
 		
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = high_command
 			idea_token = SOV_vasily_yanchenko
 			ledger = air

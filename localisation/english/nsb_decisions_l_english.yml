@@ -671,6 +671,7 @@
  SOV_the_rush_for_berlin:0 "Their Land, Their Blood"
  SOV_the_rush_for_berlin_desc:0 "The path towards our glorious victory has been a journey of blood and brutality. All of it has been necessary. When the flag of our motherland flies atop the Reichstag... all of Berlin will know that the evil of the Fascist Reich has been wiped from the face of the earth."
  SOV_uranus_desc:0 "The rotten cancer of the fascist Reich ravages Europe like a plague. Their relentless drive into our motherland steals the lives of men, women, and children alike. The arrogance of their leaders is matched only by the brutality of their soldiers. These are the darkest days of the Nazi occupation of Stalingrad."
+ SOV_bagration_desc:0 "We have lost many brave men, but their sacrifice is not in vain. Our tanks now form a line of steel so powerful that all German resistance will be crushed beneath its mighty treads. Today - we will watch as Seelow falls. Along with all those foolish enough to stand in our way."
  SOV_raise_penal_units:0 "Raise Penal Units"
  SOV_raise_penal_units_desc:0 "More meat for the meat grinder."
  SOV_raise_penal_units_days_tt:0 "Current days are: [?SOV_penal_units_raised_flag:days|Y0]"

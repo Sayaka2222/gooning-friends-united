@@ -252,7 +252,6 @@ set_variable = { SOV_paranoia_inspection_re_enable_days = 180 } #Inpsection deci
 set_variable = { SOV_paranoia_inspection_remove_days = 7 } #Inspection decisions time to complete
 set_variable = { SOV_paranoia_inspection_decision_cost = 50 } #Inspection decisions cost
 
-country_event = { id = NSB_soviet_paranoia_system_events.01 days = 90 random_days = 10 } # EVENT ACTIVATING THE PARANOIA SYSTEM
 
 # Civil war preparation 
 set_variable = { SOV_army_framejob_decision_cost = 25 } #Frame general decisions cost
@@ -706,6 +705,7 @@ add_ideas = {
 	closed_economy
 	volunteers
 	peace_training
+	SOV_purged_junior_army_officers_1
 }
 
 

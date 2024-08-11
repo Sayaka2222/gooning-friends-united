@@ -13,5 +13,196 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 2500 }
+
+	focus = {
+		id = africa_hp
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			date > 1939.9.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_technology = {
+					africa_hp = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = africa_hp_off
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = africa_hp
+		}
+		relative_position_id = africa_hp
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			date > 1941.6.22
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_technology = {
+					africa_hp_off = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = hp_41
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = africa_hp_off
+		}
+		relative_position_id = africa_hp_off
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_technology = {
+					hp_buff_41 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = hp_42
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = hp_41
+		}
+		relative_position_id = hp_41
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			date > 1942.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_technology = {
+					hp_buff_42 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = hp_43
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = hp_42
+		}
+		relative_position_id = hp_42
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			date > 1943.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_technology = {
+					hp_buff_43 = 1
+				}
+			}
+		}
+	}
 }
 

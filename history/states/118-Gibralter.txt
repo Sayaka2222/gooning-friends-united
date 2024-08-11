@@ -13,13 +13,21 @@ state=
 			air_base = 2
 			4135 = {
 				naval_base = 5
-				coastal_bunker = 2
+				coastal_bunker = 10
+			}
+			13228 = {
+				naval_base = 5
+				coastal_bunker = 10
 			}
 		}
 		add_claim_by = SPR
+		add_dynamic_modifier = {
+			modifier = ENG_gibraltar
+			scope = ENG
+		}
 	}
 	provinces={
-		4135
+		4135 13228
 	}
 
 	local_supplies=0.0 

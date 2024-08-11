@@ -1,79 +1,4 @@
 war_measures = {
-
-	USA_homeland_defense = {
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = USA
-		}
-
-		available = {
-			any_state = {
-				is_core_of = USA
-				NOT = {
-					is_controlled_by = USA
-				}
-			}
-			has_civil_war = no
-
-		}
-
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		visible = {
-			has_defensive_war = yes
-			CSA = {
-				exists = no
-			}
-		}
-
-		complete_effect = {
-			if = {
-				limit = {
-					has_war_support < 0.9
-				}
-				set_war_support = 0.9
-			}
-			if = {
-				limit = {
-					has_idea = great_depression
-				}
-				remove_ideas = great_depression
-			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_idea = extensive_conscription
-							has_idea = scraping_the_barrel
-							has_idea = service_by_requirement
-							has_idea = all_adults_serve
-						}
-					}
-				}
-				add_ideas = extensive_conscription
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-						has_idea = civilian_economy
-						has_idea = low_economic_mobilisation
-						has_idea = partial_economic_mobilisation
-						has_idea = war_economy
-					}
-				}
-				add_ideas = tot_economic_mobilisation
-			}
-			add_ideas = USA_homeland_defense
-		}
-	}
 }
 USA_aid_britain = {
 	USA_establish_personal_communication_with_former_naval_person = {
@@ -818,6 +743,7 @@ USA_war_plans = {
 			has_war_with = MEX
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -839,6 +765,7 @@ USA_war_plans = {
 			has_war_with = ENG
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -858,9 +785,9 @@ USA_war_plans = {
 		icon = generic_operation
 		available = {
 			has_war_with = ITA
+			has_completed_focus = USA_war_plan_silver
 		}
 		visible = {
-			has_completed_focus = USA_war_plan_silver
 		}
 		ai_will_do = {
 			factor = 1
@@ -879,6 +806,7 @@ USA_war_plans = {
 			has_war_with = RAJ
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -898,6 +826,7 @@ USA_war_plans = {
 			has_war_with = NZL
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -919,9 +848,9 @@ USA_war_plans = {
 		icon = generic_operation
 		available = {
 			has_war_with = JAP
+			has_completed_focus = USA_war_plan_orange
 		}
 		visible = {
-			has_completed_focus = USA_war_plan_orange
 		}
 		ai_will_do = {
 			factor = 1
@@ -937,16 +866,6 @@ USA_war_plans = {
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
-		targeted_modifier = {
-			tag = MAN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = MEN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
 	}
 	USA_execute_war_plan_yellow = {
 		icon = generic_operation
@@ -955,11 +874,10 @@ USA_war_plans = {
 				has_war_with = CHI
 				has_war_with = SIA
 				has_war_with = MAN
-
 			}
+			has_completed_focus = USA_war_plan_yellow
 		}
 		visible = {
-			has_completed_focus = USA_war_plan_yellow
 		}
 		ai_will_do = {
 			factor = 1
@@ -988,6 +906,7 @@ USA_war_plans = {
 			has_war_with = CAN
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -1016,6 +935,7 @@ USA_war_plans = {
 			}
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -1034,6 +954,7 @@ USA_war_plans = {
 			has_war_with = FRA
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1
@@ -1050,9 +971,9 @@ USA_war_plans = {
 		icon = generic_operation
 		available = {
 			has_war_with = GER
+			has_completed_focus = USA_war_plan_black
 		}
 		visible = {
-			has_completed_focus = USA_war_plan_black
 		}
 		ai_will_do = {
 			factor = 1
@@ -1071,6 +992,7 @@ USA_war_plans = {
 			has_war_with = SOU
 		}
 		visible = {
+			always = no
 		}
 		ai_will_do = {
 			factor = 1

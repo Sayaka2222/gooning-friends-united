@@ -45,5 +45,6 @@ tags={
 	"Fixes"
 	"Gameplay"
 }
-name="Vanilla Reforged"
+name="Vanilla Remastered"
 supported_version="1.14.*"
+remote_file_id="3301524491"

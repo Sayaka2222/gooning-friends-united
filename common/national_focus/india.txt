@@ -70,20 +70,13 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
 		}
 
 		available = {
-			OR = {
-				AND = {
-					threat > 0.1
-					is_subject = yes
-				}
-				is_subject = no
-			}
 		}
 
 		bypass = {
@@ -113,7 +106,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_provincial_elections
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -152,17 +145,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-			OR = {
-				is_subject = yes
-				has_global_flag = ENG_decolonized
-			}
 		}
 
 		bypass = {
@@ -199,7 +188,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_cripps_mission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -237,7 +226,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1796,7 +1785,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30

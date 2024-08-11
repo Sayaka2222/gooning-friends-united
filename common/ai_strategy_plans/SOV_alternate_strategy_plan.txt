@@ -689,8 +689,6 @@ SOV_exiles_tsarist_plan = {
 	ai_national_focuses = {
 
 		#Take during Civil War if it lasts long, but otherwise take it as soon as political path is established - until 1st tech slot
-		SOV_infrastructure_effort_nsb #35
-		SOV_heavy_industry #35
 		SOV_finish_the_five_year_plan #70
 		SOV_third_five_year_plan #70
 		SOV_improve_railway_network #70
@@ -760,8 +758,6 @@ SOV_exiles_fascist_plan = {
 	ai_national_focuses = {
 
 		#Take during Civil War if it lasts long, but otherwise take it as soon as political path is established - until 1st tech slot
-		SOV_infrastructure_effort_nsb
-		SOV_heavy_industry
 		SOV_finish_the_five_year_plan
 		SOV_third_five_year_plan
 		SOV_improve_railway_network

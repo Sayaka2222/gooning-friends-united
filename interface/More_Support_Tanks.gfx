@@ -1,8 +1,8 @@
 spriteTypes = {	
 	
 	### Large Icons ###
-	spriteType = { name = "GFX_unit_paratrooper_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_shocktroop_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_desert_infantry_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_desertinfantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_paratrooper_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_paratrooper_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_desert_infantry_icon_medium" 						texturefile = "gfx/interface/counters/divisions_large/unit_desert_infantry_icon.dds" noOfFrames = 2 }
 	#td
 	spriteType = { name = "GFX_unit_support_light_td_icon_medium" 						texturefile = "gfx/MST_gfx/unit_support_light_tank_at_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_support_medium_td_icon_medium" 						texturefile = "gfx/MST_gfx/unit_support_medium_tank_at_icon.dds" noOfFrames = 2 }
@@ -54,6 +54,9 @@ spriteTypes = {
 	
 	
 	### Small Icons ###
+	
+	spriteType = { name = "GFX_unit_paratrooper_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_desert_infantry_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_desert_infantry_icon.dds" noOfFrames = 2 } #legacy
 	#td
 	spriteType = { name = "GFX_unit_support_modern_td_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_support_super_heavy_td_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 } #legacy
@@ -108,13 +111,13 @@ spriteTypes = {
 	### Texticons ###
 	spriteType = {
 		name = "GFX_unit_paratrooper_icon_small"
-		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_shocktroop_icon.dds"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_icon.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_desert_infantry_icon_small"
-		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_desertinfantry_icon.dds"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_desert_infantry_icon.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}

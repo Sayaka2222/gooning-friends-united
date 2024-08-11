@@ -46,13 +46,6 @@ ITA_colonial_management_dec_cat = {
 	}
 	
 	priority = 20
-	
-	visible = {
-		OR = {
-			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_abolish_the_colonies
-		}
-	}
 }
 
 ITA_naval_cooperation_programs_dec_cat = { 

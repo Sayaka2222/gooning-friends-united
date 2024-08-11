@@ -72,6 +72,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 			2 = { #ROME
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -328,7 +329,7 @@ focus_tree = {
 		relative_position_id = ITA_litoranea_balbo
 		cost = 10
 		available = {
-			907 = {
+			434 = {
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
 			452 = {
@@ -455,16 +456,6 @@ focus_tree = {
 				amount = 4
 				state = 450
 			}
-			450 = {
-				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
-				set_state_flag = benghazi_oil_developed
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}	
-		
 		}
 	}
 
@@ -543,13 +534,27 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			162 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ITA_strengthen_northern_industry
 		icon = GFX_focus_ITA_northern_industry
-		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
+		prerequisite = { focus = ITA_steel_industry_in_terni }
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
@@ -580,7 +585,7 @@ focus_tree = {
 	focus = {
 		id = ITA_modernize_the_mezzogiorno
 		icon = GFX_focus_ITA_southern_industry
-		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
+		prerequisite = { focus = ITA_power_plants_in_terni }
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
@@ -626,7 +631,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
+			add_timed_idea = { idea = ITA_foggia_farm_fields days = 365 }
 		}
 	}
 
@@ -1871,6 +1876,10 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
 			}
 		}
 	}
@@ -1938,6 +1947,10 @@ focus_tree = {
 					type = dockyard
 					level = 5
 					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 10
 				}
 			}
 		}
@@ -2026,7 +2039,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ITA_incrociatori_leggeri
-				bonus = 1
+				bonus = 2
 				uses = 1
 				technology = improved_heavy_armor_scheme
 			}
@@ -2174,7 +2187,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_incrociatori_pesanti
-				bonus = 1
+				bonus = 2
 				uses = 1
 				category = bb_tech
 			}
@@ -2424,6 +2437,10 @@ focus_tree = {
 					type = dockyard
 					level = 5
 					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 10
 				}
 			}
 		}
@@ -2908,26 +2925,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = ITA_devaluate_the_lire
-		icon = GFX_focus_ITA_devaluate_the_lire
-		prerequisite = { focus = ITA_triumph_in_africa_bba }
-
-		x = -3
-		y = 1
-		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
-		}
-	}
-
 	focus = {
 		id = ITA_anglo_italian_agreements
 		icon = GFX_focus_chi_british_cooperation
@@ -3091,21 +3088,6 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_topple_amhara_rulers_event_chain_tt
-				hidden_effect = {
-					ITA_haile_selassie_gugsa_doppleganger = { unit_leader_event = BBA_italy_local_rulers.1 }
-				}
-			}
-			hidden_effect = {
-				ETH = {
-					country_event = { id = BBA_italo_ethiopian_war_events.510 hours = 6 }
-				}
-			}
-
 		}
 	}
 
@@ -3114,7 +3096,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 3
+		x = -3
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -3165,9 +3147,8 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 10
 		available = {
-			has_country_leader = {
-				character = ITA_benito_mussolini
-				ruling_only = yes
+			GER = {
+				has_completed_focus = GER_improve_national_spirit
 			}
 		}
 
@@ -3255,7 +3236,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3277,7 +3258,6 @@ focus_tree = {
 			158 = {
 				add_extra_state_shared_building_slots = 2
 			}
-			add_timed_idea = { idea = ITA_battaglia_per_la_terra days = 730 }
 		}
 	}
 
@@ -7620,36 +7600,19 @@ focus_tree = {
 				idea = ITA_pact_of_steel
 				days = 365
 			}
-			BUL = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 			CRO = {
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
-							size > 1
+							size > 3
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -7762,11 +7725,6 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
 					instant_build = yes
 				}
 				add_resource = {
@@ -12522,17 +12480,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					has_resistance = yes
-				}
-				add_compliance = 15
-			}
-
-			activate_decision = ITA_abolish_the_colonies_dec
-			custom_effect_tooltip = ITA_abolish_the_colonies_decision_effects_tt
-			custom_effect_tooltip = ITA_abolish_the_colonies_event_chain_tt
-			custom_effect_tooltip = ITA_abolish_the_colonies_tips_tt
 		}
 	}
 

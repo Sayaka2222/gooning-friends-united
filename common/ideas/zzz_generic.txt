@@ -64,7 +64,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			modifier = {
 				industrial_capacity_dockyard = -0.4
-				navy_refit_speed = 0.4
+				refit_speed = 0.4
 			}
 		}
 		peace_training = {
@@ -227,9 +227,9 @@ ideas = {
 				always = no
 			}
 			cancel = {
-				date > 1939.1.1
+				date > 1936.9.1
 			}
-			name = "Volunteer Core"
+			name = "Volunteer Corp"
 			removal_cost = -1
 			picture = generic_pp_unity_bonus
 			modifier = {

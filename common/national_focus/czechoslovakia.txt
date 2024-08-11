@@ -1800,7 +1800,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 1.1
 				uses = 1
 				technology = basic_medium_tank_chassis
 				technology = basic_heavy_tank_chassis
@@ -1875,7 +1875,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 1.1
 				uses = 1
 				technology = improved_medium_tank_chassis
 				technology = advanced_light_tank_chassis

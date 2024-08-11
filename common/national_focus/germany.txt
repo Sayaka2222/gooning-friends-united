@@ -17,6 +17,7 @@ focus_tree = {
 			tag = GER
 		}
 	}
+	continuous_focus_position = { x = 55 y = 1300 }
 	
 	default = no
 
@@ -635,13 +636,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_idea = war_economy }
-					NOT = { has_idea = tot_economic_mobilisation }
-				}
-				add_ideas = war_economy
-			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -904,6 +898,40 @@ focus_tree = {
 					set_state_flag = GER_integrate_war_economies_2
 				}
 			}
+			BUL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_2
+				}
+			}
 			GER = {
 				random_owned_controlled_state = {
 					limit = {
@@ -920,6 +948,22 @@ focus_tree = {
 						instant_build = yes
 					}
 					set_state_flag = GER_integrate_war_economies_1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_2
 				}
 				random_owned_controlled_state = {
 					limit = {
@@ -1372,6 +1416,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = no
 		available = {
+			date > 1937.1.1
 		}
 		cancel = {
 		}
@@ -1412,8 +1457,6 @@ focus_tree = {
 				transfer_troops = no
 			}
 			ENG = {
-				promote_character = ENG_neville_chamberlain
-				retire_character = ENG_stanley_baldwin
 				add_war_support = 0.1
 				add_ideas = partial_economic_mobilisation
 			}
@@ -1861,6 +1904,11 @@ focus_tree = {
 				id = "BEL"
 				value = 200
 			}
+			hidden_effect = {
+				ENG = {
+					country_event = britain.9
+				}
+			}
 		}
 	}
 
@@ -2186,6 +2234,12 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			every_country = {
+				limit = {
+					has_idea = no_winter_clothes
+				}
+				remove_ideas = no_winter_clothes
+			}
 			add_timed_idea = {
 				idea = GER_typhoon
 				days = 30
@@ -2778,18 +2832,22 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_2
 				amount = 60000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_2
 				amount = 6000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment_2
 				amount = 6000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_2
 				amount = 4000
+				producer = GER
 			}
 		}
 	}
@@ -3155,7 +3213,22 @@ focus_tree = {
 		prerequisite = { focus = GER_form_the_reichskommissariats }
 		prerequisite = { focus = GER_extra_tech_slot }
 		available = {
-			date > 1942.3.1
+			OR = {
+				date > 1942.3.1
+				count_triggers = {
+					amount = 3
+					NOT = {
+						controls_state = 202
+						controls_state = 206
+						controls_state = 808
+						controls_state = 241
+						controls_state = 242
+						controls_state = 221
+						controls_state = 224
+						controls_state = 220
+					}
+				}
+			}
 		}
 		x = 2
 		y = 1
@@ -3201,6 +3274,121 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
+			add_ideas = total_war
+		}
+	}
+
+	focus = {
+		id = GER_fortress_cities
+		text = "Fortify the Cities"
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = "Total War" }
+		available = {
+		}
+		x = -2
+		y = 1
+		relative_position_id = "Total War"
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			55 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 6488
+				}
+			}
+			66 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 9570
+				}
+			}
+			67 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 11467
+				}
+			}
+			763 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 6332
+				}
+			}
+			50 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 9517
+				}
+			}
+			51 = {
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 6469
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 587
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_volkssturm
+		text = "Volkssturm"
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = "Total War" }
+		available = {
+		}
+		x = 2
+		y = 1
+		relative_position_id = "Total War"
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 100000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 10000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 6000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 6000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 6000
+				producer = GER
+			}
 		}
 	}
 	focus = {

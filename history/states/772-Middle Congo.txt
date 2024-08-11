@@ -9,12 +9,18 @@ state={
 		rubber=1 # was: 1
 	}
 	history={
+		add_state_modifier = {
+			modifier = {
+				local_building_slots_factor = 0.75
+			}
+		}
 		owner = FRA
 		add_core_of = SWE
 		victory_points = {
 			8193 2
 		}
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 4
 			12975 = {
 				naval_base = 1

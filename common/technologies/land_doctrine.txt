@@ -2626,7 +2626,9 @@ technologies = {
 	
 	mass_assault = {
 		doctrine_name = "MASS_ASSAULT_DOCTRINE"
-		
+		allow = {
+			tag = SOV
+		}
 		xp_research_type = army
 		xp_unlock_cost = 0
 		xor = { mobile_warfare superior_firepower trench_warfare } 

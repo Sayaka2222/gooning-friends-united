@@ -3282,6 +3282,68 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_operation_groza
+		text = "Operation Groza"
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
+		x = -3
+		y = 1
+		relative_position_id = SOV_strengthen_the_mobilization_plan
+		cost = 1
+
+		available = {
+			OR = {
+				date > 1941.9.1
+				ENG = {
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+			hidden_effect = {
+				ITA= {add_to_war = {
+					targeted_alliance = GER
+					enemy = SOV
+			}}
+		   		ROM= {add_to_war = {
+					targeted_alliance = GER
+					enemy = SOV
+			}}
+		   		HUN= {add_to_war = {
+					targeted_alliance = GER
+					enemy = SOV
+			}}
+				BUL= {add_to_war = {
+					targeted_alliance = GER
+					enemy = SOV
+			}}
+				CRO= {add_to_war = {
+					targeted_alliance = GER
+					enemy = SOV
+			}}
+				if = {
+					limit = { 
+						CZE = {
+							exists = yes
+						}
+					}
+					CZE= {add_to_war = {
+						targeted_alliance = GER
+						enemy = SOV
+					}}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_desperate_measures
 		icon = GFX_goal_great_patriotic_war
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
@@ -3291,7 +3353,12 @@ focus_tree = {
 		cost = 1
 
 		available = {
-			has_war_with = GER
+			OR = {
+				has_war_with = GER
+				ENG = {
+					surrender_progress > 0.3
+				}
+			}
 		}
 		
 		search_filters = {}
@@ -3404,12 +3471,21 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_idea = SOV_desperate_measures_ns }
+			OR = {
+				NOT = { has_idea = SOV_desperate_measures_ns }
+				ENG = {
+					surrender_progress > 0.3
+				}
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_purged_junior_army_officers_1
+				add_idea = SOV_purged_junior_army_officers_2
+			}
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
 
@@ -3583,7 +3659,6 @@ focus_tree = {
 					has_government = communism
 				}
 				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				unlock_decision_tooltip = SOV_propaganda_glory_to_partisans
 				unlock_decision_tooltip = SOV_propaganda_death_to_invaders
 				custom_effect_tooltip = propaganda_campaign_requirement_tt
 			}
@@ -3614,19 +3689,6 @@ focus_tree = {
 			}
 			else = {
 				add_ideas = SOV_smersh_no_lar
-			}
-
-			if = {
-				limit = {
-					has_government = communism
-				}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				if = {
-					limit ={ has_dlc = "La Resistance" }
-					unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
-				}
-				unlock_decision_tooltip = SOV_propaganda_do_not_blab
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
 			}
 		}
 	}
@@ -3769,6 +3831,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_purged_junior_army_officers_2
+				add_idea = SOV_purged_junior_army_officers_3
+			}
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.1 }
 			custom_effect_tooltip = SOV_barb_1_tt
 		}
@@ -3794,6 +3860,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			remove_ideas = SOV_purged_junior_army_officers_3
 			add_ideas = SOV_rehabilitated_military_ns
 			show_unit_leaders_tooltip = SOV_pavel_rybalko
 
@@ -3949,7 +4016,10 @@ focus_tree = {
 			add_political_power = 25
 
 			SOV_paranoia_high_increase_effect = yes
-
+			swap_ideas = {
+				remove_idea = trotskyite_plot_nsb
+				add_idea = trotskyite_plot_nsb_2
+			}
 		}
 	}
 
@@ -4011,6 +4081,10 @@ focus_tree = {
 			add_political_power = 25
 
 			SOV_paranoia_high_increase_effect = yes
+			swap_ideas = {
+				remove_idea = trotskyite_plot_nsb_2
+				add_idea = trotskyite_plot_nsb_3
+			}
 		}
 	}
 
@@ -4104,6 +4178,10 @@ focus_tree = {
 			SOV_paranoia_high_increase_effect = yes
 
 			set_country_flag = SOV_stalinist_military_flag #New Generals have more chances of being Stalinists after this
+			swap_ideas = {
+				remove_idea = trotskyite_plot_nsb_3
+				add_idea = trotskyite_plot_nsb_4
+			}
 		}
 	}
 
@@ -4143,7 +4221,7 @@ focus_tree = {
 			add_political_power = 25
 
 			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
-			remove_ideas = trotskyite_plot_nsb
+			remove_ideas = trotskyite_plot_nsb_4
 		}
 	}
 
@@ -4222,13 +4300,14 @@ focus_tree = {
 			add_political_power = 25
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = SOV_propaganda_stalin
-			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 
 	focus = {
 		id = SOV_inheritor_of_the_mantle_of_lenin
+		allow_branch = {
+			always = no
+		}
 		icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
 		prerequisite = { focus = SOV_stalins_cult_of_personality }
 		x = -1
@@ -4302,7 +4381,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_stalins_cult_of_personality
 		cost = 5
-
+		allow_branch = {
+			always = no
+		}
 		mutually_exclusive = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 
 		available = {

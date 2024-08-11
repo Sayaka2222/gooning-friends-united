@@ -62,6 +62,7 @@ recruit_character = YUG_peter_ii
 
 add_ideas = {
 	SWI_swiss_neutrality
+	limited_conscription
 }
 
 if = {

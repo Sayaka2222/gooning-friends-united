@@ -95,7 +95,10 @@ ENG_harland_wolff_organization = {
 		mio_cat_tech_all_carrier_and_modules
 	}
 	allowed = {	
-		tag = ENG
+		OR = {
+			tag = ENG
+			tag = AST
+		}
 	}
 	initial_trait = {
 		equipment_bonus = {
@@ -134,7 +137,10 @@ ENG_yarrow_shipbuilders_organization = {
 	icon = GFX_idea_yarrow_shipbuilders
 	
 	allowed = {	
-		tag = ENG 
+		OR = {
+			tag = ENG
+			tag = AST
+		}
 	}
 	initial_trait = {
 		equipment_bonus = {
@@ -157,7 +163,10 @@ ENG_john_brown_organization = {
 	}
 
 	allowed = {	
-		tag = ENG 
+		OR = {
+			tag = ENG
+			tag = AST
+		}
 	}
 	initial_trait = {
 		equipment_bonus = {

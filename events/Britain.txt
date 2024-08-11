@@ -223,95 +223,35 @@ country_event = {
 	}
 }
 
-# Chamberlain Resigns
 country_event = {
 	id = britain.9
 	title = britain.9.t
 	desc = britain.9.d
 	picture = GFX_report_event_chamberlain
-
 	fire_only_once = yes
-
 	trigger = {
-		tag = ENG
-		has_war = yes
-		has_government = democratic
-		OR = {
-			has_global_flag = fall_of_france
-			FRA = { surrender_progress > 0.1 }
-			HOL = { surrender_progress > 0.1 }
-			BEL = { surrender_progress > 0.1 }
-			LUX = { surrender_progress > 0.1 }
-			DEN = { surrender_progress > 0.1 }
-			NOR = { surrender_progress > 0.1 }
-			AND = {
-				110 = { is_controlled_by = GER }
-				NOT = { is_in_faction_with = GER }
-			}
-		}
-		NOT = { has_country_flag = chamberlain_died }
-		has_country_leader = {
-			character = ENG_neville_chamberlain
-			ruling_only = yes
+		GER = {
+			has_completed_focus = GER_around_maginot
 		}
 	}
-
 	mean_time_to_happen = {
-		days = 2
+		days = 1
 	}
-
 	immediate = { set_country_flag = chamberlain_resigned }
-	
 	option = {
 		name = britain.9.a
-		promote_character = ENG_winston_churchill
-		retire_character = ENG_neville_chamberlain
-		add_stability = 0.1
-		add_war_support = 0.1
-
-	}
-}
-
-
-# Chamberlain Passes Away
-country_event = {
-	id = britain.10
-	title = britain.10.t
-	desc = britain.10.d
-	picture = GFX_report_event_chamberlain
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = ENG
-		has_government = democratic
-		date > 1940.9.11
-		NOT = { has_country_flag = chamberlain_resigned }
-		has_country_leader = {
-			character = ENG_neville_chamberlain
-			ruling_only = yes
-		}
-	}	
-
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	immediate = { set_country_flag = chamberlain_died }
-
-	option = {
-		name = britain.10.a
-		kill_country_leader = yes
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = GFX_portrait_Winston_Churchill
+			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
 				british_bulldog
 			}
 		}
+		add_stability = 0.1
+		add_war_support = 0.1		
 	}
 }
 
@@ -384,193 +324,6 @@ country_event = {
 	}
 }
 
-# France wants to join allies
-country_event = {
-	id = britain.13
-	title = britain.13.t
-	desc = britain.13.d
-	picture = GFX_report_event_degaulle_churchill
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.13.a
-		add_to_faction = FROM
-		FROM = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
-			}
-		}
-		FROM = { country_event = { id = france.29} }
-		hidden_effect = {
-			news_event = { id = news.175 }
-		}
-	}
-	
-	option = {
-		name = britain.13.b
-		ai_chance = { factor = 0 }
-		FROM = { 
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = FRA_go_with_britain_reject
-			}
-			country_event = { id = france.30 }
-		}
-		hidden_effect = {
-			news_event = { id = news.176 }
-		}
-	}
-}
-
-# Germany demands Slovenia from Yugoslavia
-country_event = {
-	id = britain.14
-	title = britain.14.t
-	desc = britain.14.d
-	picture = GFX_report_event_hitler_croatia_handshake
-
-	is_triggered_only = yes
-	
-	option = { # Abandon Yugoalvia
-		name = britain.14.a
-		ai_chance = { 
-			factor = 90 
-			modifier = {
-				has_war_with = GER
-				factor = 0
-			}
-		}
-		YUG = {
-			add_opinion_modifier = { target = ENG modifier = western_betrayal }
-		}		
-		if = {
-			limit = {
-				has_guaranteed = YUG
-			}
-			diplomatic_relation = {
-   				country = YUG
-   				relation = guarantee
-   				active = no
-  			}
-		}
-		if = {
-			limit = {
-				country_exists = FRA
-			}
-			FRA = { country_event = { id = france.25 hours = 2 } }
-		}
-		else = {
-			if = {
-				limit = {
-					ITA = {
-						OR = {
-							NOT = { has_completed_focus = ITA_balkan_ambition }
-							is_in_faction_with = GER
-							exists = no
-						}
-					}
-				}
-				YUG = {
-					add_opinion_modifier = { target = FRA modifier = western_betrayal }
-					country_event = { id = yugoslavia.5 hours = 6 }
-				}			
-			}
-			if = {
-				limit = { 
-					ITA = {
-						has_completed_focus = ITA_balkan_ambition
-						NOT = { is_in_faction_with = GER }
-						NOT = { has_war_with = YUG }
-					}
-				}
-				ITA = { country_event = { id = italy.12 } }
-			}
-		}
-	}
-	
-	option = { # Support Yugoslavia
-		name = britain.14.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = yes
-			}
-			remove_from_faction = GER
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = no
-			}
-			GER = { remove_from_faction = ENG }
-		}
-		add_political_power = -200
-		add_stability = -0.05
-		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		effect_tooltip = {
-			GER = {
-				create_wargoal = {
-					type = take_state_focus
-					target = YUG
-					generator = { 853 102 }
-				}
-			}
-		}
-		add_to_faction = YUG
-		YUG = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
-			}
-		}
-		if = {
-			limit = {
-				FRA = {
-					is_puppet = no
-					NOT = { has_war_with = YUG }
-				}
-			}
-			FRA = { country_event = { id = france.26 hours = 2 } }
-		}
-		YUG = {
-			add_opinion_modifier = { target = ENG modifier = offered_support }
-		}
-	}	
-}
-#Britain receives warning of the Indian National Army
-country_event = {
-	id = britain.19
-	title = britain.19.t
-	desc = britain.19.d
-	picture = GFX_report_event_indian_soldiers
-
-	is_triggered_only = yes
-
-	option = {
-		name = britain.19.a
-		effect_tooltip = {
-			RAJ = {
-				add_ideas = RAJ_azad_hind
-			}
-		}
-		custom_effect_tooltip = ENG_RAJ_azad_hind_tooltip 
-		hidden_effect = {
-			country_event = { id = britain.20 days = 500  random_days = 100 }
-		}
-	}
-}
-
 country_event = {
 	id = britain.21
 	title = britain.21.t
@@ -594,16 +347,11 @@ country_event = {
     fire_only_once = yes
  
     trigger = {
-        original_tag = ENG
-        has_government = democratic
-        has_idea = ENG_george_vi
-        date > 1937.5.27
-        has_start_date < 1936.01.02
-        NOT = { has_country_flag = baldwin_resigned }
+		has_completed_focus = uk_extra_tech_slot
     }
 
     mean_time_to_happen = {
-        days = 7
+        days = 1
     }
 
 	option = {

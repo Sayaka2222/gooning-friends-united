@@ -143,7 +143,7 @@ characters = {
 				traits = {
 					army_chief_defensive_2
 				}
-			cost = 100
+			cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -334,7 +334,7 @@ characters = {
 				traits = {
 					air_chief_safety_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -433,7 +433,7 @@ characters = {
 
 	BUL_theodosi_daskalov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_theodosi_daskalov
 			ledger = army
@@ -468,7 +468,7 @@ characters = {
 				has_dlc = "Battle for the Bosporus"
 			}
 			advisor = {
-				cost = 100
+				cost = 150
 				slot = theorist
 				idea_token = BUL_georgi_petsov
 				ledger = navy
@@ -493,7 +493,7 @@ characters = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			advisor = {
-				cost = 100
+				cost = 150
 				slot = theorist
 				idea_token = BUL_georgi_petsov
 				ledger = navy
@@ -519,7 +519,7 @@ characters = {
 
 	BUL_sava_ivanov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_sava_ivanov
 			ledger = navy
@@ -542,7 +542,7 @@ characters = {
 
 	BUL_georgi_drenikov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_georgi_drenikov
 			ledger = air
@@ -583,7 +583,7 @@ characters = {
 			traits = {
 				army_chief_organizational_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -633,7 +633,7 @@ characters = {
 				traits = {
 					army_chief_drill_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
@@ -675,7 +675,7 @@ characters = {
 				traits = {
 					army_chief_drill_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -709,7 +709,7 @@ characters = {
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
@@ -742,7 +742,7 @@ characters = {
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -776,7 +776,7 @@ characters = {
 				traits = {
 					army_chief_maneuver_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
@@ -818,7 +818,7 @@ characters = {
 				traits = {
 					air_chief_ground_support_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -859,7 +859,7 @@ characters = {
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
@@ -880,7 +880,7 @@ characters = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			advisor = {
-				cost = 100
+				cost = 150
 				slot = theorist
 				idea_token = BUL_kiril_stanchev
 				ledger = army
@@ -960,7 +960,7 @@ characters = {
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -1028,7 +1028,7 @@ characters = {
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -1097,7 +1097,7 @@ characters = {
 				traits = {
 					air_bomber_interception_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
@@ -1130,7 +1130,7 @@ characters = {
 				traits = {
 					air_air_combat_training_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1190,7 +1190,7 @@ characters = {
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -1268,7 +1268,7 @@ characters = {
 				traits = {
 					army_cavalry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1299,7 +1299,7 @@ characters = {
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -1331,7 +1331,7 @@ characters = {
 			traits = {
 				army_entrenchment_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1358,7 +1358,7 @@ characters = {
 			traits = {
 				army_armored_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -1389,7 +1389,7 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -2170,7 +2170,7 @@ characters = {
 
 	BUL_ivan_gaidimitriv = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_ivan_gaidimitriv
 			ledger = air
@@ -2207,7 +2207,7 @@ characters = {
 			traits = {
 				navy_naval_air_defense_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2260,7 +2260,7 @@ characters = {
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

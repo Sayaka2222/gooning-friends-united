@@ -1155,7 +1155,7 @@
 			}
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 1
+				bonus = 1.25
 				uses = 1
 				technology = improved_medium_tank_chassis
 			}
